@@ -11,10 +11,10 @@ minimal_mistakes_skin    : "sunrise" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Minimal Mistakes"
+title                    : "My Archive"
 title_separator          : "-"
-subtitle                 : "A Jekyll theme"
-name                     : &name "Michael Rose" # &name is a YAML anchor which can be *referenced later
+subtitle                 : "Personal Documentation"
+name                     : &name "Miftah Ahmad Choiri" # &name is a YAML anchor which can be *referenced later
 description              : &description "A flexible Jekyll theme for your blog or site with a minimalist aesthetic."
 url                      : https://miftah-ahmad-choiri.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/" # the subpath of your site, e.g. "/blog"
@@ -99,36 +99,39 @@ analytics:
 # Site Author
 author:
   name             : *name # *name is a YAML reference pointing to the &anchor earlier
-  avatar           : "/assets/images/michael-rose.jpg"
+  avatar           : "/assets/images/myprofile1.png"
   bio              : "Just another *boring*, *tattooed*, *time traveling*, *designer*."
-  location         : "Buffalo, NY"
+  location         : "Jakarta, ID"
   links:
-    - label: "Made Mistakes"
+    - label: "Resume/CV"
       icon: "fas fa-fw fa-link"
-      url: "https://mademistakes.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/mmistakes"
+      url: "https://miftah-ahmad-choiri.github.io/"
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/miftah-ahmad-choiri-a8a953120/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/mmistakes"
+      url: "https://github.com/miftah-ahmad-choiri"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/mmistakes"
+      url: "https://www.instagram.com/miftah_ahmad_choiri/"
 
 
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/mmistakes"
+    - label: "Resume/CV"
+      icon: "fas fa-fw fa-link"
+      url: "https://miftah-ahmad-choiri.github.io/"
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/miftah-ahmad-choiri-a8a953120/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/mmistakes"
+      url: "https://github.com/miftah-ahmad-choiri"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/mmistakes"
+      url: "https://www.instagram.com/miftah_ahmad_choiri/"
 
 
 # Reading Files
@@ -274,7 +277,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/New_York # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Jakarta # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
