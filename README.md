@@ -71,6 +71,27 @@ gh auth login
 gh release list
 gh release create v0.1.1 --title "Release v0.1.1" --notes "Create new feature and fix code"
 gh release list
+# check on the remote repository for branch develop
+```
+
+### **Merge branch develop with branch deploy & main**
+Merge changes into deploy and main
+```bash
+# checkout into deploy and merge
+git checkout deploy
+git merge develop
+git push origin deploy
+```
+Backup the deployed script into main branch
+```bash
+git checkout main
+git merge deploy
+git push origin main
+```
+Delete branch develop, so you can start fresh in the next update
+```bash
+git branch -d develop
+git push origin --delete develop
 ```
 
 ---
