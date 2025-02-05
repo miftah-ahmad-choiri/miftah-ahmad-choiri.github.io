@@ -2,7 +2,7 @@
 
 ---
 
-## 📋 **Before Editing**
+## 📋 **BEFORE EDITING**
 
 ### 1️⃣ **Sync with Deployed App**
 Ensure your local repository is up-to-date with the deployed version:
@@ -47,7 +47,7 @@ v0.1.1
 
 ---
 
-## 💻 **Develop Software**
+## 💻 **DEVELOPING SOFTWARE**
 
 Make changes, track modifications, and commit your updates:
 ```bash
@@ -59,7 +59,7 @@ git push -u origin develop
 
 ---
 
-## 🚀 **After Editing**
+## 🚀 **AFTER EDITING**
 
 ### 📦 **Publish a New Release**
 Authenticate with GitHub CLI and create a new release:
@@ -71,7 +71,7 @@ gh release list
 # check on the remote repository for branch develop
 ```
 
-### **Update Release after Changes**
+### 🔄 **Update Release after Changes**
 If you make any changes after the release published, you need to do following update
 ```bash
 gh release view v0.1.1
@@ -85,7 +85,7 @@ gh release view v0.1.1
 gh release edit v0.1.1 --notes "Final adding new Markdown file how to edit this software and how to release a new version code. And update release v0.1.1"
 ```
 
-### **Merge branch develop with branch deploy & main**
+### 💾 **Merge branch develop with branch deploy & main**
 Merge changes into deploy and main
 ```bash
 # checkout into deploy and merge
@@ -99,6 +99,8 @@ git checkout main
 git merge deploy
 git push origin main
 ```
+
+### 🚮 **Delete `develop` branch**
 Delete branch develop, so you can start fresh in the next update
 ```bash
 git branch -d develop
