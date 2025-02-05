@@ -74,6 +74,20 @@ gh release list
 # check on the remote repository for branch develop
 ```
 
+### **Update Release after Changes**
+If you make any changes after the release published, you need to do following update
+```bash
+gh release view v0.1.1
+git tag -d v0.1.1
+git tag -a v0.1.1 -m " Adding new Markdown file how to edit this software and how to release a new version code. And update release v0.1.1"
+git push origin develop --force
+```
+After update the tag, you can update the github release
+```bash
+gh release view v0.1.1
+gh release edit v0.1.1 --notes " Adding new Markdown file how to edit this software and how to release a new version code. And update release v0.1.1"
+```
+
 ### **Merge branch develop with branch deploy & main**
 Merge changes into deploy and main
 ```bash
