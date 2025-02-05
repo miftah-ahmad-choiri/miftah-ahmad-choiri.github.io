@@ -1,6 +1,3 @@
-Here’s an improved version of your Markdown file with better formatting, clear section divisions, and consistent styling:
-
-```markdown
 # 🚀 How to Edit This Website
 
 ---
