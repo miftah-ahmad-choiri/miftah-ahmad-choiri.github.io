@@ -4,57 +4,124 @@ permalink: /docs/structure/
 excerpt: "How the theme is organized and what all of the files are for."
 last_modified_at: 2018-03-20T15:19:22-04:00
 ---
+# 🚀 How to Edit This Website
 
-Nothing clever here :wink:. Layouts, data files, and includes are all placed in their default locations. Stylesheets and scripts in `assets`, and a few development related files in the project's root directory.
+---
 
-**Please note:** If you installed Minimal Mistakes via the Ruby Gem method, theme files like `_layouts`, `_includes`, `_sass`, and `/assets/` will be missing. This is normal as they are bundled with the [`minimal-mistakes-jekyll`](https://rubygems.org/gems/minimal-mistakes-jekyll) Ruby gem. If you would like to make changes, create the files and Jekyll will prefer your local copy.
-{: .notice--info}
+## 📋 **BEFORE EDITING**
 
+### 1️⃣ **Sync with Deployed App**
+Ensure your local repository is up-to-date with the deployed version:
 ```bash
-minimal-mistakes
-├── _data                      # data files for customizing the theme
-|  ├── navigation.yml          # main navigation links
-|  └── ui-text.yml             # text used throughout the theme's UI
-├── _includes
-|  ├── analytics-providers     # snippets for analytics (Google and custom)
-|  ├── comments-providers      # snippets for comments
-|  ├── footer
-|  |  └── custom.html          # custom snippets to add to site footer
-|  ├── head
-|  |  └── custom.html          # custom snippets to add to site head
-|  ├── feature_row             # feature row helper
-|  ├── gallery                 # image gallery helper
-|  ├── group-by-array          # group by array helper for archives
-|  ├── nav_list                # navigation list helper
-|  ├── toc                     # table of contents helper
-|  └── ...
-├── _layouts
-|  ├── archive-taxonomy.html   # tag/category archive for Jekyll Archives plugin
-|  ├── archive.html            # archive base
-|  ├── categories.html         # archive listing posts grouped by category
-|  ├── category.html           # archive listing posts grouped by specific category
-|  ├── collection.html         # archive listing documents in a specific collection
-|  ├── compress.html           # compresses HTML in pure Liquid
-|  ├── default.html            # base for all other layouts
-|  ├── home.html               # home page
-|  ├── posts.html              # archive listing posts grouped by year
-|  ├── search.html             # search page
-|  ├── single.html             # single document (post/page/etc)
-|  ├── tag.html                # archive listing posts grouped by specific tag
-|  ├── tags.html               # archive listing posts grouped by tags
-|  └── splash.html             # splash page
-├── _sass                      # SCSS partials
-├── assets
-|  ├── css
-|  |  └── main.scss            # main stylesheet, loads SCSS partials from _sass
-|  ├── images                  # image assets for posts/pages/collections/etc.
-|  ├── js
-|  |  ├── plugins              # jQuery plugins
-|  |  ├── vendor               # vendor scripts
-|  |  ├── _main.js             # plugin settings and other scripts to load after jQuery
-|  |  └── main.min.js          # optimized and concatenated script file loaded before </body>
-├── _config.yml                # site configuration
-├── Gemfile                    # gem file dependencies
-├── index.html                 # paginated home page showing recent posts
-└── package.json               # NPM build scripts
+cd miftah-ahmad-choiri.origin.io
+git pull origin deploy
 ```
+
+### 2️⃣ **Create a New Branch**
+Switch to a new branch named `develop`:
+```bash
+git branch -M develop
+```
+
+### 3️⃣ **Check Current Version Tag**
+Verify the current version tag before making changes:
+```bash
+git tag
+```
+If no tags exist, create an initial version tag:
+```bash
+git tag -a v0.1.0 -m "Releasing version 0.1.0"
+git tag
+```
+**Example Output:**
+```text
+v0.1.0
+```
+
+### 4️⃣ **Create a New Tag for the Upgrade**
+Tag the repository for the new version and push it to the remote:
+```bash
+git tag -a v0.1.1 -m "Releasing version 0.1.1"
+git push origin v0.1.1
+git tag
+```
+**Example Output:**
+```text
+v0.1.0
+v0.1.1
+```
+
+---
+
+## 💻 **DEVELOPING SOFTWARE**
+
+Make changes, track modifications, and commit your updates:
+```bash
+git status
+git add .
+git commit -m "Create new features or fix code"
+git push -u origin develop
+```
+
+---
+
+## 🚀 **AFTER EDITING**
+
+### 📦 **Publish a New Release**
+Authenticate with GitHub CLI and create a new release:
+```bash
+gh auth login
+gh release list
+gh release create v0.1.1 --title "Release v0.1.1" --notes "Create new feature and fix code"
+gh release list
+# check on the remote repository for branch develop
+```
+
+### 🔄 **Update Release after Changes**
+If you make any changes after the release published, you need to do following update
+```bash
+gh release view v0.1.1
+git tag -d v0.1.1
+git tag -a v0.1.1 -m "Final adding new Markdown file how to edit this software and how to release a new version code. And update release v0.1.1"
+git push origin develop --force
+```
+After update the tag, you can update the github release
+```bash
+gh release view v0.1.1
+gh release edit v0.1.1 --notes "Final adding new Markdown file how to edit this software and how to release a new version code. And update release v0.1.1"
+```
+
+### 💾 **Merge branch develop with branch deploy & main**
+Merge changes into deploy and main
+```bash
+# checkout into deploy and merge
+git checkout deploy
+git merge develop
+git push origin deploy
+```
+Backup the deployed script into main branch
+```bash
+git checkout main
+git merge deploy
+git push origin main
+```
+
+### 🚮 **Delete `develop` branch**
+Delete branch develop, so you can start fresh in the next update
+```bash
+git branch -d develop
+git push origin --delete develop
+```
+
+---
+
+✅ **All done! Your changes have been successfully committed and released.** 🎉
+```
+
+This version includes:
+- Emojis for better visual separation.
+- Clear section headings with descriptive titles.
+- Consistent code formatting.
+- Dividers (`---`) for clean transitions between sections.
+
+Let me know if you'd like further tweaks! 🚀
