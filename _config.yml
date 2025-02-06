@@ -12,11 +12,11 @@ minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "My Archive"
+title                    : "MyHowto"
 title_separator          : "-"
-subtitle                 : "Personal Documentation"
+subtitle                 : "By Miftah Ahmad Choiri"
 name                     : &name "Miftah Ahmad Choiri" # &name is a YAML anchor which can be *referenced later
-description              : &description "A flexible Jekyll theme for your blog or site with a minimalist aesthetic."
+description              : &description "Miftah Ahmad Choiri is an IT Infrastructure Specialist with expertise in Linux system administration, virtualization, and automation. He has experience working with Red Hat, HP-UX, AIX, and AS/400 environments, along with OpenShift, Ansible, and shell scripting. Passionate about on-premises and cloud computing, Miftah is always eager to expand his knowledge and contribute to innovative IT solutions."
 url                      : https://miftah-ahmad-choiri.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/" # the subpath of your site, e.g. "/blog"
 repository               : "miftah-ahmad-choiri/miftah-ahmad-choiri.github.io"
