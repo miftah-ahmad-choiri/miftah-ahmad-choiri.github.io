@@ -30,8 +30,8 @@ Cornelius Fiddlebone:
 # Site Author
 Miftah Ahmad Choiri:
   name             : Miftah Ahmad Choiri # *name is a YAML reference pointing to the &anchor earlier
-  avatar           : "/assets/images/myprofile1.png"
-  bio              : "Miftah Ahmad Choiri is an **IT Infrastructure Specialist** with expertise in Linux system administration, virtualization, and automation. He has experience working with Red Hat, HP-UX, AIX, and AS/400 environments, along with OpenShift, Ansible, and shell scripting. Passionate about on-premises and cloud computing, Miftah is always eager to expand his knowledge and contribute to innovative IT solutions."
+  avatar           : "/assets/profiles/myprofile3.png"
+  bio              : "Investing in **learning** is the most valuable **investment**—its returns last a lifetime and create endless **opportunities**.🚀"
   location         : "Jakarta, ID"
   links:
     - label: "Resume/CV"

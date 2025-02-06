@@ -20,8 +20,8 @@ List of directories that were edited:
 
 -----------------------------------
 
-## 1. 🗂️ `_data`
-### 1.1 Adding an author on the page
+## 1. 🗂️ **`_data`**
+### Adding an author on the page
 Add an author by inserting it into the following section, then go to `_pages` to add the author on the pages.
 
 ```yaml
@@ -49,7 +49,7 @@ author_profile: true
 ---
 ```
 
-### 1.2 Edit Navigation Sidebar
+### Edit Navigation Sidebar
 You can edit the navigation sidebar in `_data/navigation.yml`.
 
 ```yaml
@@ -71,8 +71,8 @@ permalink: /docs/tutorial/     #### <<< Edit permalink to point to URL ####
 ```
 -----------------------
 
-## 2. 🗂️ `_docs`
-### 2.1 Edit the documentation name, link URL, and navigation link
+## 2. 🗂️ **`_docs`**
+### Edit the documentation name, link URL, and navigation link
 You can edit documentation files. In this case, we edited `_docs/03-installation.md` into `_docs/tutorial.md`. The file name changes from "Installation" into "Tutorial" and the permalink changes.
 
 Before:
@@ -104,8 +104,8 @@ docs:
         url: /docs/tutorial/    #### <<< Add URL link here ####
 ```
 -------------------------
-## 3. 🗂️ `_pages`
-### 3.1 Add author on the pages layout
+## 3. 🗂️ **`_pages`**
+### Add author on the pages layout
 Here, you can add author information in the `_pages/year-archive.md`.
 
 ```yaml
@@ -118,8 +118,8 @@ author_profile: true           #### <<< Add author here ####
 ---
 ```
 ---------------------------
-## 4. 🗂️ `_posts`
-### 4.1 Create new posts
+## 4. 🗂️ **`_posts`**
+### Create new posts
 You can create new posts by creating a markdown file in `_posts/2024-04-18-welcome-to-miftah.md`. Don't forget to use the date format `2024-04-18-xxxxx.md` to ensure the post appears at the top.
 
 ```yaml
@@ -136,16 +136,16 @@ tags:
 Hi, Miftah...
 ```
 ---------------------------
-## 5. 📂 `assets`
-### 5.1 Add images and store in the images directory
+## 5. 📂 **`assets`**
+### Add images and store in the images directory
 You can add new images and create new directories within the `assets` folder to make it easier to manage and use images.
 ---------------------
-## 6. 📂 `release-notes`
-### 6.1 Update any notes/documentation for each change
+## 6. 📂 **`release-notes`**
+### Update any notes/documentation for each change
 Please take note of every change you make to ensure everything is trackable.
 ----------------------
-## 7. 📄 `_index.md`
-### 7.1 Change the homepage of the website
+## 7. 📄 **`_index.md`**
+### Change the homepage of the website
 You can change the homepage of the website by editing the `index.md`.
 
 ```yaml
@@ -188,8 +188,8 @@ feature_row:
 {% include feature_row %}
 ```
 -------------------
-## 8. 🔧 `_config.yml`
-### 8.1 Add a logo on the website
+## 8. 🔧 **`_config.yml`**
+### Add a logo on the website
 You can change the logo of the website by editing `_config.yml`.
 
 ```yaml

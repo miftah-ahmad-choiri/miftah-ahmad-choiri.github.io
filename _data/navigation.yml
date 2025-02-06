@@ -20,16 +20,20 @@ foo:
 
 # main links
 main:
-  - title: "Quick-Start Guide"
+  - title: "🏠Home"
+    url: /
+  - title: "📄MyDocs"
     url: /docs/quick-start-guide/
-  - title: "About"
-    url: /about/
-  - title: "Sample Posts"
+  - title: "🏆MyPorto"
     url: /year-archive/
-  - title: "Sample Collections"
+  - title: "💼MyProject"
     url: /collection-archive/
-  - title: "Terms &amp; Privacy Policy"
+  - title: "👤MySelf"
+    url: /about/
+  - title: "📜Terms &amp; Privacy Policy"
     url: /terms/
+    #target: _blank
+
 
 
 # documentation links

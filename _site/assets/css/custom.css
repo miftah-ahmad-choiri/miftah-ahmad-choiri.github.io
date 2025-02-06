@@ -1,0 +1,6 @@
+.feature-row img {
+    width: 100%;  /* Ensures all images take up the full width of the container */
+    height: auto; /* Maintains aspect ratio */
+    max-width: 300px; /* Set a maximum width for uniformity */
+    object-fit: cover; /* Ensures the images cover the area without distorting */
+}

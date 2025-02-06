@@ -12,15 +12,26 @@ layouts_gallery:
   - url: /assets/images/mm-layout-archive.png
     image_path: /assets/images/mm-layout-archive.png
     alt: "archive layout example"
-last_modified_at: 2022-05-27T11:59:26-04:00
-toc: true
+last_modified_at: 2025-02-06T11:59:26-04:00
+#toc: true
 ---
 
-Minimal Mistakes is a flexible two-column Jekyll theme. Perfect for hosting your personal site, blog, or portfolio on GitHub or self-hosting on your own server. As the name implies --- styling is purposely minimalistic to be enhanced and customized by you :smile:.
 
-{% include gallery id="layouts_gallery" caption="Examples of included layouts `splash`, `single`, and `archive`." %}
+As an experienced **IT professional** with a broad range of skills in **system administration**, **server management**, and **virtualization**, I have worked extensively with **Red Hat**, **RHV**, **RHCOS**, **AIX**, **VMware ESXi**, and **AS/400**. I specialize in managing complex infrastructures, including **IBM DS8000**, **Storwize**, **IBM Power Server**, and high-availability solutions like **AIX PowerHA**. 🚀
 
-[Install the Theme]({{ "/docs/quick-start-guide/" | relative_url }}){: .btn .btn--success .btn--large}
+My technical expertise includes **automation** with **Ansible**, handling project **installations**, **migrations**, **relocations**, and **hardware breakfixes**. I am also proficient in working with **OpenShift**, **DB2 instances**, and **storage solutions** to ensure optimal performance and reliability. 🔧
+
+With a strong background in **networking**, **troubleshooting**, and **system configuration**, I excel at ensuring smooth system operations in **disconnected environments**. I am passionate about improving workflows and driving efficiency through **automation** and strategic infrastructure management. 💡
+
+Currently, I am looking for opportunities in **system administration**, **infrastructure automation**, and **server architecture**. Let’s connect! 🔗
+
+---
+
+Here is my several project and portofolio :smile:.
+
+{% include gallery id="layouts_gallery" caption="Several project redhat installations `openshift`, `rhv`, and `ansible-awx`." %}
+
+[Install with Me]({{ "/docs/quick-start-guide/" | relative_url }}){: .btn .btn--success .btn--large}
 
 ## Notable Features
 
@@ -81,5 +92,3 @@ For even more demo pages check the [posts archive][year-archive].
 - [Lunr](http://lunrjs.com)
 
 ---
-
-Minimal Mistakes is designed, developed, and maintained by Michael Rose. Just another boring, tattooed, designer from Buffalo New York.

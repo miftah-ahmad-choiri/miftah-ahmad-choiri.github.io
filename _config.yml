@@ -7,12 +7,12 @@
 
 remote_theme             : "mmistakes/minimal-mistakes@4.26.2"
 
-minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 
 # Site Settings
 locale                   : "en-US"
-title                    : "MyHowto"
+title                    : "mymind"
 title_separator          : "-"
 subtitle                 : "By Miftah Ahmad Choiri"
 name                     : &name "Miftah Ahmad Choiri" # &name is a YAML anchor which can be *referenced later
@@ -20,8 +20,8 @@ description              : &description "Miftah Ahmad Choiri is an IT Infrastruc
 url                      : https://miftah-ahmad-choiri.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/" # the subpath of your site, e.g. "/blog"
 repository               : "miftah-ahmad-choiri/miftah-ahmad-choiri.github.io"
-teaser                   : #"/assets/images/500x3953273590_704e3899d5_m.jpg"
-logo                     : "/assets/myimages/logo.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+teaser                   : "/assets/logo/1.png" #"/assets/images/500x3953273590_704e3899d5_m.jpg"
+logo                     : "/assets/logo/1.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -74,9 +74,9 @@ baidu_site_verification  :
 
 # Social Sharing
 twitter:
-  username               : &twitter "mmistakes"
+  username               : &twitter "miftah"
 facebook:
-  username               : &facebook "michaelrose"
+  username               : &facebook "miftah"
   app_id                 :
   publisher              :
 og_image                 : "/assets/images/site-logo.png" # Open Graph/Twitter default site image
@@ -86,8 +86,8 @@ social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
-    - "https://twitter.com/mmistakes"
-    - "https://www.facebook.com/michaelrose"
+    - "https://twitter.com/miftah"
+    - "https://www.facebook.com/miftah"
 
 # Analytics
 analytics:
@@ -100,8 +100,8 @@ analytics:
 # Site Author
 author:
   name             : *name # *name is a YAML reference pointing to the &anchor earlier
-  avatar           : "/assets/images/myprofile1.png"
-  bio              : "Just another *boring*, *tattooed*, *time traveling*, *designer*."
+  avatar           : "/assets/profiles/myprofile3.png"
+  bio              : "Investing in **learning** is the most valuable **investment**—its returns last a lifetime and create endless **opportunities**.🚀"
   location         : "Jakarta, ID"
   links:
     - label: "Resume/CV"
@@ -225,6 +225,7 @@ defaults:
       type: pages
     values:
       layout: single
+      classes: wide
       author_profile: true
   # _docs
   - scope:
@@ -299,7 +300,9 @@ whitelist:
   - jemoji
   - jekyll-include-cache
 
-
+extra_css:
+  - "assets/css/print.css"
+  
 # Archives
 #  Type
 #  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)

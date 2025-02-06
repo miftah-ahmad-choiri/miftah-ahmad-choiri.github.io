@@ -1,0 +1,28 @@
+@media print {
+    body {
+        font-size: 12pt;
+        color: black;
+    }
+
+    /* Hide unnecessary elements */
+    .no-print, .header, .footer, .sidebar {
+        display: none;
+    }
+
+    /* Ensure images or media fit on the page */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Adjust page margins if needed */
+    @page {
+        margin: 20mm;
+    }
+
+    /* Additional styling for the printed page */
+    .content {
+        padding: 10mm;
+        line-height: 1.5;
+    }
+}
