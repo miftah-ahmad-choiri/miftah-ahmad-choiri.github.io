@@ -10,7 +10,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Structure - My Archive</title>
+<!-- begin _includes/seo.html --><title>Structure - MyHowto</title>
 <meta name="description" content="How the theme is organized and what all of the files are for.">
 
 
@@ -22,7 +22,7 @@
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
-<meta property="og:site_name" content="My Archive">
+<meta property="og:site_name" content="MyHowto">
 <meta property="og:title" content="Structure">
 <meta property="og:url" content="http://localhost:4000/docs/structure/">
 
@@ -51,11 +51,11 @@
 
 
 
-  <meta property="article:published_time" content="2025-02-03T19:16:43+07:00">
+  <meta property="article:published_time" content="2025-02-06T19:33:33+07:00">
 
 
 
-  <meta property="article:modified_time" content="2018-03-21T02:19:22+07:00">
+  <meta property="article:modified_time" content="2025-02-05T15:25:00+07:00">
 
 
 
@@ -83,7 +83,7 @@
 
 
 
-  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="My Archive Feed">
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="MyHowto Feed">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <script type="text/javascript">
@@ -122,27 +122,43 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         
+          <a class="site-logo" href="/"><img src="/assets/myimages/logo.png" alt="MyHowto"></a>
+        
         <a class="site-title" href="/">
-          My Archive
-          <span class="site-subtitle">Personal Documentation</span>
+          MyHowto
+          <span class="site-subtitle">By Miftah Ahmad Choiri</span>
         </a>
-        <ul class="visible-links">
-<li class="masthead__menu-item">
-              <a href="/docs/quick-start-guide/">Quick-Start Guide</a>
-            </li>
-<li class="masthead__menu-item">
-              <a href="/about/">About</a>
-            </li>
-<li class="masthead__menu-item">
-              <a href="/year-archive/">Sample Posts</a>
-            </li>
-<li class="masthead__menu-item">
-              <a href="/collection-archive/">Sample Collections</a>
-            </li>
-<li class="masthead__menu-item">
-              <a href="/terms/">Terms &amp; Privacy Policy</a>
-            </li>
-</ul>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/docs/quick-start-guide/"
+                
+                
+              >Quick-Start Guide</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/about/"
+                
+                
+              >About</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/year-archive/"
+                
+                
+              >Sample Posts</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/collection-archive/"
+                
+                
+              >Sample Collections</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/terms/"
+                
+                
+              >Terms &amp; Privacy Policy</a>
+            </li></ul>
         
         <button class="search__toggle" type="button">
           <span class="visually-hidden">Toggle search</span>
@@ -181,7 +197,7 @@
     
       <nav class="nav__list">
   
-  <input id="ac-toc" name="accordion-toc" type="checkbox">
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
   <label for="ac-toc">Toggle Menu</label>
   <ul class="nav__items">
     
@@ -199,7 +215,7 @@
             
               <li><a href="/docs/structure/" class="active">Structure</a></li>
             
-              <li><a href="/docs/installation/">Installation</a></li>
+              <li><a href="/docs/tutorial/">Tutorial</a></li>
             
               <li><a href="/docs/upgrading/">Upgrading</a></li>
             
@@ -307,7 +323,7 @@
     <meta itemprop="headline" content="Structure">
     <meta itemprop="description" content="How the theme is organized and what all of the files are for.">
     
-    <meta itemprop="dateModified" content="2018-03-21T02:19:22+07:00">
+    <meta itemprop="dateModified" content="2025-02-05T15:25:00+07:00">
 
     <div class="page__inner-wrap">
       
@@ -324,57 +340,126 @@
 
       <section class="page__content" itemprop="text">
         
-        <p>Nothing clever here <img class="emoji" title=":wink:" alt=":wink:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f609.png" height="20" width="20">. Layouts, data files, and includes are all placed in their default locations. Stylesheets and scripts in <code class="language-plaintext highlighter-rouge">assets</code>, and a few development related files in the project’s root directory.</p>
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#-how-to-edit-this-website">🚀 How to Edit This Website</a><ul><li><a href="#-before-editing">📋 BEFORE EDITING</a><ul><li><a href="#1️⃣-sync-with-deployed-app">1️⃣ Sync with Deployed App</a></li><li><a href="#2️⃣-create-a-new-branch">2️⃣ Create a New Branch</a></li><li><a href="#3️⃣-check-current-version-tag">3️⃣ Check Current Version Tag</a></li><li><a href="#4️⃣-create-a-new-tag-for-the-upgrade">4️⃣ Create a New Tag for the Upgrade</a></li></ul></li><li><a href="#-developing-software">💻 DEVELOPING SOFTWARE</a></li><li><a href="#-after-editing">🚀 AFTER EDITING</a><ul><li><a href="#-publish-a-new-release">📦 Publish a New Release</a></li><li><a href="#-update-release-after-changes">🔄 Update Release after Changes</a></li><li><a href="#-merge-branch-develop-with-branch-deploy--main">💾 Merge branch develop with branch deploy &amp; main</a></li><li><a href="#-delete-develop-branch">🚮 Delete develop branch</a></li></ul></li></ul></li></ul>
+            </nav>
+          </aside>
+        
+        <h1 id="-how-to-edit-this-website">🚀 How to Edit This Website</h1>
 
-<p class="notice--info"><strong>Please note:</strong> If you installed Minimal Mistakes via the Ruby Gem method, theme files like <code class="language-plaintext highlighter-rouge">_layouts</code>, <code class="language-plaintext highlighter-rouge">_includes</code>, <code class="language-plaintext highlighter-rouge">_sass</code>, and <code class="language-plaintext highlighter-rouge">/assets/</code> will be missing. This is normal as they are bundled with the <a href="https://rubygems.org/gems/minimal-mistakes-jekyll"><code class="language-plaintext highlighter-rouge">minimal-mistakes-jekyll</code></a> Ruby gem. If you would like to make changes, create the files and Jekyll will prefer your local copy.</p>
+<hr />
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>minimal-mistakes
-├── _data                      <span class="c"># data files for customizing the theme</span>
-|  ├── navigation.yml          <span class="c"># main navigation links</span>
-|  └── ui-text.yml             <span class="c"># text used throughout the theme's UI</span>
-├── _includes
-|  ├── analytics-providers     <span class="c"># snippets for analytics (Google and custom)</span>
-|  ├── comments-providers      <span class="c"># snippets for comments</span>
-|  ├── footer
-|  |  └── custom.html          <span class="c"># custom snippets to add to site footer</span>
-|  ├── <span class="nb">head</span>
-|  |  └── custom.html          <span class="c"># custom snippets to add to site head</span>
-|  ├── feature_row             <span class="c"># feature row helper</span>
-|  ├── gallery                 <span class="c"># image gallery helper</span>
-|  ├── group-by-array          <span class="c"># group by array helper for archives</span>
-|  ├── nav_list                <span class="c"># navigation list helper</span>
-|  ├── toc                     <span class="c"># table of contents helper</span>
-|  └── ...
-├── _layouts
-|  ├── archive-taxonomy.html   <span class="c"># tag/category archive for Jekyll Archives plugin</span>
-|  ├── archive.html            <span class="c"># archive base</span>
-|  ├── categories.html         <span class="c"># archive listing posts grouped by category</span>
-|  ├── category.html           <span class="c"># archive listing posts grouped by specific category</span>
-|  ├── collection.html         <span class="c"># archive listing documents in a specific collection</span>
-|  ├── compress.html           <span class="c"># compresses HTML in pure Liquid</span>
-|  ├── default.html            <span class="c"># base for all other layouts</span>
-|  ├── home.html               <span class="c"># home page</span>
-|  ├── posts.html              <span class="c"># archive listing posts grouped by year</span>
-|  ├── search.html             <span class="c"># search page</span>
-|  ├── single.html             <span class="c"># single document (post/page/etc)</span>
-|  ├── tag.html                <span class="c"># archive listing posts grouped by specific tag</span>
-|  ├── tags.html               <span class="c"># archive listing posts grouped by tags</span>
-|  └── splash.html             <span class="c"># splash page</span>
-├── _sass                      <span class="c"># SCSS partials</span>
-├── assets
-|  ├── css
-|  |  └── main.scss            <span class="c"># main stylesheet, loads SCSS partials from _sass</span>
-|  ├── images                  <span class="c"># image assets for posts/pages/collections/etc.</span>
-|  ├── js
-|  |  ├── plugins              <span class="c"># jQuery plugins</span>
-|  |  ├── vendor               <span class="c"># vendor scripts</span>
-|  |  ├── _main.js             <span class="c"># plugin settings and other scripts to load after jQuery</span>
-|  |  └── main.min.js          <span class="c"># optimized and concatenated script file loaded before &lt;/body&gt;</span>
-├── _config.yml                <span class="c"># site configuration</span>
-├── Gemfile                    <span class="c"># gem file dependencies</span>
-├── index.html                 <span class="c"># paginated home page showing recent posts</span>
-└── package.json               <span class="c"># NPM build scripts</span>
+<h2 id="-before-editing">📋 <strong>BEFORE EDITING</strong></h2>
+
+<h3 id="1️⃣-sync-with-deployed-app">1️⃣ <strong>Sync with Deployed App</strong></h3>
+<p>Ensure your local repository is up-to-date with the deployed version:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>miftah-ahmad-choiri.origin.io
+git pull origin deploy
 </code></pre></div></div>
+
+<h3 id="2️⃣-create-a-new-branch">2️⃣ <strong>Create a New Branch</strong></h3>
+<p>Switch to a new branch named <code class="language-plaintext highlighter-rouge">develop</code>:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git branch <span class="nt">-M</span> develop
+</code></pre></div></div>
+
+<h3 id="3️⃣-check-current-version-tag">3️⃣ <strong>Check Current Version Tag</strong></h3>
+<p>Verify the current version tag before making changes:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git tag
+</code></pre></div></div>
+<p>If no tags exist, create an initial version tag:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git tag <span class="nt">-a</span> v0.1.0 <span class="nt">-m</span> <span class="s2">"Releasing version 0.1.0"</span>
+git tag
+</code></pre></div></div>
+<p><strong>Example Output:</strong></p>
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>v0.1.0
+</code></pre></div></div>
+
+<h3 id="4️⃣-create-a-new-tag-for-the-upgrade">4️⃣ <strong>Create a New Tag for the Upgrade</strong></h3>
+<p>Tag the repository for the new version and push it to the remote:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git tag <span class="nt">-a</span> v0.1.1 <span class="nt">-m</span> <span class="s2">"Releasing version 0.1.1"</span>
+git push origin v0.1.1
+git tag
+</code></pre></div></div>
+<p><strong>Example Output:</strong></p>
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>v0.1.0
+v0.1.1
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="-developing-software">💻 <strong>DEVELOPING SOFTWARE</strong></h2>
+
+<p>To run the website in local mode with auto-reload</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle <span class="nb">exec </span>jekyll serve <span class="nt">--livereload</span> <span class="nt">--force_polling</span> <span class="nt">--watch</span>
+</code></pre></div></div>
+
+<p>Make changes, track modifications, and commit your updates:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git status
+git add <span class="nb">.</span>
+git commit <span class="nt">-m</span> <span class="s2">"Create new features or fix code"</span>
+git push <span class="nt">-u</span> origin develop
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="-after-editing">🚀 <strong>AFTER EDITING</strong></h2>
+
+<h3 id="-publish-a-new-release">📦 <strong>Publish a New Release</strong></h3>
+<p>Authenticate with GitHub CLI and create a new release:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gh auth login
+gh release list
+gh release create v0.1.1 <span class="nt">--title</span> <span class="s2">"Release v0.1.1"</span> <span class="nt">--notes</span> <span class="s2">"Create new feature and fix code"</span>
+gh release list
+<span class="c"># check on the remote repository for branch develop</span>
+</code></pre></div></div>
+
+<h3 id="-update-release-after-changes">🔄 <strong>Update Release after Changes</strong></h3>
+<p>If you make any changes after the release published, you need to do following update</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gh release view v0.1.1
+git tag <span class="nt">-d</span> v0.1.1
+git tag <span class="nt">-a</span> v0.1.1 <span class="nt">-m</span> <span class="s2">"Final adding new Markdown file how to edit this software and how to release a new version code. And update release v0.1.1"</span>
+git push origin develop <span class="nt">--force</span>
+</code></pre></div></div>
+<p>After update the tag, you can update the github release</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gh release view v0.1.1
+gh release edit v0.1.1 <span class="nt">--notes</span> <span class="s2">"Final adding new Markdown file how to edit this software and how to release a new version code. And update release v0.1.1"</span>
+</code></pre></div></div>
+
+<h3 id="-merge-branch-develop-with-branch-deploy--main">💾 <strong>Merge branch develop with branch deploy &amp; main</strong></h3>
+<p>Merge changes into deploy and main</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># checkout into deploy and merge</span>
+git checkout deploy
+git merge develop
+git push origin deploy
+</code></pre></div></div>
+<p>Backup the deployed script into main branch</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout main
+git merge deploy
+git push origin main
+</code></pre></div></div>
+
+<h3 id="-delete-develop-branch">🚮 <strong>Delete <code class="language-plaintext highlighter-rouge">develop</code> branch</strong></h3>
+<p>Delete branch develop, so you can start fresh in the next update</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git branch <span class="nt">-d</span> develop
+git push origin <span class="nt">--delete</span> develop
+</code></pre></div></div>
+
+<hr />
+
+<p>✅ <strong>All done! Your changes have been successfully committed and released.</strong> 🎉
+```</p>
+
+<p>This version includes:</p>
+<ul>
+  <li>Emojis for better visual separation.</li>
+  <li>Clear section headings with descriptive titles.</li>
+  <li>Consistent code formatting.</li>
+  <li>Dividers (<code class="language-plaintext highlighter-rouge">---</code>) for clean transitions between sections.</li>
+</ul>
+
+<p>Let me know if you’d like further tweaks! 🚀</p>
 
         
       </section>
@@ -386,7 +471,7 @@
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2018-03-20">March 20, 2018</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2025-02-05">February 5, 2025</time></p>
 
       </footer>
 
@@ -399,7 +484,7 @@
 ">Previous</a>
     
     
-      <a href="/docs/installation/" class="pagination--pager" title="Installation
+      <a href="/docs/tutorial/" class="pagination--pager" title="Tutorial
 ">Next</a>
     
   </nav>
@@ -414,17 +499,20 @@
 </div>
 
       <div align="center" style="margin: 1em 0;">
-  <ins class="adsbygoogle" style="display:block; border-bottom: initial;" data-ad-client="ca-pub-7328585512091257" data-ad-slot="3049671934" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <ins class="adsbygoogle"
+        style="display:block; border-bottom: initial;"
+        data-ad-client="ca-pub-7328585512091257"
+        data-ad-slot="3049671934"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
 </div>
 
     </div>
 
     
       <div class="search-content">
-        <div class="search-content__inner-wrap">
-<div class="search-searchbar"></div>
-  <div class="search-hits"></div>
-</div>
+        <div class="search-content__inner-wrap"><div class="search-searchbar"></div>
+  <div class="search-hits"></div></div>
 
       </div>
     
@@ -441,7 +529,7 @@
     
       
         
-          <li><a href="https://miftah-ahmad-choiri.github.io/" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-link" aria-hidden="true"></i> MyPortofolio</a></li>
+          <li><a href="https://miftah-ahmad-choiri.github.io/" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-link" aria-hidden="true"></i> Resume/CV</a></li>
         
       
         
@@ -464,7 +552,7 @@
   </ul>
 </div>
 
-<div class="page__footer-copyright">© 2025 <a href="http://localhost:4000">My Archive</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2025 <a href="http://localhost:4000">MyHowto</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>

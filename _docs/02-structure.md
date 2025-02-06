@@ -56,6 +56,11 @@ v0.1.1
 
 ## 💻 **DEVELOPING SOFTWARE**
 
+To run the website in local mode with auto-reload
+```bash
+bundle exec jekyll serve --livereload --force_polling --watch
+```
+
 Make changes, track modifications, and commit your updates:
 ```bash
 git status
