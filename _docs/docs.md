@@ -4,6 +4,14 @@ title: "MyDocumentation Banks"
 excerpt: "Minimal Mistakes is a flexible two-column Jekyll theme."
 
 feature_row:
+  - image_path: /assets/pictures/14.png
+    alt: "Start Your Github Journey🔃"
+    title: "Start Your Github Journey🔃"
+    excerpt: "Quick reference guides for common commands and configurations."
+    url: "/docs/github-setup-guide-windows/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+    
   - image_path: /assets/pictures/10.png
     alt: "Redhat Enterprise Linux🎩"
     title: "Redhat Enterprise Linux🎩"
@@ -33,14 +41,6 @@ feature_row:
     title: "IBM Software Installation Books📚"
     excerpt: "Step-by-step guides for various system configurations and automations."
     url: "/404.html"
-    btn_class: "btn--primary"
-    btn_label: "Learn more"
-
-  - image_path: /assets/pictures/14.png
-    alt: "Start Your Github Journey🔃"
-    title: "Start Your Github Journey🔃"
-    excerpt: "Quick reference guides for common commands and configurations."
-    url: "/docs/github-setup-guide-windows/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
 

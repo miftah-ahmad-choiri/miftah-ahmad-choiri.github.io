@@ -45,8 +45,6 @@ docs:
         url: /docs/github-version-release/
       - title: "Jekyll Structures"
         url: /docs/how-to-edit-jekyll/
-      - title: "Upgrading"
-        url: /docs/upgrading/
   - title: Redhat Enterprise Linux🎩
     children:
       - title: "Wait in Progress"
