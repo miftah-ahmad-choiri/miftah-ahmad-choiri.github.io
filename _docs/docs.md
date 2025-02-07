@@ -1,7 +1,7 @@
 ---
 permalink: /docs/
 title: "MyDocumentation Banks"
-#excerpt: "Minimal Mistakes is a flexible two-column Jekyll theme."
+excerpt: "Minimal Mistakes is a flexible two-column Jekyll theme."
 
 feature_row:
   - image_path: /assets/pictures/10.png
@@ -60,13 +60,7 @@ feature_row:
     btn_class: "btn--primary"
     btn_label: "Learn more"
 
-related: true
-categories:
-  - Layout
-  - Uncategorized
-tags:
-  - related posts
-  - layout
+last_modified_at: 2025-02-07T09:51:05-04:00
 ---
-
+---
 {% include feature_row id="feature_row" %}

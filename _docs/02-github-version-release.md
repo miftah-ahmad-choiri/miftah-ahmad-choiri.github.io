@@ -1,8 +1,8 @@
 ---
-title: "Mastering Github Version Release"
+title: "Mastering Version Release"
 permalink: /docs/github-version-release/
 excerpt: "How the theme is organized and what all of the files are for."
-last_modified_at: 15:25 05-02-2025
+last_modified_at: 2025-02-05T21:36:18-04:00
 toc: true
 ---
 # 🚀 How to Edit This Website

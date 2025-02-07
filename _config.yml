@@ -190,21 +190,16 @@ kramdown:
   enable_coderay: false
 
 
-# Collections
 collections:
+  relocation:
+    output: true
+    permalink: /:collection/:path/
+  installation:
+    output: true
+    permalink: /:collection/:path/
   docs:
     output: true
     permalink: /:collection/:path/
-  recipes:
-    output: true
-    permalink: /:collection/:path/
-  pets:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-
 
 # Defaults
 defaults:
@@ -241,19 +236,19 @@ defaults:
       toc_sticky: true
       sidebar:
         nav: "docs"
-  # _recipes
+  # _installation
   - scope:
       path: ""
-      type: recipes
+      type: installation
     values:
       layout: single
       author_profile: true
       share: true
       comments: true
-  # _pets
+  # _relocation
   - scope:
       path: ""
-      type: pets
+      type: relocation
     values:
       layout: single
       author_profile: true
@@ -277,8 +272,8 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-# paginate: 5 # amount of posts to show
-# paginate_path: /page:num/
+#paginate: 5 # amount of posts to show
+#paginate_path: /blog/page:num/
 timezone: Asia/Jakarta # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 

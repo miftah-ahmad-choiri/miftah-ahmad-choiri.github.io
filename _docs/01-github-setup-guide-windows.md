@@ -2,7 +2,7 @@
 title: "Github Setup Guide"
 permalink: /docs/github-setup-guide-windows/
 excerpt: "How to quickly install and setup Minimal Mistakes for use with GitHub Pages."
-last_modified_at: 15:25 05-02-2025
+last_modified_at: 2025-02-04T21:36:18-04:00
 redirect_from:
   - /theme-setup/
 toc: true
