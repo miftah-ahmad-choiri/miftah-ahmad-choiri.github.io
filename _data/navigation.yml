@@ -23,7 +23,7 @@ main:
   - title: "🏠Home"
     url: /
   - title: "📄MyDocs"
-    url: /docs/quick-start-guide/
+    url: /docs/
   - title: "🏆MyPorto"
     url: /year-archive/
   - title: "💼MyProject"
@@ -35,17 +35,50 @@ main:
     #target: _blank
 
 
-
 # documentation links
 docs:
+  - title: Start Your Github Journey🔃
+    children:
+      - title: "Setup Guide"
+        url: /docs/github-setup-guide-windows/
+      - title: "Releasing New Version"
+        url: /docs/github-version-release/
+      - title: "Jekyll Structures"
+        url: /docs/how-to-edit-jekyll/
+      - title: "Upgrading"
+        url: /docs/upgrading/
+  - title: Redhat Enterprise Linux🎩
+    children:
+      - title: "Wait in Progress"
+        url: /404.html
+  - title: IBM AS/400📟
+    children:
+      - title: "Wait in Progress"
+        url: /404.html
+  - title: Redhat OpenShift📦
+    children:
+      - title: "Wait in Progress"
+        url: /404.html
+  - title: IBM Software📚
+    children:
+      - title: "Wait in Progress"
+        url: /404.html
+  - title: IBM AIX🌐
+    children:
+      - title: "Wait in Progress"
+        url: /404.html
+  - title: Red Hat Ansible🤖
+    children:
+      - title: "Wait in Progress"
+        url: /404.html
+
+
   - title: Getting Started
     children:
       - title: "Quick-Start Guide"
         url: /docs/quick-start-guide/
       - title: "Structure"
         url: /docs/structure/
-      - title: "Tutorial"
-        url: /docs/tutorial/
       - title: "Upgrading"
         url: /docs/upgrading/
   - title: Customization

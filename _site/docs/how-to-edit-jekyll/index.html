@@ -1,0 +1,846 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.26.2 by Michael Rose
+  Copyright 2013-2024 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en-US" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>How to Edit Jekyll - mymind</title>
+<meta name="description" content="Instructions to edit the website and contents.">
+
+
+  <meta name="author" content="Miftah Ahmad Choiri">
+  
+  <meta property="article:author" content="Miftah Ahmad Choiri">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="mymind">
+<meta property="og:title" content="How to Edit Jekyll">
+<meta property="og:url" content="http://localhost:4000/docs/how-to-edit-jekyll/">
+
+
+  <meta property="og:description" content="Instructions to edit the website and contents.">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/site-logo.png">
+
+
+
+  <meta name="twitter:site" content="@miftah">
+  <meta name="twitter:title" content="How to Edit Jekyll">
+  <meta name="twitter:description" content="Instructions to edit the website and contents.">
+  <meta name="twitter:url" content="http://localhost:4000/docs/how-to-edit-jekyll/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+      <meta name="twitter:image" content="http://localhost:4000/assets/images/site-logo.png">
+    
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2025-02-07T19:18:49+07:00">
+
+
+
+  <meta property="article:modified_time" content="2019-08-21T08:36:18+07:00">
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/docs/how-to-edit-jekyll/">
+
+
+
+
+
+
+
+  <meta name="google-site-verification" content="UQj93ERU9zgECodaaXgVpkjrFn9UrDMEzVamacSoQ8Y" />
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="mymind Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script type="text/javascript">
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  window.enable_copy_code_button = true;
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single wide" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/logo/1.png" alt="mymind"></a>
+        
+        <a class="site-title" href="/">
+          mymind
+          <span class="site-subtitle">By Miftah Ahmad Choiri</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/"
+                
+                
+              >🏠Home</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/docs/"
+                
+                
+              >📄MyDocs</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/year-archive/"
+                
+                
+              >🏆MyPorto</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/collection-archive/"
+                
+                
+              >💼MyProject</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/about/"
+                
+                
+              >👤MySelf</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/terms/"
+                
+                
+              >📜Terms &amp; Privacy Policy</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      <nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle Menu</label>
+  <ul class="nav__items">
+    
+      
+      
+        <li>
+          
+            <span class="nav__sub-title">Start Your Github Journey🔃</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/docs/github-setup-guide-windows/">Setup Guide</a></li>
+            
+              <li><a href="/docs/github-version-release/">Releasing New Version</a></li>
+            
+              <li><a href="/docs/how-to-edit-jekyll/" class="active">Jekyll Structures</a></li>
+            
+              <li><a href="/docs/upgrading/">Upgrading</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">Redhat Enterprise Linux🎩</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/404.html">Wait in Progress</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">IBM AS/400📟</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/404.html">Wait in Progress</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">Redhat OpenShift📦</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/404.html">Wait in Progress</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">IBM Software📚</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/404.html">Wait in Progress</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">IBM AIX🌐</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/404.html">Wait in Progress</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">Red Hat Ansible🤖</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/404.html">Wait in Progress</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">Getting Started</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/docs/quick-start-guide/">Quick-Start Guide</a></li>
+            
+              <li><a href="/docs/structure/">Structure</a></li>
+            
+              <li><a href="/docs/upgrading/">Upgrading</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">Customization</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/docs/configuration/">Configuration</a></li>
+            
+              <li><a href="/docs/overriding-theme-defaults/">Overriding Theme Defaults</a></li>
+            
+              <li><a href="/docs/navigation/">Navigation</a></li>
+            
+              <li><a href="/docs/ui-text/">UI Text</a></li>
+            
+              <li><a href="/docs/authors/">Authors</a></li>
+            
+              <li><a href="/docs/layouts/">Layouts</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">Content</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/docs/posts/">Working with Posts</a></li>
+            
+              <li><a href="/docs/pages/">Working with Pages</a></li>
+            
+              <li><a href="/docs/collections/">Working with Collections</a></li>
+            
+              <li><a href="/docs/helpers/">Helpers</a></li>
+            
+              <li><a href="/docs/utility-classes/">Utility Classes</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">Extras</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/docs/stylesheets/">Stylesheets</a></li>
+            
+              <li><a href="/docs/javascript/">JavaScript</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">Meta</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/docs/faq/">FAQ</a></li>
+            
+              <li><a href="/docs/history/">History</a></li>
+            
+              <li><a href="/docs/contributing/">Contributing</a></li>
+            
+              <li><a href="/docs/docs-2-2/">Old 2.2 Docs</a></li>
+            
+              <li><a href="/docs/license/">License</a></li>
+            
+              <li><a href="/terms/">Terms &amp; Privacy Policy</a></li>
+            
+          </ul>
+          
+        </li>
+      
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="How to Edit Jekyll">
+    <meta itemprop="description" content="Instructions to edit the website and contents.">
+    
+    <meta itemprop="dateModified" content="2019-08-21T08:36:18+07:00">
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">
+            <a href="http://localhost:4000/docs/how-to-edit-jekyll/" itemprop="url">How to Edit Jekyll
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#whats-new-in-release-v012">What’s New in Release v0.1.2</a><ul><li><a href="#directory-edited-on-v012">Directory Edited on v0.1.2</a></li><li><a href="#1-️-_data">1. 🗂️ _data</a><ul><li><a href="#adding-an-author-on-the-page">Adding an author on the page</a></li><li><a href="#edit-navigation-sidebar">Edit Navigation Sidebar</a></li></ul></li><li><a href="#2-️-_docs">2. 🗂️ _docs</a><ul><li><a href="#edit-the-documentation-name-link-url-and-navigation-link">Edit the documentation name, link URL, and navigation link</a></li></ul></li><li><a href="#3-️-_pages">3. 🗂️ _pages</a><ul><li><a href="#add-author-on-the-pages-layout">Add author on the pages layout</a></li></ul></li><li><a href="#4-️-_posts">4. 🗂️ _posts</a><ul><li><a href="#create-new-posts">Create new posts</a></li></ul></li><li><a href="#5--assets">5. 📂 assets</a><ul><li><a href="#add-images-and-store-in-the-images-directory">Add images and store in the images directory</a></li></ul></li><li><a href="#6--release-notes">6. 📂 release-notes</a><ul><li><a href="#update-any-notesdocumentation-for-each-change">Update any notes/documentation for each change</a></li></ul></li><li><a href="#7--_indexmd">7. 📄 _index.md</a><ul><li><a href="#change-the-homepage-of-the-website">Change the homepage of the website</a></li></ul></li><li><a href="#8--_configyml">8. 🔧 _config.yml</a><ul><li><a href="#add-a-logo-on-the-website">Add a logo on the website</a></li></ul></li></ul></li></ul>
+            </nav>
+          </aside>
+        
+        <h1 id="whats-new-in-release-v012">What’s New in Release v0.1.2</h1>
+
+<h2 id="directory-edited-on-v012">Directory Edited on v0.1.2</h2>
+<p>List of directories that were edited:</p>
+<ul>
+  <li>🗂️ <code class="language-plaintext highlighter-rouge">_data</code></li>
+  <li>🗂️ <code class="language-plaintext highlighter-rouge">_docs</code></li>
+  <li>🗂️ <code class="language-plaintext highlighter-rouge">_pages</code></li>
+  <li>🗂️ <code class="language-plaintext highlighter-rouge">_posts</code></li>
+  <li>📂 <code class="language-plaintext highlighter-rouge">assets</code></li>
+  <li>📂 <code class="language-plaintext highlighter-rouge">release-notes</code></li>
+  <li>📄 <code class="language-plaintext highlighter-rouge">_index.md</code></li>
+  <li>🔧 <code class="language-plaintext highlighter-rouge">_config.yml</code></li>
+</ul>
+
+<hr />
+
+<h2 id="1-️-_data">1. 🗂️ <strong><code class="language-plaintext highlighter-rouge">_data</code></strong></h2>
+<h3 id="adding-an-author-on-the-page">Adding an author on the page</h3>
+<p>Add an author by inserting it into the following section, then go to <code class="language-plaintext highlighter-rouge">_pages</code> to add the author on the pages.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Site Author</span>
+<span class="na">Miftah Ahmad Choiri</span><span class="pi">:</span>   <span class="c1">#### &lt;&lt;&lt; Create new author here ####</span>
+  <span class="na">name             </span><span class="pi">:</span> <span class="s">Miftah Ahmad Choiri</span> <span class="c1"># *name is a YAML reference pointing to the &amp;anchor earlier</span>
+  <span class="na">avatar           </span><span class="pi">:</span> <span class="s2">"</span><span class="s">/assets/images/myprofile1.png"</span>
+  <span class="na">bio              </span><span class="pi">:</span> <span class="s2">"</span><span class="s">Miftah</span><span class="nv"> </span><span class="s">Ahmad</span><span class="nv"> </span><span class="s">Choiri</span><span class="nv"> </span><span class="s">..."</span>
+  <span class="na">location         </span><span class="pi">:</span> <span class="s2">"</span><span class="s">Jakarta,</span><span class="nv"> </span><span class="s">ID"</span>
+  <span class="na">links</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">label</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Resume/CV"</span>
+      <span class="na">icon</span><span class="pi">:</span> <span class="s2">"</span><span class="s">fas</span><span class="nv"> </span><span class="s">fa-fw</span><span class="nv"> </span><span class="s">fa-link"</span>
+      <span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://miftah-ahmad-choiri.github.io/"</span>
+</code></pre></div></div>
+
+<p>Add the author here in <code class="language-plaintext highlighter-rouge">_pages/year-archive.md</code>:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Posts</span><span class="nv"> </span><span class="s">by</span><span class="nv"> </span><span class="s">Year"</span>
+<span class="na">permalink</span><span class="pi">:</span> <span class="s">/year-archive/</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">posts</span>
+<span class="na">author</span><span class="pi">:</span> <span class="s">Miftah Ahmad Choiri</span>    <span class="c1">#### &lt;&lt;&lt; Add author here ####</span>
+<span class="na">author_profile</span><span class="pi">:</span> <span class="no">true</span>
+<span class="nn">---</span>
+</code></pre></div></div>
+
+<h3 id="edit-navigation-sidebar">Edit Navigation Sidebar</h3>
+<p>You can edit the navigation sidebar in <code class="language-plaintext highlighter-rouge">_data/navigation.yml</code>.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># documentation links</span>
+<span class="na">docs</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">Getting Started</span>
+    <span class="na">children</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Tutorial"</span>      <span class="c1">#### &lt;&lt;&lt; Add title on navigation ####</span>
+        <span class="na">url</span><span class="pi">:</span> <span class="s">/docs/tutorial/</span>   <span class="c1">#### &lt;&lt;&lt; Add URL link here ####</span>
+</code></pre></div></div>
+
+<p>Make sure the <strong>permalink</strong> is also updated in <code class="language-plaintext highlighter-rouge">_docs/3.tutorial.md</code>.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Tutorial"</span>              <span class="c1">#### &lt;&lt;&lt; Edit title on document ####</span>
+<span class="na">permalink</span><span class="pi">:</span> <span class="s">/docs/tutorial/</span>     <span class="c1">#### &lt;&lt;&lt; Edit permalink to point to URL ####</span>
+<span class="nn">---</span>
+</code></pre></div></div>
+<hr />
+
+<h2 id="2-️-_docs">2. 🗂️ <strong><code class="language-plaintext highlighter-rouge">_docs</code></strong></h2>
+<h3 id="edit-the-documentation-name-link-url-and-navigation-link">Edit the documentation name, link URL, and navigation link</h3>
+<p>You can edit documentation files. In this case, we edited <code class="language-plaintext highlighter-rouge">_docs/03-installation.md</code> into <code class="language-plaintext highlighter-rouge">_docs/tutorial.md</code>. The file name changes from “Installation” into “Tutorial” and the permalink changes.</p>
+
+<p>Before:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Installation"</span>           <span class="c1">#### &lt;&lt;&lt; Edit title on document ####</span>
+<span class="na">permalink</span><span class="pi">:</span> <span class="s">/docs/installation/</span>  <span class="c1">#### &lt;&lt;&lt; Edit permalink to point to URL ####</span>
+<span class="nn">---</span>
+</code></pre></div></div>
+
+<p>After:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Tutorial"</span>                <span class="c1">#### &lt;&lt;&lt; Edit title on document ####</span>
+<span class="na">permalink</span><span class="pi">:</span> <span class="s">/docs/tutorial/</span>       <span class="c1">#### &lt;&lt;&lt; Edit permalink to point to URL ####</span>
+<span class="nn">---</span>
+</code></pre></div></div>
+
+<p>Also, ensure the sidebar is updated in <code class="language-plaintext highlighter-rouge">_data/navigation.yml</code>.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># documentation links</span>
+<span class="na">docs</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">Getting Started</span>
+    <span class="na">children</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Tutorial"</span>       <span class="c1">#### &lt;&lt;&lt; Add title on navigation ####</span>
+        <span class="na">url</span><span class="pi">:</span> <span class="s">/docs/tutorial/</span>    <span class="c1">#### &lt;&lt;&lt; Add URL link here ####</span>
+</code></pre></div></div>
+<hr />
+<h2 id="3-️-_pages">3. 🗂️ <strong><code class="language-plaintext highlighter-rouge">_pages</code></strong></h2>
+<h3 id="add-author-on-the-pages-layout">Add author on the pages layout</h3>
+<p>Here, you can add author information in the <code class="language-plaintext highlighter-rouge">_pages/year-archive.md</code>.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Posts</span><span class="nv"> </span><span class="s">by</span><span class="nv"> </span><span class="s">Year"</span>
+<span class="na">permalink</span><span class="pi">:</span> <span class="s">/year-archive/</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">posts</span>
+<span class="na">author</span><span class="pi">:</span> <span class="s">Miftah Ahmad Choiri</span>    <span class="c1">#### &lt;&lt;&lt; Add author here #### </span>
+<span class="na">author_profile</span><span class="pi">:</span> <span class="no">true</span>           <span class="c1">#### &lt;&lt;&lt; Add author here ####</span>
+<span class="nn">---</span>
+</code></pre></div></div>
+<hr />
+<h2 id="4-️-_posts">4. 🗂️ <strong><code class="language-plaintext highlighter-rouge">_posts</code></strong></h2>
+<h3 id="create-new-posts">Create new posts</h3>
+<p>You can create new posts by creating a markdown file in <code class="language-plaintext highlighter-rouge">_posts/2024-04-18-welcome-to-miftah.md</code>. Don’t forget to use the date format <code class="language-plaintext highlighter-rouge">2024-04-18-xxxxx.md</code> to ensure the post appears at the top.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Welcome</span><span class="nv"> </span><span class="s">Miftah!"</span>
+<span class="na">date</span><span class="pi">:</span> <span class="s">2019-04-18T15:34:30-04:00</span>
+<span class="na">categories</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">blog</span>
+<span class="na">tags</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">Jekyll</span>
+  <span class="pi">-</span> <span class="s">update</span>
+<span class="nn">---</span>
+
+<span class="s">Hi, Miftah...</span>
+</code></pre></div></div>
+<hr />
+<h2 id="5--assets">5. 📂 <strong><code class="language-plaintext highlighter-rouge">assets</code></strong></h2>
+<h3 id="add-images-and-store-in-the-images-directory">Add images and store in the images directory</h3>
+<p>You can add new images and create new directories within the <code class="language-plaintext highlighter-rouge">assets</code> folder to make it easier to manage and use images.
+———————</p>
+<h2 id="6--release-notes">6. 📂 <strong><code class="language-plaintext highlighter-rouge">release-notes</code></strong></h2>
+<h3 id="update-any-notesdocumentation-for-each-change">Update any notes/documentation for each change</h3>
+<p>Please take note of every change you make to ensure everything is trackable.
+———————-</p>
+<h2 id="7--_indexmd">7. 📄 <strong><code class="language-plaintext highlighter-rouge">_index.md</code></strong></h2>
+<h3 id="change-the-homepage-of-the-website">Change the homepage of the website</h3>
+<p>You can change the homepage of the website by editing the <code class="language-plaintext highlighter-rouge">index.md</code>.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">splash</span>
+<span class="na">permalink</span><span class="pi">:</span> <span class="s">/</span>
+<span class="na">hidden</span><span class="pi">:</span> <span class="no">true</span>
+<span class="na">header</span><span class="pi">:</span>
+  <span class="na">overlay_color</span><span class="pi">:</span> <span class="s2">"</span><span class="s">#5e616c"</span>
+  <span class="na">overlay_image</span><span class="pi">:</span> <span class="s">/assets/images/mm-home-page-feature.jpg</span>
+  <span class="na">actions</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">label</span><span class="pi">:</span> <span class="s2">"</span><span class="s">&lt;i</span><span class="nv"> </span><span class="s">class='fas</span><span class="nv"> </span><span class="s">fa-download'&gt;&lt;/i&gt;</span><span class="nv"> </span><span class="s">Install</span><span class="nv"> </span><span class="s">now"</span>
+      <span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">/docs/quick-start-guide/"</span>
+<span class="na">excerpt</span><span class="pi">:</span> <span class="pi">&gt;</span>
+  <span class="s">A flexible two-column Jekyll theme. Perfect for building personal sites, blogs, and portfolios.&lt;br /&gt;</span>
+  <span class="s">&lt;small&gt;&lt;a href="https://github.com/mmistakes/minimal-mistakes/releases/tag/4.26.2"&gt;Latest release v4.26.2&lt;/a&gt;&lt;/small&gt;</span>
+<span class="na">feature_row</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">image_path</span><span class="pi">:</span> <span class="s">/assets/images/mm-customizable-feature.png</span>
+    <span class="na">alt</span><span class="pi">:</span> <span class="s2">"</span><span class="s">customizable"</span>
+    <span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Super</span><span class="nv"> </span><span class="s">customizable"</span>
+    <span class="na">excerpt</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Everything</span><span class="nv"> </span><span class="s">from</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">menus,</span><span class="nv"> </span><span class="s">sidebars,</span><span class="nv"> </span><span class="s">comments,</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">more</span><span class="nv"> </span><span class="s">can</span><span class="nv"> </span><span class="s">be</span><span class="nv"> </span><span class="s">configured</span><span class="nv"> </span><span class="s">or</span><span class="nv"> </span><span class="s">set</span><span class="nv"> </span><span class="s">with</span><span class="nv"> </span><span class="s">YAML</span><span class="nv"> </span><span class="s">Front</span><span class="nv"> </span><span class="s">Matter."</span>
+    <span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">/docs/configuration/"</span>
+    <span class="na">btn_class</span><span class="pi">:</span> <span class="s2">"</span><span class="s">btn--primary"</span>
+    <span class="na">btn_label</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Learn</span><span class="nv"> </span><span class="s">more"</span>
+  <span class="pi">-</span> <span class="na">image_path</span><span class="pi">:</span> <span class="s">/assets/images/mm-responsive-feature.png</span>
+    <span class="na">alt</span><span class="pi">:</span> <span class="s2">"</span><span class="s">fully</span><span class="nv"> </span><span class="s">responsive"</span>
+    <span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Responsive</span><span class="nv"> </span><span class="s">layouts"</span>
+    <span class="na">excerpt</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Built</span><span class="nv"> </span><span class="s">with</span><span class="nv"> </span><span class="s">HTML5</span><span class="nv"> </span><span class="s">+</span><span class="nv"> </span><span class="s">CSS3.</span><span class="nv"> </span><span class="s">All</span><span class="nv"> </span><span class="s">layouts</span><span class="nv"> </span><span class="s">are</span><span class="nv"> </span><span class="s">fully</span><span class="nv"> </span><span class="s">responsive</span><span class="nv"> </span><span class="s">with</span><span class="nv"> </span><span class="s">helpers</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">augment</span><span class="nv"> </span><span class="s">your</span><span class="nv"> </span><span class="s">content."</span>
+    <span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">/docs/layouts/"</span>
+    <span class="na">btn_class</span><span class="pi">:</span> <span class="s2">"</span><span class="s">btn--primary"</span>
+    <span class="na">btn_label</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Learn</span><span class="nv"> </span><span class="s">more"</span>
+  <span class="pi">-</span> <span class="na">image_path</span><span class="pi">:</span> <span class="s">/assets/images/mm-free-feature.png</span>
+    <span class="na">alt</span><span class="pi">:</span> <span class="s2">"</span><span class="s">100%</span><span class="nv"> </span><span class="s">free"</span>
+    <span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">100%</span><span class="nv"> </span><span class="s">free"</span>
+    <span class="na">excerpt</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Free</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">use</span><span class="nv"> </span><span class="s">however</span><span class="nv"> </span><span class="s">you</span><span class="nv"> </span><span class="s">want</span><span class="nv"> </span><span class="s">under</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">MIT</span><span class="nv"> </span><span class="s">License.</span><span class="nv"> </span><span class="s">Clone</span><span class="nv"> </span><span class="s">it,</span><span class="nv"> </span><span class="s">fork</span><span class="nv"> </span><span class="s">it,</span><span class="nv"> </span><span class="s">customize</span><span class="nv"> </span><span class="s">it...</span><span class="nv"> </span><span class="s">whatever!"</span>
+    <span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">/docs/license/"</span>
+    <span class="na">btn_class</span><span class="pi">:</span> <span class="s2">"</span><span class="s">btn--primary"</span>
+    <span class="na">btn_label</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Learn</span><span class="nv"> </span><span class="s">more"</span>      
+<span class="nn">---</span>
+
+
+<span class="s">&lt;div class="feature__wrapper"&gt;</span>
+
+  
+
+<span class="s">&lt;/div&gt;</span>
+
+</code></pre></div></div>
+<hr />
+<h2 id="8--_configyml">8. 🔧 <strong><code class="language-plaintext highlighter-rouge">_config.yml</code></strong></h2>
+<h3 id="add-a-logo-on-the-website">Add a logo on the website</h3>
+<p>You can change the logo of the website by editing <code class="language-plaintext highlighter-rouge">_config.yml</code>.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">logo                     </span><span class="pi">:</span> <span class="s2">"</span><span class="s">/assets/myimages/logo.png"</span>
+</code></pre></div></div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2019-08-20">August 20, 2019</time></p>
+
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/docs/github-version-release/" class="pagination--pager" title="Mastering Github Version Release
+">Previous</a>
+    
+    
+      <a href="/docs/upgrading/" class="pagination--pager" title="Upgrading
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+      <div align="center" style="margin: 1em 0;">
+  <ins class="adsbygoogle"
+        style="display:block; border-bottom: initial;"
+        data-ad-client="ca-pub-7328585512091257"
+        data-ad-slot="3049671934"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><div class="search-searchbar"></div>
+  <div class="search-hits"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://miftah-ahmad-choiri.github.io/" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-link" aria-hidden="true"></i> Resume/CV</a></li>
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/miftah-ahmad-choiri-a8a953120/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> Linkedin</a></li>
+        
+      
+        
+          <li><a href="https://github.com/miftah-ahmad-choiri" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://www.instagram.com/miftah_ahmad_choiri/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2025 <a href="http://localhost:4000">mymind</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+<script>
+// Including InstantSearch.js library and styling
+const loadSearch = function() {
+  const loadCSS = function(src) {
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = src;
+    link.media = 'all';
+    document.head.appendChild(link);
+  };
+
+  var script = document.createElement('script');
+  script.setAttribute("type", "text/javascript");
+  script.setAttribute("src", "https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.js");
+  script.addEventListener("load", function() {
+    // Instantiating InstantSearch.js with Algolia credentials
+    const search = instantsearch({
+      appId: 'QB6HVGBSBA',
+      apiKey: '9d5014e5bbc77372547bce778dfa5663',
+      indexName: 'minimal_mistakes',
+      searchParameters: {
+        restrictSearchableAttributes: ['title', 'content']
+      }
+    });
+
+    const hitTemplate = function(hit) {
+      const url = hit.url;
+      const hightlight = hit._highlightResult;
+      const title = hightlight.title && hightlight.title.value  || "";
+      const content = hightlight.html && hightlight.html.value  || "";
+
+      return `
+        <div class="list__item">
+          <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+            <h2 class="archive__item-title" itemprop="headline"><a href="/${url}">${title}</a></h2>
+            <div class="archive__item-excerpt" itemprop="description">${content}</div>
+          </article>
+        </div>
+      `;
+    }
+
+    // Adding searchbar and results widgets
+    search.addWidget(
+      instantsearch.widgets.searchBox({
+        container: '.search-searchbar',
+        poweredBy: true,
+        placeholder: 'Enter your search term...'
+      })
+    );
+    search.addWidget(
+      instantsearch.widgets.hits({
+        container: '.search-hits',
+        templates: {
+          item: hitTemplate,
+          empty: 'No results',
+        }
+      })
+    );
+
+    if (!search.started) {
+      search.start();
+    }
+  });
+  document.body.appendChild(script);
+
+  loadCSS("https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.css");
+  loadCSS("https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch-theme-algolia.min.css");
+};
+
+// Starting the search only when toggle is clicked
+$(document).ready(function() {
+  var scriptLoaded = false;
+
+  $(".search__toggle").on("click", function() {
+    if (!scriptLoaded) {
+      loadSearch();
+      scriptLoaded = true;
+    }
+  });
+});
+</script>
+
+
+
+
+<style>
+.google-auto-placed {
+  margin: 2em auto;
+}
+</style>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+
+
+
+    <script src="http://127.0.0.1:35729/livereload.js"></script>
+  </body>
+</html>

@@ -21,3 +21,16 @@
     background-color: #cc5500; /* Darker shade on hover */
     color: white !important;
 }
+
+.feature__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+    gap: 20px;
+  }
+  
+  @media (min-width: 1200px) {
+    .feature__wrapper {
+      grid-template-columns: repeat(6, 1fr); /* 6 items in one row on large screens */
+    }
+  }
+  
