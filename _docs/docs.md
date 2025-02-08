@@ -56,7 +56,7 @@ feature_row:
     alt: "Automation with Red Hat Ansible🤖"
     title: "Automation with Red Hat Ansible🤖"
     excerpt: "Best practices for system maintenance and optimization."
-    url: "/404.html"
+    url: "/docs/how-to-install-awx"
     btn_class: "btn--primary"
     btn_label: "Learn more"
 

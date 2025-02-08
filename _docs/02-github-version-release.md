@@ -1,5 +1,11 @@
 ---
-title: "Mastering Version Release"
+title: | 
+        Mastering Version Release  <br>
+        ![GitHub](https://img.shields.io/badge/github-repository-black)
+        ![Jekyll](https://img.shields.io/badge/jekyll-static--site--generator-blue)
+        ![Ruby](https://img.shields.io/badge/ruby-programming-red)
+        ![GitHub Pages](https://img.shields.io/badge/github--pages-hosting-green)
+
 permalink: /docs/github-version-release/
 excerpt: "How the theme is organized and what all of the files are for."
 last_modified_at: 2025-02-05T21:36:18-04:00
@@ -35,9 +41,10 @@ git tag -a v0.1.0 -m "Releasing version 0.1.0"
 git tag
 ```
 **Example Output:**
-```text
+```txt
 v0.1.0
 ```
+{:.no-copy .terminal .notice--info}
 
 ### 4️⃣ **Create a New Tag for the Upgrade**
 Tag the repository for the new version and push it to the remote:
@@ -47,11 +54,11 @@ git push origin v0.1.1
 git tag
 ```
 **Example Output:**
-```text
+```txt
 v0.1.0
 v0.1.1
 ```
-
+{:.no-copy .terminal .notice--info}
 ---
 
 ## 💻 **DEVELOPING SOFTWARE**

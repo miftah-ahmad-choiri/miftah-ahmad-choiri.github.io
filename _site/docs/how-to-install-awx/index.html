@@ -1,0 +1,745 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.26.2 by Michael Rose
+  Copyright 2013-2024 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en-US" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>How to Install Ansible AWX🚀   mymind</title>
+<meta name="description" content="This guide explain how to Install Ansible AWX on RHEL9">
+
+
+  <meta name="author" content="Miftah Ahmad Choiri">
+  
+  <meta property="article:author" content="Miftah Ahmad Choiri">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="mymind">
+<meta property="og:title" content="How to Install Ansible AWX🚀 ">
+<meta property="og:url" content="http://localhost:4000/docs/how-to-install-awx/">
+
+
+  <meta property="og:description" content="This guide explain how to Install Ansible AWX on RHEL9">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/site-logo.png">
+
+
+
+  <meta name="twitter:site" content="@miftah">
+  <meta name="twitter:title" content="How to Install Ansible AWX🚀 ">
+  <meta name="twitter:description" content="This guide explain how to Install Ansible AWX on RHEL9">
+  <meta name="twitter:url" content="http://localhost:4000/docs/how-to-install-awx/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+      <meta name="twitter:image" content="http://localhost:4000/assets/images/site-logo.png">
+    
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2025-02-08T16:21:43+07:00">
+
+
+
+  <meta property="article:modified_time" content="2025-02-09T08:36:18+07:00">
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/docs/how-to-install-awx/">
+
+
+
+
+
+
+
+  <meta name="google-site-verification" content="UQj93ERU9zgECodaaXgVpkjrFn9UrDMEzVamacSoQ8Y" />
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="mymind Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script type="text/javascript">
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  window.enable_copy_code_button = true;
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single wide" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/logo/1.png" alt="mymind"></a>
+        
+        <a class="site-title" href="/">
+          mymind
+          <span class="site-subtitle">By Miftah Ahmad Choiri</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/"
+                
+                
+              >🏠Home</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/docs/"
+                
+                
+              >📄MyDocs</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/blog/"
+                
+                
+              >🏆MyPorto</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/collection-archive/"
+                
+                
+              >💼MyProject</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/about/"
+                
+                
+              >👤MySelf</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/terms/"
+                
+                
+              >📜Terms &amp; Privacy Policy</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      <nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle Menu</label>
+  <ul class="nav__items">
+    
+      
+      
+        <li>
+          
+            <span class="nav__sub-title">Start Your Github Journey🔃</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/docs/github-setup-guide-windows/">Setup Guide</a></li>
+            
+              <li><a href="/docs/github-version-release/">Releasing New Version</a></li>
+            
+              <li><a href="/docs/how-to-edit-jekyll/">Jekyll Structures</a></li>
+            
+              <li><a href="/docs/publish-content/">Publish a Content</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">Redhat Enterprise Linux🎩</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/404.html">Wait in Progress</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">IBM AS/400📟</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/404.html">Wait in Progress</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">Redhat OpenShift📦</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/404.html">Wait in Progress</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">IBM Software📚</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/404.html">Wait in Progress</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">IBM AIX🌐</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/404.html">Wait in Progress</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">Red Hat Ansible🤖</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/docs/how-to-install-awx">How to Install AWX</a></li>
+            
+          </ul>
+          
+        </li>
+      
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="How to Install Ansible AWX🚀 ">
+    <meta itemprop="description" content="This guide explain how to Install Ansible AWX on RHEL9">
+    
+    <meta itemprop="dateModified" content="2025-02-09T08:36:18+07:00">
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">
+            <a href="http://localhost:4000/docs/how-to-install-awx/" itemprop="url">How to Install Ansible AWX🚀 <br />
+<img src="https://img.shields.io/badge/ansible-automation-red" alt="Ansible" />
+<img src="https://img.shields.io/badge/ansible--tower-management--ui-blue" alt="Ansible Tower" />
+<img src="https://img.shields.io/badge/ansible--awx-open--source--ui-green" alt="Ansible AWX" />
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#-1-disable-firewall-and-configure-selinux">🔥 1. Disable Firewall and Configure SELinux</a></li><li><a href="#-2-create-and-configure-user">👤 2. Create and Configure User</a></li><li><a href="#-3-register-system-and-install-required-packages">🔑 3. Register System and Install Required Packages</a></li><li><a href="#️-4-remove-existing-container-packages">🗑️ 4. Remove Existing Container Packages</a></li><li><a href="#-5-install-docker">🐳 5. Install Docker</a></li><li><a href="#-6-verify-docker-installation">✅ 6. Verify Docker Installation</a></li><li><a href="#️-7-install-minikube-and-kubectl">🏗️ 7. Install Minikube and Kubectl</a></li><li><a href="#-8-configure-docker-permissions">🔧 8. Configure Docker Permissions</a></li><li><a href="#-9-start-minikube">🚀 9. Start Minikube</a></li><li><a href="#-10-clone-and-deploy-awx-operator">📦 10. Clone and Deploy AWX Operator</a></li><li><a href="#️-11-deploy-awx-instance">⚙️ 11. Deploy AWX Instance</a></li><li><a href="#-12-retrieve-awx-admin-credentials">🔑 12. Retrieve AWX Admin Credentials</a></li><li><a href="#-13-access-awx">🌐 13. Access AWX</a><ul><li><a href="#-awx-dashboard">🔗 AWX Dashboard:</a></li></ul></li><li><a href="#️-14-enable-kubernetes-dashboard">🖥️ 14. Enable Kubernetes Dashboard</a><ul><li><a href="#-kubernetes-dashboard-url">🔗 Kubernetes Dashboard URL:</a></li></ul></li></ul>
+            </nav>
+          </aside>
+        
+        <h2 id="-1-disable-firewall-and-configure-selinux">🔥 1. Disable Firewall and Configure SELinux</h2>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>systemctl stop firewalld
+systemctl disable firewalld
+vi /etc/selinux/config
+</code></pre></div></div>
+<div class="language-properties no-copy notice--info highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="py">selinux</span><span class="p">=</span><span class="s">disabled</span>
+</code></pre></div></div>
+
+<h2 id="-2-create-and-configure-user">👤 2. Create and Configure User</h2>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>useradd miftah
+passwd miftah
+<span class="nb">sudo </span>visudo
+</code></pre></div></div>
+<p><strong>Output:</strong>
+<em>The user ‘miftah’ has been created and configured.</em></p>
+
+<h2 id="-3-register-system-and-install-required-packages">🔑 3. Register System and Install Required Packages</h2>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>su miftah
+<span class="nb">sudo whoami
+sudo </span>subscription-manager register
+<span class="nb">sudo </span>dnf <span class="nt">-y</span> <span class="nb">install </span>dnf-plugins-core
+</code></pre></div></div>
+<p><strong>Output:</strong>
+<em>Registration successful. dnf-plugins-core installed.</em></p>
+
+<h2 id="️-4-remove-existing-container-packages">🗑️ 4. Remove Existing Container Packages</h2>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>dnf remove docker <span class="se">\</span>
+                  docker-client <span class="se">\</span>
+                  docker-client-latest <span class="se">\</span>
+                  docker-common <span class="se">\</span>
+                  docker-latest <span class="se">\</span>
+                  docker-latest-logrotate <span class="se">\</span>
+                  docker-logrotate <span class="se">\</span>
+                  docker-engine <span class="se">\</span>
+                  podman <span class="se">\</span>
+                  runc
+</code></pre></div></div>
+<p><strong>Output:</strong>
+<em>Old container packages removed successfully.</em></p>
+
+<h2 id="-5-install-docker">🐳 5. Install Docker</h2>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>dnf config-manager <span class="nt">--add-repo</span> https://download.docker.com/linux/rhel/docker-ce.repo
+<span class="nb">sudo </span>dnf <span class="nb">install </span>docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+</code></pre></div></div>
+<p><strong>Output:</strong>
+<em>Docker installed successfully.</em></p>
+
+<h2 id="-6-verify-docker-installation">✅ 6. Verify Docker Installation</h2>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>docker run hello-world
+<span class="nb">sudo </span>docker images
+<span class="nb">sudo </span>docker ps <span class="nt">-a</span>
+</code></pre></div></div>
+<p><strong>Output:</strong>
+<em>Hello from Docker! Docker is running successfully.</em></p>
+
+<h2 id="️-7-install-minikube-and-kubectl">🏗️ 7. Install Minikube and Kubectl</h2>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>curl <span class="nt">-LO</span> https://github.com/kubernetes/minikube/releases/latest/download/minikube-linux-amd64
+<span class="nb">sudo install </span>minikube-linux-amd64 /usr/local/bin/minikube
+
+curl <span class="nt">-LO</span> <span class="s2">"https://dl.k8s.io/release/</span><span class="si">$(</span>curl <span class="nt">-L</span> <span class="nt">-s</span> https://dl.k8s.io/release/stable.txt<span class="si">)</span><span class="s2">/bin/linux/amd64/kubectl"</span>
+<span class="nb">echo</span> <span class="s2">"</span><span class="si">$(</span><span class="nb">cat </span>kubectl.sha256<span class="si">)</span><span class="s2"> kubectl"</span> | <span class="nb">sha256sum</span> <span class="nt">--check</span>
+<span class="nb">sudo install</span> <span class="nt">-o</span> root <span class="nt">-g</span> root <span class="nt">-m</span> 0755 kubectl /usr/local/bin/kubectl
+</code></pre></div></div>
+<p><strong>Output:</strong>
+<em>Minikube and Kubectl installed successfully.</em></p>
+
+<h2 id="-8-configure-docker-permissions">🔧 8. Configure Docker Permissions</h2>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>usermod <span class="nt">-aG</span> docker miftah
+newgrp docker
+docker ps
+</code></pre></div></div>
+<p><strong>Output:</strong>
+<em>User ‘miftah’ added to the docker group.</em></p>
+
+<h2 id="-9-start-minikube">🚀 9. Start Minikube</h2>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>minikube start <span class="nt">--apiserver-ips</span><span class="o">=</span>10.0.0.122 <span class="nt">--host-only-cidr</span><span class="o">=</span>10.0.0.122/24
+</code></pre></div></div>
+<p><strong>Output:</strong></p>
+<pre class="no-copy notice--info"><code class="language-output">😄  minikube v1.35.0 on Redhat 9.4 (amd64)
+✨  Automatically selected the docker driver. Other choices: none, ssh
+📌  Using Docker driver with root privileges
+👍  Starting "minikube" primary control-plane node in "minikube" cluster
+🚜  Pulling base image v0.0.46 ...
+💾  Downloading Kubernetes v1.32.0 preload ...
+    &gt; gcr.io/k8s-minikube/kicbase...:  500.31 MiB / 500.31 MiB  100.00% 4.74 Mi
+    &gt; preloaded-images-k8s-v18-v1...:  333.57 MiB / 333.57 MiB  100.00% 3.14 Mi
+🔥  Creating docker container (CPUs=2, Memory=2200MB) ...
+🐳  Preparing Kubernetes v1.32.0 on Docker 27.4.1 ...
+❗  Failing to connect to https://registry.k8s.io/ from both inside the minikube container and host machine
+💡  To pull new external images, you may need to configure a proxy: https://minikube.sigs.k8s.io/docs/reference/networking/proxy/
+    ▪ Generating certificates and keys ...
+    ▪ Booting up control plane ...
+    ▪ Configuring RBAC rules ...
+🔗  Configuring bridge CNI (Container Networking Interface) ...
+🔎  Verifying Kubernetes components...
+    ▪ Using image gcr.io/k8s-minikube/storage-provisioner:v5
+🌟  Enabled addons: storage-provisioner, default-storageclass
+🏄  Done! kubectl is now configured to use "minikube" cluster and "default" namespace by default
+</code></pre>
+
+<h2 id="-10-clone-and-deploy-awx-operator">📦 10. Clone and Deploy AWX Operator</h2>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone git@github.com:ansible/awx-operator.git
+<span class="nb">cd </span>awx-operator
+git checkout tags/2.19.0
+<span class="nb">export </span><span class="nv">VERSION</span><span class="o">=</span>2.19.0
+make deploy
+</code></pre></div></div>
+<p><strong>Output:</strong></p>
+<pre class="no-copy notice--info"><code class="language-txt">namespace/awx created
+customresourcedefinition.apiextensions.k8s.io/awxbackups.awx.ansible.com created
+customresourcedefinition.apiextensions.k8s.io/awxmeshingresses.awx.ansible.com created
+customresourcedefinition.apiextensions.k8s.io/awxrestores.awx.ansible.com created
+customresourcedefinition.apiextensions.k8s.io/awxs.awx.ansible.com created
+serviceaccount/awx-operator-controller-manager created
+role.rbac.authorization.k8s.io/awx-operator-awx-manager-role created
+role.rbac.authorization.k8s.io/awx-operator-leader-election-role created
+clusterrole.rbac.authorization.k8s.io/awx-operator-metrics-reader created
+clusterrole.rbac.authorization.k8s.io/awx-operator-proxy-role created
+rolebinding.rbac.authorization.k8s.io/awx-operator-awx-manager-rolebinding created
+rolebinding.rbac.authorization.k8s.io/awx-operator-leader-election-rolebinding created
+clusterrolebinding.rbac.authorization.k8s.io/awx-operator-proxy-rolebinding created
+configmap/awx-operator-awx-manager-config created
+service/awx-operator-controller-manager-metrics-service created
+deployment.apps/awx-operator-controller-manager created
+</code></pre>
+
+<h2 id="️-11-deploy-awx-instance">⚙️ 11. Deploy AWX Instance</h2>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vi kustomization.yaml
+</code></pre></div></div>
+<p><em>Add the following content:</em></p>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">kustomize.config.k8s.io/v1beta1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">Kustomization</span>
+<span class="na">resources</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">github.com/ansible/awx-operator/config/default?ref=2.19.0</span>
+  <span class="pi">-</span> <span class="s">awx-demo.yml</span>
+<span class="na">images</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">quay.io/ansible/awx-operator</span>
+    <span class="na">newTag</span><span class="pi">:</span> <span class="s">2.19.0</span>
+<span class="na">namespace</span><span class="pi">:</span> <span class="s">awx</span>
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl apply <span class="nt">-k</span> <span class="nb">.</span>
+</code></pre></div></div>
+<p><strong>Output:</strong></p>
+<pre class="no-copy notice--info"><code class="language-txt">awx.awx.ansible.com/awx-demo created
+</code></pre>
+
+<h2 id="-12-retrieve-awx-admin-credentials">🔑 12. Retrieve AWX Admin Credentials</h2>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get secret awx-demo-admin-password <span class="nt">-o</span> <span class="nv">jsonpath</span><span class="o">=</span><span class="s2">"{.data.password}"</span> <span class="nt">--namespace</span><span class="o">=</span>awx | <span class="nb">base64</span> <span class="nt">--decode</span>
+</code></pre></div></div>
+<p><strong>Output:</strong>
+<em>The generated admin password is displayed.</em></p>
+
+<h2 id="-13-access-awx">🌐 13. Access AWX</h2>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>minikube service awx-demo-service <span class="nt">--url</span> <span class="nt">-n</span> awx
+</code></pre></div></div>
+<p>If external IP is not configured for awx service, you need to configure ip tunnel &amp; port forwarding</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get all <span class="nt">-n</span> awx
+<span class="nb">nohup </span>minikube tunnel &amp;
+kubectl <span class="nt">-n</span> awx port-forward svc/awx-demo-service <span class="nt">--address</span> 0.0.0.0 30539:80 &amp;&gt; /dev/null &amp;
+</code></pre></div></div>
+
+<h3 id="-awx-dashboard">🔗 AWX Dashboard:</h3>
+<ul>
+  <li><strong>Visit:</strong> <a href="http://10.0.0.122:30539"><strong><code class="language-plaintext highlighter-rouge">http://10.0.0.122:30539</code></strong></a></li>
+  <li><strong>Login:</strong> <code class="language-plaintext highlighter-rouge">admin / &lt;retrieved-password&gt;</code></li>
+</ul>
+
+<h2 id="️-14-enable-kubernetes-dashboard">🖥️ 14. Enable Kubernetes Dashboard</h2>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>minikube addons <span class="nb">enable </span>dashboard
+kubectl get svc <span class="nt">-n</span> kubernetes-dashboard
+kubectl patch svc kubernetes-dashboard <span class="nt">-n</span> kubernetes-dashboard <span class="nt">-p</span> <span class="s1">'{"spec":{"type":"NodePort"}}'</span>
+kubectl <span class="nt">-n</span> kubernetes-dashboard port-forward svc/kubernetes-dashboard <span class="nt">--address</span> 0.0.0.0 32528:80 &amp;&gt; /dev/null &amp;
+</code></pre></div></div>
+<h3 id="-kubernetes-dashboard-url">🔗 Kubernetes Dashboard URL:</h3>
+<ul>
+  <li><strong>Visit:</strong> <a href="http://10.0.0.122:32528"><strong><code class="language-plaintext highlighter-rouge">http://10.0.0.122:32528</code></strong></a></li>
+</ul>
+
+<p><strong>🎉 Congratulations! Your AWX setup on RHEL 9 is now complete!</strong> 🚀</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2025-02-08">February 8, 2025</time></p>
+
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/docs/how-to-edit-jekyll/" class="pagination--pager" title="How to Edit Jekyll 
+
+
+
+
+">Previous</a>
+    
+    
+      <a href="/docs/publish-content/" class="pagination--pager" title="How to Publish a Content 
+
+
+
+
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+      <div align="center" style="margin: 1em 0;">
+  <ins class="adsbygoogle"
+        style="display:block; border-bottom: initial;"
+        data-ad-client="ca-pub-7328585512091257"
+        data-ad-slot="3049671934"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><div class="search-searchbar"></div>
+  <div class="search-hits"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://miftah-ahmad-choiri.github.io/" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-link" aria-hidden="true"></i> Resume/CV</a></li>
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/miftah-ahmad-choiri-a8a953120/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> Linkedin</a></li>
+        
+      
+        
+          <li><a href="https://github.com/miftah-ahmad-choiri" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://www.instagram.com/miftah_ahmad_choiri/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2025 <a href="http://localhost:4000">mymind</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+<script>
+// Including InstantSearch.js library and styling
+const loadSearch = function() {
+  const loadCSS = function(src) {
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = src;
+    link.media = 'all';
+    document.head.appendChild(link);
+  };
+
+  var script = document.createElement('script');
+  script.setAttribute("type", "text/javascript");
+  script.setAttribute("src", "https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.js");
+  script.addEventListener("load", function() {
+    // Instantiating InstantSearch.js with Algolia credentials
+    const search = instantsearch({
+      appId: 'QB6HVGBSBA',
+      apiKey: '9d5014e5bbc77372547bce778dfa5663',
+      indexName: 'minimal_mistakes',
+      searchParameters: {
+        restrictSearchableAttributes: ['title', 'content']
+      }
+    });
+
+    const hitTemplate = function(hit) {
+      const url = hit.url;
+      const hightlight = hit._highlightResult;
+      const title = hightlight.title && hightlight.title.value  || "";
+      const content = hightlight.html && hightlight.html.value  || "";
+
+      return `
+        <div class="list__item">
+          <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+            <h2 class="archive__item-title" itemprop="headline"><a href="/${url}">${title}</a></h2>
+            <div class="archive__item-excerpt" itemprop="description">${content}</div>
+          </article>
+        </div>
+      `;
+    }
+
+    // Adding searchbar and results widgets
+    search.addWidget(
+      instantsearch.widgets.searchBox({
+        container: '.search-searchbar',
+        poweredBy: true,
+        placeholder: 'Enter your search term...'
+      })
+    );
+    search.addWidget(
+      instantsearch.widgets.hits({
+        container: '.search-hits',
+        templates: {
+          item: hitTemplate,
+          empty: 'No results',
+        }
+      })
+    );
+
+    if (!search.started) {
+      search.start();
+    }
+  });
+  document.body.appendChild(script);
+
+  loadCSS("https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.css");
+  loadCSS("https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch-theme-algolia.min.css");
+};
+
+// Starting the search only when toggle is clicked
+$(document).ready(function() {
+  var scriptLoaded = false;
+
+  $(".search__toggle").on("click", function() {
+    if (!scriptLoaded) {
+      loadSearch();
+      scriptLoaded = true;
+    }
+  });
+});
+</script>
+
+
+
+
+<style>
+.google-auto-placed {
+  margin: 2em auto;
+}
+</style>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+
+
+
+    <script src="http://127.0.0.1:35729/livereload.js"></script>
+  </body>
+</html>

@@ -15,7 +15,17 @@ header:
       class: "btn btn-primary" 
 excerpt: >
   An Artificial Brain for My Mind. Think Smart with Me! <br /> <br />
-  
+
+intro:
+  - excerpt: |
+      🔥 **_Welcome at mymind!_** 🔥  
+
+      🔧 Whether you're a **system administrator, IT engineer, or tech enthusiast**, this site is your go-to hub for **automation, virtualization, cloud computing, and hardware break-fix solutions**.  
+
+      📖 Dive into **technical guides, troubleshooting tips, and best practices**—all based on **_hands-on experience_** from project installations, migrations, and system optimizations.  
+
+      💡 **Let’s build, automate, and innovate together!** ⚙️🚀  
+
 feature_row:
   - image_path: /assets/pictures/8.png
     alt: "MyDocs-Banks📄"
@@ -28,18 +38,27 @@ feature_row:
     alt: "MyPortofolios"
     title: "MyPortofolios🏆"
     excerpt: "I have hands-on experience in setting up and configuring Ansible, RHV, OpenShift, AS/400, AIX, VIOS, Spectrum Control, IBM DS8000, and Storwize storage. My work involves optimizing enterprise infrastructure, automating deployments, and ensuring system reliability through efficient configurations."
-    url: "/docs/layouts/"
+    url: "/blog/"
     btn_class: "btn--primary"
     btn_label: "Go there"
   - image_path: /assets/pictures/7.png
     alt: "MyProjects"
     title: "MyProjects💼"
     excerpt: "I have worked on installation, migration, relocation, maintenance, optimization, integration, problem breakfix, and decommissioning for enterprise servers, including IBM Power, IBM Storage, and other OEM products. My expertise ensures seamless infrastructure deployment, system reliability, and performance optimization."
-    url: "/docs/license/"
+    url: "/collection-archive/"
     btn_class: "btn--primary"
     btn_label: "Go there"      
-
+feature_row4:
+  - image_path: /assets/profiles/Formal-circle.png
+    alt: "Miftah Ahmad Choiri"
+    title: "Miftah Ahmad Choiri"
+    excerpt: 'Investing in **learning** is the most valuable **investment**—its returns last a lifetime and create endless **opportunities**.🚀'
+    url: "/about/"
+    btn_label: "Reach Me"
+    btn_class: "btn--primary"
 ---
 
-
 {% include feature_row %}
+{% include feature_row id="intro" type="center" %}
+
+{% include feature_row id="feature_row4" type="center" %}

@@ -1,5 +1,10 @@
 ---
-title: "Github Setup Guide"
+title: | 
+        Github Setup Guide <br>
+         <br>
+        ![GitHub](https://img.shields.io/badge/github-repository-black)
+        ![GitHub Pages](https://img.shields.io/badge/github--pages-hosting-green)
+
 permalink: /docs/github-setup-guide-windows/
 excerpt: "How to quickly install and setup Minimal Mistakes for use with GitHub Pages."
 last_modified_at: 2025-02-04T21:36:18-04:00
@@ -112,18 +117,20 @@ ssh -T git@github.com
 
 Successful output:
 
-```bash
+```txt
 Hi miftah-ahmad-choiri! You've successfully authenticated, but GitHub does not provide shell access.
 ```
+{:.no-copy .terminal .notice--info}
 
 For Organization ssh-connection:
 ```bash
 ssh-keygen -t ed25519 -C "miftah.choiri@ibm.com"
 ```
-```bash
+```txt
 # save the key into different location
 Enter file in which to save the key (/c/Users/mifta/.ssh/id_ed25519): /c/Users/mifta/.ssh/id_ed25519_ibm
 ```
+{:.no-copy .terminal .notice--warning}
 ```bash
 ll ~/.ssh/
 vi ~/.ssh/config
@@ -145,22 +152,27 @@ Host github.com-ibm
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519_ibm
 ```
-```bash
+```txt
 Identity added: /c/Users/mifta/.ssh/id_ed25519_ibm (miftah.choiri@ibm.com)
 ```
+{:.no-copy .terminal .notice--info}
+
 Test connection to github.com & github.ibm.com
 ```bash
 ssh -i ~/.ssh/id_ed25519_ibm -T git@github.ibm.com
 ```
-```bash
+```txt
 Hi Miftah-Choiri! You've successfully authenticated, but GitHub does not provide shell access.
 ```
+{:.no-copy .terminal .notice--info}
+
 ```bash
 ssh -T git@github.com
 ```
-```bash
+```txt
 Hi miftah-ahmad-choiri! You've successfully authenticated, but GitHub does not provide shell access.
 ```
+{:.no-copy .terminal .notice--info}
 
 ---
 
@@ -316,18 +328,18 @@ gh repo view --web
 
 - **Repository Not Found:**
 
-  ```bash
+  ```txt
   ERROR: Repository not found.
   ```
-
+  {:.no-copy .terminal .notice--danger}
   **Fix:** Verify repository URL and access permissions.
 
 - **Remote Already Exists:**
 
-  ```bash
+  ```txt
   error: remote origin already exists.
   ```
-
+  {:.no-copy .terminal .notice--danger}
   **Fix:** Remove existing remote and add again:
 
   ```bash

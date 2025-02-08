@@ -1,5 +1,11 @@
 ---
-title: "How to Edit Jekyll"
+title: | 
+        How to Edit Jekyll <br>
+        ![GitHub](https://img.shields.io/badge/github-repository-black)
+        ![Jekyll](https://img.shields.io/badge/jekyll-static--site--generator-blue)
+        ![Ruby](https://img.shields.io/badge/ruby-programming-red)
+        ![GitHub Pages](https://img.shields.io/badge/github--pages-hosting-green)
+
 permalink: /docs/how-to-edit-jekyll/
 excerpt: "Instructions to edit the website and contents."
 last_modified_at: 2025-02-06T21:36:18-04:00
@@ -139,10 +145,12 @@ Hi, Miftah...
 ## 5. 📂 **`assets`**
 ### Add images and store in the images directory
 You can add new images and create new directories within the `assets` folder to make it easier to manage and use images.
+
 ---------------------
 ## 6. 📂 **`release-notes`**
 ### Update any notes/documentation for each change
 Please take note of every change you make to ensure everything is trackable.
+
 ----------------------
 ## 7. 📄 **`_index.md`**
 ### Change the homepage of the website

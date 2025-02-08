@@ -45,6 +45,8 @@ docs:
         url: /docs/github-version-release/
       - title: "Jekyll Structures"
         url: /docs/how-to-edit-jekyll/
+      - title: "Publish a Content"
+        url: /docs/publish-content/
   - title: Redhat Enterprise Linux🎩
     children:
       - title: "Wait in Progress"
@@ -67,8 +69,8 @@ docs:
         url: /404.html
   - title: Red Hat Ansible🤖
     children:
-      - title: "Wait in Progress"
-        url: /404.html
+      - title: "How to Install AWX"
+        url: /docs/how-to-install-awx
 
 
 
