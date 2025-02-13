@@ -12,7 +12,7 @@ last_modified_at: 2025-02-14T21:36:18-04:00
 toc: true
 ---
 
-## **Build Real World AI Applications with Gemini and Imagen**
+## **1. Build Real World AI Applications with Gemini and Imagen**
 
 Complete the introductory Build Real World AI Applications with Gemini and Imagen skill badge to demonstrate skills in the following: image recognition, natural language processing, image generation using Google's powerful Gemini and Imagen models, deploying applications on the Vertex AI platform.
 {: .notice--success}
@@ -86,7 +86,7 @@ Note: If you encounter a 401 error, try re-running the code.
 
 -------
 
-## **Build an AI Image Generator app using Imagen on Vertex AI**
+## **2. Build an AI Image Generator app using Imagen on Vertex AI**
 
 ### Objective
 Generative AI on Vertex AI (also known as genAI or gen AI) gives you access to Google's large generative AI models so you can test, tune, and deploy them for use in your AI-powered applications. In this lab, you will:
@@ -160,7 +160,7 @@ Note: By default, a SynthID watermark is added to images, but you can disable it
 {: .notice--information}
 
 ---
-## **Build an application to send Chat Prompts using the Gemini model**
+## **3. Build an application to send Chat Prompts using the Gemini model**
 
 ### Objective
 Generative AI on Vertex AI (also known as genAI or gen AI) gives you access to Google's large generative AI models so you can test, tune, and deploy them for use in your AI-powered applications. In this lab, you will:
@@ -357,7 +357,7 @@ Create a new file to get the chat responses with using stream:
 - The code is using stream=`True` while sending the messages. The stream=`True` argument indicates that the responses should be streamed back, allowing for real-time processing.
 - The code uses Gemini's ability to understand prompts and have a stateful chat conversation.
 
-## Build a Multi-Modal GenAI Application: Challenge Lab
+## **4. Build a Multi-Modal GenAI Application: Challenge Lab**
 
 ### Overview
 In a challenge lab you’re given a scenario and a set of tasks. Instead of following step-by-step instructions, you will use the skills learned from the labs in the course to figure out how to complete the tasks on your own! An automated scoring system (shown on this page) will provide feedback on whether you have completed your tasks correctly.
