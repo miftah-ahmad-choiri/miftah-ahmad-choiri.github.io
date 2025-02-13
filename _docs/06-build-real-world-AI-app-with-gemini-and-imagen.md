@@ -147,7 +147,7 @@ After starting the lab, you will get a split pane view consisting of the Code Ed
     /usr/bin/python3 /home/student/GenerateImage.py
     ```
 5. Now to view the generated image, Click `EXPLORER` > `image.jpeg`
-![image](images/image.jpeg)
+![image](/assets/images/gcp/image.jpeg)
 
 #### Code Explanation
 
@@ -410,7 +410,7 @@ generate_bouquet_image(
 )
 ```
 
-![image2](images/image2.jpeg)
+![image2](/assets/images/gcp/image2.jpeg)
 
 **Task 2**: Develop a second Python function called `analyze_bouquet_image(image_path)`. This function will take the image path as input along with a text prompt to generate birthday wishes based on the image passed and send it to the `gemini-pro-vision` model. To ensure responses can be obtained as and when they are generated, enable streaming on the prompt requests.
 ```python
@@ -456,4 +456,4 @@ sleep 30
 **Congratulations!**
 You have completed the lab! Congratulations!!
 {: .notice--success}
-![blob1](images/blob1.png)
+![blob1](/assets/images/gcp/blob1.png)

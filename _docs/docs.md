@@ -60,7 +60,7 @@ feature_row:
     btn_class: "btn--primary"
     btn_label: "Learn more"
 
-  - image_path: /assets/pictures/16.png
+  - image_path: /assets/images/gcp/gcp.png
     alt: "Introduction to GoogleCloud"
     title: "Introduction to GoogleCloud"
     excerpt: "Best practices for system maintenance and optimization."
