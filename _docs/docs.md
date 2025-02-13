@@ -60,6 +60,14 @@ feature_row:
     btn_class: "btn--primary"
     btn_label: "Learn more"
 
+  - image_path: /assets/pictures/16.png
+    alt: "Introduction to GoogleCloud"
+    title: "Introduction to GoogleCloud"
+    excerpt: "Best practices for system maintenance and optimization."
+    url: "/docs/build-ai-apps-gemini/"
+    btn_class: "btn--primary"
+    btn_label: "Learn More"
+
 last_modified_at: 2025-02-07T09:51:05-04:00
 ---
 ---

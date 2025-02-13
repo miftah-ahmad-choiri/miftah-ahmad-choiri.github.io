@@ -71,6 +71,10 @@ docs:
     children:
       - title: "How to Install AWX"
         url: /docs/how-to-install-awx
+  - title: Google Cloud
+    children:
+      - title: "Build AI Apps with Gemini"
+        url: /docs/build-ai-apps-gemini/
 
 
 
