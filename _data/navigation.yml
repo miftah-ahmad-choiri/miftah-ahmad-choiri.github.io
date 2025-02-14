@@ -74,7 +74,7 @@ docs:
   - title: Google Cloud
     children:
       - title: "Build AI Apps with Gemini"
-        url: /docs/build-ai-apps-gemini/
+        url: /docs/prompt-design-vertex-ai/
 
 
 
