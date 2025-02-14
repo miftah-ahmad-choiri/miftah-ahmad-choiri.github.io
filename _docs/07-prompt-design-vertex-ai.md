@@ -186,7 +186,7 @@ In this section, you'll cover the following best practices when engineering prom
     display(Markdown(response.text))
     ```
 
-    ```txt
+    {% capture my_markdown %}
     Okay, here are some name suggestions for a dried flower shop, playing with different angles like:
 
     **Emphasizing the Dried/Preserved Nature**:
@@ -224,8 +224,10 @@ In this section, you'll cover the following best practices when engineering prom
        - Get feedback: Ask friends, family, or potential customers for their opinions.
 
     Good luck! Let me know if you'd like more suggestions based on a specific style or theme.
-    ```
-    {:.no-copy .md .notice--info}
+    {% endcapture %}
+    <div class="notice--info">
+        {{ my_markdown | markdownify }}
+    </div>
 
 2. Run through the **Be specific, and well-defined** section of the notebook.
    Suppose that you want to brainstorm creative ways to describe Earth.
@@ -279,7 +281,7 @@ In this section, you'll cover the following best practices when engineering prom
     ```
     {:.no-copy .md .notice--info}
 
-1. Run through the **Ask one task at a time** section of the notebook.
+3. Run through the **Ask one task at a time** section of the notebook.
     🛑 Not recommended. The prompt below has two parts to the question that could be asked separately.
     ```python
     prompt = "What's the best method of boiling water and why is the sky blue?"
@@ -462,7 +464,7 @@ In this section, you'll cover the following best practices when engineering prom
     ```
     {:.no-copy .md .notice--info}
 
-1. Run through the **Watch out for hallucinations** section of the notebook.
+4. Run through the **Watch out for hallucinations** section of the notebook.
     Although LLMs have been trained on a large amount of data, they can generate text containing statements not grounded in truth or reality; these responses from the LLM are often referred to as "hallucinations" due to their limited memorization capabilities. Note that simply prompting the LLM to provide a citation isn't a fix to this problem, as there are instances of LLMs providing false or inaccurate citations. Dealing with hallucinations is a fundamental challenge of LLMs and an ongoing research area, so it is important to be cognizant that LLMs may seem to give you confident, correct-sounding statements that are in fact incorrect.
     Note that if you intend to use LLMs for the creative use cases, hallucinating could actually be quite useful.
     Try the prompt like the one below repeatedly. We set the temperature to 1.0 so that it takes more risks in its choices. It's possible that it may provide an inaccurate, but confident answer.
