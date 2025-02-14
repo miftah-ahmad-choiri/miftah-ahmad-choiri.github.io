@@ -132,35 +132,34 @@ The JupyterLab interface for your Workbench instance opens in a new browser tab.
 
 ### Task3. Prompt Engineering best practices
 Prompt engineering is all about how to design your prompts so that the response is what you were indeed hoping to see. The idea of using "unfancy" prompts is to minimize the noise in your prompt to reduce the possibility of the LLM misinterpreting the intent of the prompt. Below are a few guidelines on how to engineer "unfancy" prompts.
+```python
+%pip install --upgrade --quiet google-genai
+import IPython
 
-    ```python
-    %pip install --upgrade --quiet google-genai
-    import IPython
+app = IPython.Application.instance()
+app.kernel.do_shutdown(True)
 
-    app = IPython.Application.instance()
-    app.kernel.do_shutdown(True)
+import sys
 
-    import sys
+if "google.colab" in sys.modules:
+    from google.colab import auth
 
-    if "google.colab" in sys.modules:
-        from google.colab import auth
-
-        auth.authenticate_user()
+    auth.authenticate_user()
     
-    from IPython.display import Markdown, display
-    from google import genai
-    from google.genai.types import GenerateContentConfig
+from IPython.display import Markdown, display
+from google import genai
+from google.genai.types import GenerateContentConfig
     
-    import os
+import os
 
-    PROJECT_ID = "qwiklabs-gcp-00-2d02b388fd77"  # @param {type: "string", placeholder: "[your-project-id]", isTemplate: true}
-    if not PROJECT_ID or PROJECT_ID == "qwiklabs-gcp-00-2d02b388fd77":
-        PROJECT_ID = str(os.environ.get("GOOGLE_CLOUD_PROJECT"))
+PROJECT_ID = "qwiklabs-gcp-00-2d02b388fd77"  # @param {type: "string", placeholder: "[your-project-id]", isTemplate: true}
+if not PROJECT_ID or PROJECT_ID == "qwiklabs-gcp-00-2d02b388fd77":
+    PROJECT_ID = str(os.environ.get("GOOGLE_CLOUD_PROJECT"))
 
-    LOCATION = os.environ.get("GOOGLE_CLOUD_REGION", "us-west1")
-    client = genai.Client(vertexai=True, project=PROJECT_ID, location=LOCATION)
-    MODEL_ID = "gemini-2.0-flash-001"  # @param {type: "string"}
-    ```
+LOCATION = os.environ.get("GOOGLE_CLOUD_REGION", "us-west1")
+client = genai.Client(vertexai=True, project=PROJECT_ID, location=LOCATION)
+MODEL_ID = "gemini-2.0-flash-001"  # @param {type: "string"}
+```
 In this section, you'll cover the following best practices when engineering prompts:
    - Be concise
    - Be specific, and well-defined
@@ -225,6 +224,7 @@ In this section, you'll cover the following best practices when engineering prom
 
     Good luck! Let me know if you'd like more suggestions based on a specific style or theme.
     {% endcapture %}
+
     <div class="notice--info">
         {{ my_markdown | markdownify }}
     </div>
