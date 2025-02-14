@@ -73,8 +73,10 @@ docs:
         url: /docs/how-to-install-awx
   - title: Google Cloud
     children:
-      - title: "Build AI Apps with Gemini"
+      - title: "Prompt Design in Vertex AI"
         url: /docs/prompt-design-vertex-ai/
+      - title: "Build AI Apps with Gemini"
+        url: /docs/build-ai-apps-gemini/
 
 
 
