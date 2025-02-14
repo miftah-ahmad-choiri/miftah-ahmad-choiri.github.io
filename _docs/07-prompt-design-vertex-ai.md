@@ -70,8 +70,7 @@ In this lab, you will learn how to:
 
 > Tip: Arrange the tabs in separate windows, side-by-side.
 
-**Note**: If you see the **Choose an account** dialog, click **Use Another Account**.
-{: .notice--information}
+**Note**: If you see the **Choose an account** dialog, click **Use Another Account**. {: .notice--information}
 
 3. If necessary, copy the Username below and paste it into the Sign in dialog.
     ```bash
