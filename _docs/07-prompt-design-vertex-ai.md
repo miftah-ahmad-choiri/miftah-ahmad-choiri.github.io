@@ -185,7 +185,7 @@ In this section, you'll cover the following best practices when engineering prom
     display(Markdown(response.text))
     ```
 
-    {% capture my_markdown %}
+    ```txt
     Okay, here are some name suggestions for a dried flower shop, playing with different angles like:
 
     **Emphasizing the Dried/Preserved Nature**:
@@ -223,11 +223,8 @@ In this section, you'll cover the following best practices when engineering prom
        - Get feedback: Ask friends, family, or potential customers for their opinions.
 
     Good luck! Let me know if you'd like more suggestions based on a specific style or theme.
-    {% endcapture %}
-
-    <div class="notice--info">
-        {{ my_markdown | markdownify }}
-    </div>
+    ```
+    {:.no-copy .md .notice--info}
 
 2. Run through the **Be specific, and well-defined** section of the notebook.
    Suppose that you want to brainstorm creative ways to describe Earth.
