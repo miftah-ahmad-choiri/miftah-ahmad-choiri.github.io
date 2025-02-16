@@ -214,6 +214,17 @@ git remote add origin git@github.com:miftah-ahmad-choiri/how-to-setup-github.git
 git branch -M main
 git push -u origin main
 ```
+```bash
+git init
+git branch -M main
+git status
+git add .
+git commit -m "ïnitial commit"
+git remote add origin https://github.ibm.com/Miftah-Choiri/Miftah-Choiri.github.ibm.com.git
+git remote set-url origin git@github.ibm.com:Miftah-Choiri/Miftah-Choiri.github.ibm.com.git
+git remote -v
+git push -u origin main
+```
 ---
 
 ## 🔄 4. Pull Existing Repository
