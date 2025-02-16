@@ -242,6 +242,7 @@ defaults:
       type: installation
     values:
       layout: single
+      classes: wide
       author_profile: true
       share: true
       comments: true
@@ -251,6 +252,7 @@ defaults:
       type: relocation
     values:
       layout: single
+      classes: wide
       author_profile: true
       share: true
       comment: true
@@ -260,6 +262,7 @@ defaults:
       type: portfolio
     values:
       layout: single
+      classes: wide
       author_profile: false
       share: true
 
