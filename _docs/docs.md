@@ -64,7 +64,7 @@ feature_row:
     alt: "Introduction to GoogleCloud"
     title: "Introduction to GoogleCloud"
     excerpt: "Best practices for system maintenance and optimization."
-    url: "/docs/prompt-design-vertex-ai/"
+    url: "/docs/intro-gen-ai/"
     btn_class: "btn--primary"
     btn_label: "Learn More"
 
