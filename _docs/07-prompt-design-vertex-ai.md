@@ -1044,8 +1044,11 @@ In this section, you will use Gemini to analyze an image and extract information
     Does the result meet your expectations? You are highly encouraged to try different prompts for various tasks. You are also encouraged to experiment with different temperature settings to observe the changes in the result.
 
 13. Once you finish the prompt design, save the prompt by clicking **Save** on the top right of the Configuration section. For the region, select **Region** from the dropdown and then confirm by clicking **Save**.
+    ![img22](/assets/images/gcp/gsp1154/22.png)
 
 14. To find your saved prompts, on the left-hand navigation menu, navigate to **Prompt Management**.
+    
+    ![img23](/assets/images/gcp/gsp1154/23.png)
 
     **Note**: After selecting **Save**, give the prompts a few seconds to properly save and then proceed further with the lab. Click "Try again" if prompted "failed to update history."
     {: .notice--warning}
@@ -1054,12 +1057,16 @@ In this section, you will use Gemini to analyze an image and extract information
 ### **Task2. Explode multimodal capabilities**
 In addition to **images**, **text**, and **audio**, Gemini is capable of accepting **videos** as inputs and generating text as an output.
 1. Navigate to **Cloud Storage** > **Buckets** and copy the name of your Cloud Storage bucket and save it to use in the further step.
+    ![img24](/assets/images/gcp/gsp1154/24.png)
+
 2. Click **Activate Cloud Shell** at the top of the Google Cloud console.
+    ![img25](/assets/images/gcp/gsp1154/25.png)
+
 3. In your Cloud Shell terminal, run the command below to copy the sample video `gs://spls/gsp154/video/train.mp4` ([**preview**](https://storage.googleapis.com/spls/gsp154/video/train.mp4)) to your Cloud Storage bucket. Replace `<Your-Cloud-Storage-Bucket>` with the bucket name you copied earlier.
     ```bash
-    gcloud storage cp gs://spls/gsp154/video/train.mp4 gs://<Your-Cloud-Storage-Bucket>
+    gcloud storage cp gs://spls/gsp154/video/train.mp4 gs://cloud-ai-platform-994d81a1-e2e3-4bd5-b161-30d13c5124ac
     ```
-
+    ![img26](/assets/images/gcp/gsp1154/26.png)
     **Note**: Make sure to replace the `<Your-Cloud-Storage-Bucket>` with your bucket name.
     {: .notice--info}
 
@@ -1073,13 +1080,15 @@ In addition to **images**, **text**, and **audio**, Gemini is capable of accepti
 7. For **Region**, select `Region`.
 
 8. Click **Insert Media** > **Import from Cloud Storage**.
-
-9. Click on your bucket name and then click on the sample video i.e., `train.mp4` and click **Select**.
+    ![img27](/assets/images/gcp/gsp1154/27.png)
+9.  Click on your bucket name and then click on the sample video i.e., `train.mp4` and click **Select**.
+    ![img28](/assets/images/gcp/gsp1154/28.png)
 10. Generate information about the video by inserting the following prompt and clicking the **Submit** button.
     
     ```bash
     Title the video.
     ```
+    ![img29](/assets/images/gcp/gsp1154/29.png)
 
 Freeform mode offers many capabilities such as writing stories from images, analyzing videos, and generating multimedia ads. Explore more freeform use cases by clicking **Prompt gallery**. Check out more information about [design multimodal prompts](https://cloud.google.com/vertex-ai/docs/generative-ai/multimodal/design-multimodal-prompts).
 
@@ -1107,25 +1116,35 @@ Temperature and Token limit are two important parameters that you can adjust to 
 
 Try zero-shot prompting in **Free-form** mode.
 1. Navigate back to the **Vertex AI Studio** > **Overview** page and click **Open Freeform**.
-2. On the top right under **Model**, select the **`model name`** model.
+2. On the top right under **Model**, select the **`gemini-2.0-flash-001`** model.
 
     **Note**: The model name and version may change with the release of new models.
     {: .notice--warning}
 
-3. For **Region**, select `Region`.
+3. For **Region**, select `us-central1`.
 4. Copy the following over to the prompt input field:
     ```bash
     What is a prompt gallery?
     ```
-
+    
 5. Click on the **Submit** button.
+    ![img29](/assets/images/gcp/gsp1154/30.png)
+    ![img29](/assets/images/gcp/gsp1154/31.png)
+    ![img29](/assets/images/gcp/gsp1154/32.png)
    
 The model will respond to a comprehensive definition of the term prompt gallery.
 
 Here are some exploratory exercises to explore.
    - Adjust the Output Token limit parameter to `1024` and click the **SUBMIT** button.
+    ![img29](/assets/images/gcp/gsp1154/33.png)
+    ![img29](/assets/images/gcp/gsp1154/34.png)
+    ![img29](/assets/images/gcp/gsp1154/35.png)
    - Adjust the Temperature parameter to `0.5` and click the **SUBMIT** button.
+    ![img29](/assets/images/gcp/gsp1154/36.png)
+    ![img29](/assets/images/gcp/gsp1154/37.png)
    - Adjust the Temperature parameter to `2.0` and click the **SUBMIT** button.
+    ![img29](/assets/images/gcp/gsp1154/38.png)
+    ![img29](/assets/images/gcp/gsp1154/39.png)
 
 Inspect how the responses change as to change the parameters.
 
