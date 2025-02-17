@@ -1298,18 +1298,240 @@ You learned how to analyze an image with freeform, explore freeform capabilities
 ## **3. Getting Started with the Gemini API in Vertex AI (GSP1209)**
 
 ### Overview
+This lab provides a hands-on introduction to using the Gemini API within Vertex AI. You'll leverage the Vertex AI SDK for Python to interact with the powerful Gemini 1.5 Pro model, exploring its capabilities through a variety of tasks. These tasks include generating text from different input types (text prompts, images, and videos), as well as experimenting with various features and configuration options to fine-tune your results. This experience will equip you with the essential skills to effectively utilize the Gemini API for diverse generative AI applications.
+
+#### Gemini
+[Gemini](https://deepmind.google/technologies/gemini/) is a family of powerful generative AI models developed by Google DeepMind, capable of understanding and generating various forms of content, including text, code, images, audio, and video.
+
+**Gemini API in Vertex AI**
+The Gemini API in Vertex AI provides a unified interface for interacting with Gemini models. This allows developers to easily integrate these powerful AI capabilities into their applications. For the most up-to-date details and specific features of the latest versions, please refer to the official [Gemini documentation](https://cloud.google.com/vertex-ai/generative-ai/docs/learn/models#gemini-models).
+
+**Gemini Models**
+- [Gemini Pro](https://deepmind.google/technologies/gemini/pro/): Designed for complex reasoning, including:
+    - Analyzing and summarizing large amounts of information.
+    - Sophisticated cross-modal reasoning (across text, code, images, etc.).
+    - Effective problem-solving with complex codebases.
+
+- [Gemini Flash](https://deepmind.google/technologies/gemini/flash/): Optimized for speed and efficiency, offering:
+    - Sub-second response times and high throughput.
+    - High quality at a lower cost for a wide range of tasks.
+    - Enhanced multimodal capabilities, including improved spatial understanding, new output modalities (text, audio, images), and native tool use (Google Search, code execution, and third-party functions).
+
+#### Prequisites
+Before starting this lab, you should be familiar with:
+- Basic Python programming.
+- General API concepts.
+- Running Python code in a Jupyter notebook on Vertex AI Workbench.
+
 ### Objectives
+In this lab, you will learn how to:
+- Use the Gemini API in Vertex AI with the Vertex AI SDK for Python.
+- Interact with the Gemini 1.5 Pro (gemini-1.5-pro) model.
+- Generate text from a text prompt.
+- Explore various features and configuration options.
+- Generate text from an image and a text prompt.
+- Generate text from a video and a text prompt.
+
 ### Setup and Requirements
+#### How to start your lab and sign in to the Google Cloud console
+
+**Note**: Use an Incognito (recommended) or private browser window to run this lab. This prevents conflicts between your personal account and the student account, which may cause extra charges incurred to your personal account.
+{: .notice--danger}
+
+**Note**: Use only the student account for this lab. If you use a different Google Cloud account, you may incur charges to that account.
+{: .notice--danger}
+
+1. Click the **Start Lab** button. If you need to pay for the lab, a dialog opens for you to select your payment method. On the left is the Lab Details pane with the following:
+   - The Open Google Cloud console button
+   - Time remaining
+   - The temporary credentials that you must use for this lab
+   - Other information, if needed, to step through this lab
+
+2. Click **Open Google Cloud console** (or right-click and select **Open Link in Incognito Window** if you are running the Chrome browser). The lab spins up resources, and then opens another tab that shows the Sign in page.
+
+    > Tip: Arrange the tabs in separate windows, side-by-side.
+
+    **Note**: If you see the **Choose an account** dialog, click **Use Another Account**. 
+    {: .notice--info}
+
+3. If necessary, copy the Username below and paste it into the Sign in dialog.
+    ```bash
+    "Username"
+    ```
+    You can also find the Username in the Lab Details pane.
+4. Click **Next**.
+5. Copy the **Password** below and paste it into the **Welcome** dialog.
+    ```bash
+    "Password"
+    ```
+    You can also find the Password in the Lab Details pane.
+6. Click **Next**.
+
+    **Important**: You must use the credentials the lab provides you. Do not use your Google Cloud account credentials.
+    {: .notice--info}
+
+    **Note**: Using your own Google Cloud account for this lab may incur extra charges.
+    {: .notice--danger}
+
+7. Click through the subsequent pages:
+   - Accept the terms and conditions.
+   - Do not add recovery options or two-factor authentication (because this is a temporary account).
+   - Do not sign up for free trials.
+
+8. After a few moments, the Google Cloud console opens in this tab.
+    ![img6](/assets/images/gcp/gsp1154/50.png)
+
+    Note: To access Google Cloud products and services, click the Navigation menu or type the service or product name in the Search field.
+    ![info1](/assets/images/gcp/info1.png)
+    {: .notice--info}
+
 ---
 ### **Task1. Open the notebook in Vertex AI Workbench**
+
+1. In the Google Cloud console, on the **Navigation menu**, click **Vertex AI** > **Workbench**.
+    ![img6](/assets/images/gcp/gsp1154/51.png)
+
+2. Find the `vertex-ai-jupyterlab` instance and click on the **Open JupyterLab** button.
+    ![img6](/assets/images/gcp/gsp1154/52.png)
+
+    ![img6](/assets/images/gcp/gsp1154/53.png)
+
 ---
 ### **Task2. Setup the notebook**
+1. Open the `intro_gemini_python` file.
+    ![img6](/assets/images/gcp/gsp1154/54.png)
+2. In the **Select Kernel** dialog, choose **Python 3** from the list of available kernels.
+3. Run through the **Getting Started** and the **Import libraries** sections of the notebook.
+    - For **Project ID**, use `qwiklabs-gcp-02-a0675fbf24fb`, and for **Location**, use `us-east4`.
+    
+    **Note**: You can skip any notebook cells that are noted *Colab only*. If you experience a 429 response from any of the notebook cell executions, wait 1 minute before running the cell again to proceed.
+    {: .notice--info}
+
+In the following sections, you will run through the notebook cells to see how to use the Gemini API in Vertex AI.
+
 ---
 ### **Task3. Use the Gemini 1.5 Pro model**
+
+The Gemini 1.5 Pro (`gemini-1.5-pro`) model is designed to handle natural language tasks, multi-turn text and code chat, and code generation. In this task, run through the notebook cells to see how to use the Gemini 1.5 Pro model to generate text from text prompts.
+
+```python
+%pip install --upgrade --user google-cloud-aiplatform
+
+import IPython
+
+app = IPython.Application.instance()
+app.kernel.do_shutdown(True)
+
+import sys
+
+if "google.colab" in sys.modules:
+    from google.colab import auth
+
+    auth.authenticate_user()
+
+# Use the environment variable if the user doesn't provide Project ID.
+import os
+
+import vertexai
+
+PROJECT_ID = "[qwiklabs-gcp-02-a0675fbf24fb]"  # @param {type: "string", placeholder: "[your-project-id]" isTemplate: true}
+if not PROJECT_ID or PROJECT_ID == "[qwiklabs-gcp-02-a0675fbf24fb]":
+    PROJECT_ID = str(os.environ.get("GOOGLE_CLOUD_PROJECT"))
+
+LOCATION = os.environ.get("GOOGLE_CLOUD_REGION", "us-east4")
+
+vertexai.init(project=PROJECT_ID, location=LOCATION)
+
+from vertexai.generative_models import (
+    GenerationConfig,
+    GenerativeModel,
+    HarmBlockThreshold,
+    HarmCategory,
+    Image,
+    Part,
+    SafetySetting,
+)
+
+model = GenerativeModel("gemini-1.5-pro")
+```
+
+#### Generate text from text prompts
+Send a text prompt to the model using the `generate_content` method. The `generate_content` method can handle a wide variety of use cases, including multi-turn chat and multimodal input, depending on what the underlying model supports.
+- Run through the **Generate text from text prompts** section of the notebook.
+    
+    ```python
+    response = model.generate_content("Why is the sky blue?")
+
+    print(response.text)
+    ```
+    ```txt
+    The sky appears blue due to a phenomenon called **Rayleigh scattering**.
+
+    **Here's how it works:**
+
+    1. **Sunlight Enters the Atmosphere:** Sunlight, which appears white to us, is actually made up of all the colors of the rainbow. When this light enters Earth's atmosphere, it encounters tiny air molecules like nitrogen and oxygen.
+
+    2. **Scattering of Light:** These air molecules scatter the sunlight in all directions. However, shorter wavelengths of light (like blue and violet) are scattered much more effectively than longer wavelengths (like red and orange).
+
+    3. **Blue Light Dominates:** As a result of this preferential scattering, our eyes receive more blue light from the sky than any other color. This is why we perceive the sky as blue.
+
+    **Why not violet?**
+
+    While violet light has an even shorter wavelength than blue, our eyes are less sensitive to violet light. Additionally, some violet light is absorbed by the upper atmosphere. Therefore, the combined effect of scattering and our eye's sensitivity makes the sky appear predominantly blue.
+
+    **Sunrise and Sunset Colors:**
+
+    During sunrise and sunset, the sunlight has to travel through a larger portion of the atmosphere to reach our eyes. This causes more scattering of the shorter wavelengths, allowing longer wavelengths like red and orange to dominate, creating the beautiful colors we see in the sky at these times.
+    ```
+    {:.no-copy .terminal .notice--info}
+    
+
+#### Streaming
+By default, the model returns a response after completing the entire generation process. You can also stream the response as it is being generated, and the model will return chunks of the response as soon as they are generated.
+- Run through the **Streaming** section of the notebook.
+
+#### Try your own prompts
+- Run through the **Try your own prompts** section of the notebook.
+
+#### Safety filters
+The Gemini API provides safety filters that you can adjust across multiple filter categories to restrict or allow certain types of content. You can use these filters to adjust what's appropriate for your use case. See the [Configure safety filters](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/configure-safety-filters) page for details.
+
+When you make a request to Gemini, the content is analyzed and assigned a safety rating. You can inspect the safety ratings of the generated content by printing out the model responses, as in this example:
+
+- Run through the **Safety filters** section of the notebook.
+
+
+#### Test chat prompts
+The Gemini API supports natural multi-turn conversations and is ideal for text tasks that require back-and-forth interactions. The following examples show how the model responds during a multi-turn conversation.
+
+- Run through the **Test chat prompts** section of the notebook.
+
+
 ---
 ### **Task4. Generate text from a multimodal prompt**
+Gemini 1.5 Pro (`gemini-1.5-pro`) is a multimodal model that supports multimodal prompts. You can include text, image(s), and video in your prompt requests and get text or code responses.
+
+#### Generate text from local image and text
+- Run through the **Generate text from local image and text** section of the notebook.
+
+#### Generate text from text and image prompts
+- Run through the **Generate text from text & image(s)** section of the notebook.
+
+#### Combining multiple images and text prompts for few-shot prompting
+- Run through the **Combining multiple images and text prompts for few-shot prompting** section of the notebook.
+
+#### Generate text from a video file
+- Run through the **Generate text from a video file** section of the notebook.
+
+#### Direct analysis of publicly available web media
+- Run through the **Direct analysis of publicly available web media** section of the notebook.
+
+
 ---
 ### **Congratulations**
+
+In this lab, you delved into the utilization of the Gemini API in Vertex AI along with the Vertex AI SDK for Python to interact with the Gemini 1.5 Pro (`gemini-1.5-pro`) model. Through these exercises, you gained practical insights into the capabilities of the Gemini API in Vertex AI and its seamless integration with the Python SDK.
+{: .notice--success}
 
 ---
 ## **4. Prompt Design in Vertex AI: Challenge Lab (GSP519)**
