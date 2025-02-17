@@ -1013,7 +1013,6 @@ In this section, you will use Gemini to analyze an image and extract information
     ```bash
     Describe the image in detail.
     ```
-    
 
 10. Tune the parameter. In the Configuration section, adjust the temperature by scrolling from left (0) to right (2). Resubmit the prompt to observe any changes in the outcome compared to the previous result.
 
