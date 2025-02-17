@@ -819,64 +819,66 @@ Similar to classical model training, the quality and distribution of the example
 1. Run through the **Improve response quality by including examples** section of the notebook.
    - **Zero-shot prompt**
     
-    ```python
-    prompt = """Decide whether a Tweet's sentiment is positive, neutral, or negative.
+        ```python
+        prompt = """Decide whether a Tweet's sentiment is positive, neutral, or negative.
 
-    Tweet: I loved the new YouTube video you made!
-    Sentiment:
-    """
+        Tweet: I loved the new YouTube video you made!
+        Sentiment:
+        """
 
-    response = client.models.generate_content(model=MODEL_ID, contents=prompt)
-    display(Markdown(response.text))
-    ```
-    ```txt
-    Sentiment: Positive
-    ```
-    {:.no-copy .markdown .notice--info}
+        response = client.models.generate_content(model=MODEL_ID, contents=prompt)
+        display(Markdown(response.text))
+        ```
+        ```txt
+        Sentiment: Positive
+        ```
+        {:.no-copy .markdown .notice--info}
 
    - **One-shot prompt**
-    ```python
-    prompt = """Decide whether a Tweet's sentiment is positive, neutral, or negative.
+  
+        ```python
+        prompt = """Decide whether a Tweet's sentiment is positive, neutral, or negative.
 
-    Tweet: I loved the new YouTube video you made!
-    Sentiment: positive
+        Tweet: I loved the new YouTube video you made!
+        Sentiment: positive
 
-    Tweet: That was awful. Super boring 😠
-    Sentiment:
-    """
+        Tweet: That was awful. Super boring 😠
+        Sentiment:
+        """
 
-    response = client.models.generate_content(model=MODEL_ID, contents=prompt)
-    display(Markdown(response.text))
-    ```
-    ```txt
-    Sentiment: negative
-    ```
-    {:.no-copy .terminal .notice--info}
+        response = client.models.generate_content(model=MODEL_ID, contents=prompt)
+        display(Markdown(response.text))
+        ```
+        ```txt
+        Sentiment: negative
+        ```
+        {:.no-copy .terminal .notice--info}
 
    - **Few-shot prompt**
-    ```python
-    prompt = """Decide whether a Tweet's sentiment is positive, neutral, or negative.
+  
+        ```python
+        prompt = """Decide whether a Tweet's sentiment is positive, neutral, or negative.
 
-    Tweet: I loved the new YouTube video you made!
-    Sentiment: positive
+        Tweet: I loved the new YouTube video you made!
+        Sentiment: positive
 
-    Tweet: That was awful. Super boring 😠
-    Sentiment: negative
+        Tweet: That was awful. Super boring 😠
+        Sentiment: negative
 
-    Tweet: Something surprised me about this video - it was actually original. It was not the same old recycled stuff that I always see. Watch it - you will not regret it.
-    Sentiment:
-    """
+        Tweet: Something surprised me about this video - it was actually original. It was not the same old recycled stuff that I always see. Watch it - you will not regret it.
+        Sentiment:
+        """
 
-    response = client.models.generate_content(model=MODEL_ID, contents=prompt)
-    display(Markdown(response.text))
-    ```
-    ```txt
-    Sentiment: positive
-    ```
-    {:.no-copy .terminal .notice--info}
+        response = client.models.generate_content(model=MODEL_ID, contents=prompt)
+        display(Markdown(response.text))
+        ```
+        ```txt
+        Sentiment: positive
+        ```
+        {:.no-copy .terminal .notice--info}
 
    - **Choosing between zero-shot, one-shot, few-shot prompting methods**
-    Which prompt technique to use will solely depends on your goal. The zero-shot prompts are more open-ended and can give you creative answers, while one-shot and few-shot prompts teach the model how to behave so you can get more predictable answers that are consistent with the examples provided.
+        Which prompt technique to use will solely depends on your goal. The zero-shot prompts are more open-ended and can give you creative answers, while one-shot and few-shot prompts teach the model how to behave so you can get more predictable answers that are consistent with the examples provided.
 
 ### Congratulations!
 **Congratulations**! In this lab you learned prompt engineering best practices using Generative AI with Google Gemini. You explored use cases which follow the best practices of being concise, specific, well-define, providing examples and asking one at a time when using LLMs to generate responses.
@@ -917,7 +919,7 @@ In this lab, you will learn how to:
 
 2. Click **Open Google Cloud console** (or right-click and select **Open Link in Incognito Window** if you are running the Chrome browser). The lab spins up resources, and then opens another tab that shows the Sign in page.
 
-    > Tip: Arrange the tabs in separate windows, side-by-side.
+    > **Tip**: Arrange the tabs in separate windows, side-by-side.
 
     **Note**: If you see the **Choose an account** dialog, click **Use Another Account**. 
     {: .notice--info}
@@ -963,11 +965,11 @@ In this section, you will use Gemini to analyze an image and extract information
 1. In the Google Cloud console, enter Vertex AI API in the top search bar.
 2. Click on the result for Vertex AI API under Marketplace & APIs.
 3. Click Enable.
-    ![img1](/assets/images/gcp/1.png)
+    ![img1](/assets/images/gcp/gsp1154/1.png)
 
 #### Analyze images with Gemini
 1. In the Google Cloud console, from the **Navigation menu** (Navigation menu), select **Vertex AI** > **Vertex AI Studio** > **Overview**.
-    ![img2](/assets/images/gcp/2.png)
+    ![img2](/assets/images/gcp/gsp1154/2.png)
 2. Under **Generate with Gemini**, click **Open Freeform**.
     The UI contains three main sections:
       - **Prompt** (*located in the center*): Here, you can create a prompt that utilizes multimodal capabilities.
@@ -977,27 +979,27 @@ In this section, you will use Gemini to analyze an image and extract information
 4. In the **Configuration** section on the top right, click on the **Model** dropdown then select the **`model name`** model.
    
     **Note:** The model name and version may change with the release of new models.
-    {: .notice--info}
+    {: .notice--warning}
 
 5. For **Region**, select `Region`.
 
 6. Download the sample image. **Right-click** the timetable image and then save it to your desktop.
-    ![img3](/assets/images/gcp/3.png)
+    ![img3](/assets/images/gcp/gsp1154/3.png)
 
 7. On the top right of the **Prompt** section, click **Insert media** > **Upload**. Upload the timetable image you downloaded. The media can be in the form of an image, video, text, or audio file.
-    ![img4](/assets/images/gcp/4.png) 
+    ![img4](/assets/images/gcp/gsp1154/4.png) 
 
 8. The image will be displayed inside of the **Prompt** section. Copy the following text and paste it under the image and click on the **Submit** button on the bottom right of the Prompt section.
     ```txt
     Title the image.
     ```
-    {:.no-copy .terminal .notice--info}
+    {: .terminal .notice--info}
 
     Or be more specific:
     ```txt
     Title the image in 3 words.
     ```
-    {:.no-copy .terminal .notice--info}
+    {: .terminal .notice--info}
 
     Does the title meet your expectations? Try to modify the prompt to see if you get different results.
 
@@ -1005,29 +1007,30 @@ In this section, you will use Gemini to analyze an image and extract information
     ```txt
     Describe the image in detail.
     ```
-    {:.no-copy .terminal .notice--info}
+    {: .terminal .notice--info}
 
 10. Tune the parameter. In the Configuration section, adjust the temperature by scrolling from left (0) to right (2). Resubmit the prompt to observe any changes in the outcome compared to the previous result.
 
     **Notes:** Temperature controls the degree of randomness in token selection. Lower temperatures are good for prompts that expect a true or correct response, while higher temperatures can lead to more diverse, unexpected, or potentially biased results. With a temperature of 0 the highest probability token is always selected.
-    {: .notice--info}    
+    {: .notice--warning}    
 
 11. Extract the text from the image. Replace the previous prompt with the following:
     ```txt
     Read the text in the image.
     ```
-    {:.no-copy .terminal .notice--info}
+    {:.terminal .notice--info}
     Further on, if you want to format the output to a list, replace the previous prompt with the following:
     ```txt
     Parse the time and city in this image into a list with two columns: time and city.
     ```
+    {:.terminal .notice--info}
     Your turn - try out some different prompts! How do these results differ from before?
 
 12. Analyze the information on the image. Replace the previous prompt with the following:
     ```txt
     Calculate the percentage of the flights to different continents.
     ```
-    {: .no-copy .terminal .notice--info}
+    {: .terminal .notice--info}
     Does the result meet your expectations? You are highly encouraged to try different prompts for various tasks. You are also encouraged to experiment with different temperature settings to observe the changes in the result.
 
 13. Once you finish the prompt design, save the prompt by clicking **Save** on the top right of the Configuration section. For the region, select **Region** from the dropdown and then confirm by clicking **Save**.
@@ -1035,7 +1038,7 @@ In this section, you will use Gemini to analyze an image and extract information
 14. To find your saved prompts, on the left-hand navigation menu, navigate to **Prompt Management**.
 
     **Note**: After selecting **Save**, give the prompts a few seconds to properly save and then proceed further with the lab. Click "Try again" if prompted "failed to update history."
-    {: .notice--info}
+    {: .notice--warning}
 
 ---
 ### **Task2. Explode multimodal capabilities**
