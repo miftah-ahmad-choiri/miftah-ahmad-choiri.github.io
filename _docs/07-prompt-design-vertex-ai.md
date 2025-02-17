@@ -1829,7 +1829,7 @@ Use the `Image.load_from_file` method to load a local file as the image to gener
     print("\n-------Response--------")
     print(response.text)
     ```
-    ```
+    ```txt
     Copying gs://cloud-samples-data/generative-ai/image/320px-Felis_catus-cat_on_snow.jpg...
     / [1 files][ 17.4 KiB/ 17.4 KiB]                                                
     Operation completed over 1 objects/17.4 KiB.                                     
@@ -1844,7 +1844,7 @@ Use the `Image.load_from_file` method to load a local file as the image to gener
     -------Response--------
     A brown tabby cat is walking across a snow-covered ground. The cat has black stripes and yellow eyes. The cat is looking forward, and its tail is raised. The snow is white and there are some tracks in it. The background is out of focus.
     ```
-    {:.no-copy .terminal .notice-info}
+    {:.no-copy .terminal .notice--info}
 
 
 #### Generate text from text and image prompts
@@ -1890,10 +1890,11 @@ Use the `Image.load_from_file` method to load a local file as the image to gener
 
     **Overall Impression:** The photo conveys a sense of tranquility and contrasts the calmness of the water and the anchored boats with the busy city life suggested by the skyline. It might be a scene from a recreational area within or near a city. 
     ```
-    {:.no-copy .terminal .notice-info}
+    {:.no-copy .terminal .notice--info}
     
     - **Images with direct links**
     You can also use direct links to images, as shown below. The helper function `load_image_from_url()` (that was declared earlier) converts the image to bytes and returns it as an Image object that can be then be sent to the Gemini model with the text prompt.
+
     ```python
     # Load image from Cloud Storage URI
     image_url = (
@@ -1919,7 +1920,7 @@ Use the `Image.load_from_file` method to load a local file as the image to gener
     -------Response--------
     Two boats are floating on the water in a harbor.  In the background, you can see several bridges and the Boston skyline.
     ```
-    {:.no-copy .terminal .notice-info}
+    {:.no-copy .terminal .notice--info}
 
 #### Combining multiple images and text prompts for few-shot prompting
 - Run through the **Combining multiple images and text prompts for few-shot prompting** section of the notebook.
@@ -1964,7 +1965,7 @@ Use the `Image.load_from_file` method to load a local file as the image to gener
     -------Response--------
     Two boats are floating on the water in a harbor.  In the background, you can see several bridges and the Boston skyline.
     ```
-    {:.no-copy .terminal .notice-info}
+    {:.no-copy .terminal .notice--info}
 
 
 
@@ -2045,6 +2046,8 @@ Use the `Image.load_from_file` method to load a local file as the image to gener
     - Tablet computer with blank screen
     - Wooden table surface
     ```
+    {:.no-copy .terminal .notice--info}
+    
     This example demonstrates how to add the file URL of a publicly available video file to the request, and use the [controlled generation](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/control-generated-output) capability to constraint the model output to a structured format.
     ```python
     response_schema = {
