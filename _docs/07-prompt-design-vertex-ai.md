@@ -1006,18 +1006,21 @@ In this section, you will use Gemini to analyze an image and extract information
     ```bash
     Title the image in 3 words.
     ```
-    
+    ![img14](/assets/images/gcp/gsp1154/14.png)
     Does the title meet your expectations? Try to modify the prompt to see if you get different results.
 
 9.  Describe the image. Replace the previous prompt with the following and click the **Submit** button.
     ```bash
     Describe the image in detail.
     ```
+    ![img15](/assets/images/gcp/gsp1154/15.png)
 
 10. Tune the parameter. In the Configuration section, adjust the temperature by scrolling from left (0) to right (2). Resubmit the prompt to observe any changes in the outcome compared to the previous result.
 
     **Notes:** Temperature controls the degree of randomness in token selection. Lower temperatures are good for prompts that expect a true or correct response, while higher temperatures can lead to more diverse, unexpected, or potentially biased results. With a temperature of 0 the highest probability token is always selected.
     {: .notice--warning}    
+    ![img16](/assets/images/gcp/gsp1154/16.png)
+    ![img17](/assets/images/gcp/gsp1154/17.png)
 
 11. Extract the text from the image. Replace the previous prompt with the following:
     ```bash
