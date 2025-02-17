@@ -1564,7 +1564,7 @@ By default, the model returns a response after completing the entire generation 
 
     When the sun is near the horizon, sunlight has to travel through more of the Earth's atmosphere. The longer path means that more blue light is scattered away, leaving the longer wavelengths like red and orange to reach our eyes.
     ```
-    {: .no-copy .terminal .notice-info} 
+    {:.no-copy .terminal .notice--info} 
 
 
 #### Safety filters
@@ -1679,6 +1679,7 @@ When you make a request to Gemini, the content is analyzed and assigned a safety
     }
     model_version: "gemini-1.5-pro-001"
     ```
+    {:.no-copy}
 
 #### Test chat prompts
 The Gemini API supports natural multi-turn conversations and is ideal for text tasks that require back-and-forth interactions. The following examples show how the model responds during a multi-turn conversation.
@@ -1703,7 +1704,7 @@ The Gemini API supports natural multi-turn conversations and is ideal for text t
     
     Let me know what you think!  Would you like other suggestions? 
     ```
-    {:.no-copy .terminal .notice-info}
+    {:.no-copy .terminal .notice--info}
 
     This follow-up prompt shows how the model responds based on the previous prompt:
     ```python
@@ -1718,7 +1719,7 @@ The Gemini API supports natural multi-turn conversations and is ideal for text t
 
     Let me know what you think!  Would you like other suggestions?
     ```
-    {:.no-copy .terminal .notice-info}
+    {:.no-copy .terminal .notice--info}
 
     You can also view the chat history:
     ```python
@@ -1743,6 +1744,7 @@ The Gemini API supports natural multi-turn conversations and is ideal for text t
         }
     ]
     ```
+    {:.no-copy}
 
 ---
 ### **Task4. Generate text from a multimodal prompt**
@@ -1833,7 +1835,7 @@ Use the `Image.load_from_file` method to load a local file as the image to gener
     Operation completed over 1 objects/17.4 KiB.                                     
     -------Prompt--------
     ```
-    {:.no-copy .terminal .notice-info}
+    {:.no-copy .terminal .notice--info}
 
     ![img6](/assets/images/gcp/gsp1154/55.png)
     ```txt
@@ -2006,7 +2008,7 @@ Use the `Image.load_from_file` method to load a local file as the image to gener
         "city": "Tokyo"
     }
     ```
-
+    {:.no-copy}
 
 
 #### Direct analysis of publicly available web media
@@ -2097,6 +2099,7 @@ Use the `Image.load_from_file` method to load a local file as the image to gener
         }
     ]
     ```
+    {:.no-copy}
 
 
 ---
