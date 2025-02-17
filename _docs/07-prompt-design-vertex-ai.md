@@ -1165,24 +1165,28 @@ You can design prompts in more organized ways. You can provide **Context** and *
     ```
 
 5. Click on the **Add examples** button.
+   ![img29](/assets/images/gcp/gsp1154/41.png)
 6. In the Test field, copy the following in the Input field.
     
     ```bash
     The color of the sky is
     ```
-
+    ![img29](/assets/images/gcp/gsp1154/42.png)
 7. Click on the **Submit** button. You should receive a response from the model similar to the following:
     ```bash
     The color of the sky is blue
     ```
+    ![img29](/assets/images/gcp/gsp1154/43.png)
     Instead of completing the sentence, the model gave a full sentence as a response since you provided an example for the model to base its output from. To change the response to simply complete the sentence, you can adjust the example provided in the **OUTPUT** field.
 
 8. Click the Examples button in the Prompt box and change the OUTPUT field to:
     ```bash
     Green
     ```
+    ![img29](/assets/images/gcp/gsp1154/44.png)
 
-9. Click on the **Add examples** button.
+
+9.  Click on the **Add examples** button.
 
 10. In the **Test** field, copy the following in the **Input** field.
     ```bash
@@ -1194,7 +1198,7 @@ You can design prompts in more organized ways. You can provide **Context** and *
     blue
     ```
     {: .terminal .notice--info}
-
+    ![img29](/assets/images/gcp/gsp1154/45.png)
     You can see that the model now completes the sentence based on the example you provided. You have successfully influenced the way the model produces response.
 
 #### Few-shot prompting
@@ -1212,6 +1216,7 @@ For the next practice, you will use the model to perform sentiment analysis on a
     | A well-made and entertaining film | positive |
     | I fell asleep after 10 minutes  | negative |
     | The movie was ok               | neutral  |
+
 
 4. Once you have added the examples, click on the **Add examples** button.
     ![img7](/assets/images/gcp/gsp1154/7.png) 
@@ -1234,12 +1239,13 @@ For the next practice, you will use the model to perform sentiment analysis on a
 
 Chat mode is a conversational mode that allows you to have a freeform chat with the model. The model uses the conversation history as context for future responses. In this section, you will create a chat prompt and have a conversation with the model.
 1. From the left menu, navigate to **Chat** to create a new chat prompt.
-2. On the top right under **Model**, select the **`model name`** model.
+    ![img6](/assets/images/gcp/gsp1154/46.png)
+2. On the top right under **Model**, select the **`gemini-2.0-flash-001`** model.
    
     **Note:** The model name and version may change with the release of new models.
     {: .notice--warning}
 
-3. For **Region**, select `Region`.
+3. For **Region**, select `us-central1`.
     For this section, you will add context to the chat and let the model respond based on the context provided.
 
 4. Click **System instructions** and add the following context:
@@ -1248,12 +1254,12 @@ Chat mode is a conversational mode that allows you to have a freeform chat with 
     You are a support technician of an IT department.
     You only respond with "Have you tried turning it off and on again?" to any queries.
     ```
-
+    ![img6](/assets/images/gcp/gsp1154/47.png)
 5. Insert the following prompt:
     ```bash
     My computer is so slow! What should I do?
     ```
-
+    ![img6](/assets/images/gcp/gsp1154/48.png)
 6. Click the **Submit** button.
     The model should respond with the following:
     ```txt
@@ -1269,13 +1275,13 @@ Chat mode is a conversational mode that allows you to have a freeform chat with 
     You are here to support the users with their queries.
     ```
 
-9. Insert the following prompt:
+9.  Insert the following prompt:
     ```bash
     My computer is so slow! What should I do?
     ```
 10. Click the **Submit** button.
     The model should now be more helpful in its response to the user query.
-
+    ![img6](/assets/images/gcp/gsp1154/49.png)
     Feel free to experiment with different prompts and context to see how the model responds. You can also add more context to the chat prompt to see how the model responds based on the context provided.
 
 11. Once you finish the prompt design, name the prompt as Support `Technician Helper`.
