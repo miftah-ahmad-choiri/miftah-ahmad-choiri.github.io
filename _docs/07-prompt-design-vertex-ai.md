@@ -2210,6 +2210,8 @@ Write a tagline for a lightweight tent designed for seasoned explorers that make
     ![img6](/assets/images/gcp/gsp1154/63.png)
 8. **Save Prompt:** Once you're happy with the results, click **Save**, and select the `Region` region.
    ![img6](/assets/images/gcp/gsp1154/70.png)
+
+   
    **Note**: Ensure you are using the **gemini-1.5-pro** model for this task!
    {: .notice--info}
 
@@ -2221,8 +2223,11 @@ In this task, you will explore the Python code for the image analysis prompt you
 1. In the Google Cloud console, on the **Navigation menu**, click **Vertex AI** > **Workbench**.
 2. Find the `generative-ai-jupyterlab` instance and click on the **Open JupyterLab** button.
     ![img6](/assets/images/gcp/gsp1154/71.png)
+
     The JupyterLab interface for your Workbench instance opens in a new browser tab.
+
     ![img6](/assets/images/gcp/gsp1154/72.png)
+
 3. Create a new notebook file named `image-analysis.ipynb`.
    ![img6](/assets/images/gcp/gsp1154/73.png)
 
@@ -2368,51 +2373,52 @@ In this task, you will explore the Python code for the tagline prompt you create
         print(response.text)
 
     ```
+
     ```txt
     ##
     Taglines for Cymbal Direct's Outdoor Gear:
 
     **General:**
 
-   * **
-    Nature Unbound.**
-   * **Explore More, Worry Less.**
-   * **
-    Adventure Awaits. Gear Up.**
-   * **Built for the Wild.**
-   * **Unleash Your Inner Explorer.**
+    * **
+        Nature Unbound.**
+    * **Explore More, Worry Less.**
+    * **
+        Adventure Awaits. Gear Up.**
+    * **Built for the Wild.**
+    * **Unleash Your Inner Explorer.**
 
     **Durable Backpack:**
 
-   * **
-    Built for the Journey: Your Adventure Essentials.**
-   * **Nature's Calling. Answer with Confidence.**
-   * **Every Trail, Every Time. Your Reliable
-    Companion.**
-   * **Minimalist Design, Maximum Adventure.**
-   * **Pack Light, Explore Far.**
+    * **
+        Built for the Journey: Your Adventure Essentials.**
+    * **Nature's Calling. Answer with Confidence.**
+    * **Every Trail, Every Time. Your Reliable
+        Companion.**
+    * **Minimalist Design, Maximum Adventure.**
+    * **Pack Light, Explore Far.**
 
     **Additional Taglines:**
 
-   * **Get Outside. Get Inspired.**
-   * **Leave Your Mark on the World, Not the
-    Planet.**
-   * **Adventure Starts Here.**
-   * **Fuel Your Wanderlust.**
-   * **Nature is Calling. Are You Ready?**
+    * **Get Outside. Get Inspired.**
+    * **Leave Your Mark on the World, Not the
+        Planet.**
+    * **Adventure Starts Here.**
+    * **Fuel Your Wanderlust.**
+    * **Nature is Calling. Are You Ready?**
 
     **Taglines with "Nature" Keyword:**
 
-   * **Nature's Playground. Your Gear
-    .**
-   * **Embrace Nature. Embrace Adventure.**
-   * **Connect with Nature. Connect with Yourself.**
-   * **Nature Awaits. Explore Responsibly.**
-   * **Leave No Trace. Leave Only Memories.**
+    * **Nature's Playground. Your Gear
+        .**
+    * **Embrace Nature. Embrace Adventure.**
+    * **Connect with Nature. Connect with Yourself.**
+    * **Nature Awaits. Explore Responsibly.**
+    * **Leave No Trace. Leave Only Memories.**
 
     **Bonus:**
 
-   * **Cymbal Direct: Equipping Your Next Adventure.**
+    * **Cymbal Direct: Equipping Your Next Adventure.**
 
     **Note:**
     These taglines are just a starting point. Feel free to mix and match, or come up with your own creative ideas!
@@ -2434,6 +2440,6 @@ In this task, you will explore the Python code for the tagline prompt you create
 
 **Congratulations**, you've successfully completed the lab! You've helped Cymbal Direct create a set of tools within Google Cloud's Vertex AI platform that will streamline the generation of evocative product descriptions and catchy taglines for their new product line. You've also explored and modified the image analysis and tagline generation code in a notebook. Great job!
 {:.notice--success}
-
+![img6](/assets/images/gcp/gsp1154/75.png)
 
 ![congrats](/assets/myimages/congrats.jpg)
