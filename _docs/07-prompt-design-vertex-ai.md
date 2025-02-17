@@ -1086,14 +1086,15 @@ You can feed your desired input text, e.g. a question, to the model. The model w
 
 **Prompt design methods**
 There are three main methods to design prompts:
-    - **Zero-shot prompting** - This is a method where the LLM is given only a prompt that describes the task and no additional data. For example, if you want the LLM to answer a question, you just prompt "what is prompt design?".
-    - **One-shot prompting** - This is a method where the LLM is given a single example of the task that it is being asked to perform. For example, if you want the LLM to write a poem, you might give it a single example poem.
-    - **Few-shot prompting** - This is a method where the LLM is given a small number of examples of the task that it is being asked to perform. For example, if you want the LLM to write a news article, you might give it a few news articles to read.
+
+- **Zero-shot prompting** - This is a method where the LLM is given only a prompt that describes the task and no additional data. For example, if you want the LLM to answer a question, you just prompt "what is prompt design?".
+- **One-shot prompting** - This is a method where the LLM is given a single example of the task that it is being asked to perform. For example, if you want the LLM to write a poem, you might give it a single example poem.
+- **Few-shot prompting** - This is a method where the LLM is given a small number of examples of the task that it is being asked to perform. For example, if you want the LLM to write a news article, you might give it a few news articles to read.
 
 **Parameters**
 Temperature and Token limit are two important parameters that you can adjust to influence the model's response.
-    - **Temperature** controls the randomness in token selection. A lower temperature is good when you expect a true or correct response. A temperature of 0 means the highest probability token is always selected. A higher temperature can lead to diverse, unexpected, or potentially biased results. The model name model has a temperature range of 0 - 2 and a default of 1.
-    - **Output token limit** determines the maximum amount of text output from one prompt. A token is approximately four characters.
+- **Temperature** controls the randomness in token selection. A lower temperature is good when you expect a true or correct response. A temperature of 0 means the highest probability token is always selected. A higher temperature can lead to diverse, unexpected, or potentially biased results. The model name model has a temperature range of 0 - 2 and a default of 1.
+- **Output token limit** determines the maximum amount of text output from one prompt. A token is approximately four characters.
 
 #### Zero-shot prompting
 
