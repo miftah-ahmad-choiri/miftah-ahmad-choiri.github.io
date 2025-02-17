@@ -1026,12 +1026,13 @@ In this section, you will use Gemini to analyze an image and extract information
     ```bash
     Read the text in the image.
     ```
-    
+    ![img18](/assets/images/gcp/gsp1154/18.png)
+
     Further on, if you want to format the output to a list, replace the previous prompt with the following:
     ```bash
     Parse the time and city in this image into a list with two columns: time and city.
     ```
-    
+    ![img19](/assets/images/gcp/gsp1154/19.png)
     Your turn - try out some different prompts! How do these results differ from before?
 
 12. Analyze the information on the image. Replace the previous prompt with the following:
