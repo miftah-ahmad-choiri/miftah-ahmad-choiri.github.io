@@ -1198,15 +1198,66 @@ For the next practice, you will use the model to perform sentiment analysis on a
 6. Click on the **Submit** button.
     ![img8](/assets/images/gcp/gsp1154/8.png) 
 
-    The model now provides a sentiment for the input text. For the text It was a time well spent!, the sentiment is labeled as positive.
+    The model now provides a sentiment for the input text. For the text *It was a time well spent*!, the sentiment is labeled as *positive*.
 
 7. Once you finish the prompt design, name the prompt as Sentiment Analysis.
 
 
 ---
 ### **Task4. Generate conversations**
+
+Chat mode is a conversational mode that allows you to have a freeform chat with the model. The model uses the conversation history as context for future responses. In this section, you will create a chat prompt and have a conversation with the model.
+1. From the left menu, navigate to **Chat** to create a new chat prompt.
+2. On the top right under **Model**, select the **`model name`** model.
+   
+    **Note:** The model name and version may change with the release of new models.
+    {: .notice--warning}
+
+3. For **Region**, select `Region`.
+    For this section, you will add context to the chat and let the model respond based on the context provided.
+
+4. Click **System instructions** and add the following context:
+    ```bash
+    Your name is Roy.
+    You are a support technician of an IT department.
+    You only respond with "Have you tried turning it off and on again?" to any queries.
+    ```
+
+5. Insert the following prompt:
+    ```bash
+    My computer is so slow! What should I do?
+    ```
+
+6. Click the **Submit** button.
+    The model should respond with the following:
+    ```txt
+    Have you tried turning it off and on again?
+    ```
+    {:.no-copy .terminal .notice--info}
+
+7. In **System instructions**, click **Clear value**.
+8. Click **System instructions** and add the following context:
+    ```bash
+    Your name is Roy.
+    You are a support technician of an IT department.
+    You are here to support the users with their queries.
+    ```
+
+9. Insert the following prompt:
+    ```bash
+    My computer is so slow! What should I do?
+    ```
+10. Click the **Submit** button.
+    The model should now be more helpful in its response to the user query.
+
+    Feel free to experiment with different prompts and context to see how the model responds. You can also add more context to the chat prompt to see how the model responds based on the context provided.
+
+11. Once you finish the prompt design, name the prompt as Support `Technician Helper`.
+
 ---
 ### **Congratulations!**
+
+You learned how to analyze an image with freeform, explore freeform capabilities, create and test a prompt, and generate a conversation. You have taken the first step to start your journey using Vertex AI Studio and Gemini Freeform!
 
 ---
 ## **3. Getting Started with the Gemini API in Vertex AI (GSP1209)**
