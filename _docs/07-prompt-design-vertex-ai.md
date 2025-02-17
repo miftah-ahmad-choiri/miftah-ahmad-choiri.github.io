@@ -68,9 +68,10 @@ In this lab, you will learn how to:
 
 2. Click **Open Google Cloud console** (or right-click and select **Open Link in Incognito Window** if you are running the Chrome browser). The lab spins up resources, and then opens another tab that shows the Sign in page.
 
-> Tip: Arrange the tabs in separate windows, side-by-side.
+    > Tip: Arrange the tabs in separate windows, side-by-side.
 
-**Note**: If you see the **Choose an account** dialog, click **Use Another Account**. {: .notice--information}
+    **Note**: If you see the **Choose an account** dialog, click **Use Another Account**. 
+    {: .notice--info}
 
 3. If necessary, copy the Username below and paste it into the Sign in dialog.
     ```bash
@@ -86,7 +87,7 @@ In this lab, you will learn how to:
 6. Click **Next**.
 
     **Important**: You must use the credentials the lab provides you. Do not use your Google Cloud account credentials.
-    {: .notice--information}
+    {: .notice--info}
 
     **Note**: Using your own Google Cloud account for this lab may incur extra charges.
     {: .notice--danger}
@@ -101,8 +102,9 @@ In this lab, you will learn how to:
 
     Note: To access Google Cloud products and services, click the Navigation menu or type the service or product name in the Search field.
     ![info1](/assets/images/gcp/info1.png)
-    {: .notice--information}
+    {: .notice--info}
 
+---
 ### Task1. Open the notebook in Vertex AI Workbench
 1. In the Google Cloud console, on the **Navigation menu** (Navigation menu icon), click **Vertex AI** > **Workbench**.
    ![info1](/assets/images/gcp/2.png)
@@ -114,6 +116,7 @@ In this lab, you will learn how to:
 The JupyterLab interface for your Workbench instance opens in a new browser tab.
 ![info1](/assets/images/gcp/5.png) 
 
+---
 ### Task2. Setup the notebook
 1. Open the `intro_prompt_design` file.
    ![info1](/assets/images/gcp/6.png) 
@@ -125,10 +128,10 @@ The JupyterLab interface for your Workbench instance opens in a new browser tab.
    - For **Project ID**, use `Project ID`, and for **Location**, use `Region`.
    ![info1](/assets/images/gcp/8.png) 
 
-**Note**: You can skip any notebook cells that are noted *Colab only*. If you experience a 429 response from any of the notebook cell executions, wait 1 minute before running the cell again to proceed.
-{: .notice--information}
+    **Note**: You can skip any notebook cells that are noted *Colab only*. If you experience a 429 response from any of the notebook cell executions, wait 1 minute before running the cell again to proceed.
+    {: .notice--info}
 
-
+---
 ### Task3. Prompt Engineering best practices
 Prompt engineering is all about how to design your prompts so that the response is what you were indeed hoping to see. The idea of using "unfancy" prompts is to minimize the noise in your prompt to reduce the possibility of the LLM misinterpreting the intent of the prompt. Below are a few guidelines on how to engineer "unfancy" prompts.
 ```python
@@ -807,6 +810,7 @@ How can you attempt to reduce the chances of irrelevant responses and hallucinat
     ```
     {:.no-copy .markdown .notice--info}
 
+---
 ### Task5. Improve Response Quality by Including Examples
 Another way to improve response quality is to add examples in your prompt. The LLM learns in-context from the examples on how to respond. Typically, one to five examples (shots) are enough to improve the quality of responses. Including too many examples can cause the model to over-fit the data and reduce the quality of responses.
 
@@ -814,6 +818,7 @@ Similar to classical model training, the quality and distribution of the example
 
 1. Run through the **Improve response quality by including examples** section of the notebook.
    - **Zero-shot prompt**
+    
     ```python
     prompt = """Decide whether a Tweet's sentiment is positive, neutral, or negative.
 
@@ -876,3 +881,203 @@ Similar to classical model training, the quality and distribution of the example
 ### Congratulations!
 **Congratulations**! In this lab you learned prompt engineering best practices using Generative AI with Google Gemini. You explored use cases which follow the best practices of being concise, specific, well-define, providing examples and asking one at a time when using LLMs to generate responses.
 {: .notice--success}
+
+----
+
+## **2. Get Started with Vertex AI Studio (GSP1154)**
+
+### Overiview
+**Vertex AI** is a comprehensive machine learning development platform that provides both **predictive** and **generative AI** capabilities. It allows you to train, evaluate, and deploy predictive machine learning models for forecasting purposes. Additionally, you can utilize the platform to discover, tune, and serve generative AI models to produce content.
+
+[Vertex AI Studio](https://cloud.google.com/generative-ai-studio) lets you quickly test and customize **generative AI models** so you can leverage their capabilities in your applications. It provides a variety of tools and resources including both UI (user interface) and coding examples that make it easy to start with generative AI, even if you don't have a background in machine learning.
+
+This lab guides you through Vertex AI Studio, where you'll unlock the potential of cutting-edge generative AI models. You'll explore Gemini and use it to analyze images, design prompts, and generate conversations directly on the Google Cloud console. No need for API or Python SDKs - it's all accessible through the intuitive user interface.
+
+### Objectives
+In this lab, you will learn how to:
+- Analyze images with Gemini
+- Explore Vertex AI Studio Freeform mode
+- Design text prompts for zero-shot, one-shot, and few-shot prompting
+- Generate conversations with chat prompts
+
+### Setup and Requirements
+#### How to start your lab and sign in to the Google Cloud console
+
+**Note**: Use an Incognito (recommended) or private browser window to run this lab. This prevents conflicts between your personal account and the student account, which may cause extra charges incurred to your personal account.
+{: .notice--danger}
+
+**Note**: Use only the student account for this lab. If you use a different Google Cloud account, you may incur charges to that account.
+{: .notice--danger}
+
+1. Click the **Start Lab** button. If you need to pay for the lab, a dialog opens for you to select your payment method. On the left is the Lab Details pane with the following:
+   - The Open Google Cloud console button
+   - Time remaining
+   - The temporary credentials that you must use for this lab
+   - Other information, if needed, to step through this lab
+
+2. Click **Open Google Cloud console** (or right-click and select **Open Link in Incognito Window** if you are running the Chrome browser). The lab spins up resources, and then opens another tab that shows the Sign in page.
+
+    > Tip: Arrange the tabs in separate windows, side-by-side.
+
+    **Note**: If you see the **Choose an account** dialog, click **Use Another Account**. 
+    {: .notice--info}
+
+3. If necessary, copy the Username below and paste it into the Sign in dialog.
+    ```bash
+    "Username"
+    ```
+    You can also find the Username in the Lab Details pane.
+4. Click **Next**.
+5. Copy the **Password** below and paste it into the **Welcome** dialog.
+    ```bash
+    "Password"
+    ```
+    You can also find the Password in the Lab Details pane.
+6. Click **Next**.
+
+    **Important**: You must use the credentials the lab provides you. Do not use your Google Cloud account credentials.
+    {: .notice--info}
+
+    **Note**: Using your own Google Cloud account for this lab may incur extra charges.
+    {: .notice--danger}
+
+7. Click through the subsequent pages:
+   - Accept the terms and conditions.
+   - Do not add recovery options or two-factor authentication (because this is a temporary account).
+   - Do not sign up for free trials.
+
+8. After a few moments, the Google Cloud console opens in this tab.
+    ![info1](/assets/images/gcp/1.png)
+
+    Note: To access Google Cloud products and services, click the Navigation menu or type the service or product name in the Search field.
+    ![info1](/assets/images/gcp/info1.png)
+    {: .notice--info}
+
+
+---
+### **Task1. Analyze images with Gemini in Freeform mode**
+In this section, you will use Gemini to analyze an image and extract information from it. In Freeform mode, you can design prompts for various tasks such as classification, extraction, and generation. There is no conversation history in Freeform mode, so every prompt is a brand-new request to the model.
+
+#### Enable the Vertex AI API
+
+1. In the Google Cloud console, enter Vertex AI API in the top search bar.
+2. Click on the result for Vertex AI API under Marketplace & APIs.
+3. Click Enable.
+    ![img1](/assets/images/gcp/1.png)
+
+#### Analyze images with Gemini
+1. In the Google Cloud console, from the **Navigation menu** (Navigation menu), select **Vertex AI** > **Vertex AI Studio** > **Overview**.
+    ![img2](/assets/images/gcp/2.png)
+2. Under **Generate with Gemini**, click **Open Freeform**.
+    The UI contains three main sections:
+      - **Prompt** (*located in the center*): Here, you can create a prompt that utilizes multimodal capabilities.
+      - **Configuration** (*located on the right*): This section allows you to select models, configure parameters, and obtain the corresponding code.
+      - **Response** (*located at the bottom*): This section displays the results of your prompt.
+3. On the top left, click **Untitled Prompt** and rename your prompt as Image Analysis.
+4. In the **Configuration** section on the top right, click on the **Model** dropdown then select the **`model name`** model.
+   
+    **Note:** The model name and version may change with the release of new models.
+    {: .notice--info}
+
+5. For **Region**, select `Region`.
+
+6. Download the sample image. **Right-click** the timetable image and then save it to your desktop.
+    ![img3](/assets/images/gcp/3.png)
+
+7. On the top right of the **Prompt** section, click **Insert media** > **Upload**. Upload the timetable image you downloaded. The media can be in the form of an image, video, text, or audio file.
+    ![img4](/assets/images/gcp/4.png) 
+
+8. The image will be displayed inside of the **Prompt** section. Copy the following text and paste it under the image and click on the **Submit** button on the bottom right of the Prompt section.
+    ```txt
+    Title the image.
+    ```
+    {:.no-copy .terminal .notice--info}
+
+    Or be more specific:
+    ```txt
+    Title the image in 3 words.
+    ```
+    {:.no-copy .terminal .notice--info}
+
+    Does the title meet your expectations? Try to modify the prompt to see if you get different results.
+
+9. Describe the image. Replace the previous prompt with the following and click the **Submit** button.
+    ```txt
+    Describe the image in detail.
+    ```
+    {:.no-copy .terminal .notice--info}
+
+10. Tune the parameter. In the Configuration section, adjust the temperature by scrolling from left (0) to right (2). Resubmit the prompt to observe any changes in the outcome compared to the previous result.
+
+    **Notes:** Temperature controls the degree of randomness in token selection. Lower temperatures are good for prompts that expect a true or correct response, while higher temperatures can lead to more diverse, unexpected, or potentially biased results. With a temperature of 0 the highest probability token is always selected.
+    {: .notice--info}    
+
+11. Extract the text from the image. Replace the previous prompt with the following:
+    ```txt
+    Read the text in the image.
+    ```
+    {:.no-copy .terminal .notice--info}
+    Further on, if you want to format the output to a list, replace the previous prompt with the following:
+    ```txt
+    Parse the time and city in this image into a list with two columns: time and city.
+    ```
+    Your turn - try out some different prompts! How do these results differ from before?
+
+12. Analyze the information on the image. Replace the previous prompt with the following:
+    ```txt
+    Calculate the percentage of the flights to different continents.
+    ```
+    {: .no-copy .terminal .notice--info}
+    Does the result meet your expectations? You are highly encouraged to try different prompts for various tasks. You are also encouraged to experiment with different temperature settings to observe the changes in the result.
+
+13. Once you finish the prompt design, save the prompt by clicking **Save** on the top right of the Configuration section. For the region, select **Region** from the dropdown and then confirm by clicking **Save**.
+
+14. To find your saved prompts, on the left-hand navigation menu, navigate to **Prompt Management**.
+
+    **Note**: After selecting **Save**, give the prompts a few seconds to properly save and then proceed further with the lab. Click "Try again" if prompted "failed to update history."
+    {: .notice--info}
+
+---
+### **Task2. Explode multimodal capabilities**
+---
+### **Task3. Design text prompts**
+---
+### **Task4. Generate conversations**
+---
+### **Congratulations!**
+
+---
+## **3. Getting Started with the Gemini API in Vertex AI (GSP1209)**
+
+### Overview
+### Objectives
+### Setup and Requirements
+---
+### **Task1. Open the notebook in Vertex AI Workbench**
+---
+### **Task2. Setup the notebook**
+---
+### **Task3. Use the Gemini 1.5 Pro model**
+---
+### **Task4. Generate text from a multimodal prompt**
+---
+### **Congratulations**
+
+---
+## **4. Prompt Design in Vertex AI: Challenge Lab (GSP519)**
+
+### Overview
+### Setup and Requirements
+### Challenge Scenario
+---
+### **Task1. Build a Gemini image analysis tool**
+---
+### **Task2. Build a Gemini Tagline Generator**
+---
+### **Task3. Experiment with Image Analysis Code**
+---
+### **Task4. Experiment with Tagline Generation Code**
+
+### Congratulations!
+
+![congrats](/assets/myimages/congrats.jpg)
