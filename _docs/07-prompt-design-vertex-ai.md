@@ -1416,14 +1416,12 @@ The Gemini 1.5 Pro (`gemini-1.5-pro`) model is designed to handle natural langua
 
 ```python
 %pip install --upgrade --user google-cloud-aiplatform
-
 import IPython
 
 app = IPython.Application.instance()
 app.kernel.do_shutdown(True)
 
 import sys
-
 if "google.colab" in sys.modules:
     from google.colab import auth
 
@@ -1431,15 +1429,12 @@ if "google.colab" in sys.modules:
 
 # Use the environment variable if the user doesn't provide Project ID.
 import os
-
 import vertexai
 
 PROJECT_ID = "[qwiklabs-gcp-02-a0675fbf24fb]"  # @param {type: "string", placeholder: "[your-project-id]" isTemplate: true}
 if not PROJECT_ID or PROJECT_ID == "[qwiklabs-gcp-02-a0675fbf24fb]":
     PROJECT_ID = str(os.environ.get("GOOGLE_CLOUD_PROJECT"))
-
 LOCATION = os.environ.get("GOOGLE_CLOUD_REGION", "us-east4")
-
 vertexai.init(project=PROJECT_ID, location=LOCATION)
 
 from vertexai.generative_models import (
@@ -1461,26 +1456,19 @@ Send a text prompt to the model using the `generate_content` method. The `genera
     
     ```python
     response = model.generate_content("Why is the sky blue?")
-
     print(response.text)
     ```
     ```txt
     The sky appears blue due to a phenomenon called **Rayleigh scattering**.
-
     **Here's how it works:**
-
     1. **Sunlight Enters the Atmosphere:** Sunlight, which appears white to us, is actually made up of all the colors of the rainbow. When this light enters Earth's atmosphere, it encounters tiny air molecules like nitrogen and oxygen.
-
     2. **Scattering of Light:** These air molecules scatter the sunlight in all directions. However, shorter wavelengths of light (like blue and violet) are scattered much more effectively than longer wavelengths (like red and orange).
-
     3. **Blue Light Dominates:** As a result of this preferential scattering, our eyes receive more blue light from the sky than any other color. This is why we perceive the sky as blue.
 
     **Why not violet?**
-
     While violet light has an even shorter wavelength than blue, our eyes are less sensitive to violet light. Additionally, some violet light is absorbed by the upper atmosphere. Therefore, the combined effect of scattering and our eye's sensitivity makes the sky appear predominantly blue.
 
     **Sunrise and Sunset Colors:**
-
     During sunrise and sunset, the sunlight has to travel through a larger portion of the atmosphere to reach our eyes. This causes more scattering of the shorter wavelengths, allowing longer wavelengths like red and orange to dominate, creating the beautiful colors we see in the sky at these times.
     ```
     {:.no-copy .terminal .notice--info}
@@ -1492,29 +1480,21 @@ By default, the model returns a response after completing the entire generation 
     
     ```python
     responses = model.generate_content("Why is the sky blue?", stream=True)
-
     for response in responses:
         print(response.text, end="")
     ```
     ```txt
     The sky appears blue due to a phenomenon called **Rayleigh scattering**. 
-
     Here's a simplified explanation:
-
     1. **Sunlight Enters the Atmosphere:** When sunlight reaches Earth's atmosphere, it's made up of all the colors of the rainbow.
-
     2. **Scattering of Light:** The atmosphere is composed of tiny particles like nitrogen and oxygen molecules. As sunlight passes through, it collides with these particles. This causes the light to scatter in different directions.
-
     3. **Blue Light Scatters More:**  Blue and violet light have shorter wavelengths compared to other colors in the visible spectrum.  Shorter wavelengths scatter more easily than longer wavelengths. This means blue light is scattered more widely throughout the atmosphere than other colors.
-
     4. **Our Perception:**  Our eyes are more sensitive to blue light than violet. As a result, we perceive the sky as blue due to the scattered blue light reaching our eyes from all directions.
 
     **Why not violet?**
-
     While violet light scatters even more than blue, our eyes are less sensitive to it. Additionally, sunlight contains less violet light compared to blue. These factors contribute to why we see a blue sky instead of a violet one.
 
     **Sunset and Sunrise Colors:**
-
     During sunrise and sunset, sunlight travels through more of the atmosphere to reach our eyes. This leads to more scattering of the longer wavelengths (like orange and red) as the shorter wavelengths have already been scattered away, creating the beautiful warm hues we see. 
     ```
     {:.no-copy .terminal .notice--info}
@@ -1536,7 +1516,6 @@ By default, the model returns a response after completing the entire generation 
     ```
     ```txt
     Here are 10 tech trends, each in 5 words or less:
-
     1. **Artificial Intelligence Everywhere**
     2. **Edge Computing Growth**
     3. **Hyperautomation & Automation**
@@ -1717,24 +1696,407 @@ The Gemini API supports natural multi-turn conversations and is ideal for text t
 
     print(response.text)
     ```
+    ```txt
+    Hi Ned, since you love Lord of the Rings and The Hobbit, both epic fantasy adventures with fantastical creatures and grand battles, you might enjoy:
+
+    * **Willow (1988):**  This classic fantasy film, directed by Ron Howard and produced by George Lucas, features a similar tone and scale to the Lord of the Rings, with dwarves, fairies, and epic battles. 
+    
+    Let me know what you think!  Would you like other suggestions? 
+    ```
+    {:.no-copy .terminal .notice-info}
+
+    This follow-up prompt shows how the model responds based on the previous prompt:
+    ```python
+    prompt = "Are my favorite movies based on a book series?"
+    responses = chat.send_message(prompt)
+    print(response.text)
+    ```
+    ```txt
+    Hi Ned, since you love Lord of the Rings and The Hobbit, both epic fantasy adventures with fantastical creatures and grand battles, you might enjoy:
+
+    * **Willow (1988):**  This classic fantasy film, directed by Ron Howard and produced by George Lucas, features a similar tone and scale to the Lord of the Rings, with dwarves, fairies, and epic battles. 
+
+    Let me know what you think!  Would you like other suggestions?
+    ```
+    {:.no-copy .terminal .notice-info}
+
+    You can also view the chat history:
+    ```python
+    print(chat.history)
+    ```
+    ```json
+    [role: "user"
+    parts {
+        text: "My name is Ned. You are my personal assistant. My favorite movies are Lord of the Rings and Hobbit.\n\nSuggest another movie I might like.\n"
+        }, 
+    role: "model"
+    parts {
+        text: "Hi Ned, since you love Lord of the Rings and The Hobbit, both epic fantasy adventures with fantastical creatures and grand battles, you might enjoy:\n\n* **Willow (1988):**  This classic fantasy film, directed by Ron Howard and produced by George Lucas, features a similar tone and scale to the Lord of the Rings, with dwarves, fairies, and epic battles. \n\nLet me know what you think!  Would you like other suggestions? \n"
+        }, 
+    role: "user"
+    parts {
+        text: "Are my favorite movies based on a book series?"
+        }, 
+    role: "model"
+    parts {
+        text: "Yes, Ned, both *The Lord of the Rings* and *The Hobbit* movies are based on a series of books! \n\n* **The Hobbit**, a single book, acts as a prequel. \n* **The Lord of the Rings** is a trilogy, consisting of  *The Fellowship of the Ring*, *The Two Towers*, and *The Return of the King*.\n\nAll of these books were written by J.R.R. Tolkien. \n"
+        }
+    ]
+    ```
+
 ---
 ### **Task4. Generate text from a multimodal prompt**
 Gemini 1.5 Pro (`gemini-1.5-pro`) is a multimodal model that supports multimodal prompts. You can include text, image(s), and video in your prompt requests and get text or code responses.
 
+Define helper functions to load and display images.
+```python
+import http.client
+import typing
+import urllib.request
+import IPython.display
+from PIL import Image as PIL_Image
+from PIL import ImageOps as PIL_ImageOps
+
+def display_images(
+    images: typing.Iterable[Image],
+    max_width: int = 600,
+    max_height: int = 350,
+) -> None:
+    for image in images:
+        pil_image = typing.cast(PIL_Image.Image, image._pil_image)
+        if pil_image.mode != "RGB":
+            # RGB is supported by all Jupyter environments (e.g. RGBA is not yet)
+            pil_image = pil_image.convert("RGB")
+        image_width, image_height = pil_image.size
+        if max_width < image_width or max_height < image_height:
+            # Resize to display a smaller notebook image
+            pil_image = PIL_ImageOps.contain(pil_image, (max_width, max_height))
+        IPython.display.display(pil_image)
+
+def get_image_bytes_from_url(image_url: str) -> bytes:
+    with urllib.request.urlopen(image_url) as response:
+        response = typing.cast(http.client.HTTPResponse, response)
+        image_bytes = response.read()
+    return image_bytes
+
+def load_image_from_url(image_url: str) -> Image:
+    image_bytes = get_image_bytes_from_url(image_url)
+    return Image.from_bytes(image_bytes)
+
+def get_url_from_gcs(gcs_uri: str) -> str:
+    # converts GCS uri to url for image display.
+    url = "https://storage.googleapis.com/" + gcs_uri.replace("gs://", "").replace(
+        " ", "%20"
+    )
+    return url
+
+def print_multimodal_prompt(contents: list):
+    """
+    Given contents that would be sent to Gemini,
+    output the full multimodal prompt for ease of readability.
+    """
+    for content in contents:
+        if isinstance(content, Image):
+            display_images([content])
+        elif isinstance(content, Part):
+            url = get_url_from_gcs(content.file_data.file_uri)
+            IPython.display.display(load_image_from_url(url))
+        else:
+            print(content)
+```
+
 #### Generate text from local image and text
+Use the `Image.load_from_file` method to load a local file as the image to generate text for.
 - Run through the **Generate text from local image and text** section of the notebook.
+    ```python
+    # Download an image from Google Cloud Storage
+    ! gsutil cp "gs://cloud-samples-data/generative-ai/image/320px-Felis_catus-cat_on_snow.jpg" ./image.jpg
+
+    # Load from local file
+    image = Image.load_from_file("image.jpg")
+
+    # Prepare contents
+    prompt = "Describe this image?"
+    contents = [image, prompt]
+
+    response = model.generate_content(contents)
+
+    print("-------Prompt--------")
+    print_multimodal_prompt(contents)
+
+    print("\n-------Response--------")
+    print(response.text)
+    ```
+    ```
+    Copying gs://cloud-samples-data/generative-ai/image/320px-Felis_catus-cat_on_snow.jpg...
+    / [1 files][ 17.4 KiB/ 17.4 KiB]                                                
+    Operation completed over 1 objects/17.4 KiB.                                     
+    -------Prompt--------
+    ```
+    {:.no-copy .terminal .notice-info}
+
+    ![img6](/assets/images/gcp/gsp1154/55.png)
+    ```txt
+    Describe this image?
+
+    -------Response--------
+    A brown tabby cat is walking across a snow-covered ground. The cat has black stripes and yellow eyes. The cat is looking forward, and its tail is raised. The snow is white and there are some tracks in it. The background is out of focus.
+    ```
+    {:.no-copy .terminal .notice-info}
+
 
 #### Generate text from text and image prompts
 - Run through the **Generate text from text & image(s)** section of the notebook.
+    - **Images with Cloud Storage URIs**
+    If your images are stored in [Cloud Storage](https://cloud.google.com/storage/docs), you can specify the Cloud Storage URI of the image to include in the prompt. You must also specify the `mime_type` field. The supported MIME types for images include `image/png` and `image/jpeg`.
+
+    Note that the URI (not to be confused with URL) for a Cloud Storage object should always start with `gs://`.
+    
+    ```python
+    # Load image from Cloud Storage URI
+    gcs_uri = "gs://cloud-samples-data/generative-ai/image/boats.jpeg"
+
+    # Prepare contents
+    image = Part.from_uri(gcs_uri, mime_type="image/jpeg")
+    prompt = "Describe the scene?"
+    contents = [image, prompt]
+
+    response = model.generate_content(contents)
+
+    print("-------Prompt--------")
+    print_multimodal_prompt(contents)
+
+    print("\n-------Response--------")
+    print(response.text, end="")
+    ```
+    ![img6](/assets/images/gcp/gsp1154/56.png)
+    ```txt
+    Describe the scene?
+
+    -------Response--------
+    The photo shows two small motorboats on a river with a cityscape in the background.
+
+    Here is a breakdown of the scene:
+
+    * **Foreground:** The foreground features the river's surface with small ripples, indicating a gentle current. Two boats are the primary focus:
+        * **Closer boat:** A pontoon boat with a dark blue hull and a bimini top (a fabric roof providing shade). The motor is visible on the back.
+        * **Farther boat:** A smaller, open motorboat with a white hull. This boat appears to be further out on the water.
+    * **Background:**
+        * **River:** The river spans the photo's width and continues beyond the bridge in the background. The water appears relatively calm.
+        * **Bridge:** A multi-arched stone bridge stretches across the river. It has several arches and a roadway on top.
+        * **Cityscape:** Beyond the bridge, a cityscape rises.  Various buildings of different sizes and architectural styles are visible, hinting at a bustling urban environment.
+
+    **Overall Impression:** The photo conveys a sense of tranquility and contrasts the calmness of the water and the anchored boats with the busy city life suggested by the skyline. It might be a scene from a recreational area within or near a city. 
+    ```
+    {:.no-copy .terminal .notice-info}
+    
+    - **Images with direct links**
+    You can also use direct links to images, as shown below. The helper function `load_image_from_url()` (that was declared earlier) converts the image to bytes and returns it as an Image object that can be then be sent to the Gemini model with the text prompt.
+    ```python
+    # Load image from Cloud Storage URI
+    image_url = (
+        "https://storage.googleapis.com/cloud-samples-data/generative-ai/image/boats.jpeg"
+    )
+    image = load_image_from_url(image_url)  # convert to bytes
+
+    # Prepare contents
+    prompt = "Describe the scene?"
+    contents = [image, prompt]
+
+    response = model.generate_content(contents)
+
+    print("-------Prompt--------")
+    print_multimodal_prompt(contents)
+
+    print("\n-------Response--------")
+    print(response.text)
+    ```
+    ![img6](/assets/images/gcp/gsp1154/56.png)
+    ```txt
+    Describe the scene?
+    -------Response--------
+    Two boats are floating on the water in a harbor.  In the background, you can see several bridges and the Boston skyline.
+    ```
+    {:.no-copy .terminal .notice-info}
 
 #### Combining multiple images and text prompts for few-shot prompting
 - Run through the **Combining multiple images and text prompts for few-shot prompting** section of the notebook.
+    You can send more than one image at a time, and also place your images anywhere alongside your text prompt.
+
+    In the example below, few-shot prompting is performed to have the Gemini model return the city and landmark in a specific JSON format.
+    
+    ```python
+    # Load images from Cloud Storage URI
+    image1_url = "https://storage.googleapis.com/github-repo/img/gemini/intro/landmark1.jpg"
+    image2_url = "https://storage.googleapis.com/github-repo/img/gemini/intro/landmark2.jpg"
+    image3_url = "https://storage.googleapis.com/github-repo/img/gemini/intro/landmark3.jpg"
+    image1 = load_image_from_url(image1_url)
+    image2 = load_image_from_url(image2_url)
+    image3 = load_image_from_url(image3_url)
+
+    # Prepare prompts
+    prompt1 = """{"city": "London", "Landmark:", "Big Ben"}"""
+    prompt2 = """{"city": "Paris", "Landmark:", "Eiffel Tower"}"""
+
+    # Prepare contents
+    contents = [image1, prompt1, image2, prompt2, image3]
+
+    responses = model.generate_content(contents)
+
+    print("-------Prompt--------")
+    print_multimodal_prompt(contents)
+
+    print("\n-------Response--------")
+    print(response.text)
+    ```
+    ![img6](/assets/images/gcp/gsp1154/57.png)
+    ```json
+    {"city": "London", "Landmark:", "Big Ben"}
+    ```
+    ![img6](/assets/images/gcp/gsp1154/58.png)
+    ```json
+    {"city": "Paris", "Landmark:", "Eiffel Tower"}
+    ```
+    ![img6](/assets/images/gcp/gsp1154/59.png)
+    ```txt
+    -------Response--------
+    Two boats are floating on the water in a harbor.  In the background, you can see several bridges and the Boston skyline.
+    ```
+    {:.no-copy .terminal .notice-info}
+
+
 
 #### Generate text from a video file
 - Run through the **Generate text from a video file** section of the notebook.
+    Specify the Cloud Storage URI of the video to include in the prompt. The bucket that stores the file must be in the same Google Cloud project that's sending the request. You must also specify the `mime_type` field. The supported MIME type for video includes `video/mp4`.
+    ```python
+    file_path = "github-repo/img/gemini/multimodality_usecases_overview/pixel8.mp4"
+    video_uri = f"gs://{file_path}"
+    video_url = f"https://storage.googleapis.com/{file_path}"
+
+    IPython.display.Video(video_url, width=450)
+    ```
+    <video width="600" controls>
+    <source src="{{ site.url }}/assets/images/gcp/gsp1154/pixel8.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    ```python
+    prompt = """
+    Answer the following questions using the video only:
+    What is the profession of the main person?
+    What are the main features of the phone highlighted?
+    Which city was this recorded in?
+    Provide the answer in JSON.
+    """
+
+    video = Part.from_uri(video_uri, mime_type="video/mp4")
+    contents = [prompt, video]
+
+    response = model.generate_content(contents)
+
+    print(response.text)
+    ```
+    ```json
+    {
+        "profession": "Photographer",
+        "main features": [
+            "Video boost",
+            "Night sight for videos"
+        ],
+        "city": "Tokyo"
+    }
+    ```
+
+
 
 #### Direct analysis of publicly available web media
 - Run through the **Direct analysis of publicly available web media** section of the notebook.
+    This new feature enables you to directly process publicly available URL resources including images, text, video and audio with Gemini. This feature supports all currently [supported modalities and file formats](https://cloud.google.com/vertex-ai/generative-ai/docs/model-reference/inference#blob).
+
+    In this example, you add the file URL of a publicly available image file to the request to identify what's in the image.
+    ```python
+    prompt = """
+    Extract the objects in the given image and output them in a list in alphabetical order.
+    """
+
+    image_file = Part.from_uri(
+        "https://storage.googleapis.com/cloud-samples-data/generative-ai/image/office-desk.jpeg",
+        "image/jpeg",
+    )
+
+    response = model.generate_content([image_file, prompt])
+
+    print(response.text)
+    ```
+    ```txt
+    - Airplane toy
+    - Cup of coffee
+    - Eiffel tower toy
+    - Globe
+    - Keyboard
+    - Money
+    - Mouse
+    - Notepad
+    - Passport
+    - Shopping cart toy
+    - Sunglasses
+    - Tablet computer with blank screen
+    - Wooden table surface
+    ```
+    This example demonstrates how to add the file URL of a publicly available video file to the request, and use the [controlled generation](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/control-generated-output) capability to constraint the model output to a structured format.
+    ```python
+    response_schema = {
+        "type": "ARRAY",
+        "items": {
+            "type": "OBJECT",
+            "properties": {
+                "timecode": {
+                    "type": "STRING",
+                },
+                "chapter_summary": {
+                    "type": "STRING",
+                },
+            },
+            "required": ["timecode", "chapter_summary"],
+        },
+    }
+
+    prompt = """
+    Chapterize this video content by grouping the video content into chapters and providing a brief summary for each chapter. 
+    Please only capture key events and highlights. If you are not sure about any info, please do not make it up. 
+    """
+
+    video_file = Part.from_uri(
+        "https://storage.googleapis.com/cloud-samples-data/generative-ai/video/rio_de_janeiro_beyond_the_map_rio.mp4",
+        "video/mp4",
+    )
+
+    response = model.generate_content(
+        contents=[video_file, prompt],
+        generation_config=GenerationConfig(
+            response_mime_type="application/json",
+            response_schema=response_schema,
+        ),
+    )
+
+    print(response.text)
+    ```
+    ```json
+    [
+        {
+            "timecode": "00:00",
+            "chapter_summary": "The video opens with a breathtaking shot of Rio de Janeiro, showcasing iconic landmarks and the city's vibrant atmosphere. The text \"Google presents Beyond the Map\" is prominently displayed, hinting at an exploration of lesser-known aspects of the city."
+        },
+        {
+            "timecode": "00:07",
+            "chapter_summary": "The narrative transitions to highlight the stark contrast between the touristy perception of Rio and the reality of its favelas. The narrator emphasizes that while Rio is renowned for its beaches and landmarks, there exists another side, largely unknown and often misrepresented."
+        },
+        {
+            "timecode": "00:20",
+            "chapter_summary": " The focus shifts to the favelas, described as an \"uncharted and mysterious spot on the map.\"  The narrator points out the negative stereotypes associated with these communities, primarily portrayed through the lens of crime and poverty."
+        }
+    ]
+    ```
 
 
 ---
