@@ -1044,6 +1044,7 @@ In this section, you will use Gemini to analyze an image and extract information
     Does the result meet your expectations? You are highly encouraged to try different prompts for various tasks. You are also encouraged to experiment with different temperature settings to observe the changes in the result.
 
 13. Once you finish the prompt design, save the prompt by clicking **Save** on the top right of the Configuration section. For the region, select **Region** from the dropdown and then confirm by clicking **Save**.
+    
     ![img22](/assets/images/gcp/gsp1154/22.png)
 
 14. To find your saved prompts, on the left-hand navigation menu, navigate to **Prompt Management**.
@@ -1067,6 +1068,7 @@ In addition to **images**, **text**, and **audio**, Gemini is capable of accepti
     gcloud storage cp gs://spls/gsp154/video/train.mp4 gs://cloud-ai-platform-994d81a1-e2e3-4bd5-b161-30d13c5124ac
     ```
     ![img26](/assets/images/gcp/gsp1154/26.png)
+
     **Note**: Make sure to replace the `<Your-Cloud-Storage-Bucket>` with your bucket name.
     {: .notice--info}
 
@@ -1290,6 +1292,7 @@ Chat mode is a conversational mode that allows you to have a freeform chat with 
 ### **Congratulations!**
 
 You learned how to analyze an image with freeform, explore freeform capabilities, create and test a prompt, and generate a conversation. You have taken the first step to start your journey using Vertex AI Studio and Gemini Freeform!
+{: .notice--success}
 
 ---
 ## **3. Getting Started with the Gemini API in Vertex AI (GSP1209)**
