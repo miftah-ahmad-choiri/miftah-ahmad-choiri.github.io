@@ -949,12 +949,12 @@ In this lab, you will learn how to:
    - Do not sign up for free trials.
 
 8. After a few moments, the Google Cloud console opens in this tab.
-    ![info1](/assets/images/gcp/1.png)
+    ![img9](/assets/images/gcp/gsp1154/9.png)
 
     Note: To access Google Cloud products and services, click the Navigation menu or type the service or product name in the Search field.
     ![info1](/assets/images/gcp/info1.png)
     {: .notice--info}
-
+    
 
 ---
 ### **Task1. Analyze images with Gemini in Freeform mode**
@@ -963,26 +963,30 @@ In this section, you will use Gemini to analyze an image and extract information
 #### Enable the Vertex AI API
 
 1. In the Google Cloud console, enter Vertex AI API in the top search bar.
+    ![img10](/assets/images/gcp/gsp1154/10.png)
 2. Click on the result for Vertex AI API under Marketplace & APIs.
 3. Click Enable.
     ![img1](/assets/images/gcp/gsp1154/1.png)
 
 #### Analyze images with Gemini
 1. In the Google Cloud console, from the **Navigation menu** (Navigation menu), select **Vertex AI** > **Vertex AI Studio** > **Overview**.
-   
+    ![img11](/assets/images/gcp/gsp1154/11.png)
     ![img2](/assets/images/gcp/gsp1154/2.png)
 2. Under **Generate with Gemini**, click **Open Freeform**.
     The UI contains three main sections:
       - **Prompt** (*located in the center*): Here, you can create a prompt that utilizes multimodal capabilities.
       - **Configuration** (*located on the right*): This section allows you to select models, configure parameters, and obtain the corresponding code.
       - **Response** (*located at the bottom*): This section displays the results of your prompt.
-3. On the top left, click **Untitled Prompt** and rename your prompt as Image Analysis.
-4. In the **Configuration** section on the top right, click on the **Model** dropdown then select the **`model name`** model.
+
+    ![img12](/assets/images/gcp/gsp1154/12.png)
+
+3. On the top left, click **Untitled Prompt** and rename your prompt as **`Image Analysis`**.
+4. In the **Configuration** section on the top right, click on the **Model** dropdown then select the **`gemini-2.0-flash-001`** model.
    
     **Note:** The model name and version may change with the release of new models.
     {: .notice--warning}
 
-5. For **Region**, select `Region`.
+5. For **Region**, select `us-central1`.
 
 6. Download the sample image. **Right-click** the timetable image and then save it to your desktop.
    
@@ -991,23 +995,22 @@ In this section, you will use Gemini to analyze an image and extract information
 7. On the top right of the **Prompt** section, click **Insert media** > **Upload**. Upload the timetable image you downloaded. The media can be in the form of an image, video, text, or audio file.
 
     ![img4](/assets/images/gcp/gsp1154/4.png) 
+    ![img13](/assets/images/gcp/gsp1154/13.png)
 
 8. The image will be displayed inside of the **Prompt** section. Copy the following text and paste it under the image and click on the **Submit** button on the bottom right of the Prompt section.
-    ```txt
+    ```bash
     Title the image.
     ```
     
-
     Or be more specific:
-    ```txt
+    ```bash
     Title the image in 3 words.
     ```
     
-
     Does the title meet your expectations? Try to modify the prompt to see if you get different results.
 
 9.  Describe the image. Replace the previous prompt with the following and click the **Submit** button.
-    ```txt
+    ```bash
     Describe the image in detail.
     ```
     
@@ -1018,19 +1021,19 @@ In this section, you will use Gemini to analyze an image and extract information
     {: .notice--warning}    
 
 11. Extract the text from the image. Replace the previous prompt with the following:
-    ```txt
+    ```bash
     Read the text in the image.
     ```
     
     Further on, if you want to format the output to a list, replace the previous prompt with the following:
-    ```txt
+    ```bash
     Parse the time and city in this image into a list with two columns: time and city.
     ```
     
     Your turn - try out some different prompts! How do these results differ from before?
 
 12. Analyze the information on the image. Replace the previous prompt with the following:
-    ```txt
+    ```bash
     Calculate the percentage of the flights to different continents.
     ```
     
