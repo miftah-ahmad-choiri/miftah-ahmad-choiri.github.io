@@ -969,6 +969,7 @@ In this section, you will use Gemini to analyze an image and extract information
 
 #### Analyze images with Gemini
 1. In the Google Cloud console, from the **Navigation menu** (Navigation menu), select **Vertex AI** > **Vertex AI Studio** > **Overview**.
+   
     ![img2](/assets/images/gcp/gsp1154/2.png)
 2. Under **Generate with Gemini**, click **Open Freeform**.
     The UI contains three main sections:
@@ -984,30 +985,32 @@ In this section, you will use Gemini to analyze an image and extract information
 5. For **Region**, select `Region`.
 
 6. Download the sample image. **Right-click** the timetable image and then save it to your desktop.
+   
     ![img3](/assets/images/gcp/gsp1154/3.png)
 
 7. On the top right of the **Prompt** section, click **Insert media** > **Upload**. Upload the timetable image you downloaded. The media can be in the form of an image, video, text, or audio file.
+
     ![img4](/assets/images/gcp/gsp1154/4.png) 
 
 8. The image will be displayed inside of the **Prompt** section. Copy the following text and paste it under the image and click on the **Submit** button on the bottom right of the Prompt section.
     ```txt
     Title the image.
     ```
-    {: .terminal .notice--info}
+    
 
     Or be more specific:
     ```txt
     Title the image in 3 words.
     ```
-    {: .terminal .notice--info}
+    
 
     Does the title meet your expectations? Try to modify the prompt to see if you get different results.
 
-9. Describe the image. Replace the previous prompt with the following and click the **Submit** button.
+9.  Describe the image. Replace the previous prompt with the following and click the **Submit** button.
     ```txt
     Describe the image in detail.
     ```
-    {: .terminal .notice--info}
+    
 
 10. Tune the parameter. In the Configuration section, adjust the temperature by scrolling from left (0) to right (2). Resubmit the prompt to observe any changes in the outcome compared to the previous result.
 
@@ -1018,19 +1021,19 @@ In this section, you will use Gemini to analyze an image and extract information
     ```txt
     Read the text in the image.
     ```
-    {:.terminal .notice--info}
+    
     Further on, if you want to format the output to a list, replace the previous prompt with the following:
     ```txt
     Parse the time and city in this image into a list with two columns: time and city.
     ```
-    {:.terminal .notice--info}
+    
     Your turn - try out some different prompts! How do these results differ from before?
 
 12. Analyze the information on the image. Replace the previous prompt with the following:
     ```txt
     Calculate the percentage of the flights to different continents.
     ```
-    {: .terminal .notice--info}
+    
     Does the result meet your expectations? You are highly encouraged to try different prompts for various tasks. You are also encouraged to experiment with different temperature settings to observe the changes in the result.
 
 13. Once you finish the prompt design, save the prompt by clicking **Save** on the top right of the Configuration section. For the region, select **Region** from the dropdown and then confirm by clicking **Save**.
@@ -1044,7 +1047,7 @@ In this section, you will use Gemini to analyze an image and extract information
 ### **Task2. Explode multimodal capabilities**
 In addition to **images**, **text**, and **audio**, Gemini is capable of accepting **videos** as inputs and generating text as an output.
 1. Navigate to **Cloud Storage** > **Buckets** and copy the name of your Cloud Storage bucket and save it to use in the further step.
-2. Click **Activate Cloud Shell** ![Cloud Shell](https://img.shields.io/badge/Google%20Cloud-Shell-4285F4?logo=googlecloud&logoColor=white) at the top of the Google Cloud console.
+2. Click **Activate Cloud Shell** at the top of the Google Cloud console.
 3. In your Cloud Shell terminal, run the command below to copy the sample video `gs://spls/gsp154/video/train.mp4` ([**preview**](https://storage.googleapis.com/spls/gsp154/video/train.mp4)) to your Cloud Storage bucket. Replace `<Your-Cloud-Storage-Bucket>` with the bucket name you copied earlier.
     ```bash
     gcloud storage cp gs://spls/gsp154/video/train.mp4 gs://<Your-Cloud-Storage-Bucket>
@@ -1067,14 +1070,138 @@ In addition to **images**, **text**, and **audio**, Gemini is capable of accepti
 9. Click on your bucket name and then click on the sample video i.e., `train.mp4` and click **Select**.
 10. Generate information about the video by inserting the following prompt and clicking the **Submit** button.
     
-    ```txt
+    ```bash
     Title the video.
+    ```
+
+Freeform mode offers many capabilities such as writing stories from images, analyzing videos, and generating multimedia ads. Explore more freeform use cases by clicking **Prompt gallery**. Check out more information about [design multimodal prompts](https://cloud.google.com/vertex-ai/docs/generative-ai/multimodal/design-multimodal-prompts).
+
+---
+### **Task3. Design text prompts**
+In this section, you will explore designing text prompts in Vertex AI Studio. You will explore zero-shot, one-shot, and few-shot prompting.
+
+#### Prompt design
+
+You can feed your desired input text, e.g. a question, to the model. The model will then provide a response based on how you structured your prompt. The process of figuring out and designing the best input text (prompt) to get the desired response back from the model is called **Prompt Design**.
+
+**Prompt design methods**
+There are three main methods to design prompts:
+    - **Zero-shot prompting** - This is a method where the LLM is given only a prompt that describes the task and no additional data. For example, if you want the LLM to answer a question, you just prompt "what is prompt design?".
+    - **One-shot prompting** - This is a method where the LLM is given a single example of the task that it is being asked to perform. For example, if you want the LLM to write a poem, you might give it a single example poem.
+    - **Few-shot prompting** - This is a method where the LLM is given a small number of examples of the task that it is being asked to perform. For example, if you want the LLM to write a news article, you might give it a few news articles to read.
+
+**Parameters**
+Temperature and Token limit are two important parameters that you can adjust to influence the model's response.
+    - **Temperature** controls the randomness in token selection. A lower temperature is good when you expect a true or correct response. A temperature of 0 means the highest probability token is always selected. A higher temperature can lead to diverse, unexpected, or potentially biased results. The model name model has a temperature range of 0 - 2 and a default of 1.
+    - **Output token limit** determines the maximum amount of text output from one prompt. A token is approximately four characters.
+
+#### Zero-shot prompting
+
+Try zero-shot prompting in **Free-form** mode.
+1. Navigate back to the **Vertex AI Studio** > **Overview** page and click **Open Freeform**.
+2. On the top right under **Model**, select the **`model name`** model.
+
+    **Note**: The model name and version may change with the release of new models.
+    {: .notice--warning}
+
+3. For **Region**, select `Region`.
+4. Copy the following over to the prompt input field:
+    ```bash
+    What is a prompt gallery?
+    ```
+
+5. Click on the **Submit** button.
+   
+The model will respond to a comprehensive definition of the term prompt gallery.
+
+Here are some exploratory exercises to explore.
+   - Adjust the Output Token limit parameter to `1024` and click the **SUBMIT** button.
+   - Adjust the Temperature parameter to `0.5` and click the **SUBMIT** button.
+   - Adjust the Temperature parameter to `2.0` and click the **SUBMIT** button.
+
+Inspect how the responses change as to change the parameters.
+
+#### One-shot prompting
+
+You can design prompts in more organized ways. You can provide **Context** and **Examples** in their respective input fields. One-shot prompting is a method where the model is given a single example of the task that it is being asked to perform. In this section, you will ask the model to complete a sentence.
+1. Start by removing any text from the Prompt box.
+2. Inside of the Prompt box, click Add examples. This will open a new window where you can add examples for the prompt.
+    ![img5](/assets/images/gcp/gsp1154/5.png) 
+3. Add this to the **INPUT** field:
+    ```bash
+    The color of the grass is
+    ```
+        
+4. Add this to the OUTPUT field:
+    ```bash
+    The color of the grass is green
+    ```
+
+5. Click on the **Add examples** button.
+6. In the Test field, copy the following in the Input field.
+    
+    ```bash
+    The color of the sky is
+    ```
+
+7. Click on the **Submit** button. You should receive a response from the model similar to the following:
+    ```bash
+    The color of the sky is blue
+    ```
+    Instead of completing the sentence, the model gave a full sentence as a response since you provided an example for the model to base its output from. To change the response to simply complete the sentence, you can adjust the example provided in the **OUTPUT** field.
+
+8. Click the Examples button in the Prompt box and change the OUTPUT field to:
+    ```bash
+    Green
+    ```
+
+9. Click on the **Add examples** button.
+
+10. In the **Test** field, copy the following in the **Input** field.
+    ```bash
+    The color of the sky is
+    ```
+
+11. Click on the Submit button. You should receive a response from the model similar to the following:
+    ```txt
+    blue
     ```
     {: .terminal .notice--info}
 
-Freeform mode offers many capabilities such as writing stories from images, analyzing videos, and generating multimedia ads. Explore more freeform use cases by clicking **Prompt gallery**. Check out more information about [design multimodal prompts](https://cloud.google.com/vertex-ai/docs/generative-ai/multimodal/design-multimodal-prompts).
----
-### **Task3. Design text prompts**
+    You can see that the model now completes the sentence based on the example you provided. You have successfully influenced the way the model produces response.
+
+#### Few-shot prompting
+
+For the next practice, you will use the model to perform sentiment analysis on a sentence, such as determining whether a movie review is positive or negative using few-shot prompting.
+
+1. In the **Prompt** field, delete your examples from the previous section. To delete your examples, hover over the **Examples** and click the **X** (Remove File) button.
+    ![img6](/assets/images/gcp/gsp1154/6.png) 
+2. Click the **Add examples** button to add more examples.
+   
+3. Add the following examples:
+    
+    | INPUT                           | OUTPUT   |
+    |---------------------------------|----------|
+    | A well-made and entertaining film | positive |
+    | I fell asleep after 10 minutes  | negative |
+    | The movie was ok               | neutral  |
+
+4. Once you have added the examples, click on the **Add examples** button.
+    ![img7](/assets/images/gcp/gsp1154/7.png) 
+
+5. In the **Test** field, copy the following in the **Input** field.
+    ```bash
+    It was a time well spent!
+    ```
+
+6. Click on the **Submit** button.
+    ![img8](/assets/images/gcp/gsp1154/8.png) 
+
+    The model now provides a sentiment for the input text. For the text It was a time well spent!, the sentiment is labeled as positive.
+
+7. Once you finish the prompt design, name the prompt as Sentiment Analysis.
+
+
 ---
 ### **Task4. Generate conversations**
 ---
