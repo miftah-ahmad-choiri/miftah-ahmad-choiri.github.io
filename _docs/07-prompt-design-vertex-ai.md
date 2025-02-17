@@ -1042,6 +1042,37 @@ In this section, you will use Gemini to analyze an image and extract information
 
 ---
 ### **Task2. Explode multimodal capabilities**
+In addition to **images**, **text**, and **audio**, Gemini is capable of accepting **videos** as inputs and generating text as an output.
+1. Navigate to **Cloud Storage** > **Buckets** and copy the name of your Cloud Storage bucket and save it to use in the further step.
+2. Click **Activate Cloud Shell** ![Cloud Shell](https://img.shields.io/badge/Google%20Cloud-Shell-4285F4?logo=googlecloud&logoColor=white) at the top of the Google Cloud console.
+3. In your Cloud Shell terminal, run the command below to copy the sample video `gs://spls/gsp154/video/train.mp4` ([**preview**](https://storage.googleapis.com/spls/gsp154/video/train.mp4)) to your Cloud Storage bucket. Replace `<Your-Cloud-Storage-Bucket>` with the bucket name you copied earlier.
+    ```bash
+    gcloud storage cp gs://spls/gsp154/video/train.mp4 gs://<Your-Cloud-Storage-Bucket>
+    ```
+
+    **Note**: Make sure to replace the `<Your-Cloud-Storage-Bucket>` with your bucket name.
+    {: .notice--info}
+
+4. From the **Navigation menu**, select **Vertex AI** > **Vertex AI Studio** > **Overview**.
+5. Under **Generate with Gemini**, click **Open Freeform**.
+6. In the **Configuration** section on the top right, click on the **Model** dropdown then select the **`model name`** model.
+   
+    **Note**: The model name and version may change with the release of new models.
+    {: .notice--info}
+
+7. For **Region**, select `Region`.
+
+8. Click **Insert Media** > **Import from Cloud Storage**.
+
+9. Click on your bucket name and then click on the sample video i.e., `train.mp4` and click **Select**.
+10. Generate information about the video by inserting the following prompt and clicking the **Submit** button.
+    
+    ```txt
+    Title the video.
+    ```
+    {: .terminal .notice--info}
+
+Freeform mode offers many capabilities such as writing stories from images, analyzing videos, and generating multimedia ads. Explore more freeform use cases by clicking **Prompt gallery**. Check out more information about [design multimodal prompts](https://cloud.google.com/vertex-ai/docs/generative-ai/multimodal/design-multimodal-prompts).
 ---
 ### **Task3. Design text prompts**
 ---
