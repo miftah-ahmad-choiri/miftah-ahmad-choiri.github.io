@@ -1039,7 +1039,8 @@ In this section, you will use Gemini to analyze an image and extract information
     ```bash
     Calculate the percentage of the flights to different continents.
     ```
-    
+    ![img20](/assets/images/gcp/gsp1154/20.png)
+    ![img21](/assets/images/gcp/gsp1154/21.png)
     Does the result meet your expectations? You are highly encouraged to try different prompts for various tasks. You are also encouraged to experiment with different temperature settings to observe the changes in the result.
 
 13. Once you finish the prompt design, save the prompt by clicking **Save** on the top right of the Configuration section. For the region, select **Region** from the dropdown and then confirm by clicking **Save**.
