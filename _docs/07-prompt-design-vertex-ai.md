@@ -12,7 +12,7 @@ last_modified_at: 2025-02-14T21:36:18-04:00
 toc: true
 ---
 ---
-## **1. Generative AI with Vertex AI: Prompt Design**
+## **1. Generative AI with Vertex AI: Prompt Design (GSP1151)**
 
 ### Overview
 This lab explores prompt engineering and best practices for designing effective prompts to improve the quality of your LLM-generated responses. You'll learn how to craft prompts that are concise, specific, and well-defined, focusing on one task at a time. The lab also covers advanced techniques like turning generative tasks into classification tasks and using examples to enhance response quality. For further exploration, refer to the official documentation on [prompt design](https://cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/introduction-prompt-design).
@@ -1956,10 +1956,12 @@ Use the `Image.load_from_file` method to load a local file as the image to gener
     ```json
     {"city": "London", "Landmark:", "Big Ben"}
     ```
+    {:.no-copy}
     ![img6](/assets/images/gcp/gsp1154/58.png)
     ```json
     {"city": "Paris", "Landmark:", "Eiffel Tower"}
     ```
+    {:.no-copy}
     ![img6](/assets/images/gcp/gsp1154/59.png)
     ```txt
     -------Response--------
@@ -2047,7 +2049,7 @@ Use the `Image.load_from_file` method to load a local file as the image to gener
     - Wooden table surface
     ```
     {:.no-copy .terminal .notice--info}
-    
+
     This example demonstrates how to add the file URL of a publicly available video file to the request, and use the [controlled generation](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/control-generated-output) capability to constraint the model output to a structured format.
     ```python
     response_schema = {
@@ -2115,17 +2117,173 @@ In this lab, you delved into the utilization of the Gemini API in Vertex AI alon
 ## **4. Prompt Design in Vertex AI: Challenge Lab (GSP519)**
 
 ### Overview
+In a challenge lab you’re given a scenario and a set of tasks. Instead of following step-by-step instructions, you will use the skills learned from the labs in the course to figure out how to complete the tasks on your own! An automated scoring system (shown on this page) will provide feedback on whether you have completed your tasks correctly.
+
+When you take a challenge lab, you will not be taught new Google Cloud concepts. You are expected to extend your learned skills, like changing default values and reading and researching error messages to fix your own mistakes.
+
+To score 100% you must successfully complete all tasks within the time period!
+
+This lab is recommended for students who have enrolled in the [Prompt Design in Vertex AI](https://www.cloudskillsboost.google/course_templates/976) course. Are you ready for the challenge?
+
+#### Topics tested
+- Craft effective prompts and use parameters to guide generative AI output in Vertex AI Studio.
+- Apply Gemini models to create product descriptions and taglines in a real-world marketing scenario.
+- Examine and run Python code exported from Vertex AI Studio to gain a basic understanding of generative AI implementation.
+- Use Jupyter Notebooks to test and modify generative AI code.
+
 ### Setup and Requirements
+
+**Note**: Use an Incognito (recommended) or private browser window to run this lab. This prevents conflicts between your personal account and the student account, which may cause extra charges incurred to your personal account.
+{: .notice--danger}
+
+**Note**: Use only the student account for this lab. If you use a different Google Cloud account, you may incur charges to that account.
+{: .notice--danger}
+
 ### Challenge Scenario
+You're a member of an educational content startup specializing in engaging learners with the natural world. You've formed a partnership with Cymbal Direct, an online retailer launching a new line of outdoor gear and apparel designed to encourage young people to explore and connect with nature.
+Cymbal Direct wants to create a marketing campaign for its new product line that leverages the power of generative AI. Your task is to help them develop a set of tools within Google Cloud's Vertex AI platform that will streamline the generation of the following:
+- **Evocative Product Descriptions**: using image analysis to inspire short, descriptive text that captures the essence of their products and the feeling of being in nature.
+- **Catchy Taglines**: focused on highlighting product features, the target audience, and the desired emotional response.
+
 ---
 ### **Task1. Build a Gemini image analysis tool**
+In this section, you will create a template for analyzing images of Cymbal Direct products using the Gemini 1.5 Pro model in Vertex AI Studio. The goal is to generate descriptive text options inspired by the image, from simple details to more evocative, mood-setting phrases.
+
+**Tasks:**
+1. Before you begin, download the image provided for this task. The following image is a product from Cymbal Direct. Right-click and select **Save image as** to save the image to your local machine.
+    ![img6](/assets/images/gcp/gsp1154/60.png)
+
+2. Use Vertex AI Studio's **Freeform** interface with the **gemini-1.5-pro** model to analyze Cymbal Direct's product image (provided) and generate multiple descriptive text options inspired by the image.
+
+3. Experiment with different prompts to generate the following:
+   - Short, descriptive text inspired by the image.
+   - Catchy phrases suitable for advertisements.
+   - A poetic description for a nature-focused campaign.
+
+4. **Evaluate and Iterate**: adjust your prompt and parameters as needed to refine the results.
+5. Name your prompt `Cymbal Product Analysis`.
+6. **Save Prompt**: Once you're happy with the results, click **Save**, and select the `Region` region.
+   
+    **Note:** Ensure you are using the **`gemini-1.5-pro`** model for this task!
+    {: .notice--info}
+
 ---
 ### **Task2. Build a Gemini Tagline Generator**
+
+In this task, you will create a freeform prompt for generating diverse tagline possibilities using the Gemini 1.5 Pro model in Vertex AI Studio. The goal is to develop a prompt that allows for customization of the tagline style, based on product attributes, target audience, and emotional resonance.
+
+**Tasks:**
+1. Create a new **Freeform** prompt with the **gemini-1.5-pro** model to create a customizable tagline generator for Cymbal Direct's new product line.
+2. In the System instructions box, enter the following:
+    ```bash
+    Cymbal Direct is partnering with an outdoor gear retailer. They're launching a new line of products designed to encourage young people to explore the outdoors. Help them create catchy taglines for this product line.
+    ```
+3. Include **2 Examples** in your prompt to guide the output style. An example input and output are provided below for reference:
+4. Design a **Freeform Prompt** with parameters to customize taglines based on:
+    - Product attributes (e.g., `durable`, `lightweight`)
+    - Target audience (e.g., `young adventurers`, `families`)
+    - Emotional resonance (e.g., `empowered`, `connected`)
+
+5. In the Test box, add one input and click the submit button to have Gemini generate a tagline option based on your prompt.
+
+6. **Evaluate and Iterate:**
+   - Experiment with different parameter combinations to see the variety of taglines produced.
+   - Based on the results, fine-tune the wording of your prompt, add more parameter options, or adjust the style choices to achieve your desired outcome.
+
+7. Name your prompt `Cymbal Tagline Generator Template`.
+8. **Save Prompt:** Once you're happy with the results, click **Save**, and select the `Region` region.
+   
+   **Note**: Ensure you are using the **gemini-1.5-pro** model for this task!
+   {: .notice--info}
+
+
 ---
 ### **Task3. Experiment with Image Analysis Code**
+In this task, you will explore the Python code for the image analysis prompt you created. You will then modify the prompt to be more specific and test the new prompt in a notebook.
+1. In the Google Cloud console, on the **Navigation menu**, click **Vertex AI** > **Workbench**.
+2. Find the `Workbench instance name` instance and click on the **Open JupyterLab** button.
+    The JupyterLab interface for your Workbench instance opens in a new browser tab.
+3. Create a new notebook file named `image-analysis.ipynb`.
+
+#### Explore the image analysis code
+1. From the Vertex AI Studio page, navigate to the Saved Prompts page. Select the Cymbal Product Analysis prompt you created.
+2. On the right side of the prompt, click Get Code. Use Python as the language.
+    
+    **Note**: The first code block uses terminal commands to install the necessary Python packages. You can run these commands in a terminal or in a notebook cell. If you run them in a notebook cell, you must include the ! character at the beginning of each command. In this scenario, run the first code block in the terminal by navigating to the **File** > **New** > **Terminal**.
+    {:.notice--info}
+
+3. Run the second code cells in the notebook. Verify that the code executes successfully and produces the expected output.
+
+#### Modify the image analysis prompt
+1. Within the code, there will be a line of text between triple quotes ("""). This is your current image analysis prompt. For example, it might be:
+    ```bash
+    """Describe this image with a focus on colors, textures, and the feeling it evokes."""
+    ```
+2. Now you will modify the prompt to be more specific. Change the wording of the prompt in the code cell to make the output less than 10 words.
+3. Next, modify the prompt code to encourage the model to produce the most creative, unusual, and unexpected descriptions of the image it can think of.
+   
+    **Hint:** You will need to adjust one of the parameters in the code to achieve this!
+    {:.notify--info}
+
+4. Save the changes to your code. Then, rerun the code cell in your notebook to test Gemini with the new prompt.
+5. **Verify** that the new descriptions are shorter and more creative than the previous ones.
+
 ---
 ### **Task4. Experiment with Tagline Generation Code**
+In this task, you will explore the Python code for the tagline prompt you created. You will then modify the prompt to include a specific keyword and test the new prompt in a notebook.
+1. Create a new notebook file named `tagline-generator.ipynb`.
+2. Add the following code to the notebook:
+
+    ```python
+    from vertexai.preview.generative_models import GenerativeModel
+
+    model = GenerativeModel("gemini-1.5-pro")
+
+    prompt = """
+    Cymbal Direct is partnering with an outdoor gear retailer. They\'re launching a new line of products designed to encourage young people to explore the outdoors. Help them create catchy taglines for this product line.
+
+    input: <your example input #1>
+    output: <your example output #1>
+
+    input: <your example input #2>
+    output: <your example output #2>
+
+    input: <your test input>
+    output:
+    """
+
+    responses = model.generate_content(
+        prompt,
+        generation_config={
+            "temperature": 1,
+            "max_output_tokens": 2048,
+            "top_p": 1.0,
+            "top_k": 40,
+        },
+        stream=True
+        )
+
+    for response in responses:
+        print(response.text)
+    ```
+3. Update the placeholders `<your example input>` with the example inputs from your tagline prompt and `<your example output>` with the example outputs from your tagline prompt. Also, update `<your test input>` with your test input.
+    The examples and test inputs should be be copied from your **Cymbal Tagline Generator Template** prompt, which you can find in the **Saved Prompts** page in Vertex AI Studio.
+
+4. Run the code cell in the notebook. Verify that the code executes successfully and produces the expected output.
+
+#### Modify the tagline generation prompt
+1. Within the code, there will be multiple lines of text between triple quotes ("""). This is your current tagline generation prompt.
+2. Now you will modify the prompt to include a specific keyword. Modify the **last input** to **specifically request that the tagline includes the keyword nature**.
+3. Save the changes to your code. Then, rerun the code cell in your notebook to test the language model with the new prompt.
+4. Verify that the new tagline includes the keyword nature.
+    
+    **Note:** Wait for couple of minutes and click the check my progress button if you are not getting the score.
+    {:.notice--info}
 
 ### Congratulations!
+
+**Congratulations**, you've successfully completed the lab! You've helped Cymbal Direct create a set of tools within Google Cloud's Vertex AI platform that will streamline the generation of evocative product descriptions and catchy taglines for their new product line. You've also explored and modified the image analysis and tagline generation code in a notebook. Great job!
+{:.notice--success}
+
 
 ![congrats](/assets/myimages/congrats.jpg)
