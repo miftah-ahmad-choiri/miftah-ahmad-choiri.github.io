@@ -1,7 +1,7 @@
 ---
 title: | 
         Full-Guide Replace Disks in AIX or VIOS💡
-permalink: /docs/intro-gen-ai/
+permalink: /docs/aix-replace-disks/
 excerpt: "This module explain how to publish a content on this website"
 last_modified_at: 2025-02-08T21:36:18-04:00
 ---
