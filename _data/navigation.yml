@@ -65,8 +65,8 @@ docs:
         url: /404.html
   - title: IBM AIX🌐
     children:
-      - title: "Wait in Progress"
-        url: /404.html
+      - title: "Full-Guide Replace Disk AIX/VIOS"
+        url: /docs/aix-replace-disks/
   - title: Red Hat Ansible🤖
     children:
       - title: "How to Install AWX"

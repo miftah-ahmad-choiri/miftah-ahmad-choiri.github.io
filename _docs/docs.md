@@ -48,7 +48,7 @@ feature_row:
     alt: "Mastering IBM AIX🌐"
     title: "Mastering IBM AIX🌐"
     excerpt: "Best practices for system maintenance and optimization."
-    url: "/404.html"
+    url: "/docs/aix-replace-disks/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
 
