@@ -1,7 +1,7 @@
 ---
 title: | 
         Full-Guide Replace Disks in AIX or VIOS💡
-permalink: /docs/aix-replace-disks/
+permalink: /docs/upgrade-hmc/
 excerpt: "This module explain how to publish a content on this website"
 last_modified_at: 2025-02-08T21:36:18-04:00
 ---
@@ -15,7 +15,7 @@ We appreciate your curiosity, but this page is reserved for **IBMers**. If you'r
 If you're one of us, click the button below to proceed.👇
 {: .notice--danger}
 
-<a href="https://pages.github.ibm.com/Miftah-Choiri/docs/aix-replace-disks/" class="btn btn--info">👉 Login W3@IBM 👈</a>
+<a href="https://pages.github.ibm.com/Miftah-Choiri/docs/upgrade-hmc/" class="btn btn--info">👉 Login W3@IBM 👈</a>
 
 
 ---

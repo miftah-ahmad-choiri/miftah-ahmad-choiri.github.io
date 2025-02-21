@@ -67,6 +67,8 @@ docs:
     children:
       - title: "Full-Guide Replace Disk AIX/VIOS"
         url: /docs/aix-replace-disks/
+      - title: "Upgrading, Update, Backup HMC IBM"
+        url: /docs/upgrade-hmc/
   - title: Red Hat Ansible🤖
     children:
       - title: "How to Install AWX"
