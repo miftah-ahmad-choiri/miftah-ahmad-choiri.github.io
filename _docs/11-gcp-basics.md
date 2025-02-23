@@ -240,6 +240,8 @@ In this section, you create new predefined machine types with Compute Engine fro
     **Note**: Learn more about how to use SSH to connect to an instance from the Compute Engine guide, [Connect to Linux VMs using Google tools](https://cloud.google.com/compute/docs/instances/connecting-to-instance).
     {:.notice--info}
 
+---
+
 ### Task2. Install an NGINX Web Server
 
 Now you install an NGINX web server, one of the most popular web servers in the world, to connect your VM to something.
@@ -279,6 +281,7 @@ Now you install an NGINX web server, one of the most popular web servers in the 
     The following NEW packages will be installed:
     ...
     ```
+    {:.no-copy .terminal .notice--info}
 
 3. Run the following command to confirm that NGINX is running:
   
@@ -299,6 +302,7 @@ Now you install an NGINX web server, one of the most popular web servers in the 
 
     A default web page should open that says: **Welcome to nginx!**
 
+---
 
 ### Task3. Create a new instance with gcloud
 
@@ -380,6 +384,7 @@ Instead of using the Cloud console to create a VM instance, use the command line
     exit
     ```
 
+---
 ### Task4. Test your knowledge
 
 Test your knowledge about Google Cloud by taking the quiz. (Please select multiple correct options if necessary.)
@@ -565,6 +570,7 @@ Learn more from the Regions and zones documentation.
 **Note**: When you run gcloud on your own machine, the config settings are persisted across sessions. But in Cloud Shell, you need to set this for every new session or reconnection.
 {:.notice--info}
 
+---
 
 ### Task1. Create new instance
 
