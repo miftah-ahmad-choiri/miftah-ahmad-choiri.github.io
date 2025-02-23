@@ -1652,13 +1652,13 @@ Now that there is new code and configuration, you want the frontend instances wi
 
 Since your instances pull the code at startup, you can issue a rolling restart command:
 
-    ```bash
-    gcloud compute instance-groups managed rolling-action replace fancy-fe-mig \
-        --zone=$ZONE \
-        --max-unavailable 100%
-    ```
+  ```bash
+  gcloud compute instance-groups managed rolling-action replace fancy-fe-mig \
+      --zone=$ZONE \
+      --max-unavailable 100%
+  ```
 
-    **Note:** In this example of a rolling replace, you specifically state that all machines can be replaced immediately through the `--max-unavailable` parameter. Without this parameter, the command would keep an instance alive while restarting others to ensure availability. For testing purposes, you specify to replace all immediately for speed.
+  **Note:** In this example of a rolling replace, you specifically state that all machines can be replaced immediately through the `--max-unavailable` parameter. Without this parameter, the command would keep an instance alive while restarting others to ensure availability. For testing purposes, you specify to replace all immediately for speed.
     {:.notice--info}
 
 #### Test the website
