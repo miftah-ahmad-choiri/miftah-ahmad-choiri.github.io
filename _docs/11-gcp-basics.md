@@ -1,9 +1,11 @@
 ---
 title: | 
         **The Basics of Google Cloude Compute** <br>
-        NGINX
-        Linux-ubuntu
-        GCP
+        ![Google Cloud Compute](https://img.shields.io/badge/google--cloud-compute--engine-blue)
+        ![Nginx](https://img.shields.io/badge/nginx-web--server-green)
+        ![Debian VM](https://img.shields.io/badge/debian-virtual--machine-red)
+        ![Node.js](https://img.shields.io/badge/node.js-runtime--environment-brightgreen)
+        ![Linux](https://img.shields.io/badge/linux-operating--system-black)
 
 permalink: /docs/gcp-basics/
 excerpt: "This module explain how to publish a content on this website"
