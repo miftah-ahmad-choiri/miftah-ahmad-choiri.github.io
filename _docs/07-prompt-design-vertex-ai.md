@@ -482,6 +482,7 @@ In this section, you'll cover the following best practices when engineering prom
 
     Since LLMs do not have access to real-time information without further integrations, you may have noticed it hallucinates what day it is today in some of the outputs
 
+---
 ### Task4. Reduce Output Variability
 How can you attempt to reduce the chances of irrelevant responses and hallucinations? One way is to provide the LLM with system instructions. In this section, you will see how system instructions works and how you can use them to reduce hallucinations or irrelevant questions for a travel chatbot.
 
