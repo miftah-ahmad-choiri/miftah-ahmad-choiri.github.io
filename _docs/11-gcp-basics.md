@@ -11,7 +11,7 @@ last_modified_at: 2025-02-23T21:36:18-04:00
 toc: true
 ---
 
-## **Create a Virtual Machine**
+## **Create a Virtual Machine (GSP001)**
 ### Overview
 Compute Engine allows you to create virtual machines (VMs) that run different operating systems, including multiple flavors of Linux (Debian, Ubuntu, Suse, Red Hat, CoreOS) and Windows Server, on Google infrastructure. You can run thousands of virtual CPUs on a system that is designed to be fast and to offer strong consistency of performance.
 
@@ -404,7 +404,7 @@ Compute Engine is the foundation of Google Cloud's infrastructure as a service. 
 
 ---
 
-## **Creating a Presistent Disk**
+## **Creating a Presistent Disk (GSP004)**
 
 ### Overview
 
@@ -831,7 +831,7 @@ You've learned how to create, find, and attach persistent disks to a virtual mac
 
 ----
 
-## **Hosting a Web App on Google Cloud using Compute Engine**
+## **Hosting a Web App on Google Cloud using Compute Engine (GSP662)**
 
 ### Overview
 
@@ -2019,7 +2019,7 @@ You successfully deployed, scaled, and updated your website on Compute Engine. Y
 
 ----
 
-## **The Basics of Google Cloud Compute: Challenge Lab**
+## **The Basics of Google Cloud Compute: Challenge Lab (ARC120)**
 
 ### Overview
 
