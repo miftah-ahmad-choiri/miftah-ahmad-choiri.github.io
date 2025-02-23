@@ -223,10 +223,10 @@ In this section, you create new predefined machine types with Compute Engine fro
 4. Click **OS and storage**.
 
     Click **Change** to begin configuring your boot disk and select the values for:
-       - **Operating system**: Debian
-       - **Version**: Debian GNU/Linux 11 (bullseye)
-       - **Boot disk type**: Balanced persistent disk
-       - **Size**: 10 GB
+      - **Operating system**: Debian
+      - **Version**: Debian GNU/Linux 11 (bullseye)
+      - **Boot disk type**: Balanced persistent disk
+      - **Size**: 10 GB
 
     ![img1](/assets/images/gcp/gsp001/6.png)
 
