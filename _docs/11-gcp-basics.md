@@ -118,7 +118,7 @@ Cloud Shell is a virtual machine that is loaded with development tools. It offer
     ```
 
 4. Click Authorize.
-
+    ![img1](/assets/images/gcp/gsp001/1.png)
     **Output:**
     ```txt
     ACTIVE: *
@@ -135,7 +135,7 @@ Cloud Shell is a virtual machine that is loaded with development tools. It offer
     ```bash
     gcloud config list project
     ```
-
+    ![img1](/assets/images/gcp/gsp001/2.png)
     **Output:**
     ```txt
     [core]
@@ -180,7 +180,7 @@ Resources that live in a zone are referred to as zonal resources. Virtual machin
     ```bash
     export ZONE=Zone
     ```
-
+    ![img1](/assets/images/gcp/gsp001/3.png) 
 Learn more from the Regions and zones documentation.
 
 **Note**: When you run gcloud on your own machine, the config settings are persisted across sessions. But in Cloud Shell, you need to set this for every new session or reconnection.
@@ -193,10 +193,13 @@ Learn more from the Regions and zones documentation.
 In this section, you create new predefined machine types with Compute Engine from the Cloud console.
 
 1. In the **Cloud console**, on the **Navigation menu** (☰), click **Compute Engine** > **VM Instances**.
-
+   
+    ![img1](/assets/images/gcp/gsp001/4.png)
     This may take a minute to initialize for the first time.
 
 2. To create a new instance, click Create Instance.
+    
+    ![img1](/assets/images/gcp/gsp001/5.png)
 
 3. In the Machine configuration:
 
@@ -213,6 +216,8 @@ In this section, you create new predefined machine types with Compute Engine fro
     **Note:** A new project has a default resource quota , which may limit the number of CPU cores. You can request more when you work on projects outside this lab.
     {:.notice--info}
 
+    ![img1](/assets/images/gcp/gsp001/7.png)
+
 4. Click **OS and storage**.
 
     Click **Change** to begin configuring your boot disk and select the values for:
@@ -220,24 +225,32 @@ In this section, you create new predefined machine types with Compute Engine fro
        - **Version**: Debian GNU/Linux 11 (bullseye)
        - **Boot disk type**: Balanced persistent disk
        - **Size**: 10 GB
-  
+
+    ![img1](/assets/images/gcp/gsp001/6.png)
+
     Several images are available, including Debian, Ubuntu, CoreOS, and premium images such as Red Hat Enterprise Linux and Windows Server. For more information, see the [Operating System documentation.](https://cloud.google.com/compute/docs/images)
 
-1. Click **Networking**.
+5. Click **Networking**.
     - **Firewall**: Allow HTTP traffic
 
     Select this option in order to access a web server that you install later.
+
+    ![img1](/assets/images/gcp/gsp001/8.png)
 
     **Note**: This automatically creates a firewall rule to allow HTTP traffic on port 80.
     {:.notice--info}
 
 6. Once all sections are configured, scroll down and click Create to launch your new virtual machine instance.
 
+    ![img1](/assets/images/gcp/gsp001/9.png)
+
     It should take about a minute for the VM, `gcelab`, to be created. After `gcelab` is created, the **VM Instances** page lists it in the VM instances list.
 
 7. To use SSH to connect to the VM, click **SSH** to the right of the instance name, `gcelab`.
 
     This launches an SSH client directly from your browser.
+
+    ![img1](/assets/images/gcp/gsp001/10.png)
 
     **Note**: Learn more about how to use SSH to connect to an instance from the Compute Engine guide, [Connect to Linux VMs using Google tools](https://cloud.google.com/compute/docs/instances/connecting-to-instance).
     {:.notice--info}
@@ -304,6 +317,8 @@ Now you install an NGINX web server, one of the most popular web servers in the 
 
     A default web page should open that says: **Welcome to nginx!**
 
+    ![img1](/assets/images/gcp/gsp001/11.png)
+
 ---
 
 ### Task3. Create a new instance with gcloud
@@ -338,6 +353,8 @@ Instead of using the Cloud console to create a VM instance, use the command line
        - A root persistent disk with the same name as the instance; the disk is automatically attached to the instance.
 
     When working in your own project, you can specify a custom machine type.
+
+    ![img1](/assets/images/gcp/gsp001/12.png)
 
 1. To see all the defaults, run the following command:
 
@@ -379,6 +396,8 @@ Instead of using the Cloud console to create a VM instance, use the command line
     Enter passphrase (empty for no passphrase)
     ```
     {:no-copy .terminal .notice--info}
+
+    ![img1](/assets/images/gcp/gsp001/13.png)
 
 8. After connecting, disconnect from SSH by exiting from the remote shell with the command that follows:
   
@@ -569,6 +588,8 @@ Cloud Shell is a virtual machine that is loaded with development tools. It offer
 
 Learn more from the Regions and zones documentation.
 
+![img1](/assets/images/gcp/gsp004/1.png)
+
 **Note**: When you run gcloud on your own machine, the config settings are persisted across sessions. But in Cloud Shell, you need to set this for every new session or reconnection.
 {:.notice--info}
 
@@ -597,6 +618,8 @@ First, create a Compute Engine virtual machine instance that has only a boot dis
 
     The newly created virtual machine instance will have a default 10 GB persistent disk as the boot disk.
 
+    ![img1](/assets/images/gcp/gsp004/2.png)
+
 ----------
 
 ### Task2. Create a new persistent disk
@@ -617,6 +640,8 @@ First, create a Compute Engine virtual machine instance that has only a boot dis
     mydisk Zone 200      pd-standard READY
     ```
     {:.no-copy .terminal .notice--info}
+
+    ![img1](/assets/images/gcp/gsp004/3.png)
 
 ----
 
@@ -697,6 +722,8 @@ The persistent disk is now available as a block device in the virtual machine in
     ```
     {:.no-copy .terminal}
 
+    ![img1](/assets/images/gcp/gsp004/4.png)
+
 4. Now find the disk device by listing the disk devices in `/dev/disk/by-id/.`:
 
     ```bash
@@ -712,6 +739,7 @@ The persistent disk is now available as a block device in the virtual machine in
     lrwxrwxrwx 1 root root 10 Feb 27 02:24 scsi-0Google_PersistentDisk_persistent-disk-0-part1 -> ../../sda1
     lrwxrwxrwx 1 root root  9 Feb 27 02:25 scsi-0Google_PersistentDisk_persistent-disk-1 -> ../../sdb
     ```
+    ![img1](/assets/images/gcp/gsp004/5.png)
 
     You found the file, the default name is:
 
@@ -719,6 +747,7 @@ The persistent disk is now available as a block device in the virtual machine in
     scsi-0Google_PersistentDisk_persistent-disk-1.
     ```
     {:.no-copy}
+    
 
     **Note:** If you want a different device name, when you attach the disk, you would specify the device-name parameter. For example, to specify a device name, when you attach the disk you would use the command:
     `gcloud compute instances attach-disk gcelab --disk mydisk --device-name <YOUR_DEVICE_NAME> --zone $ZONE`
@@ -756,6 +785,7 @@ Once you find the block device, you can partition the disk, format it, and then 
     sudo mount -o discard,defaults /dev/disk/by-id/scsi-0Google_PersistentDisk_persistent-disk-1 /mnt/mydisk
     ```
     That's it!
+    ![img1](/assets/images/gcp/gsp004/6.png)
 
 
 #### Automatically mount the disk on restart
@@ -785,6 +815,8 @@ By default the disk will not be remounted if your virtual machine restarts. To m
 
 3. Save and exit nano by pressing **CTRL+O**, **ENTER**, **CTRL+X**, in that order.
 
+    ![img1](/assets/images/gcp/gsp004/7.png)
+
 ----
 
 ### Task4. Test your knowledge
@@ -792,9 +824,9 @@ By default the disk will not be remounted if your virtual machine restarts. To m
 Test your knowledge about Google cloud Platform by taking this quiz.
 
 Can you prevent the destruction of an attached persistent disk when the instance is deleted?
-- Yes, use the **`–keep-disks`** option with the **`gcloud compute instances delete`** command
+- ✅ Yes, use the **`–keep-disks`** option with the **`gcloud compute instances delete`** command
 - No, attached persistent disks are always associated with the lifetime of the instance
-- Yes, deselect the option **`Delete boot disk when instance is deleted`** when creating an instance
+- ✅ Yes, deselect the option **`Delete boot disk when instance is deleted`** when creating an instance
 
 For migrating data from a persistent disk to another region, reorder the following steps in which they should be performed:
 1. Attach disk
@@ -806,7 +838,7 @@ For migrating data from a persistent disk to another region, reorder the followi
 Choose the correct order
 - (2, 3, 1, 4, 5)
 - (4, 1, 2, 3, 5)
-- (5, 3, 2, 4, 1)
+- (5, 3, 2, 4, 1) ✅ 
 - (1, 3, 2, 4, 5)
 
 ----
@@ -2064,6 +2096,12 @@ Your team has requested a new Cloud Storage bucket, so they can store their buil
 
 - Create a bucket named **`PROJECT_ID-bucket`** (US multi-region).
 
+![img1](/assets/images/gcp/arc120/1.png)
+
+![img1](/assets/images/gcp/arc120/2.png)
+
+![img1](/assets/images/gcp/arc120/3.png)
+
 ---
 
 ### Task2. Create and attach a persistent disk to a Compute Engine Instance
@@ -2086,6 +2124,10 @@ Create a new Compute Engine instance named **my-instance** with the following co
 3. Attach the **mydisk** persistent disk to the **my-instance** Compute Engine instance.
 
 
+![img1](/assets/images/gcp/arc120/4.png)
+
+![img1](/assets/images/gcp/arc120/5.png)
+
 ----
 
 ### Task3. Install a NGINX web server
@@ -2101,3 +2143,5 @@ To test the web application, return to the Cloud Console, and click the External
 A default web page should open with the message "**Welcome to nginx!**".
 
 ### Congratulations!
+
+![img1](/assets/images/gcp/arc120/6.png)
