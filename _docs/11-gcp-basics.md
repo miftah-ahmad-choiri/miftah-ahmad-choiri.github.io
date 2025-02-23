@@ -186,6 +186,8 @@ Learn more from the Regions and zones documentation.
 **Note**: When you run gcloud on your own machine, the config settings are persisted across sessions. But in Cloud Shell, you need to set this for every new session or reconnection.
 {:.notice--info}
 
+----
+
 ### Task1. Create a New Instance from the Cloud Console
 
 In this section, you create new predefined machine types with Compute Engine from the Cloud console.
@@ -595,6 +597,8 @@ First, create a Compute Engine virtual machine instance that has only a boot dis
 
     The newly created virtual machine instance will have a default 10 GB persistent disk as the boot disk.
 
+----------
+
 ### Task2. Create a new persistent disk
 
 **Note:** Because you want to attach this disk to the virtual machine instance you created in the previous step, the zone must be the same.
@@ -613,6 +617,8 @@ First, create a Compute Engine virtual machine instance that has only a boot dis
     mydisk Zone 200      pd-standard READY
     ```
     {:.no-copy .terminal .notice--info}
+
+----
 
 ### Task3. Attaching a disk
 
@@ -779,6 +785,8 @@ By default the disk will not be remounted if your virtual machine restarts. To m
 
 3. Save and exit nano by pressing **CTRL+O**, **ENTER**, **CTRL+X**, in that order.
 
+----
+
 ### Task4. Test your knowledge
 
 Test your knowledge about Google cloud Platform by taking this quiz.
@@ -800,6 +808,8 @@ Choose the correct order
 - (4, 1, 2, 3, 5)
 - (5, 3, 2, 4, 1)
 - (1, 3, 2, 4, 5)
+
+----
 
 ### Task5. Local SSDs
 
@@ -983,6 +993,8 @@ Learn more from the Regions and zones documentation.
 **Note**: When you run gcloud on your own machine, the config settings are persisted across sessions. But in Cloud Shell, you need to set this for every new session or reconnection.
 {:.notice--info}
 
+-----
+
 ### Task1. Enable Compute Engine API
 
 - Enable the [Compute Engine API](https://console.cloud.google.com/flows/enableapi?apiid=compute) by executing the following:
@@ -990,6 +1002,8 @@ Learn more from the Regions and zones documentation.
     ```bash
     gcloud services enable compute.googleapis.com
     ```
+
+---
 
 ### Task2. Create Cloud Storage Bucket
 
@@ -1002,6 +1016,7 @@ You will use a Cloud Storage bucket to house your built code as well as your sta
     **Note**: Use of the $DEVSHELL_PROJECT_ID environment variable within Cloud Shell is to help ensure the names of objects are unique. Since all Project IDs within Google Cloud must be unique, appending the Project ID should make other names unique as well.
     {:.notice--info}
 
+---
 
 ### Task3. Clone Source repository
 Use the existing Fancy Store ecommerce website based on the monolith-to-microservices repository as the basis for your website.
@@ -1058,6 +1073,7 @@ Clone the source code so you can focus on the aspects of deploying to Compute En
 
 6. Close this window after viewing the website and then press **CTRL+C** in the terminal window to stop the web server process.
 
+---
 
 ### Task4. Create compute engine instances
 
@@ -1327,7 +1343,7 @@ Now that the code is configured, deploy the frontend instance.
     ![img1](/assets/images/gcp/gsp662/4.png)
 
 
-
+----
 
 ### Task5. Create managed instance groups
 
@@ -1485,6 +1501,8 @@ An autohealing policy relies on an **application-based health check** to verify 
     {:.notice--info}  
 
 4. Continue with the lab to allow some time for autohealing to monitor the instances in the group. You will simulate a failure to test the autohealing at the end of the lab.
+
+---
 
 ### Task6. Create load balancers
 
@@ -1712,7 +1730,7 @@ Since your instances pull the code at startup, you can issue a rolling restart c
     ```
     You'll be checking the application later in the lab.
 
-
+----
 
 ### Task7. Scaling Compute Engine
 
@@ -1754,6 +1772,7 @@ Another feature that can help with scaling is to enable a Content Delivery Netwo
 
     If the GFE can't find a cached response for the request, the GFE makes a request directly to the backend. If the response to this request is cacheable, the GFE stores the response in the Cloud CDN cache so that the cache can be used for subsequent requests.
 
+----
 
 ### Task8. Update the Website
 
@@ -2037,11 +2056,15 @@ Some standards you should follow:
 
 Each task is described in detail below, good luck!
 
+----
+
 ### Task1. Create a Cloud Storage Bucket
 
 Your team has requested a new Cloud Storage bucket, so they can store their built code and startup scripts.
 
 - Create a bucket named **`PROJECT_ID-bucket`** (US multi-region).
+
+---
 
 ### Task2. Create and attach a persistent disk to a Compute Engine Instance
 
@@ -2062,6 +2085,8 @@ Create a new Compute Engine instance named **my-instance** with the following co
 
 3. Attach the **mydisk** persistent disk to the **my-instance** Compute Engine instance.
 
+
+----
 
 ### Task3. Install a NGINX web server
 
