@@ -1021,6 +1021,7 @@ Cloud Shell is a virtual machine that is loaded with development tools. It offer
     ```bash
     export ZONE=Zone
     ```
+    ![img1](/assets/images/gcp/gsp662/5.png)
 
 Learn more from the Regions and zones documentation.
 
@@ -1043,10 +1044,13 @@ Learn more from the Regions and zones documentation.
 
 You will use a Cloud Storage bucket to house your built code as well as your startup scripts.
 - From Cloud Shell, execute the following to create a new Cloud Storage bucket:
+    
     ```bash
     gsutil mb gs://fancy-store-$DEVSHELL_PROJECT_ID
     ```
 
+    ![img1](/assets/images/gcp/gsp662/6.png)
+    
     **Note**: Use of the $DEVSHELL_PROJECT_ID environment variable within Cloud Shell is to help ensure the names of objects are unique. Since all Project IDs within Google Cloud must be unique, appending the Project ID should make other names unique as well.
     {:.notice--info}
 
@@ -1066,12 +1070,16 @@ Clone the source code so you can focus on the aspects of deploying to Compute En
     ```bash
     cd ~/monolith-to-microservices
     ```
+    ![img1](/assets/images/gcp/gsp662/7.png)
 
 2. Run the initial build of the code to allow the application to run locally:
 
     ```bash
     ./setup.sh
     ```
+    
+    ![img1](/assets/images/gcp/gsp662/8.png)
+    ![img1](/assets/images/gcp/gsp662/9.png)
 
     It will take a few minutes for this script to finish.
 
@@ -1080,6 +1088,7 @@ Clone the source code so you can focus on the aspects of deploying to Compute En
     ```bash
     nvm install --lts
     ```
+    ![img1](/assets/images/gcp/gsp662/10.png)
 
 4. Next, run the following to test the application, switch to the `microservices` directory, and start the web server:
   
@@ -1097,10 +1106,14 @@ Clone the source code so you can focus on the aspects of deploying to Compute En
     ```
     {:.notice--info}
 
+    ![img1](/assets/images/gcp/gsp662/11.png)
+
 5. Preview your application by clicking the **web preview icon** then selecting **Preview on port 8080**.
     ![img1](/assets/images/gcp/gsp662/1.png)
 
     This opens a new window where you can see the frontend of Fancy Store.
+
+    ![img1](/assets/images/gcp/gsp662/12.png)
 
     **Note:** Within the Preview option, you should be able to see the Frontend; however, the Products and Orders functions will not work, as those services are not yet exposed.
     {:.notice--info}
@@ -1133,6 +1146,9 @@ A startup script will be used to instruct the instance what to do each time it i
     ![img1](/assets/images/gcp/gsp662/2.png)
 
 3. Navigate to the `monolith-to-microservices` folder.
+
+    ![img1](/assets/images/gcp/gsp662/13.png)
+
 4. Add the following code to the `startup-script.sh` file:
 
     ```bash
@@ -1181,6 +1197,8 @@ A startup script will be used to instruct the instance what to do each time it i
     supervisorctl update
     ```
 
+    ![img1](/assets/images/gcp/gsp662/14.png)
+
 5. Find the text `[DEVSHELL_PROJECT_ID]` in the file and replace it with your Project ID: `Project ID`
     The line of code within `startup-script.sh` should now resemble:
   
@@ -1197,11 +1215,12 @@ A startup script will be used to instruct the instance what to do each time it i
 
 8. Close the startup-script.sh file.
 
-9. Return to Cloud Shell Terminal and run the following to copy the startup-script.sh file into your bucket:
+9.  Return to Cloud Shell Terminal and run the following to copy the startup-script.sh file into your bucket:
   
     ```bash
     gsutil cp ~/monolith-to-microservices/startup-script.sh gs://fancy-store-$DEVSHELL_PROJECT_ID
     ```
+    ![img1](/assets/images/gcp/gsp662/15.png)
 
     It will now be accessible at: [https://storage.googleapis.com/[BUCKET_NAME]/startup-script.sh](https://storage.googleapis.com/[BUCKET_NAME]/startup-script.sh).
 
@@ -1227,6 +1246,8 @@ When instances launch, they pull code from the Cloud Storage bucket, so you can 
     rm -rf monolith-to-microservices/*/node_modules
     gsutil -m cp -r monolith-to-microservices gs://fancy-store-$DEVSHELL_PROJECT_ID/
     ```
+    ![img1](/assets/images/gcp/gsp662/16.png)
+    ![img1](/assets/images/gcp/gsp662/17.png)
 
     **Note:** The node_modules dependencies directories are deleted to ensure the copy is as fast and efficient as possible. These are recreated on the instances when they start up.
   {:.notice--info}
@@ -1248,6 +1269,8 @@ The first instance to be deployed will be the backend instance which will house 
       --tags=backend \
       --metadata=startup-script-url=https://storage.googleapis.com/fancy-store-$DEVSHELL_PROJECT_ID/startup-script.sh
   ```
+
+  ![img1](/assets/images/gcp/gsp662/18.png)
 
 
 #### Configure Connection to Backend
@@ -1273,6 +1296,8 @@ Before you deploy the frontend of the application, you need to update the config
     ```
     {:.notice--info}
 
+    ![img1](/assets/images/gcp/gsp662/19.png)
+
 2. **Copy the External IP** for the backend.
 
 3. In the Cloud Shell Explorer, navigate to `monolith-to-microservices` > `react-app`.
@@ -1281,12 +1306,16 @@ Before you deploy the frontend of the application, you need to update the config
 
     In the next step, you edit the `.env` file to point to the External IP of the backend. **[BACKEND_ADDRESS]** represents the External IP address of the backend instance determined from the above `gcloud` command.
 
+    ![img1](/assets/images/gcp/gsp662/20.png)
+
 5. In the `.env` file, replace localhost with your **[BACKEND_ADDRESS]**:
   
     ```bash
     REACT_APP_ORDERS_URL=http://[BACKEND_ADDRESS]:8081/api/orders
     REACT_APP_PRODUCTS_URL=http://[BACKEND_ADDRESS]:8082/api/products
     ```
+
+    ![img1](/assets/images/gcp/gsp662/21.png)
 
 6. **Save** the file.
 
@@ -1297,6 +1326,9 @@ Before you deploy the frontend of the application, you need to update the config
     npm install && npm run-script build
     ```
 
+    ![img1](/assets/images/gcp/gsp662/22.png)
+    ![img1](/assets/images/gcp/gsp662/23.png)
+
 8. Then copy the application code into the Cloud Storage bucket:
 
     ```bash
@@ -1304,6 +1336,9 @@ Before you deploy the frontend of the application, you need to update the config
     rm -rf monolith-to-microservices/*/node_modules
     gsutil -m cp -r monolith-to-microservices gs://fancy-store-$DEVSHELL_PROJECT_ID/
     ```
+
+    ![img1](/assets/images/gcp/gsp662/24.png)
+    ![img1](/assets/images/gcp/gsp662/25.png)
 
 
 #### Deploy the Frontend Instance
@@ -1319,6 +1354,8 @@ Now that the code is configured, deploy the frontend instance.
         --tags=frontend \
         --metadata=startup-script-url=https://storage.googleapis.com/fancy-store-$DEVSHELL_PROJECT_ID/startup-script.sh
     ```
+
+    ![img1](/assets/images/gcp/gsp662/26.png)
 
     **Note:** The deployment command and startup script is used with both the frontend and backend instances for simplicity, and because the code is configured to launch all microservices by default. As a result, all microservices run on both the frontend and backend in this sample. In a production environment you'd only run the microservices you need on each component.
     {:.notice--info}
@@ -1340,6 +1377,7 @@ Now that the code is configured, deploy the frontend instance.
     ```
 
     The website should now be fully functional.
+    ![img1](/assets/images/gcp/gsp662/27.png)
 
 2. In order to navigate to the external IP of the frontend, you need to know the address. Run the following and look for the EXTERNAL_IP of the frontend instance:
   
@@ -1368,13 +1406,14 @@ Now that the code is configured, deploy the frontend instance.
     ```
     {:.notice--info}
   
+    ![img1](/assets/images/gcp/gsp662/28.png)
     It may take a couple minutes for the instance to start and be configured.
 
 3. Wait 3 minutes and then open a new browser tab and browse to [http://[FRONTEND_ADDRESS]:8080](http://[FRONTEND_ADDRESS]:8080) to access the website, where **[FRONTEND_ADDRESS]** is the frontend EXTERNAL_IP determined above.
 
 4. Try navigating to the **Products** and **Orders** pages; these should now work.
 
-    ![img1](/assets/images/gcp/gsp662/4.png)
+    ![img1](/assets/images/gcp/gsp662/29.png)
 
 
 ----
@@ -1400,6 +1439,8 @@ To create the instance template, use the existing instances you created previous
     gcloud compute instances stop backend --zone=$ZONE
     ```
 
+    ![img1](/assets/images/gcp/gsp662/30.png)
+
 2. Create the Instance Template from Each of the Source Instances:
   
     ```bash
@@ -1411,6 +1452,8 @@ To create the instance template, use the existing instances you created previous
         --source-instance-zone=$ZONE \
         --source-instance=backend
     ```
+
+    ![img1](/assets/images/gcp/gsp662/31.png)
 
 3. Confirm the Instance Templates Were Created:
   
@@ -1432,11 +1475,15 @@ To create the instance template, use the existing instances you created previous
     CREATION_TIMESTAMP: 2023-07-25T14:52:15.442-07:00
     ```
 
+    ![img1](/assets/images/gcp/gsp662/32.png)
+
 4. With the instance templates created, delete the backend VM to save resource space:
   
     ```bash
     gcloud compute instances delete backend --zone=$ZONE
     ```
+
+    ![img1](/assets/images/gcp/gsp662/33.png)
 
 5. Type `y` when prompted.
 
@@ -1461,6 +1508,8 @@ To create the instance template, use the existing instances you created previous
         --template fancy-be
     ```
 
+    ![img1](/assets/images/gcp/gsp662/34.png)
+
     These managed instance groups will use the instance templates and are configured for **two instances each** within each group to start. The instances are automatically named based on the **base-instance-name** specified with random characters appended.
 
 2. For your application, the **frontend microservice** runs on port `8080`, and the **backend microservice** runs on port `8081` for orders and port `8082` for products:
@@ -1474,6 +1523,8 @@ To create the instance template, use the existing instances you created previous
         --zone=$ZONE \
         --named-ports orders:8081,products:8082
     ```
+
+    ![img1](/assets/images/gcp/gsp662/35.png)
 
     Since these are **non-standard ports**, you specify **named ports** to identify these. Named ports are `key:value` pair metadata representing the service name and the port that it's running on. Named ports can be assigned to an instance group, which indicates that the service is available on all instances in the group. This information is used by the **HTTP Load Balancing** service that will be configured later.
 
@@ -1507,6 +1558,8 @@ An autohealing policy relies on an **application-based health check** to verify 
         --unhealthy-threshold 3
     ```
 
+    ![img1](/assets/images/gcp/gsp662/36.png)
+
 2. Create a Firewall Rule to Allow Health Check Probes
 
     ```bash
@@ -1515,6 +1568,8 @@ An autohealing policy relies on an **application-based health check** to verify 
         --source-ranges 130.211.0.0/22,35.191.0.0/16 \
         --network default
     ```
+
+    ![img1](/assets/images/gcp/gsp662/37.png)
 
 3. Apply the Health Checks to Their Respective Services
 
@@ -1530,6 +1585,8 @@ An autohealing policy relies on an **application-based health check** to verify 
         --health-check fancy-be-hc \
         --initial-delay 300
     ```
+
+    ![img1](/assets/images/gcp/gsp662/38.png)
 
     **Note:** It can take **15 minutes** before autohealing begins monitoring instances in the group.
     {:.notice--info}  
@@ -1574,6 +1631,8 @@ Google Cloud offers many different types of load balancers. For this lab you use
       --port 8082
     ```
 
+    ![img1](/assets/images/gcp/gsp662/39.png)
+
     **Note:** These health checks are for the load balancer, and only handle directing traffic from the load balancer; they do not cause the managed instance groups to recreate instances.
     {:.notice--info}
 
@@ -1598,6 +1657,8 @@ Google Cloud offers many different types of load balancers. For this lab you use
       --global
     ```
 
+    ![img1](/assets/images/gcp/gsp662/40.png)
+
 3. Add the Load Balancer's [backend services](https://cloud.google.com/load-balancing/docs/backend-service):
 
     ```bash
@@ -1619,12 +1680,16 @@ Google Cloud offers many different types of load balancers. For this lab you use
       --global
     ```
 
+    ![img1](/assets/images/gcp/gsp662/41.png)
+
 4. Create a URL map. The URL map defines which URLs are directed to which backend services:
 
     ```bash
     gcloud compute url-maps create fancy-map \
       --default-service fancy-fe-frontend
     ```
+
+    ![img1](/assets/images/gcp/gsp662/42.png)
 
 5. Create a path matcher to allow the `/api/orders` and `/api/products` paths to route to their respective services:
 
@@ -1635,12 +1700,16 @@ Google Cloud offers many different types of load balancers. For this lab you use
       --path-rules "/api/orders=fancy-be-orders,/api/products=fancy-be-products"
     ```
 
+    ![img1](/assets/images/gcp/gsp662/43.png)
+
 6. Create the proxy which ties to the URL map:
 
     ```bash
     gcloud compute target-http-proxies create fancy-proxy \
       --url-map fancy-map
     ```
+
+    ![img1](/assets/images/gcp/gsp662/44.png)
 
 7. Create a global forwarding rule that ties a public IP address and port to the proxy:
 
@@ -1651,6 +1720,8 @@ Google Cloud offers many different types of load balancers. For this lab you use
       --ports 80
     ```
 
+    ![img1](/assets/images/gcp/gsp662/45.png)
+
 #### Update the configuration
 
 Now that you have a new static IP address, update the code on the frontend to point to this new address instead of the ephemeral address used earlier that pointed to the backend instance.
@@ -1660,6 +1731,8 @@ Now that you have a new static IP address, update the code on the frontend to po
     ```bash
     cd ~/monolith-to-microservices/react-app/
     ```
+
+    ![img1](/assets/images/gcp/gsp662/46.png)
 
 2. Find the IP address for the Load Balancer:
 
@@ -1684,6 +1757,8 @@ Now that you have a new static IP address, update the code on the frontend to po
     REACT_APP_PRODUCTS_URL=http://[LB_IP]/api/products
     ```
 
+    ![img1](/assets/images/gcp/gsp662/47.png)
+
     **Note:** The ports are removed in the new address because the load balancer is configured to handle this forwarding for you.
     {:.notice--info}
 
@@ -1696,6 +1771,9 @@ Now that you have a new static IP address, update the code on the frontend to po
     npm install && npm run-script build
     ```
 
+    ![img1](/assets/images/gcp/gsp662/48.png)
+    ![img1](/assets/images/gcp/gsp662/49.png)
+
 6. Copy the application code into your bucket:
 
     ```bash
@@ -1703,6 +1781,9 @@ Now that you have a new static IP address, update the code on the frontend to po
     rm -rf monolith-to-microservices/*/node_modules
     gsutil -m cp -r monolith-to-microservices gs://fancy-store-$DEVSHELL_PROJECT_ID/
     ```
+
+    ![img1](/assets/images/gcp/gsp662/50.png)
+    ![img1](/assets/images/gcp/gsp662/51.png)
 
 #### Update the Frontend Instances
 
@@ -1715,6 +1796,8 @@ Since your instances pull the code at startup, you can issue a rolling restart c
       --zone=$ZONE \
       --max-unavailable 100%
   ```
+  ![img1](/assets/images/gcp/gsp662/52.png)
+  ![img1](/assets/images/gcp/gsp662/53.png)
 
   **Note:** In this example of a rolling replace, you specifically state that all machines can be replaced immediately through the `--max-unavailable` parameter. Without this parameter, the command would keep an instance alive while restarting others to ensure availability. For testing purposes, you specify to replace all immediately for speed.
     {:.notice--info}
@@ -1726,6 +1809,7 @@ Since your instances pull the code at startup, you can issue a rolling restart c
     ```bash
     watch -n 2 gcloud compute backend-services get-health fancy-fe-frontend --global
     ```
+    ![img1](/assets/images/gcp/gsp662/54.png)
 
 2. Wait until the 2 services are listed as HEALTHY.
 
@@ -1790,6 +1874,8 @@ So far, you have created two managed instance groups with two instances each. Th
       --target-load-balancing-utilization 0.60
     ```
 
+    ![img1](/assets/images/gcp/gsp662/55.png)
+
     These commands create an autoscaler on the managed instance groups that automatically adds instances when utilization is above 60% utilization and removes instances when the load balancer is below 60% utilization.
 
 #### Enable Content Delivery Network
@@ -1801,6 +1887,8 @@ Another feature that can help with scaling is to enable a Content Delivery Netwo
     gcloud compute backend-services update fancy-fe-frontend \
         --enable-cdn --global
     ```
+
+    ![img1](/assets/images/gcp/gsp662/56.png)
 
     When a user requests content from the HTTP(S) load balancer, the request arrives at a Google Front End (GFE), which first looks in the Cloud CDN cache for a response to the user's request. If the GFE finds a cached response, the GFE sends the cached response to the user. This is called a **cache hit**.
 
@@ -1837,6 +1925,8 @@ Modify the machine type:
         --source-instance-zone=$ZONE
     ```
 
+    ![img1](/assets/images/gcp/gsp662/57.png)
+
 3. Roll out the updated instance template to the Managed Instance Group
     ```bash
     gcloud compute instance-groups managed rolling-action start-update fancy-fe-mig \
@@ -1844,12 +1934,17 @@ Modify the machine type:
       --version template=fancy-fe-new
     ```
 
+    ![img1](/assets/images/gcp/gsp662/58.png)
+    ![img1](/assets/images/gcp/gsp662/59.png)
+
 4. Wait 3 minutes, and then run the following to monitor the status of the update:
 
     ```bash
     watch -n 2 gcloud compute instance-groups managed list-instances fancy-fe-mig \
     --zone=$ZONE
     ```
+
+    ![img1](/assets/images/gcp/gsp662/60.png)
 
     This will take a few moments.
 
@@ -1875,6 +1970,8 @@ Modify the machine type:
     machineType: https://www.googleapis.com/compute/v1/projects/project-name/zones/us-central1-f/machineTypes/e2-small
     ```
     {:.notice--info}
+
+    ![img1](/assets/images/gcp/gsp662/61.png)
 
 #### Make changes to the website
 
@@ -1938,12 +2035,17 @@ Modify the machine type:
     ```
     You updated the React components, but you need to build the React app to generate the static files.
 
+    ![img1](/assets/images/gcp/gsp662/62.png)
+
 3. Build the React app, Run the following command to build the React app and copy it into the monolith public directory:
 
     ```bash
     cd ~/monolith-to-microservices/react-app
     npm install && npm run-script build
     ```
+
+    ![img1](/assets/images/gcp/gsp662/63.png)
+    ![img1](/assets/images/gcp/gsp662/64.png)
 
 4. Then re-push this code to the bucket:
 
@@ -1952,6 +2054,7 @@ Modify the machine type:
     rm -rf monolith-to-microservices/*/node_modules
     gsutil -m cp -r monolith-to-microservices gs://fancy-store-$DEVSHELL_PROJECT_ID/
     ```
+    ![img1](/assets/images/gcp/gsp662/65.png)
 
 #### Push changes with rolling replacements
 
@@ -1963,6 +2066,9 @@ Modify the machine type:
       --max-unavailable=100%
     ```
 
+    ![img1](/assets/images/gcp/gsp662/66.png)
+    ![img1](/assets/images/gcp/gsp662/67.png)
+
     **Note:** In this example of a rolling replace, you specifically state that all machines can be replaced immediately through the --max-unavailable parameter. Without this parameter, the command would keep an instance alive while replacing others. For testing purposes, you specify to replace all immediately for speed. In production, leaving a buffer would allow the website to continue serving the website while updating.
     {:.notice--info}
 
@@ -1971,6 +2077,8 @@ Modify the machine type:
     ```bash
     watch -n 2 gcloud compute backend-services get-health fancy-fe-frontend --global
     ```
+
+    ![img1](/assets/images/gcp/gsp662/68.png)
 
     **Example output:**
     ```bash
@@ -1997,7 +2105,11 @@ Modify the machine type:
     gcloud compute forwarding-rules list --global
     ```
 
+    ![img1](/assets/images/gcp/gsp662/69.png)
+
     The new website changes should now be visible.
+
+    ![img1](/assets/images/gcp/gsp662/70.png)
 
 #### Simulate failure
 In order to confirm the health check works, log in to an instance and stop the services.
@@ -2008,11 +2120,15 @@ In order to confirm the health check works, log in to an instance and stop the s
     gcloud compute instance-groups list-instances fancy-fe-mig --zone=$ZONE
     ```
 
+    ![img1](/assets/images/gcp/gsp662/71.png)
+
 2. Copy an instance name, then run the following to secure shell into the instance, where INSTANCE_NAME is one of the instances from the list:
   
     ```bash
     gcloud compute ssh [INSTANCE_NAME] --zone=$ZONE
     ```
+
+    ![img1](/assets/images/gcp/gsp662/72.png)
 
 3. Type in "y" to confirm, and press **Enter** twice to not use a password.
 
@@ -2021,6 +2137,8 @@ In order to confirm the health check works, log in to an instance and stop the s
     ```bash
     sudo supervisorctl stop nodeapp; sudo killall node
     ```
+
+    ![img1](/assets/images/gcp/gsp662/73.png)
 
     **Exit the instance:**
     ```bash
@@ -2032,6 +2150,8 @@ In order to confirm the health check works, log in to an instance and stop the s
     ```bash
     watch -n 2 gcloud compute operations list --filter='operationType~compute.instances.repair.*'
     ```
+
+    ![img1](/assets/images/gcp/gsp662/74.png)
 
     This will take a few minutes to complete.
 
@@ -2045,6 +2165,7 @@ In order to confirm the health check works, log in to an instance and stop the s
     The managed instance group recreated the instance to repair it.
 
 7. You can also go to **Navigation menu** > **Compute Engine** > **VM instances** to monitor through the console.
+    ![img1](/assets/images/gcp/gsp662/75.png)
 
 ### Congratulations!
 
