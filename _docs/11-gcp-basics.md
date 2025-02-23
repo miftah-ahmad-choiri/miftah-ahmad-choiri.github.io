@@ -368,7 +368,7 @@ Instead of using the Cloud console to create a VM instance, use the command line
     ```txt
     Do you want to continue? (Y/n)
     ```
-    {:no-copy .terminal}
+    {:no-copy .terminal .notice--info}
 
 7. Press **Enter** through the passphrase section to leave the passphrase empty.
   
@@ -376,7 +376,7 @@ Instead of using the Cloud console to create a VM instance, use the command line
     Generating public/private rsa key pair.
     Enter passphrase (empty for no passphrase)
     ```
-    {:no-copy .terminal}
+    {:no-copy .terminal .notice--info}
 
 8. After connecting, disconnect from SSH by exiting from the remote shell with the command that follows:
   
