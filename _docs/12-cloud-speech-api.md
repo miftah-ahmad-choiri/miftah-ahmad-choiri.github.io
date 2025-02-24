@@ -144,6 +144,8 @@ Cloud Shell is a virtual machine that is loaded with development tools. It offer
     **Note:** For full documentation of gcloud, in Google Cloud, refer to the [gcloud CLI overview guide](https://cloud.google.com/sdk/gcloud).
     {:.notice--info}
 
+    
+
 
 #### Set the region and zone
 
@@ -152,6 +154,8 @@ Cloud Shell is a virtual machine that is loaded with development tools. It offer
     ```bash
     gcloud config set compute/region REGION
     ```
+
+    ![img1](/assets/images/gcp/gsp222/4.png)
 
 Learn more from the Regions and zones documentation.
 
@@ -164,12 +168,28 @@ Learn more from the Regions and zones documentation.
 ### Task 1. Enable the Text-to-Speech API
 
 1. In the **Navigation menu**, click **APIs and Services > Enable APIs and Services**.
+    
+    ![img1](/assets/images/gcp/gsp222/5.png)
+
 2. On the top of the Dashboard, click **+ Enabled APIs and Services**.
+    
+    ![img1](/assets/images/gcp/gsp222/6.png)
+
 3. Enter `text-to-speech` in the search box.
+   
+    ![img1](/assets/images/gcp/gsp222/7.png)
+
 4. Click **Cloud Text-to-Speech API**.
+   
+    ![img1](/assets/images/gcp/gsp222/8.png)
+
 5. Click **Enable** to enable the Cloud Text-to-Speech API.
+   
+    ![img1](/assets/images/gcp/gsp222/9.png)
 
 Wait for a few seconds for the API to be enabled for the project. Once enabled, the **Cloud Text-to-Speech API** page shows details, metrics and more.
+
+![img1](/assets/images/gcp/gsp222/10.png)
 
 ---
 
@@ -183,6 +203,8 @@ Python virtual environments are used to isolate package installation from the sy
     sudo apt-get install -y virtualenv
     ```
 
+    ![img1](/assets/images/gcp/gsp222/11.png)
+
 2. Build the virtual environment:
 
     ```bash
@@ -194,6 +216,8 @@ Python virtual environments are used to isolate package installation from the sy
     ```bash
     source venv/bin/activate
     ```
+
+    ![img1](/assets/images/gcp/gsp222/12.png)
 
 ---
 ### Task 3. Create a service account
@@ -217,6 +241,8 @@ You should use a service account to authenticate your calls to the Text-to-Speec
     ```bash
     export GOOGLE_APPLICATION_CREDENTIALS=tts-qwiklab.json
     ```
+
+    ![img1](/assets/images/gcp/gsp222/13.png)
 
 ---
 
@@ -269,6 +295,8 @@ As mentioned previously, the Text-to-Speech API provides many different voices a
     }
     ```
 
+    ![img1](/assets/images/gcp/gsp222/14.png)
+
     Looking at the results from the curl command, notice that each voice has four fields:
 
       - **name**: The ID of the voice that you provide when you request that voice.
@@ -285,6 +313,9 @@ As mentioned previously, the Text-to-Speech API provides many different voices a
         -H "Content-Type: application/json; charset=utf-8" \
         "https://texttospeech.googleapis.com/v1/voices?language_code=en"
     ```
+
+    ![img1](/assets/images/gcp/gsp222/15.png)
+
 ---
 
 ### Task 5. Create synthetic speech from text
@@ -338,6 +369,8 @@ For this, you build your request to the Text-to-Speech API in a text file titled
         > synthesize-text.txt
     ```
 
+    ![img1](/assets/images/gcp/gsp222/16.png)
+
     The output of this call is saved to a file called `synthesize-text.txt`.
 
 5. Open the `synthesize-text.txt` file. Notice that the Text-to-Speech API provides the audio output in base64-encoded text assigned to the `audioContent` field, similar to what's shown below:
@@ -347,6 +380,8 @@ For this, you build your request to the Text-to-Speech API in a text file titled
         "audioContent": "//NExAASGoHwABhGudEACdzqFXfRE4EY3AACkD/zX4ADf/6J/[...]"
     }
     ```
+
+    ![img1](/assets/images/gcp/gsp222/17.png)
 
     To translate the response into audio, you need to select the audio data it contains and decode it into an audio file - for this lab, MP3. Although there are many ways that you can do this, in this lab you'll use some simple Python code.
 
@@ -379,6 +414,8 @@ For this, you build your request to the Text-to-Speech API in a text file titled
         decode_tts_output(args.input, args.output)
     ```
 
+    ![img1](/assets/images/gcp/gsp222/18.png)
+
     Save `tts_decode.py` and exit the line editor.
 
     Now, to create an audio file from the response you received from the Text-to-Speech API, run the following command from Cloud Shell:
@@ -386,6 +423,8 @@ For this, you build your request to the Text-to-Speech API in a text file titled
     ```bash
     python tts_decode.py --input "synthesize-text.txt" --output "synthesize-text-audio.mp3"
     ```
+
+    ![img1](/assets/images/gcp/gsp222/19.png)
 
     This creates a new MP3 file named `synthesize-text-audio.mp3`.
 
@@ -408,6 +447,8 @@ For this, you build your request to the Text-to-Speech API in a text file titled
         </body>
     </html>
     ```
+
+    ![img1](/assets/images/gcp/gsp222/20.png)
 
 12. Start a simple Python HTTP server:
 
@@ -469,6 +510,8 @@ In addition to using text, you can also provide input to the Text-to-Speech API 
     }
     ```
 
+    ![img1](/assets/images/gcp/gsp222/21.png)
+
     Notice that the `input` object of the JSON payload includes an `ssml` field instead of a `text` field. The `ssml` field contains XML-formatted content with the `<speak>` element as its root. Each of the elements present in this XML representation of the input affects the output of the synthetic speech.
 
     Specifically, the elements in this sample have the following effects:
@@ -500,6 +543,8 @@ In addition to using text, you can also provide input to the Text-to-Speech API 
     python tts_decode.py --input "synthesize-ssml.txt" --output "synthesize-ssml-audio.mp3"
     ```
 
+    ![img1](/assets/images/gcp/gsp222/22.png)
+
 5. Next, open the `index.html` file that you created earlier. Replace the contents of the file with the following HTML:
 
     ```html
@@ -521,6 +566,8 @@ In addition to using text, you can also provide input to the Text-to-Speech API 
         </body>
     </html>
     ```
+
+    ![img1](/assets/images/gcp/gsp222/23.png)
 
 6. Then, start a simple Python HTTP server from the Cloud Shell command prompt:
 
@@ -566,6 +613,7 @@ Build your request to the Text-to-Speech API in a text file titled `synthesize-w
         }
     }
     ```
+    ![img1](/assets/images/gcp/gsp222/24.png)
 
 3. Save the file and exit the line editor.
     
@@ -597,6 +645,8 @@ Build your request to the Text-to-Speech API in a text file titled `synthesize-w
     python tts_decode.py --input "synthesize-with-settings.txt" --output "synthesize-with-settings-audio.ogg"
     ```
 
+    ![img1](/assets/images/gcp/gsp222/25.png)
+
 6. Next open the `index.html` file that you created earlier and replace the contents of the file with the following HTML:
 
     ```html
@@ -624,6 +674,8 @@ Build your request to the Text-to-Speech API in a text file titled `synthesize-w
     ```bash
     python -m http.server 8080
     ```
+
+    ![img1](/assets/images/gcp/gsp222/26.png)
 
 8. As before, click **Web Preview** then select the port number from the displayed menu.
    
@@ -789,6 +841,7 @@ Cloud Shell is a virtual machine that is loaded with development tools. It offer
 
 Learn more from the Regions and zones documentation.
 
+![img1](/assets/images/gcp/gsp049/1.png)
 
 **Note**: When you run gcloud on your own machine, the config settings are persisted across sessions. But in Cloud Shell, you need to set this for every new session or reconnection.
 {:.notice--info}
@@ -801,8 +854,16 @@ Since later in this lab you use `curl` to send a request to the Translation API,
 
 1. To create an API key, in the Navigation menu (*Navigation menu icon*), click **APIs & services > Credentials**.
 
+    ![img1](/assets/images/gcp/gsp049/2.png)
+
 2. Click **+CREATE CREDENTIALS**.
+    
+    ![img1](/assets/images/gcp/gsp049/3.png)
+
 3. In the drop-down menu, select **API key**.
+   
+    ![img1](/assets/images/gcp/gsp049/4.png)
+
 4. Copy the key you just generated.
 
     Next, save it to an environment variable to avoid having to insert the value of your API key in each request.
@@ -840,6 +901,8 @@ In this example, you translate the string "My name is Steve" into Spanish.
         }
     }
     ```
+
+    ![img1](/assets/images/gcp/gsp049/5.png)
 
     In the response, you can see the translated text and the source language that the API detected.
 
@@ -884,6 +947,8 @@ In addition to translating text, the Translation API can also detect the languag
         }
     }
     ```
+
+    ![img1](/assets/images/gcp/gsp049/6.png)
 
     The languages returned by this sample are `"pt"` and `"ja"`. These are the **[ISO-639-1](https://en.wikipedia.org/wiki/ISO_639-1)** identifiers for **Portuguese** and **Japanese**. The [list of languages supported by the Translation API](https://cloud.google.com/translate/docs/languages) includes all possible language codes that can be returned.
 
@@ -980,7 +1045,13 @@ In this lab you use the Speech-to-Text API to do the following:
 Since you use `curl` to send a request to the Speech-to-Text API, you need to generate an API key to pass in your request URL.
 
 1. To create an API key, on the **Navigation menu** click **APIs & services > Credentials**.
+
+    ![img1](/assets/images/gcp/gsp048/1.png)
+
 2. Click **Create credentials** and select **API key**.
+
+    ![img1](/assets/images/gcp/gsp048/2.png)
+
 3. Copy and record the key you just generated to use later in this lab.
 4. Click **Close**.
 
@@ -992,8 +1063,15 @@ Since you use `curl` to send a request to the Speech-to-Text API, you need to ge
     
     Notice the **linux-instance** VM in the VM instances list. VM details are to the right of the VM name.
 
+    ![img1](/assets/images/gcp/gsp048/3.png)
+
 6. Click **SSH** to the right of the linux-instance VM name.
     An interactive shell opens. Use this to perform the next operations.
+
+
+    ![img1](/assets/images/gcp/gsp048/4.png)
+
+
 
 7. In the shell (SSH) run the following, replacing `<your_api_key>` with the key you just copied:
 
@@ -1026,6 +1104,8 @@ Since you use `curl` to send a request to the Speech-to-Text API, you need to ge
         }
     }
     ```
+
+    ![img1](/assets/images/gcp/gsp048/5.png)
 
 3. Save the file as needed.
 
@@ -1077,6 +1157,8 @@ Since you use `curl` to send a request to the Speech-to-Text API, you need to ge
         "totalBilledTime": "15s"
     }
     ```
+
+    ![img1](/assets/images/gcp/gsp048/6.png)
 
     The `transcript` value returns the Speech API's text transcription of your audio file, and `confidence` indicates how sure the API is about the transcription accuracy.
 
@@ -1142,7 +1224,11 @@ Try a **French** audio file - (for a preview, [listen here](https://storage.clou
     }
     ```
 
+    ![img1](/assets/images/gcp/gsp048/7.png)
+
     This is a sentence from a popular French children’s tale by **Jean de la Fontaine**. You can try adding other audio files in Cloud Storage and changing the `languageCode` parameter in your request.
+
+    ![img1](/assets/images/gcp/gsp048/8.png)
 
     **Note:** API restrictions and usage limits on Cloud Speech-to-Text are documented in the [Quotas and limits](https://cloud.google.com/speech-to-text/quotas) resource.
     {:.notice--info}
@@ -1309,7 +1395,11 @@ export ZONE=$(gcloud compute instances list lab-vm --format 'csv[no-heading](zon
 gcloud compute ssh lab-vm --project=$DEVSHELL_PROJECT_ID --zone=$ZONE --quiet
 ```
 
+![img1](/assets/images/gcp/arc129/2.png)
+
 * Go to `Credentials` from [here](https://console.cloud.google.com/apis/credentials)
+
+![img1](/assets/images/gcp/arc129/1.png)
 
 ```bash
 export API_KEY=AIzaSyCYZ2qUCBPx-hmJj7zQWXJTE2OY51q-tyM
@@ -1329,6 +1419,8 @@ sudo chmod +x arc132.sh
 ./arc132.sh
 ```
 
+![img1](/assets/images/gcp/arc129/3.png)
+
 ---
 
 ### Congratulations!
@@ -1336,5 +1428,5 @@ sudo chmod +x arc132.sh
 You have successfully created synthetic speech from text using the Text-to-Speech API, transcribed speech to text using the Cloud Speech API, as well as translated text and detected a language with the Cloud Translation API.
 {:.notice--success}
 
-
+![img1](/assets/images/gcp/arc129/4.png)
 
