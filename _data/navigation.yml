@@ -85,6 +85,8 @@ docs:
         url: /docs/gcp-basics/
       - title: "Cloud Speech API: 3 Ways"
         url: /docs/cloud-speech-api/
+      - title: "Secure BigLake Data"
+        url: /docs/secure-biglake-data/
 
 
 # sidebar navigation list sample

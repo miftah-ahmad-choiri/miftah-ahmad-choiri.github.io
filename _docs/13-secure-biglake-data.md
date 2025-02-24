@@ -1,17 +1,20 @@
 ---
 title: | 
         **The Basics of Google Cloude Compute** <br>
-        ![Google Cloud Compute](https://img.shields.io/badge/google--cloud-compute--engine-blue)
-        ![Nginx](https://img.shields.io/badge/nginx-web--server-green)
-        ![Debian VM](https://img.shields.io/badge/debian-virtual--machine-red)
-        ![Node.js](https://img.shields.io/badge/node.js-runtime--environment-brightgreen)
-        ![Linux](https://img.shields.io/badge/linux-operating--system-black)
+        ![Google Cloud Compute Engine](https://img.shields.io/badge/google--cloud-compute--engine-blue)
+        ![Google Cloud BigLake](https://img.shields.io/badge/google--cloud-biglake--data-blue)
+        ![Google Cloud IAM](https://img.shields.io/badge/google--cloud-cloud--iam-blue)
+        ![Google Cloud Data Catalog](https://img.shields.io/badge/google--cloud-data--catalog-blue)
 
 permalink: /doc/secure-biglake-data/
 excerpt: "This module explain how to publish a content on this website"
 last_modified_at: 2025-02-24T21:36:18-04:00
 toc: true
 ---
+
+
+
+----
 
 ## **Cloud IAM: Qwik Start (GSP064)**
 
