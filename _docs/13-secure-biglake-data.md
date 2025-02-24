@@ -6,7 +6,7 @@ title: |
         ![Google Cloud IAM](https://img.shields.io/badge/google--cloud-cloud--iam-blue)
         ![Google Cloud Data Catalog](https://img.shields.io/badge/google--cloud-data--catalog-blue)
 
-permalink: /doc/secure-biglake-data/
+permalink: /docs/secure-biglake-data/
 excerpt: "This module explain how to publish a content on this website"
 last_modified_at: 2025-02-24T21:36:18-04:00
 toc: true

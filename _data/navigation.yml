@@ -87,6 +87,8 @@ docs:
         url: /docs/cloud-speech-api/
       - title: "Secure BigLake Data"
         url: /docs/secure-biglake-data/
+      - title: "Get Started with Sensitive Data Protection"
+        url: /docs/sensitive-data-protections/
 
 
 # sidebar navigation list sample

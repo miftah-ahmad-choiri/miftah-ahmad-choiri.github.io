@@ -13,7 +13,7 @@ last_modified_at: 2025-02-08T21:36:18-04:00
 
 We appreciate your curiosity, but this page is reserved for **IBMers**. If you're one of us, please log in. If not… Well, we still think you're awesome!😃
 If you're one of us, click the button below to proceed.👇<br>
-        <a href="https://pages.github.ibm.com/Miftah-Choiri/docs/aix-replace-disks/" class="btn btn--info">👉 Login W3@IBM 👈</a>
+        👉<a href="https://pages.github.ibm.com/Miftah-Choiri/docs/aix-replace-disks/" class="btn btn--info"> Login W3@IBM </a>👈
 {: .notice--danger}
 
 
