@@ -687,7 +687,7 @@ The persistent disk is now available as a block device in the virtual machine in
     [/home/gcpstaging8246_student/.ssh] before being able to generate SSH keys.
     Do you want to continue (Y/n)?  y
     ```
-    {: .no-copy .terminal}
+    {: .no-copy .terminal .notice--info}
   
 2. At the prompt, enter Y to continue.
 
@@ -722,7 +722,7 @@ The persistent disk is now available as a block device in the virtual machine in
     the exact distribution terms for each program are described in the individual files in /usr/share/doc/*/copyright.
     Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent permitted by applicable law.
     ```
-    {:.no-copy .terminal}
+    {:.no-copy .terminal .notice--info}
 
     ![img1](/assets/images/gcp/gsp004/4.png)
 
@@ -741,6 +741,8 @@ The persistent disk is now available as a block device in the virtual machine in
     lrwxrwxrwx 1 root root 10 Feb 27 02:24 scsi-0Google_PersistentDisk_persistent-disk-0-part1 -> ../../sda1
     lrwxrwxrwx 1 root root  9 Feb 27 02:25 scsi-0Google_PersistentDisk_persistent-disk-1 -> ../../sdb
     ```
+    {:.no-copy .terminal .notice--info}
+
     ![img1](/assets/images/gcp/gsp004/5.png)
 
     You found the file, the default name is:
@@ -780,6 +782,7 @@ Once you find the block device, you can partition the disk, format it, and then 
     Creating journal (262144 blocks): done
     Writing superblocks and filesystem accounting information: done
     ```
+    {:.no-copy .terminal .notice--info}
 
 3. Now use the [`mount`](http://manpages.ubuntu.com/manpages/xenial/man8/mount.8.html) tool to mount the disk to the instance with the `discard` option enabled:
   
@@ -1250,7 +1253,7 @@ When instances launch, they pull code from the Cloud Storage bucket, so you can 
     ![img1](/assets/images/gcp/gsp662/17.png)
 
     **Note:** The node_modules dependencies directories are deleted to ensure the copy is as fast and efficient as possible. These are recreated on the instances when they start up.
-  {:.notice--info}
+    {:.notice--info}
 
 
 #### Deploy the Backend Instance
@@ -1262,15 +1265,15 @@ The first instance to be deployed will be the backend instance which will house 
 
    - Execute the following command to create an `e2-standard-2` instance that is configured to use the startup script. It is tagged as a backend instance so you can apply specific firewall rules to it later:
 
-  ```sh
-  gcloud compute instances create backend \
-      --zone=$ZONE \
-      --machine-type=e2-standard-2 \
-      --tags=backend \
-      --metadata=startup-script-url=https://storage.googleapis.com/fancy-store-$DEVSHELL_PROJECT_ID/startup-script.sh
-  ```
+    ```sh
+    gcloud compute instances create backend \
+        --zone=$ZONE \
+        --machine-type=e2-standard-2 \
+        --tags=backend \
+        --metadata=startup-script-url=https://storage.googleapis.com/fancy-store-$DEVSHELL_PROJECT_ID/startup-script.sh
+    ```
 
-  ![img1](/assets/images/gcp/gsp662/18.png)
+    ![img1](/assets/images/gcp/gsp662/18.png)
 
 
 #### Configure Connection to Backend
@@ -2231,25 +2234,24 @@ Your team has requested a new Cloud Storage bucket, so they can store their buil
 
 1. Create a Compute Engine Instance  
 
-Create a new Compute Engine instance named **my-instance** with the following configuration:
+    Create a new Compute Engine instance named **my-instance** with the following configuration:
 
-| Property         | Value                                |
-|-----------------|--------------------------------------|
-| **Series**      | E2                                   |
-| **Machine Type** | e2-medium                            |
-| **Boot Disk Type** | New balanced persistent disk      |
-| **Boot Disk Size** | 10 GB                             |
-| **Boot Disk Image** | Debian GNU/Linux 11 (bullseye)  |
-| **Firewall Rules** | Enable **Allow HTTP traffic**      |
+    | Property         | Value                                |
+    |-----------------|--------------------------------------|
+    | **Series**      | E2                                   |
+    | **Machine Type** | e2-medium                            |
+    | **Boot Disk Type** | New balanced persistent disk      |
+    | **Boot Disk Size** | 10 GB                             |
+    | **Boot Disk Image** | Debian GNU/Linux 11 (bullseye)  |
+    | **Firewall Rules** | Enable **Allow HTTP traffic**      |
 
 2. Create a new persistent disk named **mydisk** with a size of **200GB**.
 
 3. Attach the **mydisk** persistent disk to the **my-instance** Compute Engine instance.
 
+    ![img1](/assets/images/gcp/arc120/4.png)
 
-![img1](/assets/images/gcp/arc120/4.png)
-
-![img1](/assets/images/gcp/arc120/5.png)
+    ![img1](/assets/images/gcp/arc120/5.png)
 
 ----
 
