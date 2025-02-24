@@ -1,15 +1,15 @@
 ---
 title: | 
         **The Basics of Google Cloude Compute** <br>
-        ![Google Cloud Compute](https://img.shields.io/badge/google--cloud-compute--engine-blue)
-        ![Nginx](https://img.shields.io/badge/nginx-web--server-green)
-        ![Debian VM](https://img.shields.io/badge/debian-virtual--machine-red)
-        ![Node.js](https://img.shields.io/badge/node.js-runtime--environment-brightgreen)
-        ![Linux](https://img.shields.io/badge/linux-operating--system-black)
+        ![Google Cloud API](https://img.shields.io/badge/google--cloud-API-blue)
+        ![gcloud Speech-to-Text](https://img.shields.io/badge/gcloud-Speech--to--Text-yellow)
+        ![gcloud Text-to-Speech](https://img.shields.io/badge/gcloud-Text--to--Speech-orange)
+        ![Python](https://img.shields.io/badge/python-programming--language-blue)
+        
 
 permalink: /docs/cloud-speech-api/
 excerpt: "This module explain how to publish a content on this website"
-last_modified_at: 2025-02-23T21:36:18-04:00
+last_modified_at: 2025-02-24T21:36:18-04:00
 toc: true
 ---
 
@@ -1395,11 +1395,11 @@ export ZONE=$(gcloud compute instances list lab-vm --format 'csv[no-heading](zon
 gcloud compute ssh lab-vm --project=$DEVSHELL_PROJECT_ID --zone=$ZONE --quiet
 ```
 
-![img1](/assets/images/gcp/arc129/2.png)
+![img1](/assets/images/gcp/arc132/2.png)
 
 * Go to `Credentials` from [here](https://console.cloud.google.com/apis/credentials)
 
-![img1](/assets/images/gcp/arc129/1.png)
+![img1](/assets/images/gcp/arc132/1.png)
 
 ```bash
 export API_KEY=AIzaSyCYZ2qUCBPx-hmJj7zQWXJTE2OY51q-tyM
@@ -1419,7 +1419,7 @@ sudo chmod +x arc132.sh
 ./arc132.sh
 ```
 
-![img1](/assets/images/gcp/arc129/3.png)
+![img1](/assets/images/gcp/arc132/3.png)
 
 ---
 
@@ -1428,5 +1428,5 @@ sudo chmod +x arc132.sh
 You have successfully created synthetic speech from text using the Text-to-Speech API, transcribed speech to text using the Cloud Speech API, as well as translated text and detected a language with the Cloud Translation API.
 {:.notice--success}
 
-![img1](/assets/images/gcp/arc129/4.png)
+![img1](/assets/images/gcp/arc132/4.png)
 
