@@ -1269,7 +1269,7 @@ Create a JSON file called `redact-request.json` using the code that follows and 
 
 Save the `curl` command output in a file called `redact-response.txt`.
 
-Upload the output file, `redact-response.txt`, to the Cloud Storage Bucket `bucket_name_filled_after_lab_start`.
+Upload the output file, `redact-response.txt`, to the Cloud Storage Bucket `qwiklabs-gcp-03-0d4c7521e6fa-redact`.
 
 ```json
 {
@@ -1297,12 +1297,6 @@ Upload the output file, `redact-response.txt`, to the Cloud Storage Bucket `buck
     }
 }
 ```
-
-Copied!
-
-Click **Check my progress** to verify the objective.
-
-#### Redact sensitive data from text content
 
 ---
 
@@ -1337,15 +1331,12 @@ Create a de-identify template for unstructured data with the name `unstructured_
 | Transformation Rule | Replace      |
 | String value     | `[redacted]`   |
 
-Click **Check my progress** to verify the objective.
-
-#### Create DLP inspection templates
 
 ---
 
 ### Task 3. Configure a job trigger to run DLP inspection
 
-For this task, you configure a job trigger to run the Cloud Data Loss Prevention API. A few sample files have been provided for you in the Cloud Storage Bucket named `input bucket`.
+For this task, you configure a job trigger to run the Cloud Data Loss Prevention API. A few sample files have been provided for you in the Cloud Storage Bucket named `qwiklabs-gcp-03-0d4c7521e6fa-input`.
 
 Create a DLP inspection job trigger named `dlp_job` (in **Global (any region)**).
 
@@ -1353,18 +1344,39 @@ Create a DLP inspection job trigger named `dlp_job` (in **Global (any region)**)
 |-------------------------------------------------|----------------------------------------------------------|
 | Storage type                                   | Cloud Storage                                          |
 | Location Type                                  | Scan a bucket with optional include/exclude rules.     |
-| Cloud Storage Input location                   | `input bucket`                                         |
+| Cloud Storage Input location                   | `qwiklabs-gcp-03-0d4c7521e6fa-input`                                         |
 | Percentage of included objects scanned within the bucket | 100%                                 |
 | Sampling method                                | No sampling                                           |
 | Actions                                       | Toggle **Make a de-identify copy**. Enter the names of the two templates that you created into the appropriate boxes |
-| Cloud Storage output location                 | `output bucket`                                        |
+| Cloud Storage output location                 | `gs://qwiklabs-gcp-03-0d4c7521e6fa-output`                                        |
 | Schedule                                      | Create a trigger to run the job on a periodic schedule (**Weekly**) |
 
-Run DLP inspection and explore the various folders and files in the Cloud Storage Bucket `output bucket` to verify the redacted data.
+Run DLP inspection and explore the various folders and files in the Cloud Storage Bucket `gs://qwiklabs-gcp-03-0d4c7521e6fa-output` to verify the redacted data.
 
-Click **Check my progress** to verify the objective.
 
-#### Configure a job trigger to run DLP inspection
+---
+
+### Solution [here](https://youtu.be/9sWZC466FQk)
+
+Run the following Commands in CloudShell
+
+```bash
+curl -LO raw.githubusercontent.com/QUICK-GCP-LAB/2-Minutes-Labs-Solutions/refs/heads/main/Get%20Started%20with%20Sensitive%20Data%20Protection%20Challenge%20Lab/arc116-1.sh
+
+sudo chmod +x arc116-1.sh
+
+./arc116-1.sh
+```
+
+Run again the following Commands in CloudShell
+
+```bash
+curl -LO raw.githubusercontent.com/QUICK-GCP-LAB/2-Minutes-Labs-Solutions/refs/heads/main/Get%20Started%20with%20Sensitive%20Data%20Protection%20Challenge%20Lab/arc116-2.sh
+
+sudo chmod +x arc116-2.sh
+
+./arc116-2.sh
+```
 
 ---
 
