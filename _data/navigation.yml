@@ -83,7 +83,8 @@ docs:
         url: /docs/build-ai-apps-gemini/
       - title: "The Basics of Google Cloud Compute"
         url: /docs/gcp-basics/
-
+      - title: "Cloud Speech API: 3 Ways"
+        url: /docs/cloud-speech-api/
 
 
 # sidebar navigation list sample
