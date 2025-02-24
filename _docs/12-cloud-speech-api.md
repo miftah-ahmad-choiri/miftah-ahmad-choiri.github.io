@@ -809,7 +809,7 @@ Since later in this lab you use `curl` to send a request to the Translation API,
 
 5. Run the following in Cloud Shell. Be sure to replace `<your_api_key>` with the key you just copied:
 
-    ```sh
+    ```bash
     export API_KEY=YOUR_API_KEY
     ```
 
@@ -821,7 +821,7 @@ In this example, you translate the string "My name is Steve" into Spanish.
 
 - Pass the text to be translated, along with the API key environment variable, to the Translation API with the following `curl` command:
 
-    ```sh
+    ```bash
     TEXT="My%20name%20is%20Steve"
     curl "https://translation.googleapis.com/language/translate/v2?target=es&key=${API_KEY}&q=${TEXT}"
     ```
@@ -854,7 +854,7 @@ In addition to translating text, the Translation API can also detect the languag
 
 - Pass the text to be examined, along with the API key environment variable, to the Translation API with the following `curl` command:
 
-    ```sh
+    ```bash
     TEXT_ONE="Meu%20nome%20é%20Steven"
     TEXT_TWO="日本のグーグルのオフィスは、東京の六本木ヒルズにあります"
     curl -X POST "https://translation.googleapis.com/language/translate/v2/detect?key=${API_KEY}" -d "q=${TEXT_ONE}" -d "q=${TEXT_TWO}"
@@ -997,7 +997,7 @@ Since you use `curl` to send a request to the Speech-to-Text API, you need to ge
 
 7. In the shell (SSH) run the following, replacing `<your_api_key>` with the key you just copied:
 
-    ```sh
+    ```bash
     export API_KEY=<YOUR_API_KEY>
     ```
 
@@ -1009,7 +1009,7 @@ Since you use `curl` to send a request to the Speech-to-Text API, you need to ge
 
 1. Build your request to the API in a `request.json` file:
 
-    ```sh
+    ```bash
     touch request.json
     ```
 
@@ -1045,7 +1045,7 @@ Since you use `curl` to send a request to the Speech-to-Text API, you need to ge
 
 1. Pass your request body, along with the API key environment variable, to the API with the following `curl` command:
 
-    ```sh
+    ```bash
     curl -s -X POST -H "Content-Type: application/json" --data-binary @request.json \
     "https://speech.googleapis.com/v1/speech:recognize?key=${API_KEY}" > result.json
     ```
@@ -1054,7 +1054,7 @@ Since you use `curl` to send a request to the Speech-to-Text API, you need to ge
 
 2. To see the contents of the file:
 
-    ```sh
+    ```bash
     cat result.json
     ```
 
@@ -1111,14 +1111,14 @@ Try a **French** audio file - (for a preview, [listen here](https://storage.clou
 
 2. Call the Speech-to-Text API again:
 
-    ```sh
+    ```bash
     curl -s -X POST -H "Content-Type: application/json" --data-binary @request.json \
     "https://speech.googleapis.com/v1/speech:recognize?key=${API_KEY}" > result.json
     ```
 
     See the results:
 
-    ```sh
+    ```bash
     cat result.json
     ```
 
@@ -1208,11 +1208,11 @@ Each task is described in detail below, good luck!
 
 ### Task 2: Create Synthetic Speech from Text Using the Text-to-Speech API
 
-1. For this task, connect to the VM instance **`Instance name`** provisioned for you via **SSH**.
+1. For this task, connect to the VM instance **`lab-vm`** provisioned for you via **SSH**.
 
 2. Activate the virtual environment using the following command:
 
-    ```sh
+    ```bash
     source venv/bin/activate
     ```
 
@@ -1261,7 +1261,7 @@ Each task is described in detail below, good luck!
 
 6. Now, to create an audio file using the response you received from the Text-to-Speech API, run the following command from Cloud Shell:
 
-    ```sh
+    ```bash
     python tts_decode.py --input "synthesize-text.txt" --output "synthesize-text-audio.mp3"
     ```
 
@@ -1276,28 +1276,58 @@ Each task is described in detail below, good luck!
 **Note:** This lab uses a pre-recorded file available on Cloud Storage: `gs://cloud-samples-data/speech/corbeau_renard.flac`. You can listen to this file.
 {:.notice--info}
 
-1. For this task, connect to the VM instance **Instance name** provisioned for you via SSH.
+1. For this task, connect to the VM instance **`lab-vm`** provisioned for you via SSH.
 
-2. Using a text editor (such as `nano` or `vim`), create a file named `request.json` as your API request to transcribe the audio file available at the `gs://cloud-samples-data/speech/corbeau_renard.flac` location to **French**.
+2. Using a text editor (such as `nano` or `vim`), create a file named `speech_request.json` as your API request to transcribe the audio file available at the `gs://cloud-samples-data/speech/corbeau_renard.flac` location to **French**.
 
-3. Call the API request and store the result in a file named `transcription_result.json`.
+3. Call `speech_request.json` and store the result in a file named `response.json`.
 
 ---
 
 ### Task 4: Translate Text with the Cloud Translation API
 
-1. For this task, connect to the VM instance **Instance name** provisioned for you via SSH.
+1. For this task, connect to the VM instance **`lab-vm`** provisioned for you via SSH.
 
-2. Translate the `input_text.txt` sentence to the **English** language by calling the Cloud Translation API and store the result in the `translated_text.json` file.
+2. Translate the `これは日本語です。` sentence to the **English** language by calling the Cloud Translation API and store the result in the `translated_response.txt` file.
 
 
 ---
 
 ### Task 5: Detect a Language with the Cloud Translation API
 
-1. For this task, connect to the VM instance **Instance name** provisioned for you via SSH.
+1. For this task, connect to the VM instance **`lab-vm`** provisioned for you via SSH.
 
-2. Detect the language of the `unknown_text.txt` sentence by calling the Cloud Translation API and store the result in the `detected_language.json` file.
+2. Detect the language of the `Este%é%japonês.` sentence by calling the Cloud Translation API and store the result in the `detected_language.txt` file.
+
+
+#### Run the following Commands in CloudShell
+
+Solution [here](https://youtu.be/eQIWNzs-0NA)
+
+```bash
+export ZONE=$(gcloud compute instances list lab-vm --format 'csv[no-heading](zone)')
+gcloud compute ssh lab-vm --project=$DEVSHELL_PROJECT_ID --zone=$ZONE --quiet
+```
+
+* Go to `Credentials` from [here](https://console.cloud.google.com/apis/credentials)
+
+```bash
+export API_KEY=AIzaSyCYZ2qUCBPx-hmJj7zQWXJTE2OY51q-tyM
+export task_2_file_name="synthesize-text.txt"
+export task_3_request_file="speech_request.json"
+export task_3_response_file="response.json"
+export task_4_sentence="これは日本語です。"
+export task_4_file="translated_response.txt"
+export task_5_sentence="Este%é%japonês."
+export task_5_file="detected_response.txt"
+```
+```bash
+curl -LO raw.githubusercontent.com/QUICK-GCP-LAB/2-Minutes-Labs-Solutions/main/Cloud%20Speech%20API%203%20Ways%20Challenge%20Lab/arc132.sh
+
+sudo chmod +x arc132.sh
+
+./arc132.sh
+```
 
 ---
 
