@@ -89,6 +89,8 @@ docs:
         url: /docs/secure-biglake-data/
       - title: "Get Started with Sensitive Data Protection"
         url: /docs/sensitive-data-protection/
+      - title: "Automate Data Capture at Scale with Document AI"
+        url: /docs/sensitive-data-protection/
 
 
 # sidebar navigation list sample
