@@ -91,6 +91,10 @@ docs:
         url: /docs/sensitive-data-protection/
       - title: "Automate Data Capture at Scale with Document AI"
         url: /docs/automate-data-capture/
+      - title: "Explore Generative AI with the Vertex AI Gemini API"
+        url: /docs/gen-ai-with-gemini-api/
+      - title: "The Basics of Google Cloude Compute"
+        url: /docs/gemini-in-bigquery/
 
 
 # sidebar navigation list sample
