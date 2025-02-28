@@ -388,6 +388,86 @@ You should see output indicating that the libraries have been installed successf
 
 Take a minute to review the Python code in the sample file. You can use an editor of your choice, such as `vi` or `nano`, to review the code in the SSH session or you can use the command from the previous section to copy the example code into the Cloud Shell and use the Code Editor to view the source code if you prefer.
 
+```python
+import argparse
+from google.cloud import documentai_v1beta3 as documentai
+from google.cloud import storage
+from prettytable import PrettyTable
+
+parser = argparse.ArgumentParser()
+parser.add_argument("-P", "--project_id", help="Google Cloud Project ID")
+parser.add_argument("-D", "--processor_id", help="Document AI Processor ID")
+parser.add_argument("-F", "--file_name", help="Input file name", default="form.pdf")
+parser.add_argument("-L", "--location", help="Proocessor Location", default="us")
+args = parser.parse_args()
+
+def process_document(project_id, location, processor_id, file_path ):
+
+        # Instantiates a client
+        client = documentai.DocumentProcessorServiceClient()
+
+        # The full resource name of the processor, e.g.:
+        # projects/project-id/locations/location/processor/processor-id
+        # You must create new processors in the Cloud Console first
+        name = f"projects/{project_id}/locations/{location}/processors/{processor_id}"
+
+        # Read the file into memory
+        with open(file_path, "rb") as image:
+            image_content = image.read()
+        
+        # Create the document object 
+        document = {"content": image_content, "mime_type": "application/pdf"}
+
+        # Configure the process request
+        request = {"name": name, "document": document}
+
+        # Use the Document AI client synchronous endpoint to process the request
+        result = client.process_document(request=request)
+
+        return result.document
+
+document=process_document(args.project_id,args.location,args.processor_id,args.file_name  )
+
+print("Document processing complete.")
+# print the raw text
+print("Text: \n{}\n".format(document.text))
+
+# Define a function to retrieve an object dictionary for a named element
+def get_text(doc_element: dict, document: dict):
+    """
+    Document AI identifies form fields by their offsets
+    in document text. This function converts offsets
+    to text snippets.
+    """
+    response = ""
+    # If a text segment spans several lines, it will
+    # be stored in different text segments.
+    for segment in doc_element.text_anchor.text_segments:
+        start_index = (
+            int(segment.start_index)
+            if segment in doc_element.text_anchor.text_segments
+            else 0
+        )
+        end_index = int(segment.end_index)
+        response += document.text[start_index:end_index]
+    return response
+
+# Grab each key/value pair and their corresponding confidence scores.
+document_pages = document.pages
+
+print("Form data detected:\n")
+# For each page fetch each form field and display fieldname, value and confidence scores
+for page in document_pages:
+    print("Page Number:{}".format(page.page_number))
+    for form_field in page.form_fields:
+        fieldName=get_text(form_field.field_name,document)
+        nameConfidence = round(form_field.field_name.confidence,4)
+        fieldValue = get_text(form_field.field_value,document)
+        valueConfidence = round(form_field.field_value.confidence,4)
+        print(fieldName+fieldValue +"  (Confidence Scores: (Name) "+str(nameConfidence)+", (Value) "+str(valueConfidence)+")\n")
+```
+
+
 The first two code blocks import the required libraries and parse parameters to initialize variables that identify the Document AI processor and input data.
 
 ```python
@@ -1239,6 +1319,7 @@ gcloud functions deploy geocode-addresses \
   --env-vars-file=cloud-functions/geocode-addresses/.env.yaml \
   --trigger-topic=${GEO_CODE_REQUEST_PUBSUB_TOPIC}
 ```
+
 ----
 
 ### Task 6. Edit Environment Variables for Cloud Run Functions
@@ -1284,6 +1365,33 @@ gsutil cp gs://spls/gsp927/documentai-pipeline-demo/sample-files/* gs://${PROJEC
 2. Click on **process-invoices**.
 3. Click **Logs** to monitor events.
 4. Check **BigQuery** for extracted data.
+
+---
+Solution [here](https://youtu.be/Wz5YMXy9uq4)
+
+Run the following Commands in CloudShell
+
+```bash
+export LOCATION=
+```
+```bash
+curl -LO raw.githubusercontent.com/QUICK-GCP-LAB/2-Minutes-Labs-Solutions/refs/heads/main/Build%20an%20End-to-End%20Data%20Capture%20Pipeline%20using%20Document%20AI/gsp927-1.sh
+
+sudo chmod +x gsp927-1.sh
+
+./gsp927-1.sh
+```
+
+Run again the following Commands in CloudShell
+
+```bash
+curl -LO raw.githubusercontent.com/QUICK-GCP-LAB/2-Minutes-Labs-Solutions/refs/heads/main/Build%20an%20End-to-End%20Data%20Capture%20Pipeline%20using%20Document%20AI/gsp927-2.sh
+
+sudo chmod +x gsp927-2.sh
+
+./gsp927-2.sh
+```
+
 
 ----
 
@@ -1479,6 +1587,33 @@ Watch the events until you see a final event indicating that the function execut
 Once the pipeline has fully processed the documents, you will see that the form information extracted from the invoices by the Document AI processor has been written into the BigQuery table.
 
 > **Note:** To monitor progress, click **Logs** in the **Management** section of the Cloud Run function to view logs.
+
+
+---
+
+🚀 Lab Solution [Watch Here](https://youtu.be/DcJXiLcxkuI)
+
+
+⚠️ Disclaimer
+- **This script and guide are provided for  the educational purposes to help you understand the lab services and boost your career. Before using the script, please open and review it to familiarize yourself with Google Cloud services. Ensure that you follow 'Qwiklabs' terms of service and YouTube’s community guidelines. The goal is to enhance your learning experience, not to bypass it.**
+
+
+🚨Copy and run the below commands in Cloud Shell:
+
+```bash
+curl -LO raw.githubusercontent.com/Techcps/Google-Cloud-Skills-Boost/master/Automate%20Data%20Capture%20at%20Scale%20with%20Document%20AI:%20Challenge%20Lab/techcps367.sh
+sudo chmod +x techcps367.sh
+./techcps367.sh
+```
+
+🚨If you're not getting score on task 5 then run the below commands few times
+
+```bash
+export PROJECT_ID=$(gcloud config get-value core/project)
+gsutil -m cp -r gs://cloud-training/gsp367/* \
+~/document-ai-challenge/invoices gs://${PROJECT_ID}-input-invoices/
+```
+
 
 ---
 
