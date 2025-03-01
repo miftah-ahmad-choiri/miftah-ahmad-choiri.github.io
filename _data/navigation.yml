@@ -95,6 +95,8 @@ docs:
         url: /docs/gen-ai-with-gemini-api/
       - title: "The Basics of Google Cloude Compute"
         url: /docs/gemini-in-bigquery/
+      - title: "Workspace: Add-ons"
+        url: /docs/workspace-addons/
 
 
 # sidebar navigation list sample
