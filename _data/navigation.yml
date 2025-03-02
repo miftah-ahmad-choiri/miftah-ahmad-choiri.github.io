@@ -97,6 +97,21 @@ docs:
         url: /docs/gemini-in-bigquery/
       - title: "Workspace: Add-ons"
         url: /docs/workspace-addons/
+      - title: "Secure Software Delivery"
+        url: /docs/secure-software-delivery/
+      - title: "Develop GenAI Apps with Gemini and Streamlit"
+        url: /docs/genai-gemini-streamlit/
+      - title: "Gemini for Data Scientists and Analysts"
+        url: /docs/gemini-data-scientist-analyst/
+      - title: "Work with Gemini Models in BigQuery"
+        url: /docs/gemini-big-query/
+      - title: "Google Developer Essentials"
+        url: /docs/google-dev-essentials/
+      - title: "Prepare Data for ML APIs on Google Cloud"
+        url: /docs/prepare-data-ml-gcp/
+      - title: "Responsible AI for Developers: Privacy & Safety"
+        url: /docs/privacy-safety-ai/
+
 
 
 # sidebar navigation list sample
