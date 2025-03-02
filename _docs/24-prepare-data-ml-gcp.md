@@ -18,6 +18,11 @@ toc: true
 Lab Course [Link](https://www.cloudskillsboost.google/course_templates/631)
 
 
+<iframe src="/assets/images/gcp/pdf/privacy-safety-ai/1.pdf" width="100%" height="500px">
+</iframe>
+
+[Download PDF](/assets/images/gcp/pdf/privacy-safety-ai/1.pdf) 
+
 ---
 
 ## **Vertex AI: Qwik Start (GSP917)**
