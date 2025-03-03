@@ -11,6 +11,11 @@ permalink: /docs/gemini-big-query/
 excerpt: "This module explain how to publish a content on this website"
 last_modified_at: 2025-03-01T21:36:18-04:00
 toc: true
+sidebar:
+  - title: "Find Your Guideline"
+    image: "/assets/pictures/4.gif"
+    image_alt: "image"
+    text: "The wise guide does not give the right answers, but leads you to the right questions."
 ---
 
 ---
