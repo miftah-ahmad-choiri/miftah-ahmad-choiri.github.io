@@ -5,7 +5,7 @@ title: |
         ![GitHub](https://img.shields.io/badge/github-repository-black)
         ![GitHub Pages](https://img.shields.io/badge/github--pages-hosting-green)
 
-permalink: /docs/github-setup-guide-windows/
+permalink: /docs/github/github-setup-guide-windows/
 excerpt: "How to quickly install and setup Minimal Mistakes for use with GitHub Pages."
 last_modified_at: 2025-02-04T21:36:18-04:00
 redirect_from:
@@ -241,6 +241,14 @@ git pull git@github.com:miftah-ahmad-choiri/how-to-setup-github.git
 git remote -v
 git remote set-url origin git@github.com:miftah-ahmad-choiri/miftah-ahmad-choiri.github.io.git
 git pull origin master
+```
+
+**Pull Rebase**
+```bash
+git pull origin develop --rebase
+git add .
+git commit -m 'add'
+git push -u origin develop
 ```
 
 ---

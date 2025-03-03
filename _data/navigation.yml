@@ -42,11 +42,11 @@ docs:
       - title: "• Setup Guide"
         url: /docs/github/github-setup-guide-windows/
       - title: "• Releasing New Version"
-        url: /docs/github-version-release/
+        url: /docs/github/github-version-release/
       - title: "• Jekyll Structures"
-        url: /docs/how-to-edit-jekyll/
+        url: /docs/github/how-to-edit-jekyll/
       - title: "• Publish a Content"
-        url: /docs/publish-content/
+        url: /docs/github/publish-content/
   - title: Redhat Enterprise Linux🎩
     children:
       - title: "• Wait in Progress"
