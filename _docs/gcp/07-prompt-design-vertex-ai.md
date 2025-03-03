@@ -13,11 +13,10 @@ toc: true
 
 ---
 
-*********************************
 
 ## **1. GENERATIVE AI WITH VERTEX AI: PROMPT DESIGN (GSP1151)**
 
-<hr style="height: 5px; background-color: black; border: none;">
+---
 
 ### Overview
 This lab explores prompt engineering and best practices for designing effective prompts to improve the quality of your LLM-generated responses. You'll learn how to craft prompts that are concise, specific, and well-defined, focusing on one task at a time. The lab also covers advanced techniques like turning generative tasks into classification tasks and using examples to enhance response quality. For further exploration, refer to the official documentation on [prompt design](https://cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/introduction-prompt-design).
@@ -111,6 +110,8 @@ In this lab, you will learn how to:
 
 ---
 ### Task1. Open the notebook in Vertex AI Workbench
+---
+
 1. In the Google Cloud console, on the **Navigation menu** (Navigation menu icon), click **Vertex AI** > **Workbench**.
    ![info1](/assets/images/gcp/2.png)
 
@@ -890,9 +891,12 @@ Similar to classical model training, the quality and distribution of the example
 **Congratulations**! In this lab you learned prompt engineering best practices using Generative AI with Google Gemini. You explored use cases which follow the best practices of being concise, specific, well-define, providing examples and asking one at a time when using LLMs to generate responses.
 {: .notice--success}
 
-----
+
+<hr style="height: 5px; background-color: black; border: none;">
+
 
 ## **2. Get Started with Vertex AI Studio (GSP1154)**
+---
 
 ### Overiview
 **Vertex AI** is a comprehensive machine learning development platform that provides both **predictive** and **generative AI** capabilities. It allows you to train, evaluate, and deploy predictive machine learning models for forecasting purposes. Additionally, you can utilize the platform to discover, tune, and serve generative AI models to produce content.
