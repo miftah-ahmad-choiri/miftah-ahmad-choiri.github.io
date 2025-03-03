@@ -14,7 +14,7 @@ header:
       url: "/docs/"
       class: "btn btn-primary" 
 excerpt: >
-  An Artificial Brain for My Mind. Think Smart with Me! <br /> <br />
+  An Artificial Brain for My Mind. Think Smart with Me! <br /> <br /> <br /> <br />
 
 intro:
   - excerpt: |
