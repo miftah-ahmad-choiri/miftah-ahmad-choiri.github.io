@@ -40,7 +40,7 @@ docs:
   - title: Start Your Github Journey🔃
     children:
       - title: "• Setup Guide"
-        url: /docs/github-setup-guide-windows/
+        url: /docs/github/github-setup-guide-windows/
       - title: "• Releasing New Version"
         url: /docs/github-version-release/
       - title: "• Jekyll Structures"
