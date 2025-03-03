@@ -8,7 +8,7 @@ hidden: true
 header:
   overlay_color: "#5e616c"
   #overlay_filter: rgba(91, 65, 182, 0.5)
-  overlay_image: /assets/pictures/20.jpeg
+  overlay_image: /assets/pictures/22.jpeg
   actions:
     - label: "<i class='fas fa-arrow-right'></i> Let's Go"
       url: "/docs/"
@@ -27,7 +27,7 @@ intro:
       💡 **Let’s build, automate, and innovate together!** ⚙️🚀  
 
 feature_row:
-  - image_path: /assets/pictures/18.png
+  - image_path: /assets/pictures/21.png
     alt: "MyDocs-Banks📄"
     title: "MyDocs-Banks📄"
     excerpt: "I provide well-structured documentation for automation and system configurations across enterprise environments. My documentation covers Red Hat, AIX, AS/400, Cisco MDS, Brocade switches, HMC, Storwize, and IBM DS8000, ensuring efficient troubleshooting, setup, and management of IT infrastructure."
