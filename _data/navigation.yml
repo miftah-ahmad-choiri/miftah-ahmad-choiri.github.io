@@ -35,6 +35,12 @@ main:
     #target: _blank
 
 
+sidebar:
+  - title: "Find Your Guideline"
+    image: "/assets/pictures/4.gif"
+    image_alt: "image"
+    text: "The wise guide does not give the right answers, but leads you to the right questions."
+
 # documentation links
 docs:
   - title: Start Your Github Journey🔃
