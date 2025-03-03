@@ -39,77 +39,77 @@ main:
 docs:
   - title: Start Your Github Journey🔃
     children:
-      - title: "Setup Guide"
+      - title: "• Setup Guide"
         url: /docs/github-setup-guide-windows/
-      - title: "Releasing New Version"
+      - title: "• Releasing New Version"
         url: /docs/github-version-release/
-      - title: "Jekyll Structures"
+      - title: "• Jekyll Structures"
         url: /docs/how-to-edit-jekyll/
-      - title: "Publish a Content"
+      - title: "• Publish a Content"
         url: /docs/publish-content/
   - title: Redhat Enterprise Linux🎩
     children:
-      - title: "Wait in Progress"
+      - title: "• Wait in Progress"
         url: /404.html
   - title: IBM AS/400📟
     children:
-      - title: "Wait in Progress"
+      - title: "• Wait in Progress"
         url: /404.html
   - title: Redhat OpenShift📦
     children:
-      - title: "Wait in Progress"
+      - title: "• Wait in Progress"
         url: /404.html
   - title: IBM Software📚
     children:
-      - title: "Wait in Progress"
+      - title: "• Wait in Progress"
         url: /404.html
   - title: IBM AIX🌐
     children:
-      - title: "Full-Guide Replace Disk AIX/VIOS"
+      - title: "• Full-Guide Replace Disk AIX/VIOS"
         url: /docs/aix-replace-disks/
-      - title: "Upgrading, Update, Backup HMC IBM"
+      - title: "• Upgrading, Update, Backup HMC IBM"
         url: /docs/upgrade-hmc/
   - title: Red Hat Ansible🤖
     children:
-      - title: "How to Install AWX"
+      - title: "• How to Install AWX"
         url: /docs/how-to-install-awx
   - title: Google Cloud
     children:
-      - title: "Introduction to Generative AI💡"
+      - title: "• Introduction to Generative AI💡"
         url: /docs/intro-gen-ai/
-      - title: "Prompt Design in Vertex AI"
+      - title: "• Prompt Design in Vertex AI"
         url: /docs/prompt-design-vertex-ai/
-      - title: "Build AI Apps with Gemini"
+      - title: "• Build AI Apps with Gemini"
         url: /docs/build-ai-apps-gemini/
-      - title: "The Basics of Google Cloud Compute"
+      - title: "• The Basics of Google Cloud Compute"
         url: /docs/gcp-basics/
-      - title: "Cloud Speech API: 3 Ways"
+      - title: "• Cloud Speech API: 3 Ways"
         url: /docs/cloud-speech-api/
-      - title: "Secure BigLake Data"
+      - title: "• Secure BigLake Data"
         url: /docs/secure-biglake-data/
-      - title: "Get Started with Sensitive Data Protection"
+      - title: "• Get Started with Sensitive Data Protection"
         url: /docs/sensitive-data-protection/
-      - title: "Automate Data Capture at Scale with Document AI"
+      - title: "• Automate Data Capture at Scale with Document AI"
         url: /docs/automate-data-capture/
-      - title: "Explore Generative AI with the Vertex AI Gemini API"
+      - title: "• Explore Generative AI with the Vertex AI Gemini API"
         url: /docs/gen-ai-with-gemini-api/
-      - title: "The Basics of Google Cloude Compute"
+      - title: "• The Basics of Google Cloude Compute"
         url: /docs/gemini-in-bigquery/
-      - title: "Workspace: Add-ons"
+      - title: "• Workspace: Add-ons"
         url: /docs/workspace-addons/
-      - title: "Secure Software Delivery"
+      - title: "• Secure Software Delivery"
         url: /docs/secure-software-delivery/
-      - title: "Develop GenAI Apps with Gemini and Streamlit"
+      - title: "• Develop GenAI Apps with Gemini and Streamlit"
         url: /docs/genai-gemini-streamlit/
-      - title: "Gemini for Data Scientists and Analysts"
+      - title: "• Gemini for Data Scientists and Analysts"
         url: /docs/gemini-data-scientist-analyst/
-      - title: "Work with Gemini Models in BigQuery"
+      - title: "• Work with Gemini Models in BigQuery"
         url: /docs/gemini-big-query/
-      - title: "Google Developer Essentials"
+      - title: "• Google Developer Essentials"
         url: /docs/google-dev-essentials/
-      - title: "Prepare Data for ML APIs on Google Cloud"
+      - title: "• Prepare Data for ML APIs on Google Cloud"
         url: /docs/prepare-data-ml-gcp/
-      - title: "Responsible AI for Developers: Privacy & Safety"
+      - title: "• Responsible AI for Developers: Privacy & Safety"
         url: /docs/privacy-safety-ai/
 
 
