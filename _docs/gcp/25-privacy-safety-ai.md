@@ -18,121 +18,123 @@ toc: true
 
 Lab Course [Link](https://www.cloudskillsboost.google/course_templates/1036)
 
-## **Overview of AI Privacy**
+<hr style="height: 5px; background-color: black; border: none;">
+
+## **1. OVERVIEW OF AI PRIVACY**
 
 
 {% include video id="Jhrv1aqzBFc" provider="youtube" %}
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Privacy in Training Data: De-identification techniques**
+## **2. PRIVACY IN TRAINING DATA: DE-IDENTIFICATION TECHNIQUES**
 
 
 {% include video id="u7q_rqepj88" provider="youtube" %}
 
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Privacy in Training Data: Randomization techniques**
+## **3. PRIVACY IN TRAINING DATA: RANDOMIZATION TECHNIQUES**
 
 
 {% include video id="2I07r046N0U" provider="youtube" %}
 
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Privacy in Machine Learning Training: DP-SGD**
+## **4. PRIVACY IN MACHINE LEARNING TRAINING: DP-SGD**
 
 
 {% include video id="L8NxHH2_5TY" provider="youtube" %}
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Privacy in Machine Learning Training: Federated Learning**
+## **5. PRIVACY IN MACHINE LEARNING TRAINING: FEDERATED LEARNING**
 
 
 {% include video id="hhig8z3IfHg" provider="youtube" %}
 
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **System Security on Google Cloud**
+## **6. SYSTEM SECURITY ON GOOGLE CLOUD**
 
 
 {% include video id="5n4aydIGThM" provider="youtube" %}
 
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **System Security on Gen AI**
+## **7. SYSTEM SECURITY ON GEN AI**
 
 
 {% include video id="Jhj4RB1-AUo" provider="youtube" %}
 
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Lab: Differential Privacy in Machine Learning with TensorFlow Privacy**
+## **8. LAB: DIFFERENTIAL PRIVACY IN MACHINE LEARNING WITH TENSORFLOW PRIVACY**
 
 
 {% include video id="iJLI24StZvo" provider="youtube" %}
 
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
 
-## **Differential Privacy in Machine Learning with TensorFlow Privacy (GSP9997)**
+## **9. DIFFERENTIAL PRIVACY IN MACHINE LEARNING WITH TENSORFLOW PRIVACY (GSP9997)**
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
 
-## **Overview AI Safety**
+## **10. OVERVIEW AI SAFETY**
 
 {% include video id="vpCFcCJv1XI" provider="youtube" %}
 
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Safety Evaluation**
+## **11. SAFETY EVALUATION**
 
 {% include video id="G9CFaxOXYZ0" provider="youtube" %}
 
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Harms Evaluation**
+## **12. HARMS EVALUATION**
 
 {% include video id="OcrK0RpsIXA" provider="youtube" %}
 
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Model Training for Safety: RLHF**
+## **13. MODEL TRAINING FOR SAFETY: RLHF**
 
 {% include video id="gW6JP2f9DIg" provider="youtube" %}
 
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Safety in Google Cloud GenAI**
+## **14. SAFETY IN GOOGLE CLOUD GENAI**
 
 {% include video id="SApdKkUj1Ok" provider="youtube" %}
 
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Lab: Safeguarding with Vertex AI Gemini API**
+## **15. LAB: SAFEGUARDING WITH VERTEX AI GEMINI API**
 
 {% include video id="p71KNl_lMw4" provider="youtube" %}
 
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Safeguarding with Vertex AI Gemini API (GSP9996)**
+## **16. SAFEGUARDING WITH VERTEX AI GEMINI API (GSP9996)**
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Quiz**
+## **17. QUIZ**
 
 
 

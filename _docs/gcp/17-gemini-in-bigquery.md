@@ -14,19 +14,19 @@ toc: true
 
 ---
 
-## **Use Case**
+## **1. USE CASE**
 
 {% include video id="ULJ_sMbFd1g" provider="youtube" %}
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Explore and Prepare Data**
+## **2. EXPLORE AND PREPARE DATA**
 
 {% include video id="fkmbLcz6Svg" provider="youtube" %}
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Explore Data with Gemini in BigQuery (GSP1257)**
+## **3. EXPLORE DATA WITH GEMINI IN BIGQUERY (GSP1257)**
 
 ### Overview
 
@@ -109,9 +109,9 @@ Finally, you will have time to reflect on what you have learned in this lab and 
     ![info1](/assets/images/gcp/info1.png)
     {: .notice--info}
 
----
 
 ### Task 1. Generate data insights on the order item table
+---
 
 In this task, you will enable data insights on the `order_item` table within the `coffee_on_wheels` dataset.
 
@@ -130,6 +130,7 @@ Data insights is a tool for anyone who wants to explore their data and gain insi
 {:.notice--info}
 
 ### Task 2. Use table explorer to review details of the location table
+---
 
 While you are waiting for the insights to be generated, you will use the [table explorer](https://cloud.google.com/bigquery/docs/table-explorer) feature of BigQuery to review the `location` table included with the `coffee_on_wheels` dataset. You will also build a basic query with the table explorer to find all fields associated with *Coffee Cart Connection, Empire Espresso, and Street Sips* trucks.
 
@@ -194,6 +195,7 @@ Here are some key things to remember about table explorer:
 Considering your data and use cases for BigQuery, how would you use the table explorer feature?
 
 ### Task 3. Query the order item table without code
+---
 
 The insights you generated in an earlier task are now ready. In this task, you will use a prompt generated from these insights to query the `order_item` table without using code.
 
@@ -297,6 +299,7 @@ Here are some key things to remember about BigQuery insights:
 2. Considering your data and use cases for BigQuery, how would you use the data insights feature?
 
 ### Task 4. Review the menu and order tables
+---
 
 In this task, you explore the remaining menu and order tables in the coffee_on_wheels dataset and answer the questions below using your [Lab Journal](https://storage.mtls.cloud.google.com/spls/gsp1257/gsp1257_Lab_Journal.pdf). Now that you have learned about the data insights and table explorer tools, we suggest you use them to answer these questions, or even write your own queries if you choose to do so. However, be mindful of the remaining time left for this lab. Once the clock gets to 5 minutes left, we suggest you confirm you have completed all progress checks to get credit for completing the lab.
 
@@ -318,18 +321,17 @@ Once you have answered the questions, feel free to review the [Lab Journal Solut
 In this lab, you learned how to generate data insights, and use these insights to query the coffee_on_wheels dataset without code. You also learned how to use the table explorer to explore the location table and generate basic queries without code. Finally, you considered how to apply these features to your own data and use cases with BigQuery.
 
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
 
-## **Assist Code Deployment**
+## **4. ASSIST CODE DEPLOYMENT**
 
 {% include video id="TRH5sAi0xWQ" provider="youtube" %}
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
 
-
-## **Develop Code with Gemini in BigQuery (GSP1258)** 
+## **5. DEVELOP CODE WITH GEMINI IN BIGQUERY (GSP1258)** 
 
 ### Overview
 
@@ -416,9 +418,9 @@ Finally, you will have time to reflect on what you have learned in this lab and 
     {: .notice--info}
 
 
----
 
 ### Task 1. Review menu and order_item tables
+---
 
 In this task, you review the `menu` and `order_item` table schemas.
 
@@ -444,9 +446,9 @@ In this task, you review the `menu` and `order_item` table schemas.
 3. Answer this question:
    - Which fields use `INTEGER` as the data type?
 
----
 
 ### Task 2. Generate a SQL query using a natural language prompt
+---
 
 In this task, you generate a SQL query using a natural language prompt to find menu IDs and total revenue for the top three and bottom three items in the menu by total revenue.
 
@@ -510,9 +512,9 @@ In this task, you generate a SQL query using a natural language prompt to find m
 1. Considering your data and use cases for **BigQuery**, How would you use the **code generation** feature?
 2. How would you use the **code explanation** feature?
 
----
 
 ### Task 3. Transform a query
+---
 
 The query you created in the previous task is helpful, but it is missing some critical information. For example, you don't know the menu item name, and there are extraneous decimal places in the `total_revenue` column.
 
@@ -633,9 +635,9 @@ In this task, you use the transform feature of Gemini to write prompts to addres
 - **What is the total revenue generated by Clouds of Coffee Delight?**
 - **Considering your data and use cases for BigQuery, how would you use the code generation feature?**
 
----
 
 ### Task 4. Code review, debugging, and suggestions
+---
 
 When you use Gemini with BigQuer,y you also have the ability to review and debug code. When you may have an error, you can use Gemini to suggest changes to improve your code, so there aren't errors.
 
@@ -809,21 +811,22 @@ This is very close to what your teammate wanted. However, there is one small mis
 
 2. Considering your data and use cases, how would you use the code review and suggestion features to fix code you are struggling with?  
 
----
 
 ### Congratulations!
+---
+
 
 You have generated a SQL query with a natural language prompt and used code explanation to understand queries you are unfamiliar with. You have also used Gemini to help you review and debug code. You asked Gemini to help you with suggestions to improve or even fix your code. You are becoming more experienced with using Gemini in BigQuery to author queries with and without code. Now you even have experience troubleshooting queries. You are becoming more confident with BigQuery each day and can use Gemini to supplement your knowledge and skills.
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Discover and Visualize Workflow**
+## **6. DISCOVER AND VISUALIZE WORKFLOW**
 
 {% include video id="zIEQeFzlXQo" provider="youtube" %}
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Use Data Canvas to Visualize and Design Queries(GSP1259)** 
+## **7. USE DATA CANVAS TO VISUALIZE AND DESIGN QUERIES(GSP1259)** 
 
 ### Overview
 
@@ -906,9 +909,9 @@ Finally, you have time to reflect on what you have learned in this lab and consi
     ![info1](/assets/images/gcp/info1.png)
     {: .notice--info}
 
----
 
 ### Task 1: Join the Menu, Orders, and Order Item Tables  
+---
 
 In this task, you use Data Canvas to find the `menu`, `orders`, and `order_item` tables and join them so that you can create insights from them.  
 
@@ -988,9 +991,9 @@ Now that you have found the tables, you can join them.
    - You see each menu item listed with key fields including `item_name`, `item_price`, `order_datetime`, and `item_total`.  
    - Use these fields within this new table to calculate total revenue for each item in 2024 in the next task.  
 
----
 
 ### Task 2: Calculate the Total Revenue for All Menu Items in 2024  
+---
 
 In this task, you use the joined tables to calculate the total revenue for all menu items in 2024 using a Gemini prompt resulting in an SQL query.  
 
@@ -1037,6 +1040,7 @@ Beneath the results of the join query, you see options to branch another node in
   
 
 ### Task 3: Create a Bar Chart Displaying the Top 10 Items by Total Revenue  
+---
 
 In this task, you use the results from the total revenue calculation to create a bar chart of the top 10 items by total revenue.  
 
@@ -1101,9 +1105,9 @@ Now that the chart is created, you also get a summary. To view the chart summary
 
 2. Why is **Brewhaha Bonanza** displayed as the highest total revenue item in the chart and not **Coffee-infused Avocado Toast**?  
 
----
 
 ### Task 4. Identify Two Menu Items Generating the Same Revenue
+---
 
 In this task, you identify two menu items generating the same revenue from the total revenue calculation you completed in an earlier task.
 
@@ -1153,6 +1157,7 @@ Review the results. Notice two results are displayed, with the item names, size,
 
 
 ### Task 5. Collaborate with Others
+---
 
 In this task, you act as two different users, the owner of the data canvas and another user you want to share the data canvas with. First, you review the roles assigned to the owner and the other user within this lab environment. Then, you save and share the data canvas you just created. You also export the data canvas to a notebook. Finally, you access the data canvas as the other user.
 
@@ -1232,24 +1237,24 @@ From here, the other can review the data canvas to understand the workflow you d
 - How would you manage access to the data canvases your team creates?
 
 
----
 
 ### Congratulations!
+---
 
 You have successfully used data canvas to find and join tables from the **coffee_on_wheels** dataset. You also successfully calculated the total revenue for all menu items in the dataset, and visualized these using a bar chart directly in **data canvas**. Then, you successfully found two items with the same revenue from this calculation. Finally, you successfully used IAM roles in **data canvas** to save a data canvas in your project and share it with others.
 
 Consider what you have learned in this lab, and share it with others on your team to identify how you can collaborate with each other using **data canvas**.
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Summary**
+## **8. SUMMARY**
 
 {% include video id="_o-iphsDx_E" provider="youtube" %}
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
 
-## **Quiz**
+## **9. QUIZ**
 
 ### Overview
 

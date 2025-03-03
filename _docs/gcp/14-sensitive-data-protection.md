@@ -14,7 +14,7 @@ toc: true
 
 ---
 
-## **Cloud Data Loss Prevention API: Qwik Start (GSP107)**
+## **1. CLOUD DATA LOSS PREVENTION API: QWIK START (GSP107)**
 
 ### Overview
 
@@ -156,9 +156,8 @@ Cloud Shell is a virtual machine that is loaded with development tools. It offer
     export PROJECT_ID=$DEVSHELL_PROJECT_ID
     ```
 
----
-
 ### Task 1. Inspect a string for sensitive information
+---
 
 This section shows you how to ask the service to scan sample text using the `projects.content.inspect` REST method. The JSON file you create contains an `InspectConfig` and a `ContentItem` object.
 
@@ -252,6 +251,7 @@ gsutil cp inspect-output.txt gs://bucket_name_filled_after_lab_start
 ```
 
 ### Task 2. Redacting sensitive data from text content
+---
 
 The DLP API can automatically redact sensitive data from text files instead of giving you a list of findings.
 
@@ -339,12 +339,14 @@ gsutil cp redact-output.txt gs://bucket_name_filled_after_lab_start
 ```
 
 ### Congratulations!
+---
+
 
 You used the Cloud Data Loss Prevention (DLP) API to inspect for, and then redact sensitive data from text content.
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Redacting Critical Data with Sensitive Data Protection (GSP864)** 
+## **2. REDACTING CRITICAL DATA WITH SENSITIVE DATA PROTECTION (GSP864)** 
 
 ### Overview
 
@@ -494,9 +496,9 @@ Cloud Shell is a virtual machine that is loaded with development tools. It offer
     gcloud config set compute/region Region
     ```
 
----
 
 ### Task 1. Clone the repo and enable APIs
+---
 
 #### Clone the Repository
 In Cloud Shell, run the following command to download the Cloud Data Loss Prevention Node.js Client repository:
@@ -534,9 +536,9 @@ gcloud services enable dlp.googleapis.com cloudkms.googleapis.com \
 --project $PROJECT_ID
 ```
 
----
 
 ### Task 2. Inspect strings and files
+---
 
 The `samples` directory of the project downloaded in the preceding step contains several JavaScript files that make use of the different functionality of the DLP API. The file `inspectString.js` inspects a provided string for sensitive info types.
 
@@ -653,9 +655,9 @@ gsutil cp inspected-string.txt gs://bucket_name_filled_after_lab_start
 gsutil cp inspected-file.txt gs://bucket_name_filled_after_lab_start
 ```
 
----
 
 ### Task 3. De-identification
+---
 
 Beyond inspecting and detecting sensitive data, you can also use Sensitive Data Protection to perform de-identification using the DLP API. De-identification is the process of removing identifying information from data. The API detects sensitive data as defined by info types, then uses a de-identification transformation to mask, delete, or otherwise obscure the data.
 
@@ -716,9 +718,9 @@ gsutil cp de-identify-output.txt gs://bucket_name_filled_after_lab_start
 
 Click **Check my progress** to verify the objective.
 
----
 
 ### Task 4. Redact strings and images
+---
 
 Another method of obfuscating sensitive information is redaction. Redaction replaces a match with the info type it's identified to match with.
 
@@ -834,15 +836,15 @@ gsutil cp redacted-email.png gs://bucket_name_filled_after_lab_start
 
 Click **Check my progress** to verify the objective.
 
----
 
 ### Congratulations!
+---
 
 The Cloud Data Loss Prevention (DLP) API is a powerful tool that provides access to a powerful sensitive data inspection, classification, and de-identification platform. You used the DLP API to inspect strings and files for multiple info types, and then redact data from a string and an image.
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Creating a De-identified Copy of Data in Cloud Storage (GSP1073)** 
+## **3. CREATING A DE-IDENTIFIED COPY OF DATA IN CLOUD STORAGE (GSP1073)** 
 
 ### Overview
 
@@ -923,9 +925,9 @@ In this lab, you:
     {: .notice--info}
 
 
----
 
 ### Task 1. Create De-Identify Templates
+---
 
 #### Create a Template for Unstructured Data
 
@@ -991,9 +993,9 @@ In this section, you configure and create a de-identify template for structured 
 
 14. Click **Create**.
 
----
 
 ### Task 2. Create a DLP Inspection Job Trigger
+---
 
 In the Google Cloud console, navigate back to the Data Loss Prevention page.
 
@@ -1047,8 +1049,8 @@ You should now have a job under **Inspection > Job Triggers**.
 
 
 
----
 ### Task 3. Run DLP Inspection and Review Results
+---
 
 In the Google Cloud console, navigate back to the Data Loss Prevention page.
 
@@ -1091,14 +1093,14 @@ For further exploration, you can try the following:
 - Change the settings in the de-identification templates to try out different ways to de-identify and transform data. See the transformation reference [here](https://cloud.google.com/dlp/docs/concepts-transformation). You can also try turning on different tokenization or pseudonymization methods using **Cloud KMS**.
 - Try editing the **DLP Job Trigger** and adjusting what kind of data is being inspected, then run another job by clicking **Run Now** from the triggers page. For example, if you turn off **PERSON_NAME** detection, the names should no longer be redacted.
 
-### Congratulations!
+#### Congratulations!
 
 Congratulations, in this lab you created **Sensitive Data Protection de-identification templates** for structured and unstructured data, configured a **Job Trigger** with **De-identify Findings Action** enabled, created an **Inspection Job**, and viewed the results of the inspection job.
 
 
----
 
 ### Task 4. Redact strings and images
+---
 
 Another method of obfuscating sensitive information is redaction. Redaction replaces a match with the info type it's identified to match with.
 
@@ -1212,17 +1214,17 @@ gsutil cp redacted-phone.png gs://bucket_name_filled_after_lab_start
 gsutil cp redacted-email.png gs://bucket_name_filled_after_lab_start
 ```
 
----
 
 ### Congratulations!
+---
 
 The Cloud Data Loss Prevention (DLP) API is a powerful tool that provides access to a powerful sensitive data inspection, classification, and de-identification platform. You used the DLP API to inspect strings and files for multiple info types, and then redact data from a string and an image.
 
 
 
+<hr style="height: 5px; background-color: black; border: none;">
 
----
-## **Get Started with Sensitive Data Protection: Challenge Lab (ARC116)**
+## **4. GET STARTED WITH SENSITIVE DATA PROTECTION: CHALLENGE LAB (ARC116)**
 
 ### Overview
 
@@ -1259,10 +1261,10 @@ You need to:
 
 Each task is described in detail below, good luck!
 
-----
 
 
 ### Task 1. Redact sensitive data from text content
+---
 
 To complete this task, set an environmental variable for your project ID and obtain an authorization token in Cloud Shell.
 
@@ -1299,9 +1301,9 @@ Upload the output file, `redact-response.txt`, to the Cloud Storage Bucket `qwik
 }
 ```
 
----
 
 ### Task 2. Create DLP inspection templates
+---
 
 For this task, you create two de-identification templates that are used to inspect structured and unstructured data, respectively.
 
@@ -1333,9 +1335,9 @@ Create a de-identify template for unstructured data with the name `unstructured_
 | String value     | `[redacted]`   |
 
 
----
 
 ### Task 3. Configure a job trigger to run DLP inspection
+---
 
 For this task, you configure a job trigger to run the Cloud Data Loss Prevention API. A few sample files have been provided for you in the Cloud Storage Bucket named `qwiklabs-gcp-03-0d4c7521e6fa-input`.
 
@@ -1355,9 +1357,10 @@ Create a DLP inspection job trigger named `dlp_job` (in **Global (any region)**)
 Run DLP inspection and explore the various folders and files in the Cloud Storage Bucket `gs://qwiklabs-gcp-03-0d4c7521e6fa-output` to verify the redacted data.
 
 
----
+
 
 ### Solution [here](https://youtu.be/9sWZC466FQk)
+---
 
 Run the following Commands in CloudShell
 
@@ -1379,10 +1382,10 @@ sudo chmod +x arc116-2.sh
 ./arc116-2.sh
 ```
 
----
+
 
 ### Congratulations!
-
+---
 
 
 

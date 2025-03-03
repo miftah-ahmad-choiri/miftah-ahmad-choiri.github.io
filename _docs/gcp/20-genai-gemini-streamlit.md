@@ -18,15 +18,25 @@ toc: true
 
 Lab Course [Link](https://www.cloudskillsboost.google/course_templates/978)
 
-## **Getting Started with the Gemini API in Vertex AI with cURL (GSP1228)**
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Introduction to Function Calling with Gemini (GSP1227)**
+## **1. GETTING STARTED WITH THE GEMINI API IN VERTEX AI WITH CURL (GSP1228)**
 
-## **Getting Started with the Gemini API in Vertex AI (GSP1209)**
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Utilize the Streamlit Framework with Cloud Run and the Gemini API in Vertex AI (GSP1229)**
+## **2. INTRODUCTION TO FUNCTION CALLING WITH GEMINI (GSP1227)**
 
-## **Develop GenAI Apps with Gemini and Streamlit: Challenge Lab (GSP517)**
+<hr style="height: 5px; background-color: black; border: none;">
+
+## **3. GETTING STARTED WITH THE GEMINI API IN VERTEX AI (GSP1209)**
+
+<hr style="height: 5px; background-color: black; border: none;">
+
+## **4. UTILIZE THE STREAMLIT FRAMEWORK WITH CLOUD RUN AND THE GEMINI API IN VERTEX AI (GSP1229)**
+
+<hr style="height: 5px; background-color: black; border: none;">
+
+## **5. DEVELOP GENAI APPS WITH GEMINI AND STREAMLIT: CHALLENGE LAB (GSP517)**
 
 
 

@@ -14,7 +14,7 @@ toc: true
 
 ---
 
-## **Create and Test a Document AI Processor (GSP924)**
+## **1. CREATE AND TEST A DOCUMENT AI PROCESSOR (GSP924)**
 
 ### Overview
 
@@ -148,10 +148,8 @@ Cloud Shell is a virtual machine that is loaded with development tools. It offer
 
 
 
----
-
-
 ### Task 1. Enable the Cloud Document AI API
+---
 
 In this task, you will enable the Document AI API and create and test a general form processor. The general form processor will process any type of document and extract all the text content it can identify in the document. It is not limited to printed text; it can handle handwritten text and text in any orientation, supports multiple languages, and understands how form data elements are related to each other so that you can extract key/value pairs for form fields that have text labels.
 
@@ -166,6 +164,7 @@ Before you can begin using Document AI, you must enable the API.
 
 
 ### Task 2. Create and test a general form processor
+---
 
 Next, you will create a Document AI processor using the **Document AI Form Parser**.
 
@@ -202,6 +201,7 @@ Next, you will upload the sample form you downloaded to your **form-parser** pro
 In this task, you will test a **Document AI general form processor** by making API calls from the command line.
 
 ### Task 3. Set up the lab instance
+---
 
 In this section, you will set up the lab instance to use the **Document AI API**.
 
@@ -302,9 +302,9 @@ echo '"}}' >> temp.json
 cat temp.json | tr -d \n > request.json
 ```
 
----
 
 ### Task 4. Make a Synchronous Process Document Request Using curl
+---
 
 In this task, you process the sample document by making a call to the synchronous Document AI API endpoint using `curl`.
 
@@ -356,9 +356,9 @@ The JSON file is quite large as it includes the base64 encoded source document a
 
 Check that a document has been processed by the Document AI API.
 
----
 
 ### Task 5. Test a Document AI Form Processor Using the Python Client Libraries
+---
 
 Make a synchronous call to the Document AI API using the Python Document AI client libraries.
 
@@ -512,9 +512,9 @@ print("Document processing complete.")
 print("Text: \n{}\n".format(document.text))
 ```
 
----
 
 ### Task 6. Run the Document AI Python Code
+---
 
 Execute the sample code and process the same file as before.
 
@@ -554,15 +554,15 @@ Form data detected:
 Page Number:1 Phone #: (906) 917-3486 (Confidence Scores: (Name) 1.0, (Value) 1.0) ... Date: 9/14/19 (Confidence Scores: (Name) 0.9999, (Value) 0.9999) ... Name: Sally Walker (Confidence Scores: (Name) 0.9973, (Value) 0.9973) ... 
 ```
 
----
 
 ### Congratulations!
+---
 
 You've successfully used the Document AI API to extract data from documents using a general form processor. In this lab, you created and tested a Document AI processor using the console and the command line, and made Document AI synchronous API calls using Python.
 
+<hr style="height: 5px; background-color: black; border: none;">
 
-
-## **Process Documents with Python Using the Document AI API (GSP925)** 
+## **2. PROCESS DOCUMENTS WITH PYTHON USING THE DOCUMENT AI API (GSP925)** 
 
 ### Overview
 
@@ -641,10 +641,9 @@ Cloud Shell is a virtual machine that is loaded with development tools. It offer
     {:.notice--info}
 
 
----
-
 
 ### Task 1. Create and Test a General Form Processor
+---
 
 In this task, you will enable the Document AI API and create and test a general form processor. The general form processor will process any type of document and extract all the text content it can identify in the document. It is not limited to printed text, it can handle handwritten text and text in any orientation, supports a number of languages, and understands how form data elements are related to each other so that you can extract key:value pairs for form fields that have text labels.
 
@@ -670,9 +669,9 @@ This will create the processor and return to the processor details page that wil
 
 Make a note of the **Processor ID** as you will need to update variables in JupyterLab notebooks with the Processor ID in later tasks.
 
----
 
 ### Task 2. Configure Your Vertex AI Workbench Instance to Perform Document AI API Calls
+---
 
 Next, connect to JupyterLab running on the Vertex AI Workbench instance that was created for you when the lab was started, then configure that environment for the remaining lab tasks.
 
@@ -700,9 +699,9 @@ Next, connect to JupyterLab running on the Vertex AI Workbench instance that was
 9. In the **Select Kernel** dialog, choose **Python 3** from the list of available kernels.
 10. Check that the Vertex AI instance has been prepared for synchronous Document AI API calls.
 
----
 
 ### Task 3. Make a Synchronous Process Document Request
+---
 
 Make a process document call using a synchronous Document AI API call. For processing large amounts of documents at a time, you can also use the asynchronous API, which you will use in a later task.
 
@@ -822,9 +821,9 @@ else:
     print("Document does not contain entity data.")
 ```
 
----
 
 ### Task 4. Run the synchronous Document AI Python code
+---
 
 Execute the code to make synchronous calls to the Document AI API in the JupyterLab notebook.
 
@@ -846,9 +845,9 @@ In the JupyterLab menu, click **File** and then click **Save Notebook** to save 
 
 Check that a document has been processed using the synchronous Cloud Document API.
 
----
 
 ### Task 5. Create a Document AI Document OCR processor
+---
 
 In this task, you will create a Document AI processor using the general Document OCR parser.
 
@@ -858,9 +857,9 @@ In this task, you will create a Document AI processor using the general Document
 4. Click **Create** to create your processor.
 5. Make a note of the processor ID. You will need to specify this in a later task.
 
----
 
 ### Task 6. Prepare your environment for asynchronous Document AI API calls
+---
 
 In this task, you upload the sample JupyterLab notebook to test asynchronous Document AI API calls and copy some sample forms for the lab to Cloud Storage for asynchronous processing.
 
@@ -879,9 +878,9 @@ gsutil -m cp async_files_path gs://${BUCKET}/input
 4. In the **Select Kernel** dialog, choose **Python 3** from the list of available kernels.
 5. Check that the Vertex AI instance has been prepared for asynchronous Document AI API calls.
 
----
 
 ### Task 7. Make an asynchronous process document request
+---
 
 #### Review the Python code for asynchronous Document AI API calls
 
@@ -981,9 +980,9 @@ Use the sample code provided for you in the JupyterLab notebook to process docum
 
 **Your output will contain text listing the Document AI data detected in each file.**
 
----
 
 ### Congratulations
+---
 
 You've successfully made synchronous and asynchronous calls to the Document AI API. In this lab, you:
 
@@ -992,9 +991,9 @@ You've successfully made synchronous and asynchronous calls to the Document AI A
 - Parsed data from a scanned form using Python to make a synchronous API call.
 - Parsed data from scanned forms using Python to make an asynchronous API call.
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Build an End-to-End Data Capture Pipeline using Document AI (GSP927)** 
+## **3. BUILD AN END-TO-END DATA CAPTURE PIPELINE USING DOCUMENT AI (GSP927)** 
 
 ### Overview
 
@@ -1093,10 +1092,10 @@ Cloud Shell is a virtual machine that is loaded with development tools. It offer
     **Note:** For full documentation of gcloud, in Google Cloud, refer to the [gcloud CLI overview guide](https://cloud.google.com/sdk/gcloud).
     {:.notice--info}
 
----
 
 
 ### Task 1. Enable APIs and create an API key
+---
 
 You must enable the APIs for Document AI, Cloud Run functions, Cloud Build, and Geocoding for this lab, then create the API key that is required by the Geocoding Cloud Run function.
 
@@ -1125,9 +1124,9 @@ In the console, in the Navigation menu (**Navigation menu icon**), click **APIs 
 
 Check that all the required APIs have been enabled.
 
----
 
 ### Task 2. Download the lab source code
+---
 
 In this task, you copy the source files into your Cloud Shell. These files include the source code for the Cloud Run functions and the schemas for the BigQuery tables that you will create in the lab.
 
@@ -1140,9 +1139,9 @@ gcloud storage cp -r \
   ~/documentai-pipeline-demo/
 ```
 
----
 
 ### Task 3. Create a form processor
+---
 
 Create an instance of the **generic form processor** to use in the **Document AI Platform** using the **Document AI Form Parser** specialized parser. The generic form processor will process any type of document and extract all the text content it can identify in the document. It is not limited to printed text; it can handle handwritten text and text in any orientation, supports a number of languages, and understands how form data elements are related to each other so that you can extract key-value pairs for form fields that have text labels.
 
@@ -1153,9 +1152,9 @@ Create an instance of the **generic form processor** to use in the **Document AI
 
 You will configure a Cloud Run function later in this lab with the **processor ID** and **location** of this processor so that the Cloud Run function will use this specific processor to process sample invoices.
 
----
 
 ### Task 4. Create Cloud Storage buckets and a BigQuery dataset
+---
 
 In this section, you will prepare your environment by creating the Google Cloud resources that are required for your document processing pipeline.
 
@@ -1209,9 +1208,9 @@ gcloud pubsub topics \
   create ${GEO_CODE_REQUEST_PUBSUB_TOPIC}
 ```
 
----
 
 ### Task 5. Create Cloud Run Functions
+---
 
 Create the two Cloud Run functions that your data processing pipeline uses to process invoices uploaded to Cloud Storage. These functions use the Document AI API to extract form data from the raw documents, then use the GeoCode API to retrieve geolocation data about the address information extracted from the documents.
 
@@ -1321,9 +1320,9 @@ gcloud functions deploy geocode-addresses \
   --trigger-topic=${GEO_CODE_REQUEST_PUBSUB_TOPIC}
 ```
 
-----
 
 ### Task 6. Edit Environment Variables for Cloud Run Functions
+---
 
 In this task, you finalize the configuration of the Cloud Run functions by editing the environment variables for each function to reflect your lab specific parameters via the Cloud Console.
 
@@ -1351,9 +1350,9 @@ In this task, you finalize the configuration of the Cloud Run functions by editi
 5. Click **Next**, select `.env.yaml`, and update the `API_key` value.
 6. Click **Deploy**.
 
----
 
 ### Task 7. Test and Validate the End-to-End Solution
+---
 
 Upload test data to Cloud Storage and monitor the pipeline progress:
 
@@ -1394,16 +1393,16 @@ sudo chmod +x gsp927-2.sh
 ```
 
 
-----
 
 ### Congratulations!
+---
 
 You have successfully built an end-to-end invoice processing pipeline using Document AI, Cloud Run, BigQuery, Cloud Storage, and Pub/Sub!
 
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Automate Data Capture at Scale with Document AI: Challenge Lab (GSP367)**
+## **4. AUTOMATE DATA CAPTURE AT SCALE WITH DOCUMENT AI: CHALLENGE LAB (GSP367)**
 
 ### Overview
 
@@ -1434,9 +1433,9 @@ You must create a document processing pipeline that will automatically process d
 
 You are provided with the source code for a Cloud Run functions that will perform the processing, and you are expected to deploy the document processing pipeline as shown in the architecture below, making sure to correctly configure the components for your specific pipeline.
 
-----
 
 ### Task 1. Enable the Cloud Document AI API and copy lab source files.
+---
 
 #### Enable the Cloud Document AI API
 Enable the Cloud Document AI API.
@@ -1452,9 +1451,9 @@ mkdir ./document-ai-challenge
 gsutil -m cp -r gs://spls/gsp367/* \
   ~/document-ai-challenge/
 ```
----
 
 ### Task 2. Create a form processor
+---
 
 Create an instance of the general form processor using the Document AI Form Parser processor in the General (non-specialized) section. The general form processor will process any type of document and extract all the text content it can identify in the document as well as form information that it infers from the layout.
 
@@ -1468,9 +1467,9 @@ Create an instance of the general form processor using the Document AI Form Pars
 
 > **Note:** You will configure a Cloud Run function later in this lab with the **PROCESSOR ID** and **PARSER LOCATION** of this processor so that the Cloud Run function will use this specific processor to process invoices. Click on the created processor and note the **PROCESSOR ID**. However, the processor region is the **PARSER LOCATION**.
 
----
 
 ### Task 3. Create Google Cloud resources
+---
 
 #### Create input, output, and archive Cloud Storage buckets
 In this step, you must create the three Cloud Storage buckets listed below with uniform bucket-level access enabled.
@@ -1509,9 +1508,9 @@ Use this schema to create a table named `doc_ai_extracted_entities` in the `invo
 
 You can navigate to BigQuery in the Cloud Console and inspect the schema of tables in the `invoice_parser_results` dataset using BigQuery SQL workspace.
 
----
 
 ### Task 4. Deploy the document processing Cloud Run functions
+---
 
 To complete this task, you must deploy the Cloud Run functions that your data processing pipeline uses to process invoices uploaded to Cloud Storage. This function will use a Document AI API Generic Form processor to extract form data from the raw documents.
 
@@ -1575,9 +1574,9 @@ Ensure the `PARSER_LOCATION` value is in lower case.
 Ensure you update the `PROJECT_ID` environment variable with your project ID.
 Wait for the function to be fully redeployed.
 
----
 
 ### Task 5. Test and validate the end-to-end solution
+---
 
 For your final task, you must successfully process the set of invoices that are available in the `~/document-ai-challenge/invoices` folder using your pipeline.
 
@@ -1616,9 +1615,10 @@ gsutil -m cp -r gs://cloud-training/gsp367/* \
 ```
 
 
----
 
 ### Congratulations!
+---
+
 
 In this lab, you have successfully created a document processing pipeline that automatically processes documents uploaded to Cloud Storage using the Document AI API. You have created a form processor, deployed a Cloud Run function to process documents, and validated the end-to-end solution by processing a set of invoices.
 

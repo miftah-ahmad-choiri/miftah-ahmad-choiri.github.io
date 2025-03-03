@@ -14,50 +14,52 @@ toc: true
 
 ---
 
----
+
 
 Lab Course [Link](https://www.cloudskillsboost.google/course_templates/1133)
 
-## **CRM Use Case: Social Media Sentiment Analysis**
+<hr style="height: 5px; background-color: black; border: none;">
+
+## **1. CRM USE CASE: SOCIAL MEDIA SENTIMENT ANALYSIS**
 
 
 {% include video id="JiQnl1z4wzY" provider="youtube" %}
 
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Work with AI/ML Models in BigQuery**
+## **2. WORK WITH AI/ML MODELS IN BIGQUERY**
 
 
 {% include video id="N0QFv7UXuHU" provider="youtube" %}
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Gemini in Action: Analyze Customer Reviews with SQL**
+## **3. GEMINI IN ACTION: ANALYZE CUSTOMER REVIEWS WITH SQL**
 
 
 {% include video id="7ZpHUcMGo1U" provider="youtube" %}
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
 
-## **Analyze Customer Reviews with Gemini using SQL (GSP1246)**
+## **4. ANALYZE CUSTOMER REVIEWS WITH GEMINI USING SQL (GSP1246)**
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
 
-## **Gemini in Action: Analyze Customer Reviews with Python Notebooks**
+## **5. GEMINI IN ACTION: ANALYZE CUSTOMER REVIEWS WITH PYTHON NOTEBOOKS**
 
 {% include video id="N8-ofVFPJmE" provider="youtube" %}
 
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Analyze Customer Reviews with Gemini using Python Notebooks (GSP1249)**
+## **6. ANALYZE CUSTOMER REVIEWS WITH GEMINI USING PYTHON NOTEBOOKS (GSP1249)**
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Quiz**
+## **7. QUIZ**
 
 
 

@@ -14,7 +14,7 @@ toc: true
 
 ---
 
-## **It Speaks! Create Synthetic Speech Using Text-to-Speech (GSP222)**
+## **1. IT SPEAKS! CREATE SYNTHETIC SPEECH USING TEXT-TO-SPEECH (GSP222)**
 
 ### Overview
 
@@ -164,9 +164,9 @@ Learn more from the Regions and zones documentation.
 **Note**: When you run gcloud on your own machine, the config settings are persisted across sessions. But in Cloud Shell, you need to set this for every new session or reconnection.
 {:.notice--info}
 
----
 
 ### Task 1. Enable the Text-to-Speech API
+---
 
 1. In the **Navigation menu**, click **APIs and Services > Enable APIs and Services**.
     
@@ -192,9 +192,9 @@ Wait for a few seconds for the API to be enabled for the project. Once enabled, 
 
 ![img1](/assets/images/gcp/gsp222/10.png)
 
----
 
 ### Task 2. Create a virtual environment
+---
 
 Python virtual environments are used to isolate package installation from the system.
 
@@ -220,8 +220,9 @@ Python virtual environments are used to isolate package installation from the sy
 
     ![img1](/assets/images/gcp/gsp222/12.png)
 
----
+
 ### Task 3. Create a service account
+---
 
 You should use a service account to authenticate your calls to the Text-to-Speech API.
 
@@ -245,9 +246,9 @@ You should use a service account to authenticate your calls to the Text-to-Speec
 
     ![img1](/assets/images/gcp/gsp222/13.png)
 
----
 
 ### Task 4. Get a list of available voices
+---
 
 As mentioned previously, the Text-to-Speech API provides many different voices and languages that you can use to create audio files. You can use any of the [available voices](https://cloud.google.com/text-to-speech/docs/voices) as the speaker for your content.
 
@@ -317,9 +318,9 @@ As mentioned previously, the Text-to-Speech API provides many different voices a
 
     ![img1](/assets/images/gcp/gsp222/15.png)
 
----
 
 ### Task 5. Create synthetic speech from text
+---
 
 Now that you've seen how to get the names of voices to speak your text, it's time to create some synthetic speech!
 
@@ -467,9 +468,9 @@ For this, you build your request to the Text-to-Speech API in a text file titled
 
 16. When you're done listening to the audio files, you can shut down the HTTP server by pressing **CTRL+C** in Cloud Shell.
 
----
 
-# Task 6. Create synthetic speech from SSML
+### Task 6. Create synthetic speech from SSML
+---
 
 In addition to using text, you can also provide input to the Text-to-Speech API in the form of [Speech Synthesis Markup Language (SSML)](https://cloud.google.com/text-to-speech/docs/ssml). SSML defines an XML format for representing synthetic speech. Using SSML input, you can more precisely control pauses, emphasis, pronunciation, pitch, speed, and other qualities in the synthetic speech output.
 
@@ -582,7 +583,8 @@ In addition to using text, you can also provide input to the Text-to-Speech API 
 
 8. Play the two embedded audio files. Notice the differences in the SSML output: although both audio files say the same words, the SSML output speaks them a bit differently, adding pauses and different pronunciations for abbreviations.
 
-# Task 7. Configure audio output and device profiles
+### Task 7. Configure audio output and device profiles
+---
 
 Beyond SSML, you can provide even more customization to your synthetic speech output. You can specify other audio encodings, change the pitch, and optimize the output for specific hardware.
 
@@ -686,9 +688,9 @@ Build your request to the Text-to-Speech API in a text file titled `synthesize-w
 
 9. Play the third embedded audio file. Notice that the voice on the audio speaks a bit faster and lower than the previous examples.
 
----
 
 ### Congratulations!
+---
 
 You have learned how to create synthetic speech using the Cloud Text-to-Speech API. You learned about:
 
@@ -696,9 +698,9 @@ You have learned how to create synthetic speech using the Cloud Text-to-Speech A
 - Creating a Text-to-Speech API request and calling the API with curl, providing both text and [SSML](https://cloud.google.com/text-to-speech/docs/ssml)
 - Configuring the setting for audio output, including specifying a device profile for audio playback
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Translate Text with the Cloud Translation API (GSP049)** 
+## **2. TRANSLATE TEXT WITH THE CLOUD TRANSLATION API (GSP049)** 
 
 ### Overview
 
@@ -847,9 +849,9 @@ Learn more from the Regions and zones documentation.
 **Note**: When you run gcloud on your own machine, the config settings are persisted across sessions. But in Cloud Shell, you need to set this for every new session or reconnection.
 {:.notice--info}
 
----
 
 ### Task 1. Create an API key
+---
 
 Since later in this lab you use `curl` to send a request to the Translation API, you need to generate an API key to pass in your request URL.
 
@@ -875,9 +877,9 @@ Since later in this lab you use `curl` to send a request to the Translation API,
     export API_KEY=YOUR_API_KEY
     ```
 
----
 
 ### Task 2. Translate text
+---
 
 In this example, you translate the string "My name is Steve" into Spanish.
 
@@ -910,9 +912,9 @@ In this example, you translate the string "My name is Steve" into Spanish.
     **Note: Premium Mode** The Google Cloud Translation API uses a standard edition model for most translation tasks. Google has augmented its translation service to use a more robust [Neural Machine Translation System](https://research.googleblog.com/2016/09/a-neural-network-for-machine.html). To learn more about using this premium model, refer to the [Cloud Translation Documentation](https://cloud.google.com/translate/docs).
     {:.notice--info}
 
----
 
 ### Task 3. Detect the language
+---
 
 In addition to translating text, the Translation API can also detect the language of the text. In this example, you detect the language of two strings.
 
@@ -953,16 +955,17 @@ In addition to translating text, the Translation API can also detect the languag
 
     The languages returned by this sample are `"pt"` and `"ja"`. These are the **[ISO-639-1](https://en.wikipedia.org/wiki/ISO_639-1)** identifiers for **Portuguese** and **Japanese**. The [list of languages supported by the Translation API](https://cloud.google.com/translate/docs/languages) includes all possible language codes that can be returned.
 
----
+
 
 ### Congratulations!
+---
 
 You've learned how to translate text with the Cloud Translation API!
 
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Speech to Text Transcription with the Cloud Speech API (GSP048)** 
+## **3. SPEECH TO TEXT TRANSCRIPTION WITH THE CLOUD SPEECH API (GSP048)** 
 
 ### Overview
 
@@ -1234,16 +1237,15 @@ Try a **French** audio file - (for a preview, [listen here](https://storage.clou
     **Note:** API restrictions and usage limits on Cloud Speech-to-Text are documented in the [Quotas and limits](https://cloud.google.com/speech-to-text/quotas) resource.
     {:.notice--info}
 
----
-
 ### Congratulations!
+---
 
 You've performed speech-to-text transcription with the Speech API. You passed the API the Cloud Storage URI of your audio file and reviewed the alternative of passing a base64 encoded string of your audio content.
 
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Cloud Speech API 3 Ways: Challenge Lab (ARC132)**
+## **4. CLOUD SPEECH API 3 WAYS: CHALLENGE LAB (ARC132)**
 
 ### Overview
 
@@ -1283,17 +1285,17 @@ For this challenge lab, a virtual machine (VM) instance named `Instance name` ha
 
 Each task is described in detail below, good luck!
 
-----
 
 ### Task 1: Create an API Key
+---
 
 1. For this task, you need to create an API key to use in this and other tasks when sending a request to the Speech-to-Text API.
 
 2. Save the API key to use in other tasks.
 
----
 
 ### Task 2: Create Synthetic Speech from Text Using the Text-to-Speech API
+---
 
 1. For this task, connect to the VM instance **`lab-vm`** provisioned for you via **SSH**.
 
@@ -1356,9 +1358,9 @@ Each task is described in detail below, good luck!
 
 7. Finally, download the audio file via the **DOWNLOAD FILE** option of the VM instance's SSH session to listen to it.
 
----
 
 ### Task 3: Perform Speech-to-Text Transcription with the Cloud Speech API
+---
 
 **Note:** This lab uses a pre-recorded file available on Cloud Storage: `gs://cloud-samples-data/speech/corbeau_renard.flac`. You can listen to this file.
 {:.notice--info}
@@ -1369,18 +1371,17 @@ Each task is described in detail below, good luck!
 
 3. Call `speech_request.json` and store the result in a file named `response.json`.
 
----
 
 ### Task 4: Translate Text with the Cloud Translation API
+---
 
 1. For this task, connect to the VM instance **`lab-vm`** provisioned for you via SSH.
 
 2. Translate the `これは日本語です。` sentence to the **English** language by calling the Cloud Translation API and store the result in the `translated_response.txt` file.
 
 
----
-
 ### Task 5: Detect a Language with the Cloud Translation API
+---
 
 1. For this task, connect to the VM instance **`lab-vm`** provisioned for you via SSH.
 

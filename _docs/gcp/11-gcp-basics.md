@@ -14,7 +14,8 @@ toc: true
 
 ---
 
-## **Create a Virtual Machine (GSP001)**
+## **1. CREATE A VIRTUAL MACHINE (GSP001)**
+
 ### Overview
 Compute Engine allows you to create virtual machines (VMs) that run different operating systems, including multiple flavors of Linux (Debian, Ubuntu, Suse, Red Hat, CoreOS) and Windows Server, on Google infrastructure. You can run thousands of virtual CPUs on a system that is designed to be fast and to offer strong consistency of performance.
 
@@ -189,9 +190,9 @@ Learn more from the Regions and zones documentation.
 **Note**: When you run gcloud on your own machine, the config settings are persisted across sessions. But in Cloud Shell, you need to set this for every new session or reconnection.
 {:.notice--info}
 
-----
 
 ### Task1. Create a New Instance from the Cloud Console
+----
 
 In this section, you create new predefined machine types with Compute Engine from the Cloud console.
 
@@ -258,9 +259,9 @@ In this section, you create new predefined machine types with Compute Engine fro
     **Note**: Learn more about how to use SSH to connect to an instance from the Compute Engine guide, [Connect to Linux VMs using Google tools](https://cloud.google.com/compute/docs/instances/connecting-to-instance).
     {:.notice--info}
 
----
 
 ### Task2. Install an NGINX Web Server
+----
 
 Now you install an NGINX web server, one of the most popular web servers in the world, to connect your VM to something.
 
@@ -322,9 +323,9 @@ Now you install an NGINX web server, one of the most popular web servers in the 
 
     ![img1](/assets/images/gcp/gsp001/11.png)
 
----
 
 ### Task3. Create a new instance with gcloud
+----
 
 Instead of using the Cloud console to create a VM instance, use the command line tool gcloud, which is pre-installed in [Google Cloud Shell](https://cloud.google.com/developer-shell/#how_do_i_get_started). Cloud Shell is an interactive shell environment for Google Cloud loaded with all the development tools you need (gcloud, git, and others) and offers a persistent 5-GB home directory.
 
@@ -408,8 +409,9 @@ Instead of using the Cloud console to create a VM instance, use the command line
     exit
     ```
 
----
+
 ### Task4. Test your knowledge
+----
 
 Test your knowledge about Google Cloud by taking the quiz. (Please select multiple correct options if necessary.)
 
@@ -420,13 +422,14 @@ Through which of the following ways can you create a VM instance in Compute Engi
 
 
 ### Congratulations!
+----
 
 Compute Engine is the foundation of Google Cloud's infrastructure as a service. You created a VM with Compute Engine and can now map your existing server infrastructure, load balancers, and network topology to Google Cloud.
 {: .notice--success}
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Creating a Presistent Disk (GSP004)**
+## **2. CREATING A PRESISTENT DISK (GSP004)**
 
 ### Overview
 
@@ -596,9 +599,9 @@ Learn more from the Regions and zones documentation.
 **Note**: When you run gcloud on your own machine, the config settings are persisted across sessions. But in Cloud Shell, you need to set this for every new session or reconnection.
 {:.notice--info}
 
----
 
 ### Task1. Create new instance
+----
 
 First, create a Compute Engine virtual machine instance that has only a boot disk.
 
@@ -623,9 +626,9 @@ First, create a Compute Engine virtual machine instance that has only a boot dis
 
     ![img1](/assets/images/gcp/gsp004/2.png)
 
-----------
 
 ### Task2. Create a new persistent disk
+----
 
 **Note:** Because you want to attach this disk to the virtual machine instance you created in the previous step, the zone must be the same.
 {:.notice--info}
@@ -646,9 +649,9 @@ First, create a Compute Engine virtual machine instance that has only a boot dis
 
     ![img1](/assets/images/gcp/gsp004/3.png)
 
-----
 
 ### Task3. Attaching a disk
+----
 
 #### Attaching the persistent disk
 
@@ -823,9 +826,9 @@ By default the disk will not be remounted if your virtual machine restarts. To m
 
     ![img1](/assets/images/gcp/gsp004/7.png)
 
-----
 
 ### Task4. Test your knowledge
+----
 
 Test your knowledge about Google cloud Platform by taking this quiz.
 
@@ -847,9 +850,9 @@ Choose the correct order
 - (5, 3, 2, 4, 1) ✅ 
 - (1, 3, 2, 4, 5)
 
-----
 
 ### Task5. Local SSDs
+----
 
 Compute Engine can also attach local SSDs. Local SSDs are physically attached to the server hosting the virtual machine instance to which they are mounted. This tight coupling offers superior performance, with very high input/output operations per second (IOPS) and very low latency compared to persistent disks.
 
@@ -863,13 +866,14 @@ This lab does not cover local SSDs.
 - To maximize the local SSD performance, you'll need to use a special Linux image that supports NVMe. You can learn more about local SSDs in the [Local SSD documentation](https://cloud.google.com/compute/docs/disks/local-ssd#create_a_local_ssd).
 
 ### Congratulations!
+----
 
 You've learned how to create, find, and attach persistent disks to a virtual machine instance and the key difference between persistent disks and local SSDs. You can use persistent disks to setup and configure your database servers.
 {:.notice--success}
 
-----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Hosting a Web App on Google Cloud using Compute Engine (GSP662)**
+## **3. HOSTING A WEB APP ON GOOGLE CLOUD USING COMPUTE ENGINE (GSP662)**
 
 ### Overview
 
@@ -1032,9 +1036,9 @@ Learn more from the Regions and zones documentation.
 **Note**: When you run gcloud on your own machine, the config settings are persisted across sessions. But in Cloud Shell, you need to set this for every new session or reconnection.
 {:.notice--info}
 
------
 
 ### Task1. Enable Compute Engine API
+----
 
 - Enable the [Compute Engine API](https://console.cloud.google.com/flows/enableapi?apiid=compute) by executing the following:
   
@@ -1042,9 +1046,9 @@ Learn more from the Regions and zones documentation.
     gcloud services enable compute.googleapis.com
     ```
 
----
 
 ### Task2. Create Cloud Storage Bucket
+----
 
 You will use a Cloud Storage bucket to house your built code as well as your startup scripts.
 - From Cloud Shell, execute the following to create a new Cloud Storage bucket:
@@ -1058,9 +1062,10 @@ You will use a Cloud Storage bucket to house your built code as well as your sta
     **Note**: Use of the $DEVSHELL_PROJECT_ID environment variable within Cloud Shell is to help ensure the names of objects are unique. Since all Project IDs within Google Cloud must be unique, appending the Project ID should make other names unique as well.
     {:.notice--info}
 
----
 
 ### Task3. Clone Source repository
+----
+
 Use the existing Fancy Store ecommerce website based on the monolith-to-microservices repository as the basis for your website.
 
 Clone the source code so you can focus on the aspects of deploying to Compute Engine. Later on in this lab, you will perform a small update to the code to demonstrate the simplicity of updating on Compute Engine.
@@ -1124,9 +1129,9 @@ Clone the source code so you can focus on the aspects of deploying to Compute En
 
 6. Close this window after viewing the website and then press **CTRL+C** in the terminal window to stop the web server process.
 
----
 
 ### Task4. Create compute engine instances
+----
 
 Now it's time to start deploying some Compute Engine instances!
 
@@ -1420,9 +1425,9 @@ Now that the code is configured, deploy the frontend instance.
     ![img1](/assets/images/gcp/gsp662/29.png)
 
 
-----
 
 ### Task5. Create managed instance groups
+----
 
 To allow the application to scale, managed instance groups will be created and will use the frontend and backend instances as Instance Templates.
 
@@ -1597,9 +1602,9 @@ An autohealing policy relies on an **application-based health check** to verify 
 
 4. Continue with the lab to allow some time for autohealing to monitor the instances in the group. You will simulate a failure to test the autohealing at the end of the lab.
 
----
 
 ### Task6. Create load balancers
+----
 
 To complement your managed instance groups, use HTTP(S) Load Balancers to serve traffic to the frontend and backend microservices, and use mappings to send traffic to the proper backend services based on pathing rules. This exposes a single load balanced IP for all services.
 
@@ -1852,9 +1857,9 @@ Since your instances pull the code at startup, you can issue a rolling restart c
     ```
     You'll be checking the application later in the lab.
 
-----
 
 ### Task7. Scaling Compute Engine
+----
 
 So far, you have created two managed instance groups with two instances each. This configuration is fully functional but remains static regardless of load. Next, you create an autoscaling policy based on utilization to automatically scale each managed instance group.
 
@@ -1898,9 +1903,10 @@ Another feature that can help with scaling is to enable a Content Delivery Netwo
 
     If the GFE can't find a cached response for the request, the GFE makes a request directly to the backend. If the response to this request is cacheable, the GFE stores the response in the Cloud CDN cache so that the cache can be used for subsequent requests.
 
-----
+
 
 ### Task8. Update the Website
+----
 
 #### Updating instance template
 
@@ -2172,13 +2178,16 @@ In order to confirm the health check works, log in to an instance and stop the s
     ![img1](/assets/images/gcp/gsp662/75.png)
 
 ### Congratulations!
+----
 
 You successfully deployed, scaled, and updated your website on Compute Engine. You are now experienced with Compute Engine, Managed Instance Groups, Load Balancers, and Health Checks!
 {:.notice--success}
 
 ----
 
-## **The Basics of Google Cloud Compute: Challenge Lab (ARC120)**
+<hr style="height: 5px; background-color: black; border: none;">
+
+## **4. THE BASICS OF GOOGLE CLOUD COMPUTE: CHALLENGE LAB (ARC120)**
 
 ### Overview
 
@@ -2215,9 +2224,10 @@ Some standards you should follow:
 
 Each task is described in detail below, good luck!
 
-----
+
 
 ### Task1. Create a Cloud Storage Bucket
+----
 
 Your team has requested a new Cloud Storage bucket, so they can store their built code and startup scripts.
 
@@ -2229,9 +2239,10 @@ Your team has requested a new Cloud Storage bucket, so they can store their buil
 
 ![img1](/assets/images/gcp/arc120/3.png)
 
----
+
 
 ### Task2. Create and attach a persistent disk to a Compute Engine Instance
+---
 
 1. Create a Compute Engine Instance  
 
@@ -2254,9 +2265,10 @@ Your team has requested a new Cloud Storage bucket, so they can store their buil
 
     ![img1](/assets/images/gcp/arc120/5.png)
 
-----
+
 
 ### Task3. Install a NGINX web server
+----
 
 For this task, SSH into the Compute Engine instance, and install a NGINX web server. Here's a reminder of the general steps:
 
@@ -2269,6 +2281,7 @@ To test the web application, return to the Cloud Console, and click the External
 A default web page should open with the message "**Welcome to nginx!**".
 
 ### Congratulations!
+---
 
 ![img1](/assets/images/gcp/arc120/6.png)
 

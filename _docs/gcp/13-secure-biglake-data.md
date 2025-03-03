@@ -17,7 +17,7 @@ toc: true
 
 ----
 
-## **Cloud IAM: Qwik Start (GSP064)**
+## **1. CLOUD IAM: QWIK START (GSP064)**
 
 ### Overview
 
@@ -75,9 +75,9 @@ To reset which user is signed into a browser tab:
 1. Click your **Avatar** and click **Sign out** to sign out.
 2. In the **Lab Connection** panel, click **Open Google Console** and sign in back using the appropriate **Username** and **Password**.
 
----
 
 ### Task 1. Explore the IAM console and project level roles
+---
 
 Return to the **Username 1** Cloud Console page.  
 Select **Navigation menu > IAM & Admin > IAM**. You are now in the *"IAM & Admin"* console.  
@@ -123,9 +123,9 @@ This is one example of how IAM roles affect what you can and cannot do in Google
 
 Switch back to the **Username 1** console for the next step.  
 
----
 
 ### Task 2. Prepare a Cloud Storage bucket for access testing  
+---
 
 Ensure that you are in the **Username 1** Cloud Console.  
 
@@ -175,9 +175,9 @@ From the Console, select **Navigation menu > Cloud Storage > Buckets**. Verify t
 
 **Username 2** has the **"Viewer"** role prescribed which allows them **read-only actions** that do not affect state. This example illustrates this feature—they can **view** Cloud Storage buckets and files that are hosted in the Google Cloud project that they've been granted access to.  
 
----
 
 ### Task 3. Remove project access
+---
 
 Switch to the **Username 1** console.  
 
@@ -204,9 +204,9 @@ Switch to the **Username 1** console.
 > **Note:** As mentioned before, it can take up to **80 seconds** for permissions to be revoked.  
 > If you haven't received a permission error, wait **2 minutes** and then try refreshing the console.  
 
----
 
 ### Task 4. Add Cloud Storage permissions  
+---
 
 1. **Copy** Username 2 name from the **Lab Connection** panel.  
 2. Switch to **Username 1** console.  
@@ -240,15 +240,16 @@ Switch to the **Username 1** console.
 
 As you can see, you gave **Username 2** view access to the **Cloud Storage bucket**.  
 
----
 
-### 🎉 Congratulations!  
+
+### 🎉 Congratulations!
+---  
 
 In this lab, you exercised **granting and revoking Cloud IAM roles** to a user.
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Data Catalog: Qwik Start (GSP729)** 
+## **2. DATA CATALOG: QWIK START (GSP729)** 
 
 ### Overview
 
@@ -396,9 +397,9 @@ Cloud Shell is a virtual machine that is loaded with development tools. It offer
     **Note:** For full documentation of gcloud, in Google Cloud, refer to the [gcloud CLI overview guide](https://cloud.google.com/sdk/gcloud).
     {:.notice--info}
 
----
 
 ### Task 1. Enable the Data Catalog API
+---
 
 From the navigation menu, select **APIs and Services > Library**.
 
@@ -428,9 +429,9 @@ Click **Done**.
 
 The **BigQuery console** opens.
 
----
 
 ### Task 2. Create a dataset
+---
 
 In the left navigation pane of **BigQuery**, click on **view actions** next to your **project ID**, then click **CREATE DATASET**.
 
@@ -447,9 +448,9 @@ Then click **Create dataset**.
 
 > **Note:** You cannot add a description or a label when you create a dataset using the Cloud Console. After the dataset is created, you can add a description and label.
 
----
 
 ### Task 3. Copy a public New York Taxi table to your dataset.
+---
 
 From the left-hand panel, click **+ ADD > Public datasets**.
 
@@ -476,9 +477,9 @@ The previous command used the `bq` command-line tool to copy the public table in
 You will add **Data Catalog tags** to the table in the next section.
 
 
----
 
 ### Task 4. Create a Data Catalog tag template
+---
 
 Create a tag template from the Data Catalog UI.
 
@@ -539,9 +540,9 @@ Click **CREATE**.
 The **Data Catalog Tag template** page displays template details and attributes:
 
 
----
 
 ### Task 5. Tag your table with the newly created tags
+---
 
 To attach a tag to a table in your dataset, click on the **Data Catalog** icon in the top left corner.
 
@@ -572,15 +573,15 @@ To attach a tag to a table in your dataset, click on the **Data Catalog** icon i
 
 
 
----
 
 ### Congratulations!
+---
 
 Great job! You learned how to successfully attach a tag to a table with **Data Catalog**.
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **BigLake: Qwik Start (GSP1040)** 
+## **3. BIGLAKE: QWIK START (GSP1040)** 
 
 ### Overview
 
@@ -719,9 +720,9 @@ Cloud Shell is a virtual machine that is loaded with development tools. It offer
     **Note:** For full documentation of gcloud, in Google Cloud, refer to the [gcloud CLI overview guide](https://cloud.google.com/sdk/gcloud).
     {:.notice--info}
 
----
 
 ### Task 1. Create a connection resource
+---
 
 BigLake tables access Google Cloud Storage data using a connection resource. A connection resource can be associated with a single table or an arbitrary group of tables in the project.
 
@@ -740,9 +741,9 @@ BigLake tables access Google Cloud Storage data using a connection resource. A c
 8. In the **Connection info** section, copy the **Service Account ID**. You will need this in the following section.
 
 
----
 
 ### Task 2. Set up access to a Cloud Storage data lake
+---
 
 In this section, you will give the new connection resource read-only access to the Cloud Storage data lake so that BigQuery can access Cloud Storage files on behalf of users. We recommend that you grant the connection resource service account the **Storage Object Viewer** IAM role, which lets the service account access Cloud Storage buckets.
 
@@ -756,9 +757,9 @@ In this section, you will give the new connection resource read-only access to t
    **Note:** After you migrate users to BigLake tables, remove direct Cloud Storage permissions from existing users. Direct file access allows users to bypass governance policies (such as row- and column-level security) set on BigLake tables.
 
 
----
 
 ### Task 3. Create a BigLake table
+---
 
 The following example uses the CSV file format, but you can use any format supported by BigLake, as shown in Limitations. If you're familiar with creating tables in BigQuery, then this process should be similar. The only difference is that you specify the associated cloud resource connection.
 
@@ -866,9 +867,10 @@ Now that you have a dataset created, you can copy an existing dataset from Cloud
 10. Click **Create Table**.
 11. Click **Check my progress** to verify the objective.
 
----
+
 
 ### Task 4. Query a BigLake table through BigQuery
+---
 
 Now that you've created the BigLake table, you can use any BigQuery client to submit a query.
 
@@ -883,9 +885,9 @@ Now that you've created the BigLake table, you can use any BigQuery client to su
 
 3. Verify you can see all of the columns and data in the resulting table.
 
----
 
 ### Task 5. Set up access control policies
+---
 
 Once a BigLake table has been created, it can be managed in a similar fashion to BigQuery tables. To create access control policies for BigLake tables, you'll first create a taxonomy of policy tags in BigQuery. Then, apply the policy tags to the sensitive rows or columns. In this section, you will create a column-level policy. For directions on setting up row-level security, see the [row-level security guide](#).
 
@@ -940,9 +942,9 @@ Verify your table schema now resembles the following:
 
 The query should run without any issues and return the columns you have access to. This example shows that column-level security enforced through BigQuery can also be applied to BigLake tables.
 
----
 
 ### Task 6. Upgrade external tables to BigLake tables
+---
 
 You can upgrade existing tables to BigLake tables by associating the existing table to a cloud resource connection. For a complete list of flags and arguments, see `bq update` and `bq mkdef`.
 
@@ -1054,9 +1056,10 @@ You can upgrade existing tables to BigLake tables by associating the existing ta
     Great! You successfully upgraded the existing external table to a BigLake table by associating it to a cloud resource connection.
    
 
----
+
 
 #### Congratulations!
+---
 
 In this lab, you:
 - Created a connection resource.
@@ -1066,9 +1069,9 @@ In this lab, you:
 - Set up column-level access control policies.
 - Updated an existing external table to a BigLake table using the connection resource.
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Secure BigLake Data: Challenge Lab (ARC129)**
+## **4. SECURE BIGLAKE DATA: CHALLENGE LAB (ARC129)**
 
 ### Overview
 
@@ -1108,9 +1111,10 @@ Some standards you should follow:
 - Create all resources in the multiple regions in United States, unless otherwise directed.
 Each task is described in detail below, good luck!
 
-----
+
 
 ### Task 1. Create a BigLake table using a Cloud Resource connection
+---
 
 Create a BigQuery dataset named `online_shop` that is multi-region in the United States.
 
@@ -1126,6 +1130,7 @@ gs://qwiklabs-gcp-00-62a529679d7e-bucket/user-online-sessions.csv
 
 
 ### Task 2. Apply and verify policy tags on columns containing sensitive data
+---
 
 Use the precreated taxonomy named `access_control-taxonomy-3xvxl` to apply column-level policy tags on the table.
 Apply the policy tag named `sensitive-data-policy` to the following columns in the `user_online_sessions` table:
@@ -1139,6 +1144,7 @@ Verify the column-level security by running a query that omits the protected col
 
 
 ### Task 3. Remove IAM permissions to Cloud Storage for other users
+---
 
 Follow Google best practices after migrating data to BigLake by removing IAM permissions for `student-04-a0e201e53f16@qwiklabs.net` (User 2) to Cloud Storage.
 Leave the IAM role for **project viewer**.

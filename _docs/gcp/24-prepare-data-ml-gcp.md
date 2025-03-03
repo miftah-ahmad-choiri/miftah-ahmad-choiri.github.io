@@ -22,47 +22,47 @@ Lab Course [Link](https://www.cloudskillsboost.google/course_templates/631)
 <iframe src="/assets/images/gcp/pdf/privacy-safety-ai/1.pdf" width="100%" height="1000px">
 </iframe>
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
 ## **Vertex AI: Qwik Start (GSP917)**
 
 https://www.youtube.com/watch?v=IKcmDGxp9k0
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Dataprep: Qwik Start (GSP105)**
+## **1. DATAPREP: QWIK START (GSP105)**
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Dataflow: Qwik Start - Templates (GSP192)**
+## **2. DATAFLOW: QWIK START - TEMPLATES (GSP192)**
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Dataflow: Qwik Start - Python (GSP207)**
+## **3. DATAFLOW: QWIK START - PYTHON (GSP207)**
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Dataproc: Qwik Start - Console (GSP103)**
+## **4. DATAPROC: QWIK START - CONSOLE (GSP103)**
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Dataproc: Qwik Start - Command Line (GSP104)**
+## **5. DATAPROC: QWIK START - COMMAND LINE (GSP104)**
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Cloud Natural Language API: Qwik Start (GSP097)**
+## **6. CLOUD NATURAL LANGUAGE API: QWIK START (GSP097)**
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Speech-to-Text API: Qwik Start (GSP119)**
+## **7. SPEECH-TO-TEXT API: QWIK START (GSP119)**
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Video Intelligence: Qwik Start (GSP154)**
+## **8. VIDEO INTELLIGENT: QWIK START (GSP154)**
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Prepare Data for ML APIs on Google Cloud: Challenge Lab (GSP323)**
+## **9. PREPARE DATA FOR ML APIs ON GOOGLE CLOUD: CHALLENGE LAB (GSP323)**
 
 
 

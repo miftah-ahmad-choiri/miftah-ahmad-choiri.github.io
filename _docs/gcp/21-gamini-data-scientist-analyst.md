@@ -18,35 +18,37 @@ toc: true
 
 Lab Course [Link](https://www.cloudskillsboost.google/course_templates/879)
 
-## **Introducing Gemini for Data Professionals**
+<hr style="height: 5px; background-color: black; border: none;">
+
+## **1. INTRODUCING GEMINI FOR DATA PROFESSIONALS**
 
 
 {% include video id="_pFAmZBwels" provider="youtube" %}
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Analyze data with Gemini assistance (GSP9999)**
+## **2. ANALYZE DATA WITH GEMINI ASSISTANCE (GSP9999)**
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
 
-## **How to Analyze Data with Gemini**
+## **3. HOW TO ANALYZE DATA WITH GEMINI**
 
 {% include video id="iObPJDtGsRs" provider="youtube" %}
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Gemini for Data Scientists (GSP9998)**
+## **4. GEMINI FOR DATA SCIENTISTS (GSP9998)**
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Designing an LLM connected model with Gemini**
+## **5. DESIGNING AN LLM CONECTED MODEL WITH GEMINI**
 
 {% include video id="Wek8P-M1Wjw" provider="youtube" %}
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Quiz**
+## **6. QUIZ**
 
 
 

@@ -13,7 +13,7 @@ toc: true
 
 ---
 
-## **1. Build Real World AI Applications with Gemini and Imagen**
+## **1. BUILD REAL WORLD AI APPLICATIONS WITH GEMINI AND IMAGEN**
 
 Complete the introductory Build Real World AI Applications with Gemini and Imagen skill badge to demonstrate skills in the following: image recognition, natural language processing, image generation using Google's powerful Gemini and Imagen models, deploying applications on the Vertex AI platform.
 {: .notice--success}
@@ -85,9 +85,9 @@ Note: If you encounter a 401 error, try re-running the code.
 
 **Try it yourself!** Experiment with different image URIs and prompt questions to explore Gemini's capabilities.
 
--------
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **2. Build an AI Image Generator app using Imagen on Vertex AI**
+## **2. BUILD AN AI IMAGE GENERATOR APP USING IMAGEN ON VERTEX AI**
 
 ### Objective
 Generative AI on Vertex AI (also known as genAI or gen AI) gives you access to Google's large generative AI models so you can test, tune, and deploy them for use in your AI-powered applications. In this lab, you will:
@@ -160,8 +160,9 @@ After starting the lab, you will get a split pane view consisting of the Code Ed
 Note: By default, a SynthID watermark is added to images, but you can disable it by specifying the optional parameter add_watermark=False. You can't use a seed value and watermark at the same time. Learn more about SynthID watermark
 {: .notice--information}
 
----
-## **3. Build an application to send Chat Prompts using the Gemini model**
+<hr style="height: 5px; background-color: black; border: none;">
+
+## **3. BUILD AN APPLICATION TO SEND CHAT PROMPTS USING THE GEMINI MODEL**
 
 ### Objective
 Generative AI on Vertex AI (also known as genAI or gen AI) gives you access to Google's large generative AI models so you can test, tune, and deploy them for use in your AI-powered applications. In this lab, you will:
@@ -358,7 +359,9 @@ Create a new file to get the chat responses with using stream:
 - The code is using stream=`True` while sending the messages. The stream=`True` argument indicates that the responses should be streamed back, allowing for real-time processing.
 - The code uses Gemini's ability to understand prompts and have a stateful chat conversation.
 
-## **4. Build a Multi-Modal GenAI Application: Challenge Lab**
+<hr style="height: 5px; background-color: black; border: none;">
+
+## **4. BUILD A MULTI-MODAL GEN AI APPLICATION: CHALLENGE LAB**
 
 ### Overview
 In a challenge lab you’re given a scenario and a set of tasks. Instead of following step-by-step instructions, you will use the skills learned from the labs in the course to figure out how to complete the tasks on your own! An automated scoring system (shown on this page) will provide feedback on whether you have completed your tasks correctly.

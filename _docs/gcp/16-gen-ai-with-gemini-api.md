@@ -14,7 +14,7 @@ toc: true
 
 ---
 
-## **Getting Started with the Gemini API in Vertex AI (GSP1209)**
+## **1. GETTING STARTED WITH THE GEMINI API IN VERTEX AI (GSP1209)**
 
 ### Overview
 
@@ -117,9 +117,8 @@ In this lab, you will learn how to:
     ![info1](/assets/images/gcp/info1.png)
     {: .notice--info}
 
----
-
 ### Task 1. Open the notebook in Vertex AI Workbench
+---
 
 1. In the Google Cloud console, on the Navigation menu (Navigation menu icon), click **Vertex AI > Workbench**.
 
@@ -127,9 +126,9 @@ In this lab, you will learn how to:
 
 The JupyterLab interface for your Workbench instance opens in a new browser tab.
 
----
 
 ### Task 2. Set up the notebook
+---
 
 1. Open the `notebook name` file.
 
@@ -144,9 +143,9 @@ For **Project ID**, use `Project ID`, and for **Location**, use `Region`.
 
 In the following sections, you will run through the notebook cells to see how to use the **Gemini API** in **Vertex AI**.
 
----
 
 ### Task 3. Use the Gemini 1.5 Pro model
+---
 
 The **Gemini 1.5 Pro** (`gemini-1.5-pro`) model is designed to handle natural language tasks, multi-turn text and code chat, and code generation. In this task, run through the notebook cells to see how to use the Gemini 1.5 Pro model to generate text from text prompts.
 
@@ -185,9 +184,9 @@ The Gemini API supports natural **multi-turn conversations** and is ideal for te
 - Run through the **Test chat prompts** section of the notebook.
 
 
----
 
 ### Task 4. Generate text from a multimodal prompt
+---
 
 **Gemini 1.5 Pro** (`gemini-1.5-pro`) is a multimodal model that supports multimodal prompts. You can include **text, image(s), and video** in your prompt requests and get text or code responses.
 
@@ -216,16 +215,17 @@ The Gemini API supports natural **multi-turn conversations** and is ideal for te
 - Run through the **Direct analysis of publicly available web media** section of the notebook.
 
 
----
 
 ### Congratulations!
+---
 
 In this lab, you delved into the utilization of the **Gemini API in Vertex AI** along with the **Vertex AI SDK for Python** to interact with the **Gemini 1.5 Pro** (`gemini-1.5-pro`) model. Through these exercises, you gained practical insights into the capabilities of the Gemini API in Vertex AI and its seamless integration with the Python SDK.
 
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Multimodality with Gemini (GSP1210)** 
+
+## **2. MULTIMODALITY WITH GEMINI (GSP1210)** 
 
 ### Overview
 
@@ -335,9 +335,9 @@ In this lab, you will:
     {: .notice--info}
 
 
----
 
 ### Task 1. Open the notebook in Vertex AI Workbench
+---
 
 1 In the Google Cloud console, on the Navigation menu, click **Vertex AI > Workbench**.
 
@@ -345,9 +345,9 @@ In this lab, you will:
 
 The JupyterLab interface for your Workbench instance opens in a new browser tab.
 
----
 
 ### Task 2. Set up the notebook
+---
 
 1. Open the `notebook name` file.
 
@@ -360,9 +360,9 @@ The JupyterLab interface for your Workbench instance opens in a new browser tab.
 **Note:** You can skip any notebook cells that are noted **Colab only**. If you experience a `429` response from any of the notebook cell executions, wait 1 minute before running the cell again to proceed.
 {:.notice--info}
 
----
 
 ### Task 3. Use the Gemini Flash model
+---
 
 **Gemini Flash** (`gemini-1.5-flash`) is a multimodal model that supports multimodal prompts. You can include text, image(s), and video in your prompt requests and get text or code responses.
 
@@ -428,16 +428,16 @@ Gemini can also retrieve extra information beyond the video. In this example, yo
 
 Run through the **Retrieving extra information beyond the video** section of the notebook.
 
-----
-
 
 ### Congratulations!
+---
 
 You have now completed the lab! In this lab, you learned how to use the **Gemini API** in **Vertex AI** to generate text from text and image(s) prompts.
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Introduction to Function Calling with Gemini (GSP1227)** 
+
+## **3. INTRODUCTION TO FUNCTION CALLING WITH GEMINI (GSP1227)** 
 
 ### Overview
 
@@ -542,10 +542,10 @@ In this lab, you learn how to:
     ![info1](/assets/images/gcp/info1.png)
     {: .notice--info}
 
----
 
 
 ### Task 1. Open the notebook in Vertex AI Workbench
+---
 
 1. In the Google Cloud console, on the Navigation menu, click **Vertex AI > Workbench**.
 
@@ -553,9 +553,9 @@ In this lab, you learn how to:
 
 The JupyterLab interface for your Workbench instance opens in a new browser tab.
 
----
 
 ### Task 2. Set up the notebook
+---
 
 1. Open the `notebook name` file.
 
@@ -571,9 +571,9 @@ For **Project ID**, use `Project ID`, and for **Location**, use `Region`.
 In the following sections, you will run through the notebook cells to see how to use the Gemini API in Vertex AI with the Vertex AI SDK for Python.
 
 
----
 
 ### Task 3. Using function calling for structured Google Store queries
+---
 
 When working with a generative text model, it can be difficult to coerce the LLM to give consistent responses in a structured format such as JSON. **Function calling** makes it easy to work with LLMs via prompts and unstructured inputs, and have the LLM return a structured response that can be used to call an external function.
 
@@ -581,9 +581,9 @@ You can think of function calling as a way to get structured output from user pr
 
 1. In this task, run through the notebook cells to see how to use the Gemini model to help customers get information about products in the **Google Store**.
 
----
 
 ### Task 4. Using function calling to geocode addresses with a maps API
+---
 
 In this example, you'll use the text modality in the Gemini API to define a function that takes multiple parameters as inputs. You'll use the function call response to then make a live API call to convert an address to latitude and longitude coordinates.
 
@@ -592,9 +592,9 @@ In this example, you'll use the text modality in the Gemini API to define a func
 Here we used the **[OpenStreetMap Nominatim API](https://nominatim.openstreetmap.org/ui/search.html)** to geocode an address to make it easy to use and learn in this notebook. If you're working with large amounts of maps or geolocation data, you can use the **[Google Maps Geocoding API](https://developers.google.com/maps/documentation/geocoding)**.
 
 
----
 
 ### Task 5. Using function calling for entity extraction
+---
 
 In the previous examples, you made use of the entity extraction functionality within **Gemini Function Calling** so that you could pass the resulting parameters to a REST API or client library. However, you might want to only perform the entity extraction step with **Gemini Function Calling** and stop there without actually calling an API. You can think of this functionality as a convenient way to transform unstructured text data into structured fields.
 
@@ -602,15 +602,15 @@ In this example, you'll build a **log extractor** that takes raw log data and tr
 
 1. In this task, run through the notebook cells to see how to use the **Gemini Pro** model to generate function calls to extract entities from log data.
 
----
 
 ### Congratulations!
+---
 
 Congratulations! In this lab, you learned how to use the **Gemini API** in **Vertex AI** to generate function calls from text prompts. You used the **Gemini Pro** model to generate function calls to help customers get information about products in the **Google Store**, geocode addresses, and extract entities from log data.
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Explore Generative AI with the Gemini API in Vertex AI: Challenge Lab (GSP515)**
+## **4. EXPLORE GENERATIVE AI WITH THE GEMINI API IN VERTEX AI: CHALLENGE LAB (GSP515)**
 
 ### Overview
 
@@ -645,9 +645,9 @@ Your long-term objective is to enhance the platform's capabilities, enabling it 
 
 Your success in this challenge will not only advance the platform's functionality but also demonstrate your proficiency in leveraging Gemini's state-of-the-art AI capabilities to address real-world problems in the realm of video content analysis. Are you ready to take on the challenge?
 
-----
 
 ### Task 1. Generate text using Gemini
+---
 
 In this section, you are tasked with calling the Gemini API via Cloud Shell to confirm your understanding of how to make API calls.
 
@@ -679,9 +679,9 @@ In this section, you are tasked with calling the Gemini API via Cloud Shell to c
     ```
 
 
----
 
 ### Task 2. Open the notebook in Vertex AI Workbench
+---
 
 1. In the **Google Cloud console**, on the Navigation menu, click **Vertex AI > Workbench**.
 
@@ -689,9 +689,9 @@ In this section, you are tasked with calling the Gemini API via Cloud Shell to c
 
 The JupyterLab interface for your Workbench instance opens in a new browser tab.
 
----
 
 ### Task 3. Create a function call using Gemini
+---
 
 1. Click on the notebook name file.
 
@@ -706,9 +706,8 @@ The JupyterLab interface for your Workbench instance opens in a new browser tab.
     **Note:** Ensure you can see the **weather-related data** in the response that is printed.
     {:.notice--info}
 
----
-
 ### Task 4. Describe video contents using Gemini
+---
 
 In this section, you are tasked with completing the Python code in the cells of a Jupyter notebook that leverage the **Gemini LLM** to describe the contents of a video.
 
@@ -717,9 +716,10 @@ In this section, you are tasked with completing the Python code in the cells of 
 2. Complete the required sections of the notebook **notebook name** under **Task 4**.
 
 
----
 
 ### Congratulations!
+---
+
 
 Throughout this challenge, you've demonstrated your adeptness in leveraging **Gemini APIs** to generate text, create function calls, and describe video contents. Your work ensured that these features met the expected standards before deployment to production.
 

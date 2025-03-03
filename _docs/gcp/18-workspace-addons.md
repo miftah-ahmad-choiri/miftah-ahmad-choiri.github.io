@@ -14,7 +14,7 @@ toc: true
 
 ---
 
-## **Creating a Gmail Add-on (GSP249)**
+## **1. CREATING A GMAIL ADD-ON (GSP249)**
 
 ### Overview
 
@@ -91,9 +91,9 @@ In this hands-on lab you create a Gmail [Add-on](https://developers.google.com/g
     ![info1](/assets/images/gcp/info1.png)
     {: .notice--info}
 
----
 
 ### Task 1. Create the script project
+---
 
 #### Launch Apps Script
 
@@ -238,9 +238,9 @@ In this hands-on lab you create a Gmail [Add-on](https://developers.google.com/g
     **Note:** Before saving, you'll need to update the script manifest to avoid errors.
     {:.notice--info}
 
----
 
 ### Task 2. Update the script manifest
+---
 
 Update the manifest (**appsscript.json**) to provide the add-on with required deployment information.
 
@@ -272,9 +272,9 @@ Update the manifest (**appsscript.json**) to provide the add-on with required de
 
 3. Click the **Save project** icon to save the changes to the manifest and **Code.gs**. This step provides the add-on with required deployment information. If you get an error, save **Code.gs** again.
 
----
 
 ### Task 3. Deploy the add-on
+---
 
 1. Click the **Deploy > Test deployments** button at the top of the screen.
 2. For **Application(s): Gmail**, click **Install**.
@@ -287,9 +287,9 @@ Update the manifest (**appsscript.json**) to provide the add-on with required de
     **Note:** If you don't see your add-on in the **Installed developer add-ons** list, refresh the browser window. If the add-on is still not in the list, return to the **Gmail Add-on Quickstart** tab, uninstall and reinstall the add-on from the **Test deployments** window.
     {:.notice--danger}
 
----
 
 ### Task 4. Run the add-on
+---
 
 1. Return to your **Gmail** tab and refresh the tab.
 2. Choose a message in Gmail and open it.
@@ -321,9 +321,9 @@ The add-ons you installed appear in the right menu of the open email thread.
 
 6. Once authorized, the add-on should automatically refresh and start operating.
 
----
 
 ### Task 5. Use the add-on
+---
 
 The **Test 1** and the **Test 2** labels are checked under the **Available User Labels** section of the add-on (right side menu).
 1. Click the **Test 2** checkbox to deselect the label. This will remove the label from the email thread you're currently in.
@@ -332,17 +332,19 @@ The **Test 1** and the **Test 2** labels are checked under the **Available User 
 4. In the add-on menu, select the **Test 1** and **Test 2** checkboxes, enabling them both.
 5. Return to the **Inbox** and refresh the browser. Both labels have been applied to the email thread.
 
+
+
+### **Congratulations!**
 ---
 
 
-### **Congratulations!**  
 You now have an idea of what Gmail add-ons are capable of. You could do many other things like displaying other recent threads that the sender has started, or translating the text of an email from one language to another without leaving Gmail.
 
 
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Using the Natural Language API from Google Docs (GSP126)** 
+## **2. USING THE NATURAL LANGUAGE API FROM GOOGLE DOCS (GSP126)** 
 
 ### Overview
 
@@ -424,9 +426,9 @@ In this lab, you learn how to:
     ![info1](/assets/images/gcp/info1.png)
     {: .notice--info}
 
----
 
 ### Task 1. Enable the Natural Language API
+---
 
 Before you start, make sure that the Natural Language API is enabled.
 
@@ -434,9 +436,9 @@ Before you start, make sure that the Natural Language API is enabled.
 
 2. Search for **Cloud Natural Language API** and click on the API to enable it or to confirm that the API is enabled.
 
----
 
 ### Task 2. Get an API key
+---
 
 Generate an API user key to pass in the request URL.
 
@@ -449,9 +451,9 @@ Generate an API user key to pass in the request URL.
 Once you have the API key, you are ready to move into Google Docs.
 
 
----
 
 ### Task 3. Set up your Google Doc
+---
 
 Before you call the Natural Language API, make an Apps Script program to create the menu, link it to a function to mark the text, and extract the text from the user selection.
 
@@ -581,9 +583,9 @@ Before you call the Natural Language API, make an Apps Script program to create 
 9. Once the script is authorized, the selected text is highlighted in yellow, since the stub for sentiment analysis always returns `0.0`, which is neutral.
 
 
----
 
 ### Task 4. Call the Natural Language API
+---
 
 Once your program can extract text from the selection and highlight it, it's time to call the Natural Language API. All of this is done in the body of the `retrieveSentiment` function.
 
@@ -708,17 +710,17 @@ Once your program can extract text from the selection and highlight it, it's tim
 
     What happens if you add another "I'm sad."?
 
----
 
 ### Congratulations!
+---
 
 You created a Google Doc and called the Natural Language API to analyze the sentiment of selected portions of the document.
 
 
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Google Chat Bot - Apps Script (GSP250)** 
+## **3. GOOGLE CHAT BOT - APPS SCRIPT (GSP250)** 
 
 ### Overview
 
@@ -802,9 +804,9 @@ In this lab, you perform the following tasks:
     ![info1](/assets/images/gcp/info1.png)
     {: .notice--info}
 
----
 
 ### Task 1. Create a chat app from a template
+---
 
 To implement your bot, create a new Google Apps Script project using the Chat App template.
 
@@ -847,9 +849,9 @@ The Chat App template pre-populates the code file containing the event handlers.
 
 3. Click **Save project to drive** (Save icon) to save the change to the **Code.gs** file.
 
----
 
 ### Task 2. Publish the bot
+---
 
 Before you can run and test the bot, the Google Chat API must be enabled for your Google Cloud project, and your bot must be published to Google Chat.
 
@@ -913,9 +915,9 @@ To test your bot in **Google Chat**, do the following:
     **Note**: It can take a few minutes for the progress check below to return a successful completion mark for this task. If not successful, wait a few mins and try again.
     {:.notice--info}
 
----
 
 ### Task 3. Define a card-formatted response
+---
 
 In the previous task, your bot responded to Google Chat events with a simple text response. In this task, you update your bot to respond with cards.
 
@@ -1189,9 +1191,8 @@ function onRemoveFromSpace(event) {
     **Note**: It can take a few minutes for the progress check below to return a successful completion mark for this task. If not successful, wait a few mins and try again.
     {:.notice--info}
 
----
-
 ### Task 4. React to button clicks in cards
+---
 
 In the previous step, your bot responded to a message from a user—a `MESSAGE` event—with a simple card that contained a [`TextParagragh`](https://developers.google.com/chat/reference/message-formats/cards#textparagraph) widget. In this step, you will create a response that includes buttons, where each button has a custom action defined for it.
 
@@ -1364,9 +1365,9 @@ Now the bot displays the available options.
     {:.notice--info}
 
 
----
 
 ### Congratulations!
+---
 
 You created a bot that responds to user messages, sets their vacation responder in Gmail, and puts an all-day event on their Calendar.
 

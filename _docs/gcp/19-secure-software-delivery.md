@@ -18,13 +18,21 @@ toc: true
 
 Lab Course [Link](https://www.cloudskillsboost.google/course_templates/1164/labs/509863)
 
-## **Gating Deployments with Binary Authorization (GSP1183)**
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Secure Builds with Cloud Build (GSP1184)**
+## **1. GETTING DEPLOYMENT WITH BINARY AUTHORIZATION (GSP1183)**
 
-## **Securing Container Builds (GSP1185)**
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Secure Software Delivery: Challenge Lab (GSP521)**
+## **2. SECURE BUILDS WITH CLOUD BUILD (GSP1184)**
+
+<hr style="height: 5px; background-color: black; border: none;">
+
+## **3. SECURING CONTAINER BUILDS (GSP1185)**
+
+<hr style="height: 5px; background-color: black; border: none;">
+
+## **4. SECURE SOFTWARE DELIVERY: CHALLENGE LAB (GSP521)**
 
 
 

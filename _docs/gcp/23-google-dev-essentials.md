@@ -19,33 +19,33 @@ toc: true
 Lab Course [Link](https://www.cloudskillsboost.google/course_templates/735)
 
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Weather Data in BigQuery (GSP009)**
+## **1. WEATHER DATA IN BIGQUERY (GSP009)**
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Classify Images of Clouds in the Cloud with AutoML Images (GSP223)**
+## **2. CLASSIFY IMAGES OF CLOUDS IN THE CLOUD AUTOML IMAGES (GSP223)**
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Entity and Sentiment Analysis with the Natural Language API (GSP038)**
+## **3. ENTITY AND SENTIMENT ANALYSIS WITH THE NATURAL LANGUAGE API (GSP038)**
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **App Engine: Qwik Start-Java (GSP068)**
+## **4. APP ENGINE: QWIK START-JAVA (GSP068)**
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **App Engine: Qwik Start-Python (GSP067)**
+## **5. APP ENGINE: QWIK START-PYTHON (GSP067)**
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Autoscaling an Instance Group with Custom Cloud Monitoring Metrics (GSP087)**
+## **6. AUTOSCALING AN INSTANCE GROUP WITH CUSTOM CLOUD MONITORING METRICS (GSP087)**
 
----
+<hr style="height: 5px; background-color: black; border: none;">
 
-## **Quiz**
+## **7. QUIZ**
 
 
 
