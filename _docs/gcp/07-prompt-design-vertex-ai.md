@@ -13,10 +13,9 @@ toc: true
 
 ---
 
+---
 
 ## **1. GENERATIVE AI WITH VERTEX AI: PROMPT DESIGN (GSP1151)**
-
----
 
 ### Overview
 This lab explores prompt engineering and best practices for designing effective prompts to improve the quality of your LLM-generated responses. You'll learn how to craft prompts that are concise, specific, and well-defined, focusing on one task at a time. The lab also covers advanced techniques like turning generative tasks into classification tasks and using examples to enhance response quality. For further exploration, refer to the official documentation on [prompt design](https://cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/introduction-prompt-design).
@@ -56,6 +55,7 @@ In this lab, you will learn how to:
     - Text summarization
 
 ### Setup and Requirements
+
 #### How to start your lab and sign in to the Google Cloud console
 
 **Note**: Use an Incognito (recommended) or private browser window to run this lab. This prevents conflicts between your personal account and the student account, which may cause extra charges incurred to your personal account.
@@ -108,7 +108,7 @@ In this lab, you will learn how to:
     ![info1](/assets/images/gcp/info1.png)
     {: .notice--info}
 
----
+
 ### Task1. Open the notebook in Vertex AI Workbench
 ---
 
@@ -122,8 +122,10 @@ In this lab, you will learn how to:
 The JupyterLab interface for your Workbench instance opens in a new browser tab.
 ![info1](/assets/images/gcp/5.png) 
 
----
+
 ### Task2. Setup the notebook
+---
+
 1. Open the `intro_prompt_design` file.
    ![info1](/assets/images/gcp/6.png) 
 
@@ -137,8 +139,10 @@ The JupyterLab interface for your Workbench instance opens in a new browser tab.
     **Note**: You can skip any notebook cells that are noted *Colab only*. If you experience a 429 response from any of the notebook cell executions, wait 1 minute before running the cell again to proceed.
     {: .notice--info}
 
----
+
 ### Task3. Prompt Engineering best practices
+---
+
 Prompt engineering is all about how to design your prompts so that the response is what you were indeed hoping to see. The idea of using "unfancy" prompts is to minimize the noise in your prompt to reduce the possibility of the LLM misinterpreting the intent of the prompt. Below are a few guidelines on how to engineer "unfancy" prompts.
 ```python
 %pip install --upgrade --quiet google-genai
@@ -488,8 +492,10 @@ In this section, you'll cover the following best practices when engineering prom
 
     Since LLMs do not have access to real-time information without further integrations, you may have noticed it hallucinates what day it is today in some of the outputs
 
----
+
 ### Task4. Reduce Output Variability
+---
+
 How can you attempt to reduce the chances of irrelevant responses and hallucinations? One way is to provide the LLM with system instructions. In this section, you will see how system instructions works and how you can use them to reduce hallucinations or irrelevant questions for a travel chatbot.
 
 1. Run through the **Using system instructions to guardrail the model from irrelevant responses** section of the notebook.
@@ -817,8 +823,10 @@ How can you attempt to reduce the chances of irrelevant responses and hallucinat
     ```
     {:.no-copy .markdown .notice--info}
 
----
+
 ### Task5. Improve Response Quality by Including Examples
+---
+
 Another way to improve response quality is to add examples in your prompt. The LLM learns in-context from the examples on how to respond. Typically, one to five examples (shots) are enough to improve the quality of responses. Including too many examples can cause the model to over-fit the data and reduce the quality of responses.
 
 Similar to classical model training, the quality and distribution of the examples is very important. Pick examples that are representative of the scenarios that you need the model to learn, and keep the distribution of the examples (e.g. number of examples per class in the case of classification) aligned with your actual distribution.
@@ -888,6 +896,8 @@ Similar to classical model training, the quality and distribution of the example
         Which prompt technique to use will solely depends on your goal. The zero-shot prompts are more open-ended and can give you creative answers, while one-shot and few-shot prompts teach the model how to behave so you can get more predictable answers that are consistent with the examples provided.
 
 ### Congratulations!
+--- 
+
 **Congratulations**! In this lab you learned prompt engineering best practices using Generative AI with Google Gemini. You explored use cases which follow the best practices of being concise, specific, well-define, providing examples and asking one at a time when using LLMs to generate responses.
 {: .notice--success}
 
@@ -895,8 +905,8 @@ Similar to classical model training, the quality and distribution of the example
 <hr style="height: 5px; background-color: black; border: none;">
 
 
-## **2. Get Started with Vertex AI Studio (GSP1154)**
----
+## **2. GET STARTED WITH VERTEX AI STUDIO (GSP1154)**
+
 
 ### Overiview
 **Vertex AI** is a comprehensive machine learning development platform that provides both **predictive** and **generative AI** capabilities. It allows you to train, evaluate, and deploy predictive machine learning models for forecasting purposes. Additionally, you can utilize the platform to discover, tune, and serve generative AI models to produce content.
@@ -966,8 +976,10 @@ In this lab, you will learn how to:
     {: .notice--info}
     
 
----
+
 ### **Task1. Analyze images with Gemini in Freeform mode**
+---
+
 In this section, you will use Gemini to analyze an image and extract information from it. In Freeform mode, you can design prompts for various tasks such as classification, extraction, and generation. There is no conversation history in Freeform mode, so every prompt is a brand-new request to the model.
 
 #### Enable the Vertex AI API
@@ -1064,8 +1076,10 @@ In this section, you will use Gemini to analyze an image and extract information
     **Note**: After selecting **Save**, give the prompts a few seconds to properly save and then proceed further with the lab. Click "Try again" if prompted "failed to update history."
     {: .notice--warning}
 
----
+
 ### **Task2. Explode multimodal capabilities**
+---
+
 In addition to **images**, **text**, and **audio**, Gemini is capable of accepting **videos** as inputs and generating text as an output.
 1. Navigate to **Cloud Storage** > **Buckets** and copy the name of your Cloud Storage bucket and save it to use in the further step.
     ![img24](/assets/images/gcp/gsp1154/24.png)
@@ -1104,8 +1118,10 @@ In addition to **images**, **text**, and **audio**, Gemini is capable of accepti
 
 Freeform mode offers many capabilities such as writing stories from images, analyzing videos, and generating multimedia ads. Explore more freeform use cases by clicking **Prompt gallery**. Check out more information about [design multimodal prompts](https://cloud.google.com/vertex-ai/docs/generative-ai/multimodal/design-multimodal-prompts).
 
----
+
 ### **Task3. Design text prompts**
+---
+
 In this section, you will explore designing text prompts in Vertex AI Studio. You will explore zero-shot, one-shot, and few-shot prompting.
 
 #### Prompt design
@@ -1246,8 +1262,9 @@ For the next practice, you will use the model to perform sentiment analysis on a
 7. Once you finish the prompt design, name the prompt as Sentiment Analysis.
 
 
----
+
 ### **Task4. Generate conversations**
+---
 
 Chat mode is a conversational mode that allows you to have a freeform chat with the model. The model uses the conversation history as context for future responses. In this section, you will create a chat prompt and have a conversation with the model.
 1. From the left menu, navigate to **Chat** to create a new chat prompt.
@@ -1304,8 +1321,10 @@ Chat mode is a conversational mode that allows you to have a freeform chat with 
 You learned how to analyze an image with freeform, explore freeform capabilities, create and test a prompt, and generate a conversation. You have taken the first step to start your journey using Vertex AI Studio and Gemini Freeform!
 {: .notice--success}
 
----
-## **3. Getting Started with the Gemini API in Vertex AI (GSP1209)**
+
+<hr style="height: 5px; background-color: black; border: none;">
+
+## **3. GETTING STARTED WITH THE GEMINI API IN VERTEX AI (GSP1209)**
 
 ### Overview
 This lab provides a hands-on introduction to using the Gemini API within Vertex AI. You'll leverage the Vertex AI SDK for Python to interact with the powerful Gemini 1.5 Pro model, exploring its capabilities through a variety of tasks. These tasks include generating text from different input types (text prompts, images, and videos), as well as experimenting with various features and configuration options to fine-tune your results. This experience will equip you with the essential skills to effectively utilize the Gemini API for diverse generative AI applications.
@@ -1395,8 +1414,9 @@ In this lab, you will learn how to:
     ![info1](/assets/images/gcp/info1.png)
     {: .notice--info}
 
----
+
 ### **Task1. Open the notebook in Vertex AI Workbench**
+---
 
 1. In the Google Cloud console, on the **Navigation menu**, click **Vertex AI** > **Workbench**.
     ![img6](/assets/images/gcp/gsp1154/51.png)
@@ -1406,8 +1426,10 @@ In this lab, you will learn how to:
 
     ![img6](/assets/images/gcp/gsp1154/53.png)
 
----
+
 ### **Task2. Setup the notebook**
+---
+
 1. Open the `intro_gemini_python` file.
     ![img6](/assets/images/gcp/gsp1154/54.png)
 2. In the **Select Kernel** dialog, choose **Python 3** from the list of available kernels.
@@ -1419,8 +1441,9 @@ In this lab, you will learn how to:
 
 In the following sections, you will run through the notebook cells to see how to use the Gemini API in Vertex AI.
 
----
+
 ### **Task3. Use the Gemini 1.5 Pro model**
+---
 
 The Gemini 1.5 Pro (`gemini-1.5-pro`) model is designed to handle natural language tasks, multi-turn text and code chat, and code generation. In this task, run through the notebook cells to see how to use the Gemini 1.5 Pro model to generate text from text prompts.
 
@@ -1756,8 +1779,10 @@ The Gemini API supports natural multi-turn conversations and is ideal for text t
     ```
     {:.no-copy}
 
----
+
 ### **Task4. Generate text from a multimodal prompt**
+---
+
 Gemini 1.5 Pro (`gemini-1.5-pro`) is a multimodal model that supports multimodal prompts. You can include text, image(s), and video in your prompt requests and get text or code responses.
 
 Define helper functions to load and display images.
@@ -2117,14 +2142,16 @@ Use the `Image.load_from_file` method to load a local file as the image to gener
     {:.no-copy}
 
 
----
+
 ### **Congratulations**
+---
 
 In this lab, you delved into the utilization of the Gemini API in Vertex AI along with the Vertex AI SDK for Python to interact with the Gemini 1.5 Pro (`gemini-1.5-pro`) model. Through these exercises, you gained practical insights into the capabilities of the Gemini API in Vertex AI and its seamless integration with the Python SDK.
 {: .notice--success}
 
----
-## **4. Prompt Design in Vertex AI: Challenge Lab (GSP519)**
+<hr style="height: 5px; background-color: black; border: none;">
+
+## **4. PROMPT DESIGN IN VERTEX AI: CHALLENGE LAB (GSP519)**
 
 ### Overview
 In a challenge lab you’re given a scenario and a set of tasks. Instead of following step-by-step instructions, you will use the skills learned from the labs in the course to figure out how to complete the tasks on your own! An automated scoring system (shown on this page) will provide feedback on whether you have completed your tasks correctly.
@@ -2155,8 +2182,10 @@ Cymbal Direct wants to create a marketing campaign for its new product line that
 - **Evocative Product Descriptions**: using image analysis to inspire short, descriptive text that captures the essence of their products and the feeling of being in nature.
 - **Catchy Taglines**: focused on highlighting product features, the target audience, and the desired emotional response.
 
----
+
 ### **Task1. Build a Gemini image analysis tool**
+---
+
 In this section, you will create a template for analyzing images of Cymbal Direct products using the Gemini 1.5 Pro model in Vertex AI Studio. The goal is to generate descriptive text options inspired by the image, from simple details to more evocative, mood-setting phrases.
 
 **Tasks:**
@@ -2178,8 +2207,9 @@ In this section, you will create a template for analyzing images of Cymbal Direc
     **Note:** Ensure you are using the **`gemini-1.5-pro`** model for this task!
     {: .notice--info}
 
----
+
 ### **Task2. Build a Gemini Tagline Generator**
+---
 
 In this task, you will create a freeform prompt for generating diverse tagline possibilities using the Gemini 1.5 Pro model in Vertex AI Studio. The goal is to develop a prompt that allows for customization of the tagline style, based on product attributes, target audience, and emotional resonance.
 
@@ -2227,8 +2257,10 @@ Write a tagline for a lightweight tent designed for seasoned explorers that make
 
     ![img6](/assets/images/gcp/gsp1154/64.png)
 
----
+
 ### **Task3. Experiment with Image Analysis Code**
+---
+
 In this task, you will explore the Python code for the image analysis prompt you created. You will then modify the prompt to be more specific and test the new prompt in a notebook.
 1. In the Google Cloud console, on the **Navigation menu**, click **Vertex AI** > **Workbench**.
 2. Find the `generative-ai-jupyterlab` instance and click on the **Open JupyterLab** button.
@@ -2309,8 +2341,10 @@ Please provide the code cell and prompt.
 
 5. **Verify** that the new descriptions are shorter and more creative than the previous ones.
 
----
+
 ### **Task4. Experiment with Tagline Generation Code**
+---
+
 In this task, you will explore the Python code for the tagline prompt you created. You will then modify the prompt to include a specific keyword and test the new prompt in a notebook.
 1. Create a new notebook file named `tagline-generator.ipynb`.
 2. Add the following code to the notebook:
@@ -2447,6 +2481,7 @@ In this task, you will explore the Python code for the tagline prompt you create
     {:.notice--info}
 
 ### Congratulations!
+---
 
 **Congratulations**, you've successfully completed the lab! You've helped Cymbal Direct create a set of tools within Google Cloud's Vertex AI platform that will streamline the generation of evocative product descriptions and catchy taglines for their new product line. You've also explored and modified the image analysis and tagline generation code in a notebook. Great job!
 {:.notice--success}
