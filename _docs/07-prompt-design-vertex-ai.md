@@ -482,6 +482,7 @@ In this section, you'll cover the following best practices when engineering prom
 
     Since LLMs do not have access to real-time information without further integrations, you may have noticed it hallucinates what day it is today in some of the outputs
 
+---
 ### Task4. Reduce Output Variability
 How can you attempt to reduce the chances of irrelevant responses and hallucinations? One way is to provide the LLM with system instructions. In this section, you will see how system instructions works and how you can use them to reduce hallucinations or irrelevant questions for a travel chatbot.
 
@@ -2443,3 +2444,90 @@ In this task, you will explore the Python code for the tagline prompt you create
 ![img6](/assets/images/gcp/gsp1154/75.png)
 
 ![congrats](/assets/myimages/congrats.jpg)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Scroll to Top Button -->
+<button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">㐃</button>
+
+<style>
+  /* Style for the button */
+  #scrollToTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 20px; /* Place the button 20px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #555; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 20px; /* Some padding */
+    border-radius: 20px; /* Rounded corners */
+    font-size: 15px; /* Increase font size */
+  }
+  #scrollToTopBtn:hover {
+    background-color: #111; /* Darker background on hover */
+  }
+</style>
+
+<script defer>
+  // Show the button when scrolling down
+  window.onscroll = function() {
+    let btn = document.getElementById("scrollToTopBtn");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+
+  // Scroll to top function
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
