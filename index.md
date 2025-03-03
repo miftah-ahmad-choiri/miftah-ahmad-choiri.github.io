@@ -8,7 +8,7 @@ hidden: true
 header:
   overlay_color: "#5e616c"
   #overlay_filter: rgba(91, 65, 182, 0.5)
-  overlay_image: https://www.canva.com/design/DAGgqOnDIW4/S1AYKZKDdbno14cnl6DWaA/view?utm_content=DAGgqOnDIW4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h636c94df62
+  overlay_image: /assets/pictures/1.gif
   actions:
     - label: "<i class='fas fa-arrow-right'></i> Let's Go"
       url: "/docs/"
