@@ -8,7 +8,7 @@ hidden: true
 header:
   overlay_color: "#5e616c"
   #overlay_filter: rgba(91, 65, 182, 0.5)
-  overlay_image: /assets/pictures/1.gif
+  overlay_image: /assets/pictures/2.gif
   actions:
     - label: "<i class='fas fa-arrow-right'></i> Let's Go"
       url: "/docs/"
