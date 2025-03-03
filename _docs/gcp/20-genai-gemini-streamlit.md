@@ -7,7 +7,7 @@ title: |
         ![Node.js](https://img.shields.io/badge/node.js-runtime--environment-brightgreen)
         ![Linux](https://img.shields.io/badge/linux-operating--system-black)
 
-permalink: /docs/secure-software-delivery/
+permalink: /docs/gcp/genai-gemini-streamlit/
 excerpt: "This module explain how to publish a content on this website"
 last_modified_at: 2025-03-01T21:36:18-04:00
 toc: true
@@ -16,15 +16,22 @@ toc: true
 
 ---
 
-Lab Course [Link](https://www.cloudskillsboost.google/course_templates/1164/labs/509863)
+Lab Course [Link](https://www.cloudskillsboost.google/course_templates/978)
 
-## **Gating Deployments with Binary Authorization (GSP1183)**
+## **Getting Started with the Gemini API in Vertex AI with cURL (GSP1228)**
 
-## **Secure Builds with Cloud Build (GSP1184)**
+## **Introduction to Function Calling with Gemini (GSP1227)**
 
-## **Securing Container Builds (GSP1185)**
+## **Getting Started with the Gemini API in Vertex AI (GSP1209)**
 
-## **Secure Software Delivery: Challenge Lab (GSP521)**
+## **Utilize the Streamlit Framework with Cloud Run and the Gemini API in Vertex AI (GSP1229)**
+
+## **Develop GenAI Apps with Gemini and Streamlit: Challenge Lab (GSP517)**
+
+
+
+
+
 
 
 

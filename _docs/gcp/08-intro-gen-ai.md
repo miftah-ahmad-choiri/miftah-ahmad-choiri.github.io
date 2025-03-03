@@ -1,32 +1,23 @@
 ---
 title: | 
-        **Secure Software Delivery** <br>
-        ![Google Cloud Compute](https://img.shields.io/badge/google--cloud-compute--engine-blue)
-        ![Nginx](https://img.shields.io/badge/nginx-web--server-green)
-        ![Debian VM](https://img.shields.io/badge/debian-virtual--machine-red)
-        ![Node.js](https://img.shields.io/badge/node.js-runtime--environment-brightgreen)
-        ![Linux](https://img.shields.io/badge/linux-operating--system-black)
-
-permalink: /docs/genai-gemini-streamlit/
+        Introduction to Generative AI💡
+permalink: /docs/gcp/intro-gen-ai/
 excerpt: "This module explain how to publish a content on this website"
-last_modified_at: 2025-03-01T21:36:18-04:00
-toc: true
+last_modified_at: 2025-02-08T21:36:18-04:00
+header:
+  video:
+    id: tNBvUvsScAA
+    provider: youtube
 
 ---
 
----
 
-Lab Course [Link](https://www.cloudskillsboost.google/course_templates/978)
 
-## **Getting Started with the Gemini API in Vertex AI with cURL (GSP1228)**
+{% include video id="tNBvUvsScAA" provider="youtube" %}
 
-## **Introduction to Function Calling with Gemini (GSP1227)**
 
-## **Getting Started with the Gemini API in Vertex AI (GSP1209)**
 
-## **Utilize the Streamlit Framework with Cloud Run and the Gemini API in Vertex AI (GSP1229)**
 
-## **Develop GenAI Apps with Gemini and Streamlit: Challenge Lab (GSP517)**
 
 
 
@@ -99,3 +90,5 @@ Lab Course [Link](https://www.cloudskillsboost.google/course_templates/978)
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 </script>
+
+

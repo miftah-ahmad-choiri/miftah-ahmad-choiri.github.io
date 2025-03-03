@@ -6,7 +6,7 @@ title: |
         ![Imagen](https://img.shields.io/badge/imagen-image--generation-orange)
         ![Python](https://img.shields.io/badge/python-programming--language-blue)
 
-permalink: /docs/build-ai-apps-gemini/
+permalink: /docs/gcp/build-ai-apps-gemini/
 excerpt: "This module explain how to publish a content on this website"
 last_modified_at: 2025-02-14T21:36:18-04:00
 toc: true

@@ -47,6 +47,54 @@ docs:
         url: /docs/github/how-to-edit-jekyll/
       - title: "• Publish a Content"
         url: /docs/github/publish-content/
+  - title: IBM AIX🌐
+    children:
+      - title: "• Full-Guide Replace Disk AIX/VIOS"
+        url: /docs/aix/aix-replace-disks/
+      - title: "• Upgrading, Update, Backup HMC IBM"
+        url: /docs/aix/upgrade-hmc/
+  - title: Red Hat Ansible🤖
+    children:
+      - title: "• How to Install AWX"
+        url: /docs/ansible/how-to-install-awx
+  - title: Google Cloud
+    children:
+      - title: "• Introduction to Generative AI💡"
+        url: /docs/gcp/intro-gen-ai/
+      - title: "• Prompt Design in Vertex AI"
+        url: /docs/gcp/prompt-design-vertex-ai/
+      - title: "• Build AI Apps with Gemini"
+        url: /docs/gcp/build-ai-apps-gemini/
+      - title: "• The Basics of Google Cloud Compute"
+        url: /docs/gcp/gcp-basics/
+      - title: "• Cloud Speech API: 3 Ways"
+        url: /docs/gcp/cloud-speech-api/
+      - title: "• Secure BigLake Data"
+        url: /docs/gcp/secure-biglake-data/
+      - title: "• Get Started with Sensitive Data Protection"
+        url: /docs/gcp/sensitive-data-protection/
+      - title: "• Automate Data Capture at Scale with Document AI"
+        url: /docs/gcp/automate-data-capture/
+      - title: "• Explore Generative AI with the Vertex AI Gemini API"
+        url: /docs/gcp/gen-ai-with-gemini-api/
+      - title: "• The Basics of Google Cloude Compute"
+        url: /docs/gcp/gemini-in-bigquery/
+      - title: "• Workspace: Add-ons"
+        url: /docs/gcp/workspace-addons/
+      - title: "• Secure Software Delivery"
+        url: /docs/gcp/secure-software-delivery/
+      - title: "• Develop GenAI Apps with Gemini and Streamlit"
+        url: /docs/gcp/genai-gemini-streamlit/
+      - title: "• Gemini for Data Scientists and Analysts"
+        url: /docs/gcp/gemini-data-scientist-analyst/
+      - title: "• Work with Gemini Models in BigQuery"
+        url: /docs/gcp/gemini-big-query/
+      - title: "• Google Developer Essentials"
+        url: /docs/gcp/google-dev-essentials/
+      - title: "• Prepare Data for ML APIs on Google Cloud"
+        url: /docs/gcp/prepare-data-ml-gcp/
+      - title: "• Responsible AI for Developers: Privacy & Safety"
+        url: /docs/gcp/privacy-safety-ai/
   - title: Redhat Enterprise Linux🎩
     children:
       - title: "• Wait in Progress"
@@ -63,54 +111,6 @@ docs:
     children:
       - title: "• Wait in Progress"
         url: /404.html
-  - title: IBM AIX🌐
-    children:
-      - title: "• Full-Guide Replace Disk AIX/VIOS"
-        url: /docs/aix-replace-disks/
-      - title: "• Upgrading, Update, Backup HMC IBM"
-        url: /docs/upgrade-hmc/
-  - title: Red Hat Ansible🤖
-    children:
-      - title: "• How to Install AWX"
-        url: /docs/how-to-install-awx
-  - title: Google Cloud
-    children:
-      - title: "• Introduction to Generative AI💡"
-        url: /docs/intro-gen-ai/
-      - title: "• Prompt Design in Vertex AI"
-        url: /docs/prompt-design-vertex-ai/
-      - title: "• Build AI Apps with Gemini"
-        url: /docs/build-ai-apps-gemini/
-      - title: "• The Basics of Google Cloud Compute"
-        url: /docs/gcp-basics/
-      - title: "• Cloud Speech API: 3 Ways"
-        url: /docs/cloud-speech-api/
-      - title: "• Secure BigLake Data"
-        url: /docs/secure-biglake-data/
-      - title: "• Get Started with Sensitive Data Protection"
-        url: /docs/sensitive-data-protection/
-      - title: "• Automate Data Capture at Scale with Document AI"
-        url: /docs/automate-data-capture/
-      - title: "• Explore Generative AI with the Vertex AI Gemini API"
-        url: /docs/gen-ai-with-gemini-api/
-      - title: "• The Basics of Google Cloude Compute"
-        url: /docs/gemini-in-bigquery/
-      - title: "• Workspace: Add-ons"
-        url: /docs/workspace-addons/
-      - title: "• Secure Software Delivery"
-        url: /docs/secure-software-delivery/
-      - title: "• Develop GenAI Apps with Gemini and Streamlit"
-        url: /docs/genai-gemini-streamlit/
-      - title: "• Gemini for Data Scientists and Analysts"
-        url: /docs/gemini-data-scientist-analyst/
-      - title: "• Work with Gemini Models in BigQuery"
-        url: /docs/gemini-big-query/
-      - title: "• Google Developer Essentials"
-        url: /docs/google-dev-essentials/
-      - title: "• Prepare Data for ML APIs on Google Cloud"
-        url: /docs/prepare-data-ml-gcp/
-      - title: "• Responsible AI for Developers: Privacy & Safety"
-        url: /docs/privacy-safety-ai/
 
 
 

@@ -7,7 +7,7 @@ title: |
         ![Python](https://img.shields.io/badge/python-programming--language-blue)
         
 
-permalink: /docs/cloud-speech-api/
+permalink: /docs/gcp/cloud-speech-api/
 excerpt: "This module explain how to publish a content on this website"
 last_modified_at: 2025-02-24T21:36:18-04:00
 toc: true

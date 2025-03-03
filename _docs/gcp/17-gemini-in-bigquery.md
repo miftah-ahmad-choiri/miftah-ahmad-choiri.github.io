@@ -7,7 +7,7 @@ title: |
         ![Node.js](https://img.shields.io/badge/node.js-runtime--environment-brightgreen)
         ![Linux](https://img.shields.io/badge/linux-operating--system-black)
 
-permalink: /docs/gemini-in-bigquery/
+permalink: /docs/gcp/gemini-in-bigquery/
 excerpt: "This module explain how to publish a content on this website"
 last_modified_at: 2025-02-28T21:36:18-04:00
 toc: true

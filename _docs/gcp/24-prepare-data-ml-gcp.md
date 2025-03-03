@@ -1,13 +1,13 @@
 ---
 title: | 
-        **Google Developer Essentials** <br>
+        **Prepare Data for ML APIs on Google Cloud** <br>
         ![Google Cloud Compute](https://img.shields.io/badge/google--cloud-compute--engine-blue)
         ![Nginx](https://img.shields.io/badge/nginx-web--server-green)
         ![Debian VM](https://img.shields.io/badge/debian-virtual--machine-red)
         ![Node.js](https://img.shields.io/badge/node.js-runtime--environment-brightgreen)
         ![Linux](https://img.shields.io/badge/linux-operating--system-black)
 
-permalink: /docs/google-dev-essentials/
+permalink: /docs/gcp/prepare-data-ml-gcp/
 excerpt: "This module explain how to publish a content on this website"
 last_modified_at: 2025-03-01T21:36:18-04:00
 toc: true
@@ -16,38 +16,53 @@ toc: true
 
 ---
 
-Lab Course [Link](https://www.cloudskillsboost.google/course_templates/735)
+Lab Course [Link](https://www.cloudskillsboost.google/course_templates/631)
 
 
----
-
-## **Weather Data in BigQuery (GSP009)**
-
----
-
-## **Classify Images of Clouds in the Cloud with AutoML Images (GSP223)**
+<iframe src="/assets/images/gcp/pdf/privacy-safety-ai/1.pdf" width="100%" height="1000px">
+</iframe>
 
 ---
 
-## **Entity and Sentiment Analysis with the Natural Language API (GSP038)**
+## **Vertex AI: Qwik Start (GSP917)**
+
+https://www.youtube.com/watch?v=IKcmDGxp9k0
 
 ---
 
-## **App Engine: Qwik Start-Java (GSP068)**
+## **Dataprep: Qwik Start (GSP105)**
 
 ---
 
-## **App Engine: Qwik Start-Python (GSP067)**
+## **Dataflow: Qwik Start - Templates (GSP192)**
 
 ---
 
-## **Autoscaling an Instance Group with Custom Cloud Monitoring Metrics (GSP087)**
+## **Dataflow: Qwik Start - Python (GSP207)**
 
 ---
 
-## **Quiz**
+## **Dataproc: Qwik Start - Console (GSP103)**
 
+---
 
+## **Dataproc: Qwik Start - Command Line (GSP104)**
+
+---
+
+## **Cloud Natural Language API: Qwik Start (GSP097)**
+
+---
+
+## **Speech-to-Text API: Qwik Start (GSP119)**
+
+---
+
+## **Video Intelligence: Qwik Start (GSP154)**
+
+---
+
+## **Prepare Data for ML APIs on Google Cloud: Challenge Lab (GSP323)**
 
 
 
