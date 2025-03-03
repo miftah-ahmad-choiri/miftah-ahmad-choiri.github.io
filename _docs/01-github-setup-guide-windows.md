@@ -11,12 +11,6 @@ last_modified_at: 2025-02-04T21:36:18-04:00
 redirect_from:
   - /theme-setup/
 toc: true
-
-sidebar:
-  - title: "Find Your Guideline"
-    image: "/assets/pictures/4.gif"
-    image_alt: "image"
-    text: "The wise guide does not give the right answers, but leads you to the right questions."
 ---
 
 # GitHub Setup Guide for Windows (Git Bash) by Miftah Ahmad Choiri

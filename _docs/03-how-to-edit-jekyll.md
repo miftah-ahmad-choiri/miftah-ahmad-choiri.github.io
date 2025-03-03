@@ -11,11 +11,6 @@ excerpt: "Instructions to edit the website and contents."
 last_modified_at: 2025-02-06T21:36:18-04:00
 toc: true
 
-sidebar:
-  - title: "Find Your Guideline"
-    image: "/assets/pictures/4.gif"
-    image_alt: "image"
-    text: "The wise guide does not give the right answers, but leads you to the right questions."
 ---
 # What's New in Release v0.1.2
 
