@@ -8,7 +8,7 @@ hidden: true
 header:
   overlay_color: "#5e616c"
   #overlay_filter: rgba(91, 65, 182, 0.5)
-  overlay_image: /assets/pictures/1.jpg
+  overlay_image: /assets/pictures/20.jpeg
   actions:
     - label: "<i class='fas fa-arrow-right'></i> Let's Go"
       url: "/docs/"
@@ -27,21 +27,21 @@ intro:
       💡 **Let’s build, automate, and innovate together!** ⚙️🚀  
 
 feature_row:
-  - image_path: /assets/pictures/8.png
+  - image_path: /assets/pictures/18.png
     alt: "MyDocs-Banks📄"
     title: "MyDocs-Banks📄"
     excerpt: "I provide well-structured documentation for automation and system configurations across enterprise environments. My documentation covers Red Hat, AIX, AS/400, Cisco MDS, Brocade switches, HMC, Storwize, and IBM DS8000, ensuring efficient troubleshooting, setup, and management of IT infrastructure."
     url: "/docs/"
     btn_class: "btn--primary"
     btn_label: "Go there"
-  - image_path: /assets/pictures/9.png
+  - image_path: /assets/pictures/19.png
     alt: "MyPortofolios"
     title: "MyPortofolios🏆"
     excerpt: "I have hands-on experience in setting up and configuring Ansible, RHV, OpenShift, AS/400, AIX, VIOS, Spectrum Control, IBM DS8000, and Storwize storage. My work involves optimizing enterprise infrastructure, automating deployments, and ensuring system reliability through efficient configurations."
     url: "/blog/"
     btn_class: "btn--primary"
     btn_label: "Go there"
-  - image_path: /assets/pictures/7.png
+  - image_path: /assets/pictures/17.png
     alt: "MyProjects"
     title: "MyProjects💼"
     excerpt: "I have worked on installation, migration, relocation, maintenance, optimization, integration, problem breakfix, and decommissioning for enterprise servers, including IBM Power, IBM Storage, and other OEM products. My expertise ensures seamless infrastructure deployment, system reliability, and performance optimization."
