@@ -10,6 +10,12 @@ permalink: /docs/github-version-release/
 excerpt: "How the theme is organized and what all of the files are for."
 last_modified_at: 2025-02-05T21:36:18-04:00
 toc: true
+
+sidebar:
+  - title: "Find Your Guideline"
+    image: "/assets/pictures/4.gif"
+    image_alt: "image"
+    text: "The wise guide does not give the right answers, but leads you to the right questions."
 ---
 # 🚀 How to Edit This Website
 
