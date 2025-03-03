@@ -12,8 +12,12 @@ last_modified_at: 2025-02-14T21:36:18-04:00
 toc: true
 
 ---
----
-## **1. Generative AI with Vertex AI: Prompt Design (GSP1151)**
+
+*********************************
+
+## **1. GENERATIVE AI WITH VERTEX AI: PROMPT DESIGN (GSP1151)**
+
+<hr style="height: 5px; background-color: black; border: none;">
 
 ### Overview
 This lab explores prompt engineering and best practices for designing effective prompts to improve the quality of your LLM-generated responses. You'll learn how to craft prompts that are concise, specific, and well-defined, focusing on one task at a time. The lab also covers advanced techniques like turning generative tasks into classification tasks and using examples to enhance response quality. For further exploration, refer to the official documentation on [prompt design](https://cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/introduction-prompt-design).

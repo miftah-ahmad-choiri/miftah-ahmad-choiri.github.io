@@ -8,7 +8,7 @@ feature_row:
     alt: "Start Your Github Journey🔃"
     title: "Start Your Github Journey🔃"
     excerpt: "Quick reference guides for common commands and configurations."
-    url: "/docs/github-setup-guide-windows/"
+    url: "/docs/github/github-setup-guide-windows/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
 
@@ -48,7 +48,7 @@ feature_row:
     alt: "Mastering IBM AIX🌐"
     title: "Mastering IBM AIX🌐"
     excerpt: "Best practices for system maintenance and optimization."
-    url: "/docs/aix-replace-disks/"
+    url: "/docs/aix/aix-replace-disks/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
 
@@ -56,7 +56,7 @@ feature_row:
     alt: "Automation with Red Hat Ansible🤖"
     title: "Automation with Red Hat Ansible🤖"
     excerpt: "Best practices for system maintenance and optimization."
-    url: "/docs/how-to-install-awx"
+    url: "/docs/ansible/how-to-install-awx"
     btn_class: "btn--primary"
     btn_label: "Learn more"
 
@@ -64,7 +64,7 @@ feature_row:
     alt: "Introduction to GoogleCloud"
     title: "Introduction to GoogleCloud"
     excerpt: "Best practices for system maintenance and optimization."
-    url: "/docs/intro-gen-ai/"
+    url: "/docs/gcp/intro-gen-ai/"
     btn_class: "btn--primary"
     btn_label: "Learn More"
 
