@@ -10,6 +10,7 @@ permalink: /docs/how-to-edit-jekyll/
 excerpt: "Instructions to edit the website and contents."
 last_modified_at: 2025-02-06T21:36:18-04:00
 toc: true
+
 ---
 # What's New in Release v0.1.2
 

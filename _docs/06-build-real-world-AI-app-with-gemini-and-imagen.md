@@ -10,6 +10,7 @@ permalink: /docs/build-ai-apps-gemini/
 excerpt: "This module explain how to publish a content on this website"
 last_modified_at: 2025-02-14T21:36:18-04:00
 toc: true
+
 ---
 
 ## **1. Build Real World AI Applications with Gemini and Imagen**

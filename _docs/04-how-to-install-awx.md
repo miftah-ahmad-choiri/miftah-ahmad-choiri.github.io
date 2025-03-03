@@ -9,6 +9,7 @@ permalink: /docs/how-to-install-awx/
 excerpt: "This guide explain how to Install Ansible AWX on RHEL9"
 last_modified_at: 2025-02-08T21:36:18-04:00
 toc: true
+
 ---
 
 ## 🔥 1. Disable Firewall and Configure SELinux
