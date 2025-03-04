@@ -1311,25 +1311,30 @@ In this section of the lab, you will learn how to create a customer service appl
 4.  Look for the `&lt;td style="padding:10px;">` tag with the `{summary}` output included. Add new line of code before this tag.
 
 5.  Paste `&lt;td rowspan="3" style="padding: 10px;">&lt;img src="&lt;authenticated url here>" alt="Customer Image" style="max-width: 300px;">&lt;/td>` into this new line of code.
+
 6.  Find the Authenticated URL for the image_7061.png file. Go to Cloud Storage, select the only bucket you have there, the images folder, and then click on the image.
+
 7.  On the resulting page, copy the Authenticated URL for the image.
+
 8.  Return to the Python notebook in BigQuery. Replace the `&lt;authenticated url here>` with the actual Authenticated URL in the code you just pasted.
-9.  Run the cell. \
-Again the output is minimal. Just some processing messages, indicating each step completes.
+
+9.  Run the cell. 
+    Again the output is minimal. Just some processing messages, indicating each step completes.
+
 10.  Create a new cell to download the audio file and load it into the player, using the code below:
 
-    ```python
-    # Download the audio file from Google Cloud Storage and load into the player
-    storage_client = storage.Client()
-    bucket = storage_client.bucket(bucket_name)
-    blob = bucket.blob(f"{folder_name}/data-beans_review_7061.mp3")
-    audio_bytes = io.BytesIO(blob.download_as_bytes())
+      ```python
+      # Download the audio file from Google Cloud Storage and load into the player
+      storage_client = storage.Client()
+      bucket = storage_client.bucket(bucket_name)
+      blob = bucket.blob(f"{folder_name}/data-beans_review_7061.mp3")
+      audio_bytes = io.BytesIO(blob.download_as_bytes())
 
-    # Assuming a sample rate of 44100 Hz (common for MP3 files)
-    sample_rate = 44100
+      # Assuming a sample rate of 44100 Hz (common for MP3 files)
+      sample_rate = 44100
 
-    print('The audio file is loaded in the player.
-    ```   
+      print('The audio file is loaded in the player.
+      ```   
 
 11. A few key points about this cell:
     * The code in the cell accesses the Cloud Storage bucket and retrieves the specific audio file (data-beans_review_7061.mp3).
@@ -1355,13 +1360,6 @@ Again the output is minimal. Just some processing messages, indicating each step
 ### **Congratulations!**
 ---
 You successfully created cloud resource connection in BigQuery. You also created created a dataset, tables, and models to prompt Gemini to analyze sentiment and keywords on customer reviews. Finally, you used Gemini to analyze audio-based customer reviews to generate summaries and keywords to repond to customer reviews within a customer service application.
-
-
-
-<hr style="height: 5px; background-color: black; border: none;">
-
-## **7. QUIZ**
-
 
 
 
