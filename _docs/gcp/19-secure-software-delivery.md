@@ -2219,7 +2219,7 @@ In this section, you will complete the Cloud Build pipeline to include vulnerabi
 
     **cloudbuild.yaml**
 
-    ```bash
+    ```yaml
     steps:
 
     # TODO: #1. Build Step. Replace the <image-name> placeholder with the correct value.
