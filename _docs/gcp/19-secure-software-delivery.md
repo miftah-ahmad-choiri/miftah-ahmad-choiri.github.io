@@ -181,8 +181,6 @@ export PROJECT_NUMBER=$(gcloud projects describe $PROJECT_ID \
     --format='value(projectNumber)')
 ```
 
-content_copy
-
 #### Enable services
 
 Enable all necessary services:
@@ -818,7 +816,7 @@ Currently, your cluster is running a policy with one rule: allow containers from
 
 2. You should now have a new file on disk, called `updated_policy.yaml`. Now, instead of the default rule rejecting all images, it first checks your attestor for verifications.
 
-![allowed containers plus container signed by Attestor is allowed](Images/VUX-allowed-containers-plus-container-signed.png)
+    ![allowed containers plus container signed by Attestor is allowed](Images/VUX-allowed-containers-plus-container-signed.png)
 
 3. Upload the new policy to Binary Authorization:
 
@@ -1379,7 +1377,7 @@ In the example below you will build and analyze the image locally before acting 
     gcloud artifacts docker images list-vulnerabilities $(cat scan_id.txt) --format="value(vulnerability.effectiveSeverity)" | if grep -Fxq ${SEVERITY}; then echo "Failed vulnerability check for ${SEVERITY} level"; else echo "No ${SEVERITY} Vulnerabilities found"; fi
     ```
 
-The output from this command will be
+    The output from this command will be
 
     ```bash
     Failed vulnerability check for CRITICAL level
