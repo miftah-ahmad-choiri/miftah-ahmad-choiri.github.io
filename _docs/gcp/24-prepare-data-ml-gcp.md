@@ -19,7 +19,7 @@ toc: true
 Lab Course [Link](https://www.cloudskillsboost.google/course_templates/631)
 
 
-<iframe src="/assets/images/gcp/pdf/privacy-safety-ai/1.pdf" width="100%" height="1000px">
+<iframe src="/assets/images/gcp/pdf/privacy-safety-ai/2.pdf" width="100%" height="1000px">
 </iframe>
 
 <hr style="height: 5px; background-color: black; border: none;">
