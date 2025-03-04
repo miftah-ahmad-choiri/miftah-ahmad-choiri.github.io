@@ -85,6 +85,92 @@ Lab Course [Link](https://www.cloudskillsboost.google/course_templates/1036)
 
 ## **9. DIFFERENTIAL PRIVACY IN MACHINE LEARNING WITH TENSORFLOW PRIVACY (GSP9997)**
 
+
+### **Overview**
+
+This lab helps you learn how to use differential privacy in machine learning using TensorFlow Privacy.
+
+#### Learning objectives
+
+1. Wrap existing optimizers into their differentially private counterparts using TensorFlow Privacy.
+2. Practice checking hyperparameters introduced by differentially private machine learning.
+3. Measure the privacy guarantee provided using analysis tools included in TensorFlow Privacy.
+
+
+### **Task 0. Setup and requirements**
+---
+
+For each lab, you get a new Google Cloud project and set of resources for a fixed time at no cost.
+
+1. Sign in to Qwiklabs using an **incognito window**.
+2. Note the lab's access time (for example, `1:15:00`), and make sure you can finish within that time. 
+    There is no pause feature. You can restart if needed, but you have to start at the beginning.
+
+3. When ready, click **Start lab**.
+4. Note your lab credentials (**Username** and **Password**). You will use them to sign in to the Google Cloud Console.
+5. Click **Open Google Console**.
+6. Click **Use another account** and copy/paste credentials for **this** lab into the prompts. 
+    If you use other credentials, you'll receive errors or **incur charges**.
+
+7. Accept the terms and skip the recovery resource page.
+
+**Note:** Do not click **End Lab** unless you have finished the lab or want to restart it. This clears your work and removes the project.
+{:.notice--info}
+
+
+#### Enable the Notebooks API
+
+1. In the Google Cloud Console, on the **Navigation menu**, click **APIs & Services > Library**.
+2. Search for **Notebooks API** and press ENTER.
+3. Click on the **Notebooks API** result, and if the API is not enabled, click **Enable**.
+
+
+#### Enable the Vertex AI API
+
+1. In the Google Cloud Console, on the **Navigation menu**, click **Vertex AI > Dashboard**.
+2. Click **ENABLE ALL RECOMMENDED APIS**.
+
+
+### **Task 1. Open Vertex AI Workbench instance**
+---
+
+1. In the Google Cloud Console, on the **Navigation Menu**, click **Vertex AI > Workbench**.
+2. On the **Instance** page, click **CREATE NEW**.
+3. Please use the default zone and region: `zone placeholder` `region placeholder`. Leave the remaining settings as they are and then click **Create**. The new VM will take 2-3 minutes to start.
+4. Click **Open JupyterLab**. A JupyterLab window will open in a new tab.
+
+
+### **Task 2. Clone a course repo within your Vertex AI Workbench instance**
+---
+
+To clone the notebook in your JupyterLab instance:
+
+1. In JupyterLab, open a new terminal window.
+2. At the command-line prompt, run the following command:
+
+    ```bash
+    git clone https://github.com/GoogleCloudPlatform/asl-ml-immersion.git
+    cd asl-ml-immersion
+    export PATH=$PATH:~/.local/bin
+    make install
+    ```
+
+3. To confirm that you have cloned the repository, double-click on the `asl-ml-immersion` directory and ensure that you can see its contents. The files for all the Jupyter notebook-based labs throughout this course are available in this directory.
+
+
+### **Task 3. Implement Differential Privacy with TensorFlow Privacy**
+---
+
+1. In the notebook interface, navigate to **asl-ml-immersion > notebooks > responsible_ai > privacy > solutions** and open **privacy_dpsgd.ipynb**.
+2. In the notebook interface, click **Edit > Clear All Outputs**.
+3. Carefully read through the notebook instructions and run through the notebook.
+
+**Tip**: To run the current cell, click the cell and press SHIFT+ENTER. Other cell commands are listed in the notebook UI under **Run**.
+{:.notice--info}
+
+
+
+
 <hr style="height: 5px; background-color: black; border: none;">
 
 
@@ -131,6 +217,87 @@ Lab Course [Link](https://www.cloudskillsboost.google/course_templates/1036)
 <hr style="height: 5px; background-color: black; border: none;">
 
 ## **16. SAFEGUARDING WITH VERTEX AI GEMINI API (GSP9996)**
+
+### **Overview**
+
+This lab shows you how to inspect the safety ratings returned from the Vertex AI Gemini API and how to set a safety threshold to filter responses.
+
+#### Learning objectives
+
+1. Call the Vertex AI Gemini API and inspect safety ratings of the responses
+2. Define a threshold for filtering safety ratings according to your needs
+
+
+### **Task 0. Setup and requirements**
+---
+
+For each lab, you get a new Google Cloud project and set of resources for a fixed time at no cost.
+
+1. Sign in to Qwiklabs using an **incognito window**.
+2. Note the lab's access time (for example, `1:15:00`), and make sure you can finish within that time. 
+    There is no pause feature. You can restart if needed, but you have to start at the beginning.
+3. When ready, click **Start lab**.
+4. Note your lab credentials (**Username** and **Password**). You will use them to sign in to the Google Cloud Console.
+5. Click **Open Google Console**.
+6. Click **Use another account** and copy/paste credentials for **this** lab into the prompts. 
+    If you use other credentials, you'll receive errors or **incur charges**.
+7. Accept the terms and skip the recovery resource page.
+
+**Note:** Do not click **End Lab** unless you have finished the lab or want to restart it. This clears your work and removes the project.
+{:.notice--info}
+
+
+#### Enable the Notebooks API
+
+1. In the Google Cloud Console, on the **Navigation menu**, click **APIs & Services > Library**.
+2. Search for **Notebooks API** and press ENTER.
+3. Click on the **Notebooks API** result, and if the API is not enabled, click **Enable**.
+
+
+#### Enable the Vertex AI API
+
+1. In the Google Cloud Console, on the **Navigation menu**, click **Vertex AI > Dashboard**.
+2. Click **ENABLE ALL RECOMMENDED APIS**.
+
+
+### **Task 1. Open Vertex AI Workbench instance**
+---
+
+1. In the Google Cloud Console, on the **Navigation Menu**, click **Vertex AI > Workbench**.
+2. On the **Instance** page, click **CREATE NEW**.
+3. Please use the default zone and region: `zone placeholder` `region placeholder`. Leave the remaining settings as they are and then click **Create**. The new VM will take 2-3 minutes to start.
+4. Click **Open JupyterLab**. A JupyterLab window will open in a new tab.
+
+
+### **Task 2. Clone a course repo within your Vertex AI Workbench instance**
+---
+
+To clone the notebook in your JupyterLab instance:
+
+1. In JupyterLab, open a new terminal window.
+2. At the command-line prompt, run the following command:
+
+    ```bash
+    git clone https://github.com/GoogleCloudPlatform/asl-ml-immersion.git
+    cd asl-ml-immersion
+    export PATH=$PATH:~/.local/bin
+    make install
+    ```
+
+3. To confirm that you have cloned the repository, double-click on the `asl-ml-immersion` directory and ensure that you can see its contents. The files for all the Jupyter notebook-based labs throughout this course are available in this directory.
+
+
+### **Task 3. Safeguard with Gemini API**
+---
+
+1. In the notebook interface, navigate to **asl-ml-immersion > notebooks > responsible_ai > safety > solutions** and open **gemini_safety_ratings.ipynb**.
+2. In the notebook interface, click **Edit > Clear All Outputs**.
+3. Carefully read through the notebook instructions and run through the notebook.
+
+**Tip**: To run the current cell, click the cell and press SHIFT+ENTER. Other cell commands are listed in the notebook UI under **Run**.
+{:.notice--info}
+
+
 
 <hr style="height: 5px; background-color: black; border: none;">
 
