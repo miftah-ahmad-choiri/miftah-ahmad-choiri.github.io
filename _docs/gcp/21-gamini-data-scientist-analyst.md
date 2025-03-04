@@ -496,10 +496,10 @@ To identify these new customers, you will use Gemini, Vertex AI, and BigQuery to
 
 Configuration of the environment has already been completed for you. This includes enabling the Cloud AI Companion for Gemini and granting IAM the necessary roles to use Gemini. For more information, see Gemini for [Google Cloud overview](https://cloud.google.com/gemini/docs/overview).
 
-**Note: **Duet AI was renamed to Gemini, our next-generation model. This lab has been updated to reflect this change. Any references to Duet AI in the user interface or documentation should be treated as equivalent to Gemini while following the lab instructions.
+**Note:** Duet AI was renamed to Gemini, our next-generation model. This lab has been updated to reflect this change. Any references to Duet AI in the user interface or documentation should be treated as equivalent to Gemini while following the lab instructions.
 {:.notice--info}
 
-**Note: **As an early-stage technology, Gemini can generate output that seems plausible but is factually incorrect. We recommend that you validate all output from Gemini before you use it. For more information, see [Gemini for Google Cloud and responsible AI](https://cloud.google.com/gemini/docs/discover/responsible-ai).
+**Note:** As an early-stage technology, Gemini can generate output that seems plausible but is factually incorrect. We recommend that you validate all output from Gemini before you use it. For more information, see [Gemini for Google Cloud and responsible AI](https://cloud.google.com/gemini/docs/discover/responsible-ai).
 {:.notice--info}
 
 
@@ -1072,16 +1072,16 @@ If you plan to explore multiple architectures, tutorials, or quickstarts, reusin
 To avoid incurring charges, you can delete the table and model used in this lab by running the following code in a new code cell within the notebook:
 
 
-    ```python
-    # Delete customer_stats table
+```python
+# Delete customer_stats table
 
-    client.delete_table(f"{project_id}.{dataset_name}.{table_name}", not_found_ok=True)
-    print(f"Deleted table: {project_id}.{dataset_name}.{table_name}")
+client.delete_table(f"{project_id}.{dataset_name}.{table_name}", not_found_ok=True)
+print(f"Deleted table: {project_id}.{dataset_name}.{table_name}")
 
-    # Delete K-means model
-    client.delete_model(f"{project_id}.{dataset_name}.{model_name}", not_found_ok=True)
-    print(f"Deleted model: {project_id}.{dataset_name}.{model_name}")
-    ```
+# Delete K-means model
+client.delete_model(f"{project_id}.{dataset_name}.{model_name}", not_found_ok=True)
+print(f"Deleted model: {project_id}.{dataset_name}.{model_name}")
+```
 
 After you run the cell, you can refresh the contents of your project in BigQuery studio to observe the deletion of the table and the model.
 
