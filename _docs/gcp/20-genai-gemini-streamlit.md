@@ -158,7 +158,7 @@ Gemini 1.5 Pro (`gemini-1.5-pro`) model is tailored for natural language tasks s
 
 1. In this task, run through the notebook cells to see how to use the Gemini Pro model to generate text from a text prompt.
 
-**Note: **Save the notebook file before clicking on the **Check my progress** button for every task.
+**Note:** Save the notebook file before clicking on the **Check my progress** button for every task.
 {:.notice--danger}
 
 
@@ -334,7 +334,7 @@ Here we used the [OpenStreetMap Nominatim API](https://nominatim.openstreetmap.o
 {:.notice--info}
 
 
-## **Task 5. Using function calling for entity extraction**
+### **Task 5. Using function calling for entity extraction**
 ---
 
 In the previous examples, you made use of the entity extraction functionality within Gemini Function Calling so that you could pass the resulting parameters to a REST API or client library. However, you might want to only perform the entity extraction step with Gemini Function Calling and stop there without actually calling an API. You can think of this functionality as a convenient way to transform unstructured text data into structured fields.
@@ -344,7 +344,7 @@ In this example, you'll build a log extractor that takes raw log data and transf
 1. In this task, run through the notebook cells to see how to use the Gemini Pro model to generate function calls to extract entities from log data.
 
 
-## **Congratulations!**
+### **Congratulations!**
 ---
 
 Congratulations! In this lab, you learned how to use the Gemini API in Vertex AI to generate function calls from text prompts. You used the Gemini Pro model to generate function calls to help customers get information about products in the Google Store, geocode addresses, and extract entities from log data.
