@@ -23,6 +23,8 @@ Lab Course [Link](https://www.cloudskillsboost.google/course_templates/735)
 
 ## **1. WEATHER DATA IN BIGQUERY (GSP009)**
 
+
+
 <hr style="height: 5px; background-color: black; border: none;">
 
 ## **2. CLASSIFY IMAGES OF CLOUDS IN THE CLOUD AUTOML IMAGES (GSP223)**

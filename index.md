@@ -57,7 +57,7 @@ feature_row4:
     btn_label: "Reach Me"
     btn_class: "btn--primary"
 ---
-
+<meta name="algolia-site-verification"  content="5AE1D17DC6131FB3" />
 {% include feature_row %}
 {% include feature_row id="intro" type="center" %}
 
