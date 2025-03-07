@@ -62,11 +62,19 @@ feature_row:
 
   - image_path: /assets/images/gcp/gcp.png
     alt: "Introduction to GoogleCloud"
-    title: "Introduction to GoogleCloud"
+    title: "Introduction to GoogleCloud🔵🔴🟡🟢"
     excerpt: "Best practices for system maintenance and optimization."
     url: "/docs/gcp/intro-gen-ai/"
     btn_class: "btn--primary"
     btn_label: "Learn More"
+
+  - image_path: /assets/pictures/25.png
+    alt: "IELTS Training Courses🌍"
+    title: "IELTS English Courses🌍"
+    excerpt: "Best practices for system maintenance and optimization."
+    url: "/docs/ielts/grammar-betty-azar-5th/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
 
 last_modified_at: 2025-02-07T09:51:05-04:00
 ---
