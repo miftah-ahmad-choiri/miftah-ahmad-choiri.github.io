@@ -103,6 +103,10 @@ docs:
     children:
       - title: "• Replace Battery BSM IBM DS8K"
         url: /docs/ds8k/replace-battery/
+  - title: Server DELL VRTX 
+    children:
+      - title: "• Replace Disk DELL VRTX"
+        url: /docs/dell/replace-disk-vrtx/
   - title: Redhat Enterprise Linux🎩
     children:
       - title: "• Wait in Progress"
