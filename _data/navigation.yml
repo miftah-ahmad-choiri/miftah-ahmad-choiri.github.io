@@ -99,6 +99,10 @@ docs:
     children:
       - title: "• Understanding and Using English Grammar"
         url: /docs/ielts/grammar-betty-azar-5th/
+  - title: IBM Storage DS8000
+    children:
+      - title: "• Replace Battery BSM IBM DS8K"
+        url: /docs/ds8k/replace-battery/
   - title: Redhat Enterprise Linux🎩
     children:
       - title: "• Wait in Progress"

@@ -1,6 +1,10 @@
 ---
-title: "Installation IBM Power10 Server at Bank HSBC Indonesia"
-excerpt: "The Lhasa Apso is a non-sporting dog breed originating in Tibet."
+title: | 
+        Replace Batteries BSM IBM DS8000💡
+permalink: /docs/ds8k/replace-battery/
+excerpt: "This module explain how to publish a content on this website"
+last_modified_at: 2025-02-08T21:36:18-04:00
+
 ---
 ---
 
@@ -10,8 +14,11 @@ excerpt: "The Lhasa Apso is a non-sporting dog breed originating in Tibet."
 
 We appreciate your curiosity, but this page is reserved for **IBMers**. If you're one of us, please log in. If not… Well, we still think you're awesome!😃
 If you're one of us, click the button below to proceed.👇<br><br>
-        👉<a href="https://pages.github.ibm.com/Miftah-Choiri/installation/01-install-p10-hsbc/" class="btn btn--info btn--large"> Login W3@IBM </a>👈 
+        👉<a href="https://pages.github.ibm.com/Miftah-Choiri/docs/ds8k/replace-battery/" class="btn btn--info btn--large"> Login W3@IBM </a>👈 
 {: .notice--danger}
+
+
+
 
 ---
 

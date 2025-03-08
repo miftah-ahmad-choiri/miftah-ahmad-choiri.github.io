@@ -76,6 +76,14 @@ feature_row:
     btn_class: "btn--primary"
     btn_label: "Learn more"
 
+  - image_path: /assets/pictures/25.png
+    alt: "IBM Storage DS8000🌍"
+    title: "IBM Storage DS8000🌍"
+    excerpt: "Best practices for system maintenance and optimization."
+    url: "/docs/ds8k/replace-battery/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+
 last_modified_at: 2025-02-07T09:51:05-04:00
 ---
 ---
