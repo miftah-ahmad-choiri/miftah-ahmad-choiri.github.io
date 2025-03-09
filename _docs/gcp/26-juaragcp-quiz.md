@@ -1,16 +1,12 @@
 ---
 title: | 
         **QUIZ QUESTION & ANSWER JUARAGCP** <br>
-        ![HMC IBM](https://img.shields.io/badge/HMC-IBM-blue)
-        ![BMC IBM](https://img.shields.io/badge/BMC-IBM-lightgrey)
-        ![Upgrade HMC](https://img.shields.io/badge/Upgrade-HMC-orange)
-        ![Backup HMC](https://img.shields.io/badge/Backup-HMC-green)
 
 
 permalink: /docs/gcp/juaragcp-quiz/
 excerpt: "This module explain how to publish a content on this website"
 last_modified_at: 2025-03-08T21:36:18-04:00
-toc: true
+
 ---
 
 ## Questions 
@@ -390,7 +386,7 @@ The correct answer is:
 - **Model management** (Vertex AI Model Registry, MLOps tools)  
 - **Integration with pre-trained models** (Vertex AI AutoML, Generative AI capabilities)  
 
-#### Why the other options are incorrect:  
+**Why the other options are incorrect**:  
 - **B**: Vertex AI is not solely for storing and managing datasets—**Cloud Storage** is typically used for that purpose.  
 - **C**: While Vertex AI supports **natural language processing (NLP)**, it is not **exclusively** designed for NLP tasks. It also supports computer vision, structured data, and other AI applications.  
 - **D**: Vertex AI does provide **infrastructure for deep learning (GPUs/TPUs)**, but its capabilities go far beyond just running experiments—it also includes **model training, deployment, and monitoring**.  
