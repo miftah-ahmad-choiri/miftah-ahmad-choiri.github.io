@@ -95,6 +95,8 @@ docs:
         url: /docs/gcp/prepare-data-ml-gcp/
       - title: "• Responsible AI for Developers: Privacy & Safety"
         url: /docs/gcp/privacy-safety-ai/
+      - title: "• Quiz Question & Anwer JUARAGCP"
+        url: /docs/gcp/juaragcp-quiz/
   - title: IELTS English Courses🌎
     children:
       - title: "• Understanding and Using English Grammar"
