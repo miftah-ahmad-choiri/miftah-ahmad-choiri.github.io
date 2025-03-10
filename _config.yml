@@ -197,6 +197,9 @@ collections:
   installation:
     output: true
     permalink: /:collection/:path/
+  develop-software:
+    output: true
+    permalink: /:collection/:path/
   docs:
     output: true
     permalink: /:collection/:path/
@@ -254,6 +257,16 @@ defaults:
   - scope:
       path: ""
       type: relocation
+    values:
+      layout: single
+      classes: wide
+      author_profile: true
+      share: true
+      comment: true
+  # _develop-software
+  - scope:
+      path: ""
+      type: develop-software
     values:
       layout: single
       classes: wide
