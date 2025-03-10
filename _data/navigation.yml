@@ -49,6 +49,8 @@ docs:
         url: /docs/github/publish-content/
   - title: IBM AIX🌐
     children:
+      - title: "• AIX Basics - IBM AIX Administrator"
+        url: /docs/aix/aix-basics/
       - title: "• Full-Guide Replace Disk AIX/VIOS"
         url: /docs/aix/aix-replace-disks/
       - title: "• Upgrading, Update, Backup HMC IBM"
