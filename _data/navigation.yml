@@ -121,8 +121,8 @@ docs:
         url: /404.html
   - title: IBM AS/400📟
     children:
-      - title: "• Wait in Progress"
-        url: /404.html
+      - title: "• IBM i System Operator"
+        url: /docs/as400/ibmi-system-operator/
   - title: Redhat OpenShift📦
     children:
       - title: "• Wait in Progress"

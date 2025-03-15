@@ -26,6 +26,14 @@ toc: true
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/1.png)
 
+**What you learns**
+- Simple present & present progressive > form (+-?)
+- Simple present + Frequency Adverbs (always, usually, normally, often, sometimes, rearely, seldom, never)
+- Singular plural verbs > spelling (-s/-es)
+- non-action verbs [S+V-s/es] = toughts, emotions, relationships, senses, ownership (non-progresive tenses)
+- Yes-No Questions (present & progresive tense) (do or be + S+V)
+
+
 ### 1-1 Simple present and present progressive 
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/2.png)
