@@ -115,14 +115,16 @@ docs:
     children:
       - title: "• Replace Disk DELL VRTX"
         url: /docs/dell/replace-disk-vrtx/
-  - title: Redhat Enterprise Linux🎩
-    children:
-      - title: "• Wait in Progress"
-        url: /404.html
   - title: IBM AS/400📟
     children:
       - title: "• IBM i System Operator"
         url: /docs/as400/ibmi-system-operator/
+      - title: "• Replace HBA Adapter at BTN"
+        url: /docs/as400/replace-hba-btn/
+  - title: Redhat Enterprise Linux🎩
+    children:
+      - title: "• Wait in Progress"
+        url: /404.html
   - title: Redhat OpenShift📦
     children:
       - title: "• Wait in Progress"
