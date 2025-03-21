@@ -64,15 +64,24 @@ gallery:
     title: "Image 12 title caption"
 
 gallery2:
-  - url: https://flic.kr/p/8a6Ven
-    image_path: https://farm2.staticflickr.com/1272/4697500467_8294dac099_q.jpg
-    alt: "Black and grays with a hint of green"
-  - url: https://flic.kr/p/8a738X
-    image_path: https://farm5.staticflickr.com/4029/4697523701_249e93ba23_q.jpg
-    alt: "Made for open text placement"
-  - url: https://flic.kr/p/8a6VXP
-    image_path: https://farm5.staticflickr.com/4046/4697502929_72c612c636_q.jpg
-    alt: "Fog in the trees"
+  - url: https://www.credly.com/badges/8772a2af-36b3-4b7b-81fa-42d77f931d2a
+    image_path: https://images.credly.com/images/f66e0bf1-33da-4fec-afd5-cf68b197c167/image.png
+    alt: "System Operator for IBM i Foundations - issued by IBM"
+  - url: https://www.credly.com/badges/241e4fb6-1947-4c08-ac9b-e6d48f27fa2b
+    image_path: https://images.credly.com/size/340x340/images/c82b45a6-e457-4e99-a133-21bd056faf6f/image.png
+    alt: "Interskill - AIX Systems Administrator - Fundamentals - issued by IBM"
+  - url: https://www.credly.com/badges/cab2bd5b-5a13-4029-bf13-d3ad6c3fc079
+    image_path: https://images.credly.com/images/355ed734-5f0b-4751-95a1-6364974d1129/image.png
+    alt: "AIX User Essentials - issued by IBM"
+  - url: https://www.credly.com/badges/a89a277d-a769-4a2f-aef0-134822fe1ef6
+    image_path: https://images.credly.com/images/5ee26427-f944-4182-b802-459462184c9a/image.png
+    alt: "Cloud Essentials - issued by IBM"
+  - url: https://www.credly.com/badges/25e56f22-af1e-44b2-a300-5a08f42008b9
+    image_path: https://images.credly.com/images/23fa4f52-49e4-4a85-b09e-66d0973e808b/image.png
+    alt: "IBM watsonx.ai Technical Essentials - issued by IBM"
+  - url: https://www.credly.com/badges/7e01834e-08a8-4bf4-94e1-49618cb3c125
+    image_path: https://images.credly.com/size/340x340/images/7e0878b0-b74c-4425-aac0-7437a4a4dbd4/image.png
+    alt: "TSS Foundations - issued by IBM"
 
 last_modified_at: 2025-03-21T11:59:26-04:00
 #toc: true
@@ -87,8 +96,15 @@ With a strong background in **networking**, **troubleshooting**, and **system co
 
 Currently, I am looking for opportunities in **system administration**, **infrastructure automation**, and **server architecture**. Let’s connect! 🔗
 
----
+
+## My Skill-Badges
+
+{% include gallery id="gallery2" caption="This is a my **certificates** and my **skill-badges**." %}
+
+## My Certificates
 
 {% include gallery caption="This is a my **certificates** and my **skill-badges**." %}
 
-{% include gallery id="gallery2" caption="This is a my **certificates** and my **skill-badges**." %}
+## My Awards & scholarships
+
+{% include gallery caption="This is a my **certificates** and my **skill-badges**." %}
