@@ -13,7 +13,7 @@ layouts_gallery:
     image_path: /assets/images/mm-layout-archive.png
     alt: "archive layout example"
 
-certificates:
+gallery:
   - url: /assets/images/unsplash-gallery-image-1.jpg
     image_path: /assets/images/unsplash-gallery-image-1-th.jpg
     alt: "placeholder image 1"
@@ -63,7 +63,7 @@ certificates:
     alt: "placeholder image 12"
     title: "Image 12 title caption"
 
-badges:
+gallery2:
   - url: https://flic.kr/p/8a6Ven
     image_path: https://farm2.staticflickr.com/1272/4697500467_8294dac099_q.jpg
     alt: "Black and grays with a hint of green"
@@ -89,6 +89,6 @@ Currently, I am looking for opportunities in **system administration**, **infras
 
 ---
 
-{% include certificates caption="This is a my **certificates** and my **skill-badges**." %}
+{% include gallery caption="This is a my **certificates** and my **skill-badges**." %}
 
-{% include certificates id="badges" caption="This is a my **certificates** and my **skill-badges**." %}
+{% include gallery id="gallery2" caption="This is a my **certificates** and my **skill-badges**." %}
