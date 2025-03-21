@@ -16,52 +16,125 @@ layouts_gallery:
 gallery:
   - url: /assets/images/aboutme/certificates/1.png
     image_path: /assets/images/aboutme/certificates/1.png
-    alt: "Certificate of Attendance - Redhat Enterprise Linux Automation with Ansible (RH294) - issued by Red Hat"
-    title: "Image 1 title caption"
-  - url: /assets/images/unsplash-gallery-image-2.jpg
-    image_path: /assets/images/unsplash-gallery-image-2-th.jpg
-    alt: "placeholder image 2"
-    title: "Image 2 title caption"
-  - url: /assets/images/unsplash-gallery-image-3.jpg
-    image_path: /assets/images/unsplash-gallery-image-3-th.jpg
-    alt: "placeholder image 3"
-    title: "Image 3 title caption"
-  - url: /assets/images/unsplash-gallery-image-1.jpg
-    image_path: /assets/images/unsplash-gallery-image-1-th.jpg
-    alt: "placeholder image 4"
-    title: "Image 4 title caption"
-  - url: /assets/images/unsplash-gallery-image-2.jpg
-    image_path: /assets/images/unsplash-gallery-image-2-th.jpg
-    alt: "placeholder image 5"
-    title: "Image 5 title caption"
-  - url: /assets/images/unsplash-gallery-image-3.jpg
-    image_path: /assets/images/unsplash-gallery-image-3-th.jpg
-    alt: "placeholder image 6"
-    title: "Image 6 title caption"
-  - url: /assets/images/unsplash-gallery-image-1.jpg
-    image_path: /assets/images/unsplash-gallery-image-1-th.jpg
-    alt: "placeholder image 7"
-    title: "Image 7 title caption"
-  - url: /assets/images/unsplash-gallery-image-2.jpg
-    image_path: /assets/images/unsplash-gallery-image-2-th.jpg
-    alt: "placeholder image 8"
-    title: "Image 8 title caption"
-  - url: /assets/images/unsplash-gallery-image-3.jpg
-    image_path: /assets/images/unsplash-gallery-image-3-th.jpg
-    alt: "placeholder image 9"
-    title: "Image 9 title caption"
-  - url: /assets/images/unsplash-gallery-image-1.jpg
-    image_path: /assets/images/unsplash-gallery-image-1-th.jpg
-    alt: "placeholder image 10"
-    title: "Image 10 title caption"
-  - url: /assets/images/unsplash-gallery-image-2.jpg
-    image_path: /assets/images/unsplash-gallery-image-2-th.jpg
-    alt: "placeholder image 11"
-    title: "Image 11 title caption"
-  - url: /assets/images/unsplash-gallery-image-3.jpg
-    image_path: /assets/images/unsplash-gallery-image-3-th.jpg
-    alt: "placeholder image 12"
-    title: "Image 12 title caption"
+    alt: "Redhat Enterprise Linux Automation with Ansible (RH294) - issued by Red Hat"
+    title: "Redhat Enterprise Linux Automation with Ansible (RH294) - issued by Red Hat"
+  - url: /assets/images/aboutme/certificates/2.png
+    image_path: /assets/images/aboutme/certificates/2.png
+    alt: "Introduction to Cloud - issued by Cognitive Class"
+    title: "Introduction to Cloud - issued by Cognitive Class"
+  - url: /assets/images/aboutme/certificates/3.png
+    image_path: /assets/images/aboutme/certificates/3.png
+    alt: "Introduction to TensorFlow for Artificial Intelligent, Machine Learning, and Deep Learning - issued by Coursera"
+    title: "Introduction to TensorFlow for Artificial Intelligent, Machine Learning, and Deep Learning - issued by Coursera"
+  - url: /assets/images/aboutme/certificates/4.png
+    image_path: /assets/images/aboutme/certificates/4.png
+    alt: "Natural Language Processing in TensorFlow - issued by Coursera"
+    title: "Natural Language Processing in TensorFlow - issued by Coursera"
+  - url: /assets/images/aboutme/certificates/5.png
+    image_path: /assets/images/aboutme/certificates/5.png
+    alt: "Sequences, Time Series and Prediction - issued by Coursera"
+    title: "Sequences, Time Series and Prediction - issued by Coursera"
+  - url: /assets/images/aboutme/certificates/6.png
+    image_path: /assets/images/aboutme/certificates/6.png
+    alt: "TensorFlow in Practice - issued by Coursera"
+    title: "TensorFlow in Practice - issued by Coursera"
+  - url: /assets/images/aboutme/certificates/7.png
+    image_path: /assets/images/aboutme/certificates/7.png
+    alt: "Convolutional Neural Networks in TensorFlow - issued by Coursera"
+    title: "Convolutional Neural Networks in TensorFlow - issued by Coursera"
+  - url: /assets/images/aboutme/certificates/8.jpg
+    image_path: /assets/images/aboutme/certificates/8.jpg
+    alt: "Programming with Python - issued by Dicoding"
+    title: "Programming with Python - issued by Dicoding"
+  - url: /assets/images/aboutme/certificates/9.png
+    image_path: /assets/images/aboutme/certificates/9.png
+    alt: "TensorFlow Developer Certificate - issued by Google"
+    title: "TensorFlow Developer Certificate - issued by Google"
+  - url: /assets/images/aboutme/certificates/10.png
+    image_path: /assets/images/aboutme/certificates/10.png
+    alt: "AIX Basics - issued by IBM Training"
+    title: "AIX Basics - issued by IBM Training"
+  - url: /assets/images/aboutme/certificates/11.png
+    image_path: /assets/images/aboutme/certificates/11.png
+    alt: "IBM i System Operator - issued by IBM Training"
+    title: "IBM i System Operator - issued by IBM Training"
+  - url: /assets/images/aboutme/certificates/12.jpg
+    image_path: /assets/images/aboutme/certificates/12.jpg
+    alt: "Modular IELTS Prep Course - issued by IALF Surabaya"
+    title: "Modular IELTS Prep Course - issued by IALF Surabaya"
+  - url: /assets/images/aboutme/certificates/12.png
+    image_path: /assets/images/aboutme/certificates/12.png
+    alt: "3rd Party Service, FRU Replacement Training - issued by Teradata"
+    title: "3rd Party Service, FRU Replacement Training - issued by Teradata"
+  - url: /assets/images/aboutme/certificates/13.png
+    image_path: /assets/images/aboutme/certificates/13.png
+    alt: "Check All Best Practices - issued by Teradata"
+    title: "Check All Best Practices - issued by Teradata"
+  - url: /assets/images/aboutme/certificates/14.png
+    image_path: /assets/images/aboutme/certificates/14.png
+    alt: "Do No Harm Core Principles - issued by Teradata"
+    title: "Do No Harm Core Principles - issued by Teradata"
+  - url: /assets/images/aboutme/certificates/15.png
+    image_path: /assets/images/aboutme/certificates/15.png
+    alt: "Supporting Teradata Disk Arrays (LTD) On-demand - issued by Teradata"
+    title: "Supporting Teradata Disk Arrays (LTD) On-demand - issued by Teradata"
+  - url: /assets/images/aboutme/certificates/16.png
+    image_path: /assets/images/aboutme/certificates/16.png
+    alt: "Supporting Teradata On-demand - issued by Teradata"
+    title: "Supporting Teradata On-demand - issued by Teradata"
+  - url: /assets/images/aboutme/certificates/17.png
+    image_path: /assets/images/aboutme/certificates/17.png
+    alt: "Supporting the Teradata Hardware Platform (LTD) On-Demand - issued by Teradata"
+    title: "Supporting the Teradata Hardware Platform (LTD) On-Demand - issued by Teradata"
+  - url: /assets/images/aboutme/certificates/18.png
+    image_path: /assets/images/aboutme/certificates/18.png
+    alt: "TechBytes: Teradata 101-1 MPP Architecture - issued by Teradata"
+    title: "TechBytes: Teradata 101-1 MPP Architecture - issued by Teradata"
+  - url: /assets/images/aboutme/certificates/19.png
+    image_path: /assets/images/aboutme/certificates/19.png
+    alt: "TechBytes: Teradata 101-1 Introduction Teradata Design - issued by Teradata"
+    title: "TechBytes: Teradata 101-1 Introduction Teradata Design - issued by Teradata"
+  - url: /assets/images/aboutme/certificates/20.png
+    image_path: /assets/images/aboutme/certificates/20.png
+    alt: "AIX Administration for Absolute Beginners: Better than Linux - issued by Udemy"
+    title: "AIX Administration for Absolute Beginners: Better than Linux - issued by Udemy"
+  - url: /assets/images/aboutme/certificates/21.png
+    image_path: /assets/images/aboutme/certificates/21.png
+    alt: "AIX Administration for Absolute Beginners: Better than Linux - issued by Udemy"
+    title: "AIX Administration for Absolute Beginners: Better than Linux - issued by Udemy"
+  - url: /assets/images/aboutme/certificates/22.png
+    image_path: /assets/images/aboutme/certificates/22.png
+    alt: "Complete Guide on RedHat Certified Engineer Cert (RHCE-EX294) - issued by Udemy"
+    title: "Complete Guide on RedHat Certified Engineer Cert (RHCE-EX294) - issued by Udemy"
+  - url: /assets/images/aboutme/certificates/23.png
+    image_path: /assets/images/aboutme/certificates/23.png
+    alt: "Expert Advisor Programming in MQL5 Part1: Fundamentals - issued by Udemy"
+    title: "Expert Advisor Programming in MQL5 Part1: Fundamentals - issued by Udemy"
+  - url: /assets/images/aboutme/certificates/24.png
+    image_path: /assets/images/aboutme/certificates/24.png
+    alt: "IT Troubleshooting Skill Training - issued by Udemy"
+    title: "IT Troubleshooting Skill Training - issued by Udemy"
+  - url: /assets/images/aboutme/certificates/25.png
+    image_path: /assets/images/aboutme/certificates/25.png
+    alt: "Linux Administration Bootcamp: Go from Beginner to Advanced - issued by Udemy"
+    title: "Linux Administration Bootcamp: Go from Beginner to Advanced - issued by Udemy"
+  - url: /assets/images/aboutme/certificates/26.png
+    image_path: /assets/images/aboutme/certificates/26.png
+    alt: "Linux Administration Bootcamp: Go from Beginner to Advanced - issued by Udemy"
+    title: "Linux Administration Bootcamp: Go from Beginner to Advanced - issued by Udemy"
+  - url: /assets/images/aboutme/certificates/27.png
+    image_path: /assets/images/aboutme/certificates/27.png
+    alt: "Linux RedHat Certified Engineer (RHCE-EX294) - issued by Udemy"
+    title: "Linux RedHat Certified Engineer (RHCE-EX294) - issued by Udemy"
+  - url: /assets/images/aboutme/certificates/28.png
+    image_path: /assets/images/aboutme/certificates/28.png
+    alt: "RedHat Certified System Administrator (RHCSA8) BootCamp - issued by Udemy"
+    title: "RedHat Certified System Administrator (RHCSA8) BootCamp - issued by Udemy"
+  - url: /assets/images/aboutme/certificates/29.png
+    image_path: /assets/images/aboutme/certificates/29.png
+    alt: "The Complete Foundation FOREX Trading Course - issued by Udemy"
+    title: "The Complete Foundation FOREX Trading Course - issued by Udemy"
+  
 
 gallery2:
   - url: https://www.credly.com/badges/8772a2af-36b3-4b7b-81fa-42d77f931d2a
@@ -122,6 +195,68 @@ gallery2:
     image_path: https://images.credly.com/images/68756311-9319-4eeb-a2b7-76defc8dd8a2/image.png
     alt: "Prepare Data for ML APIs on Google Cloud Skill Badge - issued by Google Cloud"
 
+gallery3:
+  - url: /assets/images/aboutme/awards/1.png
+    image_path: /assets/images/aboutme/awards/1.png
+    alt: "Participant of the Young Leader for Indonesia batch 2019 - issued by Young Leader for Indonesia by McKinsey&Company"
+    title: "Participant of the Young Leader for Indonesia batch 2019 - issued by Young Leader for Indonesia by McKinsey&Company"
+  - url: /assets/images/aboutme/awards/2.png
+    image_path: /assets/images/aboutme/awards/2.png
+    alt: "3rd Winner of Think Efficiency 2018 Competition Energy Category - issued by Shell Company"
+    title: "3rd Winner of Think Efficiency 2018 Competition Energy Category - issued by Shell Company"
+  - url: /assets/images/aboutme/awards/3.png
+    image_path: /assets/images/aboutme/awards/3.png
+    alt: "2nd Winner Competition IoT Makers Creation 2019 - issued by Indonesia IoT Association, Ministry of Industrial and Ministry of Communication"
+    title: "2nd Winner Competition IoT Makers Creation 2019 - issued by Indonesia IoT Association, Ministry of Industrial and Ministry of Communication"
+  - url: /assets/images/aboutme/awards/4.png
+    image_path: /assets/images/aboutme/awards/4.png
+    alt: "Participant of Shell LiveWIRE Energy Solutions Bootcamp Series - issued by Shell Company"
+    title: "Participant of Shell LiveWIRE Energy Solutions Bootcamp Series - issued by Shell Company"
+  - url: /assets/images/aboutme/awards/5.png
+    image_path: /assets/images/aboutme/awards/5.png
+    alt: "Organizing Committee in the 2017 International Seminar Conference on Intelligent Technology and Its Applications and 2017 Regional Conference on Electrical and Electronics Engineering - issued by IEEE ITS Surabaya"
+    title: "Organizing Committee in the 2017 International Seminar Conference on Intelligent Technology and Its Applications and 2017 Regional Conference on Electrical and Electronics Engineering - issued by IEEE ITS Surabaya"
+  - url: /assets/images/aboutme/awards/6.png
+    image_path: /assets/images/aboutme/awards/6.png
+    alt: "Best Poster of National Electrical Power System Competition 2018 at Gajah Mada University - issued by Gajah Mada University"
+    title: "Best Poster of National Electrical Power System Competition 2018 at Gajah Mada University - issued by Gajah Mada University"
+  - url: /assets/images/aboutme/awards/7.png
+    image_path: /assets/images/aboutme/awards/7.png
+    alt: "3rd Winner of National Electrical Power System Competition 2018 at Gajah Mada University - issued by Gajah Mada University"
+    title: "3rd Winner of National Electrical Power System Competition 2018 at Gajah Mada University - issued by Gajah Mada University"
+  - url: /assets/images/aboutme/awards/8.png
+    image_path: /assets/images/aboutme/awards/8.png
+    alt: "3rd Winner of IoT Competition Multimedia & Game Event (MAGE) 2018 - issued by Sepuluh Nopember Institute of Technology Surabaya"
+    title: "3rd Winner of IoT Competition Multimedia & Game Event (MAGE) 2018 - issued by Sepuluh Nopember Institute of Technology Surabaya"
+  - url: /assets/images/aboutme/awards/9.png
+    image_path: /assets/images/aboutme/awards/9.png
+    alt: "Participant of Digital Application Development Bootcamp Competition 2018 - issued by Lintasarta"
+    title: "Participant of Digital Application Development Bootcamp Competition 2018 - issued by Lintasarta"
+  - url: /assets/images/aboutme/awards/10.png
+    image_path: /assets/images/aboutme/awards/10.png
+    alt: "Delegation of International Youth Forum on Innovation 2017 at Singapore - issued by EdConex"
+    title: "Delegation of International Youth Forum on Innovation 2017 at Singapore - issued by EdConex"
+  - url: /assets/images/aboutme/awards/11.png
+    image_path: /assets/images/aboutme/awards/11.png
+    alt: "1st Winner of National Research Paper Competition at Unnes 2017 - issued by UNNES (Semarang National University)"
+    title: "1st Winner of National Research Paper Competition at Unnes 2017 - issued by UNNES (Semarang National University)"
+  - url: /assets/images/aboutme/awards/12.png
+    image_path: /assets/images/aboutme/awards/12.png
+    alt: "Second Runner-up of Consolation Prize on National Practical Innovation Competition EXIST Fair 2017 - issued by Jambi University"
+    title: "Second Runner-up of Consolation Prize on National Practical Innovation Competition EXIST Fair 2017 - issued by Jambi University"
+  - url: /assets/images/aboutme/awards/13.png
+    image_path: /assets/images/aboutme/awards/13.png
+    alt: "2nd Winner of National Research Paper Competition at FST Fair 2016 - issued by Jambi University"
+    title: "2nd Winner of National Research Paper Competition at FST Fair 2016 - issued by Jambi University"
+  - url: /assets/images/aboutme/awards/14.png
+    image_path: /assets/images/aboutme/awards/14.png
+    alt: "First Consolation Prize Winner on National Disaster Management Event Research Paper Competition 2018 - issued by Andalas University"
+    title: "First Consolation Prize Winner on National Disaster Management Event Research Paper Competition 2018 - issued by Andalas University"
+  - url: /assets/images/aboutme/awards/15.png
+    image_path: /assets/images/aboutme/awards/15.png
+    alt: "Head of Commitee in Fundamental Electrical Training HIMATEKTRO ITS - issued by Sepuluh Nopember Institute of Technology"
+    title: "Head of Commitee in Fundamental Electrical Training HIMATEKTRO ITS - issued by Sepuluh Nopember Institute of Technology"
+
 last_modified_at: 2025-03-21T11:59:26-04:00
 #toc: true
 ---
@@ -138,12 +273,12 @@ Currently, I am looking for opportunities in **system administration**, **infras
 
 ## My Skill-Badges
 
-{% include gallery id="gallery2" caption="This is a my **certificates** and my **skill-badges**." %}
+{% include gallery id="gallery2" caption="This is a my **Digital Credential Skill Badges**" %}
 
-## My Certificates
+## My Training-Certificates
 
-{% include gallery caption="This is a my **certificates** and my **skill-badges**." %}
+{% include gallery caption="This is a my **Training Certificates**." %}
 
-## My Awards & scholarships
+## My Awards & Scholarships
 
-{% include gallery caption="This is a my **certificates** and my **skill-badges**." %}
+{% include gallery id="gallery3" caption="This is a my **Awards & Scholarships**." %}
