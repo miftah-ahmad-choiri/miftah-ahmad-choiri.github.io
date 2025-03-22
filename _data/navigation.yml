@@ -123,8 +123,18 @@ docs:
         url: /docs/as400/replace-hba-btn/
   - title: Pure Storage📚
     children:
-      - title: "• Basics Command FE Training M Series"
+      - title: "• FE Training Pure Storage M Series"
         url: /docs/purestorage/fe-training-mseries/
+  - title: Cisco📦
+    children:
+      - title: "• VLAN Theory"
+        url: /docs/cisco/vlan-theory/
+      - title: "• Cisco Email Security Appliances"
+        url: /docs/cisco/cisco-email-security-appliances/
+      - title: "• Cisco UCS C460 Server"
+        url: /docs/cisco/cisco-ucs-c460-server/
+      - title: "• Troubleshooting Hardware Issue"
+        url: /docs/cisco/troubleshoot-hardware-issue/
   - title: Redhat Enterprise Linux🎩
     children:
       - title: "• Wait in Progress"
