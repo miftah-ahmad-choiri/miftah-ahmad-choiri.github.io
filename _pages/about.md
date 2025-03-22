@@ -1,6 +1,6 @@
 ---
 permalink: /about/
-title: "About"
+title: "About Me"
 excerpt: "Minimal Mistakes is a flexible two-column Jekyll theme."
 layouts_gallery:
   - url: /assets/images/mm-layout-splash.png
@@ -134,6 +134,18 @@ gallery:
     image_path: /assets/images/aboutme/certificates/29.png
     alt: "The Complete Foundation FOREX Trading Course - issued by Udemy"
     title: "The Complete Foundation FOREX Trading Course - issued by Udemy"
+  - url: /assets/images/aboutme/certificates/30.png
+    image_path: /assets/images/aboutme/certificates/30.png
+    alt: "Field Engineer Training: FlashArray//M Series Assessment - issued by Pure Storage"
+    title: "Field Engineer Training: FlashArray//M Series Assessment - issued by Pure Storage"
+  - url: /assets/images/aboutme/certificates/32.png
+    image_path: /assets/images/aboutme/certificates/32.png
+    alt: "Field Engineer Training: FlashArray//XL Series Assessment - issued by Pure Storage"
+    title: "Field Engineer Training: FlashArray//XL Series Assessment - issued by Pure Storage"
+  - url: /assets/images/aboutme/certificates/31.png
+    image_path: /assets/images/aboutme/certificates/31.png
+    alt: "Field Engineer Training: FlashArray//X R2 & //X R3 - issued by Pure Storage"
+    title: "Field Engineer Training: FlashArray//X R2 & //X R3 - issued by Pure Storage"
   
 
 gallery2:
@@ -269,6 +281,10 @@ My technical expertise includes **automation** with **Ansible**, handling projec
 With a strong background in **networking**, **troubleshooting**, and **system configuration**, I excel at ensuring smooth system operations in **disconnected environments**. I am passionate about improving workflows and driving efficiency through **automation** and strategic infrastructure management. 💡
 
 Currently, I am looking for opportunities in **system administration**, **infrastructure automation**, and **server architecture**. Let’s connect! 🔗
+
+## My Resume
+
+## My Work Experiences
 
 
 ## My Skill-Badges

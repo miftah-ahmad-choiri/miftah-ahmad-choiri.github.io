@@ -121,6 +121,10 @@ docs:
         url: /docs/as400/ibmi-system-operator/
       - title: "• Replace HBA Adapter at BTN"
         url: /docs/as400/replace-hba-btn/
+  - title: Pure Storage📚
+    children:
+      - title: "• Basics Command FE Training M Series"
+        url: /docs/purestorage/fe-training-mseries/
   - title: Redhat Enterprise Linux🎩
     children:
       - title: "• Wait in Progress"
