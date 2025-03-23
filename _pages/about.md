@@ -269,6 +269,85 @@ gallery3:
     alt: "Head of Commitee in Fundamental Electrical Training HIMATEKTRO ITS - issued by Sepuluh Nopember Institute of Technology"
     title: "Head of Commitee in Fundamental Electrical Training HIMATEKTRO ITS - issued by Sepuluh Nopember Institute of Technology"
 
+gallery4:
+  - url: /assets/images/aboutme/social-impact/1.png
+    image_path: /assets/images/aboutme/social-impact/1.png
+    alt: "Zero Hunger Sumba: Tackling Food Insecurity on Sumba Island – Sponsored by Total Energies | 2018 Winner"
+    title: "Zero Hunger Sumba: Tackling Food Insecurity on Sumba Island – Sponsored by Total Energies | 2018 Winner"
+  - url: /assets/images/aboutme/social-impact/18.png
+    image_path: /assets/images/aboutme/social-impact/18.png
+    alt: "Zero Hunger Sumba: Tackling Food Insecurity on Sumba Island – Sponsored by Total Energies | 2018 Winner"
+    title: "Zero Hunger Sumba: Tackling Food Insecurity on Sumba Island – Sponsored by Total Energies | 2018 Winner"
+  - url: /assets/images/aboutme/social-impact/19.png
+    image_path: /assets/images/aboutme/social-impact/19.png
+    alt: "Zero Hunger Sumba: Tackling Food Insecurity on Sumba Island – Sponsored by Total Energies | 2018 Winner"
+    title: "Zero Hunger Sumba: Tackling Food Insecurity on Sumba Island – Sponsored by Total Energies | 2018 Winner"
+  - url: /assets/images/aboutme/social-impact/20.png
+    image_path: /assets/images/aboutme/social-impact/20.png
+    alt: "Zero Hunger Sumba: Tackling Food Insecurity on Sumba Island – Sponsored by Total Energies | 2018 Winner"
+    title: "Zero Hunger Sumba: Tackling Food Insecurity on Sumba Island – Sponsored by Total Energies | 2018 Winner"
+  - url: /assets/images/aboutme/social-impact/22.png
+    image_path: /assets/images/aboutme/social-impact/22.png
+    alt: "Zero Hunger Sumba: Tackling Food Insecurity on Sumba Island – Sponsored by TotalEnergies | 2018 Winner"
+    title: "Zero Hunger Sumba: Tackling Food Insecurity on Sumba Island – Sponsored by TotalEnergies | 2018 Winner"
+  - url: /assets/images/aboutme/social-impact/2.png
+    image_path: /assets/images/aboutme/social-impact/2.png
+    alt: "Participant of the Young Leader for Indonesia batch 2019 - Sponsored by Young Leader for Indonesia by McKinsey&Company"
+    title: "Participant of the Young Leader for Indonesia batch 2019 - Sponsored by Young Leader for Indonesia by McKinsey&Company"
+  - url: /assets/images/aboutme/social-impact/3.png
+    image_path: /assets/images/aboutme/social-impact/3.png
+    alt: "Participant of the Young Leader for Indonesia batch 2019 - Sponsored by Young Leader for Indonesia by McKinsey&Company"
+    title: "Participant of the Young Leader for Indonesia batch 2019 - Sponsored by Young Leader for Indonesia by McKinsey&Company"
+  - url: /assets/images/aboutme/social-impact/17.png
+    image_path: /assets/images/aboutme/social-impact/17.png
+    alt: "Participant of the Young Leader for Indonesia batch 2019 - Sponsored by Young Leader for Indonesia by McKinsey&Company"
+    title: "Participant of the Young Leader for Indonesia batch 2019 - Sponsored by Young Leader for Indonesia by McKinsey&Company"
+  - url: /assets/images/aboutme/social-impact/7.png
+    image_path: /assets/images/aboutme/social-impact/7.png
+    alt: "3rd Winner of Shell Think Efficiency 2018 - Sponsored by Shell Energy Company"
+    title: "3rd Winner of Shell Think Efficiency 2018 - Sponsored by Shell Energy Company"
+  - url: /assets/images/aboutme/social-impact/6.png
+    image_path: /assets/images/aboutme/social-impact/6.png
+    alt: "Scholar awardee of Shell Livewire Energy Bootcamp - Sponsored by Shell Energy Company"
+    title: "Scholar awardee of Shell Livewire Energy Bootcamp - Sponsored by Shell Energy Company"
+  - url: /assets/images/aboutme/social-impact/8.png
+    image_path: /assets/images/aboutme/social-impact/8.png
+    alt: "3rd & Best Poster Winner of National Electricity Planning Competition (NESCO) 2018 - Sponsored by Gajah Mada University"
+    title: "3rd & Best Poster Winner of National Electricity Planning Competition (NESCO) 2018 - Sponsored by Gajah Mada University"
+  - url: /assets/images/aboutme/social-impact/10.png
+    image_path: /assets/images/aboutme/social-impact/10.png
+    alt: "3rd & Best Poster Winner of National Electricity Planning Competition (NESCO) 2018 - Sponsored by Gajah Mada University"
+    title: "3rd & Best Poster Winner of National Electricity Planning Competition (NESCO) 2018 - Sponsored by Gajah Mada University"
+  - url: /assets/images/aboutme/social-impact/9.png
+    image_path: /assets/images/aboutme/social-impact/9.png
+    alt: "First Consolation Prize Winner on National Disaster Management Event Research Paper Competition 2018 - issued by BNPB & Andalas University"
+    title: "First Consolation Prize Winner on National Disaster Management Event Research Paper Competition 2018 - issued by BNPB & Andalas University"
+  - url: /assets/images/aboutme/social-impact/11.png
+    image_path: /assets/images/aboutme/social-impact/11.png
+    alt: "Scholar Awardee of International Youth Forum on Innovation for SDGs at Singapore 2017 - issued by EdConex"
+    title: "Scholar Awardee of International Youth Forum on Innovation for SDGs at Singapore 2017 - issued by EdConex"
+  - url: /assets/images/aboutme/social-impact/15.png
+    image_path: /assets/images/aboutme/social-impact/15.png
+    alt: "Scholar Awardee of International Youth Forum on Innovation for SDGs at Singapore 2017 - issued by EdConex"
+    title: "Scholar Awardee of International Youth Forum on Innovation for SDGs at Singapore 2017 - issued by EdConex"
+  - url: /assets/images/aboutme/social-impact/12.png
+    image_path: /assets/images/aboutme/social-impact/12.png
+    alt: "1st Winner of National Research Paper Competition at Unnes 2017 - issued by UNNES (Semarang National University)"
+    title: "1st Winner of National Research Paper Competition at Unnes 2017 - issued by UNNES (Semarang National University)"
+  - url: /assets/images/aboutme/social-impact/13.png
+    image_path: /assets/images/aboutme/social-impact/13.png
+    alt: "Inspiring Speaker for Outstanding Students at ITS Campus Freshmen Orientation 2016 - issued by ITS Electrical Engineering Student Association"
+    title: "Inspiring Speaker for Outstanding Students at ITS Campus Freshmen Orientation 2016 - issued by ITS Electrical Engineering Student Association"
+  - url: /assets/images/aboutme/social-impact/14.png
+    image_path: /assets/images/aboutme/social-impact/14.png
+    alt: "Feasibility Study on Forest Waste Utilization for Renewable Bioenergy in Nias Island 2018 – Sponsored by PT. PLN (National Electricity Company)"
+    title: "Feasibility Study on Forest Waste Utilization for Renewable Bioenergy in Nias Island 2018 – Sponsored by PT. PLN (National Electricity Company)"
+  - url: /assets/images/aboutme/social-impact/23.png
+    image_path: /assets/images/aboutme/social-impact/23.png
+    alt: "Lecture & Laboratory Assistant of Power System Simulation Labolatory 2017/2019"
+    title: "Lecture & Laboratory Assistant of Power System Simulation Labolatory 2017/2019"
+
+
 last_modified_at: 2025-03-21T11:59:26-04:00
 #toc: true
 ---
@@ -299,6 +378,9 @@ Currently, I am looking for opportunities in **system administration**, **infras
 
 {% include gallery id="gallery3" caption="This is a my **Awards & Scholarships**." %}
 
+## My Social Dedication & Contribution
+
+{% include gallery id="gallery4" caption="This is a my **Social Dedication & Contribution**." %}
 
 
 
