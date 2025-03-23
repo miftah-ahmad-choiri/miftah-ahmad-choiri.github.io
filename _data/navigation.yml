@@ -117,7 +117,7 @@ docs:
     children:
       - title: "• Replace Disk DELL VRTX"
         url: /docs/dell/replace-disk-vrtx/
-  - title: IBM AS/400📟
+  - title: IBM AS400📟
     children:
       - title: "• IBM i System Operator"
         url: /docs/as400/ibmi-system-operator/

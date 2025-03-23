@@ -1,7 +1,7 @@
 ---
 title: | 
         Backup `mksysb` LPAR AIX - BNI
-permalink: /docs/aix/aix-basics/
+permalink: /docs/aix/backup-mksysb-aix/
 excerpt: "This module explain how to publish a content on this website"
 last_modified_at: 2025-02-08T21:36:18-04:00
 
