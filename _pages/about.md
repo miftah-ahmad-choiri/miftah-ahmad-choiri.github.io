@@ -357,12 +357,12 @@ last_modified_at: 2025-03-21T11:59:26-04:00
 
 ## My Resume
 
-<iframe src="/assets/images/aboutme/resume/Resume.pdf" width="100%" height="1000px">
+<iframe src="/assets/images/aboutme/resume/Resume.pdf" width="100%" height="500px">
 </iframe>
 
 ## My Education
 
-![image-right](/assets/images/aboutme/logo/its-logo2.png){: .align-right}
+![image-right](/assets/images/aboutme/logo/logo-its.png){: .align-right}
 
 **Institut Teknologi Sepuluh Nopember (ITS)**  
 *Bachelor's Degree in Electrical Engineering | 2015 – 2019*  
@@ -371,13 +371,8 @@ Graduated with a **GPA of 3.43/4.00**, earning recognition as the **Most Outstan
 
 ## My Work Experiences
 
-![image-left](/assets/images/aboutme/logo/ibm.png){: .align-left} 
-
-**Service Planning Representative** | **IBM**
+![image-left](/assets/images/aboutme/logo/ibm.png){: .align-left} **Service Planning Representative** | **IBM** 
 (*Jun 2021 – Present* | *Jakarta*)
-
-**Service Planning Representative | IBM**  
-(Jun 2021 – Present | Jakarta, Indonesia)  
 
 Spearhead *multi-brand server and supercomputer projects*, overseeing *installations, configurations, upgrades, assessments, migrations, and relocations* to ensure seamless deployment and operational excellence. Serve as the *technical focal point* for key accounts, driving *client satisfaction, meeting project milestones, optimizing key performance indicators (KPIs), and fostering business growth*. Provide *consultative expertise* to sales and solution teams, assisting in *sizing, designing, and optimizing new system storage offerings and initiatives* to align with evolving business needs.  
 
@@ -385,19 +380,14 @@ As a *seasoned IT professional*, I bring extensive expertise in *system administ
 
 ---
 
-![image-right](/assets/images/aboutme/logo/groupm.png){: .align-right} 
-
-**Strategic Media Planner** | **GroupM**
+![image-right](/assets/images/aboutme/logo/groupm.png){: .align-right} **Strategic Media Planner** | **GroupM**
 (*Apr 2021 – Jun 2021* | *Jakarta*)
 
 Managed and strategized paid advertising campaigns for Unilever Indonesia, ensuring effective media delivery across conventional, digital, and performance-based channels. Led the development of integrated media plans to optimize brand reach and engagement. Worked closely with internal teams and external partners to craft data-driven media strategies and tactical execution, ensuring alignment with business objectives and market trends.
 
 ---
 
-![image-right](/assets/images/aboutme/logo/supertype.webp){: .align-left} 
-
-**Data Scientist/Analyst** | **Supertype**
-(*Aug 2020 – Mar 2021* | *Jakarta*)
+![image-right](/assets/images/aboutme/logo/supertype.png){: .align-left} **Data Scientist/Analyst** | **Supertype** (*Aug 2020 – Mar 2021* | *Jakarta*)
 
 As a **Data Scientist/Analyst** at **Supertype**, I managed software development for a review management app, helping clients analyze customer feedback and leverage competitor weaknesses. I built end-to-end analytics and machine learning solutions, from data collection and preprocessing to model deployment and visualization. Collaborating with the data team, I developed data pipelines, integrated solutions into backend systems using Docker, and successfully delivered an analytics dashboard with NLP-powered sentiment analysis and topic classification, providing valuable insights through interactive reports.
 
