@@ -51,10 +51,10 @@ docs:
     children:
       - title: "• AIX Basics - IBM AIX Administrator"
         url: /docs/aix/aix-basics/
+      - title: "• Backup mksysb AIX"
+        url: /docs/aix/backup-mksysb-aix/
       - title: "• Full-Guide Replace Disk AIX/VIOS"
         url: /docs/aix/aix-replace-disks/
-      - title: "• Upgrading, Update, Backup HMC IBM"
-        url: /docs/aix/upgrade-hmc/
   - title: Red Hat Ansible🤖
     children:
       - title: "• How to Install AWX"
@@ -111,6 +111,8 @@ docs:
     children:
       - title: "• Replace Battery BSM IBM DS8K"
         url: /docs/ds8k/replace-battery/
+      - title: "• How to Collec PE-Packages DS8880"
+        url: /docs/ds8k/collect-pepkages/
   - title: Server DELL VRTX 
     children:
       - title: "• Replace Disk DELL VRTX"
@@ -121,6 +123,14 @@ docs:
         url: /docs/as400/ibmi-system-operator/
       - title: "• Replace HBA Adapter at BTN"
         url: /docs/as400/replace-hba-btn/
+      - title: "• Preventive Maintenance or Health Check AS400"
+        url: /docs/as400/pm-as400/
+  - title: HMC IBM📟
+    children:
+      - title: "• How to Renew, Generate, Input UAK Keys on HMC"
+        url: /docs/hmc/renew-input-uak-key/
+      - title: "• Upgrading, Update, Backup HMC IBM"
+        url: /docs/aix/upgrade-hmc/
   - title: Pure Storage📚
     children:
       - title: "• FE Training Pure Storage M Series"
