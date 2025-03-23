@@ -129,6 +129,8 @@ docs:
     children:
       - title: "• Implementing and Administering Cisco Solutions"
         url: /docs/cisco/implementing-administering-cisco-solutions/
+      - title: "• Upload File to Server or Switch"
+        url: /docs/cisco/upload-file/
       - title: "• Cisco Email Security Appliances"
         url: /docs/cisco/cisco-email-security-appliances/
       - title: "• Cisco UCS C460 Server"
@@ -137,6 +139,12 @@ docs:
         url: /docs/cisco/troubleshoot-hardware-issue/
       - title: "• VLAN Theory"
         url: /docs/cisco/vlan-theory/
+      - title: "• Upgrade Firmware Cisco"
+        url: /docs/cisco/upgrade-firmware-cisco/
+  - title: Brocade📦
+    children:
+      - title: "• Upgrading the Firmware Brocade Switch"
+        url: /docs/brocade/upgrade-firmware-brocade/
   - title: Redhat Enterprise Linux🎩
     children:
       - title: "• Wait in Progress"

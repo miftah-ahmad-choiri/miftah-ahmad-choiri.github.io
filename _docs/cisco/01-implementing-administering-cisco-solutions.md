@@ -1,9 +1,7 @@
 ---
 title: | 
         Implementing and Administering Cisco Solutions <br>
-        ![IELTS](https://img.shields.io/badge/IELTS-language-red)  
-        ![Grammar](https://img.shields.io/badge/Grammar-checking-blue)  
-        ![Advanced](https://img.shields.io/badge/Advanced-learning-purple)  
+        ![IELTS](https://img.shields.io/badge/IELTS-language-red) ![Grammar](https://img.shields.io/badge/Grammar-checking-blue) ![Advanced](https://img.shields.io/badge/Advanced-learning-purple)  
 
 permalink: /docs/cisco/implementing-administering-cisco-solutions/
 excerpt: "How to quickly install and setup Minimal Mistakes for use with GitHub Pages."
@@ -12,6 +10,9 @@ redirect_from:
   - /theme-setup/
 toc: true
 ---
+
+<iframe src="/assets/images/cisco/implementing-administering-cisco-solutions/CCNA.pdf" width="100%" height="1000px">
+</iframe>
 
 ##  1. <a name='ExploringtheFunctionsofNetworking'></a>Exploring the Functions of Networking
 
@@ -415,6 +416,7 @@ Total Mac Addresses for this criterion: 3
   - There are two types of IP addresses: IPv4 and IPv6—the latter becoming increasingly important in modern networks.
 
 **Decimal Binary Conversion**
+
 | Base | 2<sup>7</sup> | 2<sup>6</sup> | 2<sup>5</sup> | 2<sup>4</sup> | 2<sup>3</sup> | 2<sup>2</sup> | 2<sup>1</sup> | 2<sup>0</sup> |
 |-|-|-|-|-|-|-|-| - |
 | Value | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
@@ -662,40 +664,40 @@ Total Mac Addresses for this criterion: 3
     ```
     - **Dynamic routes:** allow router to learn about remote networks from other router automatically using a specific dynamic routing protocol. Dynamic routing protocol such as *Border Gateway Protocol* (BGP), *Open Shortest Path First* (OSPF), *Enhanced Interior Gateway Routing Protocol* (EIGRP), *Intermediate System to Intermediate System* (IS-IS), *Routing Information Protocol* (RIP). It's automatically updated to reflect network changes.
     
-    ```bash
-    R 172.168.0.0/24 [120/1] via 192.168.10.2, 00:03:23, GigabitEthernet0/1
-    O 172.168.1.0/24 [110/2] via 192.168.10.2, 00:03:23, GigabitEthernet0/1
-    D 192.168.20.0/24 [90/156160] via 10.1.1.1, 00:03:23, GigabitEthernet0/0
+        ```bash
+        R 172.168.0.0/24 [120/1] via 192.168.10.2, 00:03:23, GigabitEthernet0/1
+        O 172.168.1.0/24 [110/2] via 192.168.10.2, 00:03:23, GigabitEthernet0/1
+        D 192.168.20.0/24 [90/156160] via 10.1.1.1, 00:03:23, GigabitEthernet0/0
 
-    172.168.0.0/24 = Destination Network Address
-    192.168.10.2 = Next hops router
-    R = Dynamic routing protocol
-    [110/2] = Administrative Distance and Metric (lower value indicate prefered)
-    ```
+        172.168.0.0/24 = Destination Network Address
+        192.168.10.2 = Next hops router
+        R = Dynamic routing protocol
+        [110/2] = Administrative Distance and Metric (lower value indicate prefered)
+        ```
 
     - **Static routes:** are entries that you manually enter directly into the configuration of the router. it's effective for small, simple networks that don't change frequently.
     
-    ```bash
-    S 192.168.30.0/24 [1/0] via 192.168.10.2
+        ```bash
+        S 192.168.30.0/24 [1/0] via 192.168.10.2
 
-    S = static route
-    192.168.30.0/24 = destination network
-    192.168.10.2 = Next-hop router
-    [1/0] = Administrative Distance and Metric to reach remote network (default value).
-    ```
+        S = static route
+        192.168.30.0/24 = destination network
+        192.168.10.2 = Next-hop router
+        [1/0] = Administrative Distance and Metric to reach remote network (default value).
+        ```
 
     - **Default routes:** is an optional entry used by the router if a packet doesn't match any other, a more specific route in the routing table. Selected default route is presented in the routing table as *Gateway of last resort*
     
-    ```bash
-    Gateway of last resort is 10.1.1.1 to network 0.0.0.0
+        ```bash
+        Gateway of last resort is 10.1.1.1 to network 0.0.0.0
 
-    S* 0.0.0.0/0 [1/0] via 10.1.1.1
+        S* 0.0.0.0/0 [1/0] via 10.1.1.1
 
-    S* = default static route
-    0.0.0.0/0 = Default static route
-    [1/0] = Administrative Distance and Metric to reach remote network (default value)
-    10.1.1.1 = Next-hop route address
-    ```
+        S* = default static route
+        0.0.0.0/0 = Default static route
+        [1/0] = Administrative Distance and Metric to reach remote network (default value)
+        10.1.1.1 = Next-hop route address
+        ```
 
 **Path Determination**
   - best path to a network is the path with the lowest metric
@@ -2076,6 +2078,7 @@ PC2# ping 192.168.80.2      (fail ping server2)
     - use subinterface to performs inter-VLAN routing
     - VLAN trunking must be enabled on these connections
     - packet incoming from one subinterface and then send on another subinterface
+    
     ```bash
     R1(config)# int Gi0/0.10
     R1(config-if)# encapsulation dot1q 10 --> 10 is the VLAN number
@@ -2434,7 +2437,7 @@ PC1# ping 192.168.80.2 --> success
   R1# conf t
   R1(config)# router ospf 1
   R1(config-router)# passive-interface default
-  --> make all passive interface go down (no longer send OSPF hello and can't receive OSPF neigborship)
+  --> make all passive interface go down (no longer send OSPF hello and can not receive OSPF neigborship)
   R1(config-router)# no passive-interface e0/1
   R1(config-router)# do sh ip ospf int br
   Interface    PID   Area            IP Address/Mask    Cost  State Nbrs F/C
@@ -4586,8 +4589,6 @@ Group  Port-channel  Protocol    Ports
   PC1# ping 136.61.206.3
   PC1# scp m9100-s5ek9-kickstart-mz.8.4.2d.bin RYANTHOV@136.61.206.3:bootflash:m9100-s5ek9-kickstart-mz.8.4.2d.bin
   PC1# scp m9100-s5ek9-mz.8.4.2d.bin RYANTHOV@136.61.206.3:bootflash:m9100-s5ek9-mz.8.4.2d.bin
-
-
   ```
 ##  30. <a name='ExaminingtheSecurityThreatLandscape'></a>Examining the Security Threat Landscape
 
