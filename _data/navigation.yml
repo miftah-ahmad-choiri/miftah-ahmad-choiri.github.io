@@ -127,14 +127,16 @@ docs:
         url: /docs/purestorage/fe-training-mseries/
   - title: Cisco📦
     children:
-      - title: "• VLAN Theory"
-        url: /docs/cisco/vlan-theory/
+      - title: "• Implementing and Administering Cisco Solutions"
+        url: /docs/cisco/implementing-administering-cisco-solutions/
       - title: "• Cisco Email Security Appliances"
         url: /docs/cisco/cisco-email-security-appliances/
       - title: "• Cisco UCS C460 Server"
         url: /docs/cisco/cisco-ucs-c460-server/
       - title: "• Troubleshooting Hardware Issue"
         url: /docs/cisco/troubleshoot-hardware-issue/
+      - title: "• VLAN Theory"
+        url: /docs/cisco/vlan-theory/
   - title: Redhat Enterprise Linux🎩
     children:
       - title: "• Wait in Progress"
