@@ -661,6 +661,7 @@ Total Mac Addresses for this criterion: 3
     L 10.1.1.2/32 is directly connected, GigabitEthernet0/0 --> router interface address on this router
     ```
     - **Dynamic routes:** allow router to learn about remote networks from other router automatically using a specific dynamic routing protocol. Dynamic routing protocol such as *Border Gateway Protocol* (BGP), *Open Shortest Path First* (OSPF), *Enhanced Interior Gateway Routing Protocol* (EIGRP), *Intermediate System to Intermediate System* (IS-IS), *Routing Information Protocol* (RIP). It's automatically updated to reflect network changes.
+    
     ```bash
     R 172.168.0.0/24 [120/1] via 192.168.10.2, 00:03:23, GigabitEthernet0/1
     O 172.168.1.0/24 [110/2] via 192.168.10.2, 00:03:23, GigabitEthernet0/1
@@ -671,16 +672,20 @@ Total Mac Addresses for this criterion: 3
     R = Dynamic routing protocol
     [110/2] = Administrative Distance and Metric (lower value indicate prefered)
     ```
+
     - **Static routes:** are entries that you manually enter directly into the configuration of the router. it's effective for small, simple networks that don't change frequently.
+    
     ```bash
     S 192.168.30.0/24 [1/0] via 192.168.10.2
-    
+
     S = static route
     192.168.30.0/24 = destination network
     192.168.10.2 = Next-hop router
     [1/0] = Administrative Distance and Metric to reach remote network (default value).
     ```
+
     - **Default routes:** is an optional entry used by the router if a packet doesn't match any other, a more specific route in the routing table. Selected default route is presented in the routing table as *Gateway of last resort*
+    
     ```bash
     Gateway of last resort is 10.1.1.1 to network 0.0.0.0
 
@@ -1129,7 +1134,7 @@ SW2(config-int)# no shut
 SW2(config-int)# do sh spann vlan 1 
 Et0/2   Desg  LRN   100   128.3   Shr --> still learning, wait a moment
 SW2(config-int)# do sh spann vlan 1
-Et0/2   Desg  FWD   100   128.3   Shr --> now it's forwarding
+Et0/2   Desg  FWD   100   128.3   Shr --> now it is forwarding
 SW2# sh int status
 SW2# write
 
@@ -1288,9 +1293,11 @@ Building configuration...
       - ICMP type: 133
       - Source: unspecified address (`::`) (don't have any IP)
       - Destination: `ff02::2` (all-router multicast adddress)
+    
     ```bash
     Branch(config-if)# ipv6 addr autoconfig [default]
     ```
+    
     ```bash
     R2# sh ipv6 int br
     Eth0/2  [up/up]
@@ -1310,6 +1317,7 @@ Building configuration...
     R2# sh run
     ipv6 unicast-routing
     ```
+
   - Several way to asiign an IPv6 to device:
     - **Static Assignment using a manual interface ID:** Manually assign both the prefix (network) and interface ID (host) portions of IPv6.
       ```bash
@@ -1768,72 +1776,75 @@ Verify Device Reachability
   SW1(config-vlan)# switchport voice vlan {vlan-id}
   ```
   - Assigning a Port to Data VLAN
-  ```bash
-  SW1# conf t
-  SW1(config)# int Fa0/3
-  SW1(config-if)# switchport mode access
-  SW1(config-if)# switchport access vlan 2
+    ```bash
+    SW1# conf t
+    SW1(config)# int Fa0/3
+    SW1(config-if)# switchport mode access
+    SW1(config-if)# switchport access vlan 2
 
-  SW1# conf t
-  SW1(config)# int range Fa0/1-3
-  SW1(config-if-range)# no shut
-  SW1(config-if-range)# switchport mode access
-  SW1(config-if-range)# switchport access vlan 2
-  ```
+    SW1# conf t
+    SW1(config)# int range Fa0/1-3
+    SW1(config-if-range)# no shut
+    SW1(config-if-range)# switchport mode access
+    SW1(config-if-range)# switchport access vlan 2
+    ```
   - set interface to factory defaults
-  ```bash
-  SW1(config)# default int Fa0/2
-  ```
-  - Assigning a Port to a Voice VLAN
-  ```bash
-  SW1# conf t  
-  SW1(config)# vlan 3  
-  SW1(config-vlan)# name telephony
-  SW1(config-vlan)# exit
-
-  SW1# conf t  
-  SW1(config)# int Fa0/2
-  SW1(config-if)# switchport mode access
-  SW1(config-if)# switchport voice vlan 3
-
-  SW1# conf t  
-  SW1(config)# vlan 2
-  SW1(config-vlan)# name data
-  SW1(config-vlan)# exit
-  SW1(config)# int Fa0/2
-  SW1(config-if)# switchport mode access
-  SW1(config-if)# switchport access vlan 2
-  SW1(config-if)# switchport voice vlan 3
-  ```
-  - Verifying VLANs
-  ```bash
-  SW1# sh vlan
-  VLAN Name                             Status    Ports
-  ---- -------------------------------- --------- -------------------------------
-  1    default                          active    Fa0/1, Fa0/3, Fa0/4, Fa0/5, Fa0/6, Fa0/7
-  2    data                             active    Fa0/2
-  3    telephony                        active    Fa0/2
-  1002 fddi-default                     act/unsup
-  1003 token-ring-default               act/unsup
-  1004 fddinet-default                  act/unsup
-  1005 trnet-default                    act/unsup
-
-  SW1# show vlan id 2   
-  VLAN Name                 Status    Ports
-  ---- -------------------- -------   ---------------------
-  2    data                active    Fa0/2
   
-  SW1#  show vlan brief
-  VLAN Name                             Status    Ports
-  ---- -------------------------------- --------- -------------------------------
-  1    default                          active    Fa0/1, Fa0/3, Fa0/4, Fa0/5, Fa0/6, Fa0/7
-  2    data                             active    Fa0/2
-  3    telephony                        active    Fa0/2
-  1002 fddi-default                     act/unsup
-  1003 token-ring-default               act/unsup
-  1004 fddinet-default                  act/unsup
-  1005 trnet-default                    act/unsup
-  ```
+    ```bash
+    SW1(config)# default int Fa0/2
+    ```
+  
+  - Assigning a Port to a Voice VLAN
+    ```bash
+    SW1# conf t  
+    SW1(config)# vlan 3  
+    SW1(config-vlan)# name telephony
+    SW1(config-vlan)# exit
+
+    SW1# conf t  
+    SW1(config)# int Fa0/2
+    SW1(config-if)# switchport mode access
+    SW1(config-if)# switchport voice vlan 3
+
+    SW1# conf t  
+    SW1(config)# vlan 2
+    SW1(config-vlan)# name data
+    SW1(config-vlan)# exit
+    SW1(config)# int Fa0/2
+    SW1(config-if)# switchport mode access
+    SW1(config-if)# switchport access vlan 2
+    SW1(config-if)# switchport voice vlan 3
+    ```
+  - Verifying VLANs
+  
+    ```bash
+    SW1# sh vlan
+    VLAN Name                             Status    Ports
+    ---- -------------------------------- --------- -------------------------------
+    1    default                          active    Fa0/1, Fa0/3, Fa0/4, Fa0/5, Fa0/6, Fa0/7
+    2    data                             active    Fa0/2
+    3    telephony                        active    Fa0/2
+    1002 fddi-default                     act/unsup
+    1003 token-ring-default               act/unsup
+    1004 fddinet-default                  act/unsup
+    1005 trnet-default                    act/unsup
+
+    SW1# show vlan id 2   
+    VLAN Name                 Status    Ports
+    --- -------------------- -------   ---------------------
+    2    data                active    Fa0/2
+  
+    SW1#  show vlan brief
+    VLAN Name                             Status    Ports
+    ---- -------------------------------- --------- -------------------------------
+    1    default                          active    Fa0/1, Fa0/3, Fa0/4, Fa0/5, Fa0/6, Fa0/7
+    2    data                             active    Fa0/2
+    3    telephony                        active    Fa0/2
+    1002 fddi-default                     act/unsup
+    1003 token-ring-default               act/unsup
+    1004 fddinet-default                  act/unsup
+    1005 trnet-default                    act/unsup
+    ```
   - DTP(Dynamic Trunking Protocol is used to auto negotiate into access or trunk mode
     - **dynamic auto:** inform trunk if receives DTP messages to do
     - **dynamic desirable:** automatically or actively try to convert to trunk link
@@ -2556,64 +2567,69 @@ Interface       IP-Address  OK?   Method  Status  Protocol
 Port-channel2   unassigned  YES   unset   yes     up
 ```
 - Configuring Etherchannel on Layer2
-```bash
->>> The configuration that follows applies to all 4 interfaces
->>> shurdown: Disabling interfaces ensure that incomplete configuration will not start  to create activity on the link 
->>> channel-group: port-channel number 1 as identifier and actives mode for enables LACP
-SW1(config)# int range Gi0/1-4
-SW1(config-if-range)# shutdown
-SW1(config-if-range)# channel-group 1 mode active
-SW1(config-if-range)# exit
 
->>> configuring the port-channel interface ensure consistent configuration of all member interface
-SW1(config)# int port-channel 1
-SW1(config-if)# switchport mode trunk
-SW1(config-if)# switchport trunk allowed vlan 1,2,20
-SW1(config-if)# int range Gi0/1-4
-SW1(config-if-range)# no shut
+    ```bash
+    >>> 'The configuration that follows applies to all 4 interfaces'
+    >>> 'shutdown: Disabling interfaces ensure that incomplete configuration will not start  to create activity on the link' 
+    >>> 'channel-group: port-channel number 1 as identifier and actives mode for enables LACP'
+    
+    SW1(config)# int range Gi0/1-4
+    SW1(config-if-range)# shutdown
+    SW1(config-if-range)# channel-group 1 mode active
+    SW1(config-if-range)# exit
 
->>> The configuration repeats on SW2 for interfaces Gi1/1-4
-```
+    >>> 'configuring the port-channel interface ensure consistent configuration of all member interface'
+    SW1(config)# int port-channel 1
+    SW1(config-if)# switchport mode trunk
+    SW1(config-if)# switchport trunk allowed vlan 1,2,20
+    SW1(config-if)# int range Gi0/1-4
+    SW1(config-if-range)# no shut
+
+    >>> 'The configuration repeats on SW2 for interfaces Gi1/1-4'
+    ```
 - Configuring Etherchannel on Layer3
-```bash
->>> a logical port-channel interface identified by the number 3 is created
->>> no switchport command turns interface into routed interface
->>> IP address is assigned to the routed port-channel 3 interface
-SW1(config)# int port-channel 3
-SW1(config-if)# no switchport
-SW1(config-if)# ip address 172.16.3.10 255.255.255.0
+    ```bash
+    >>> 'a logical port-channel interface identified by the number 3 is created'
+    >>> 'no switchport command turns interface into routed interface'
+    >>> 'IP address is assigned to the routed port-channel 3 interface'
+    SW1(config)# int port-channel 3
+    SW1(config-if)# no switchport
+    SW1(config-if)# ip address 172.16.3.10 255.255.255.0
 
->>> the configuration that follows applies to all 4 interfaces
->>> no switchport command turns all member interfaces into a routed interface
->>> static etherchannel manually established and is used on platforms that don't support LACP
-SW1(config-if)# int range Gi0/1-4
-SW1(config-if-range)# no switchport
-SW1(config-if-range)# channel-group mode on
-SW1(config-if-range)# exit
-```
+    >>> 'the configuration that follows applies to all 4 interfaces'
+    >>> 'no switchport command turns all member interfaces into a routed interface'
+    >>> 'static etherchannel manually established and is used on platforms that do not support LACP'
+    SW1(config-if)# int range Gi0/1-4
+    SW1(config-if-range)# no switchport
+    SW1(config-if-range)# channel-group mode on
+    SW1(config-if-range)# exit
+    ```
+
 - Verify Etherchannel Configuration
-```bash
-SW1# sh int port-channel1
-Port-channel1 is up, line protocol is up (connected)
+    
+    ```bash
+    SW1# sh int port-channel1
+    Port-channel1 is up, line protocol is up (connected)
 
-SW1# sh etherchannel sum
-Group   Port-channel  Protocol  Ports
--------------------------------------
-1       Po1(SU)       LACP      Et0/1(P)  Et0/2(P)
+    SW1# sh etherchannel sum
+    Group   Port-channel  Protocol  Ports
+    -------------------------------------
+    1       Po1(SU)       LACP      Et0/1(P)  Et0/2(P)
 
-SW1# sh etherchannel Port-channel
-Group: 1 
-Port-channel: Po1    (Primary Aggregator)
-Protocol  =   LACP
-Index   Load   Port     EC state        No of bits
-------+------+------+------------------+-----------
-  0     00     Fa0/1    Active             4 
-  1     00     Fa0/2    Active             4 
+    SW1# sh etherchannel Port-channel
+    Group: 1 
+    Port-channel: Po1    (Primary Aggregator)
+    Protocol  =   LACP
+    Index   Load   Port     EC state        No of bits
+    ------+------+------+------------------+-----------
+      0     00     Fa0/1    Active             4 
+      1     00     Fa0/2    Active             4 
 
-SW1# sh ip route
-O 172.16.2.0 [110/2] via 192.168.1.2, 00:02:37, Port-channel5
-C 192.168.1.0/24 is directly connected, Port-channel5
-```
+    SW1# sh ip route
+    O 172.16.2.0 [110/2] via 192.168.1.2, 00:02:37, Port-channel5
+    C 192.168.1.0/24 is directly connected, Port-channel5
+    ```
+
 **Configuring and Verify Etherchannel**
 ![image info](/assets/images/cisco/implementing-administering-cisco-solutions/images/Screenshot-2023-05-16-170622.png)
 
@@ -2865,6 +2881,7 @@ Group  Port-channel  Protocol    Ports
   - Screen hosts to permit or deny access to network services
 
 **ACL Wildcard Masking**
+
 |Wildcard | Ref IPv4 | Match Pattern | Match Octet |  
 | - | - | - | - | 
 | 00000000 | 01100100 | 01100100 | 100 | 
@@ -3145,7 +3162,7 @@ Group  Port-channel  Protocol    Ports
     30 deny tcp host 10.10.1.10 any
     40 permit ip any any
   
-  PC1# ping R2 --> can't talk to DNS server (block by ACL)
+  PC1# ping R2 --> can not talk to DNS server (block by ACL)
   PC1# ping 198.51.100.1 ---> success (10.10.1.10) to R2
   PC1# telnet 203.0.113.30 --> success (10.10.1.10) to SVR2
   PC1# telnet 203.0.113.30 80 --> failed (10.10.1.10) to SVR2 bcs only allow port 23
@@ -3178,6 +3195,7 @@ Group  Port-channel  Protocol    Ports
 
 **Implement Numbered and Named IPv4 ACLs**
 ![image info](/assets/images/cisco/implementing-administering-cisco-solutions/images/Screenshot-2023-05-16-171024.png)
+  
   ```bash
   PoC2> en
   PoC2# conf t
@@ -3224,6 +3242,7 @@ Group  Port-channel  Protocol    Ports
     - The router requests IPv4 address information from the DHCP server
     - The router injects a statics default route in its routing table based on the default gateway parameters received with the assigned IPv4 address
   ![image info](/assets/images/cisco/implementing-administering-cisco-solutions/images/Screenshot-2023-05-16-171205.png)
+  
   ```bash
   R1# sh ip int br
   Interface                  IP-Address      OK? Method Status                Protocol
@@ -3420,7 +3439,7 @@ Group  Port-channel  Protocol    Ports
 
   R1(config)# do ping 203.0.113.30 --> success from 198.51.100.2 to SRV2
   
-  SRV1# ping 203.0.113.30 --> failed from 10.10.2.20 to SRV2 (bcs no NAT in R1 and SRV2 can't get feedback to SRV1 which using private address)
+  SRV1# ping 203.0.113.30 --> failed from 10.10.2.20 to SRV2 (bcs no NAT in R1 and SRV2 can not get feedback to SRV1 which using private address)
 
   R1(config)# int e0/3
   R1(config-if)# ip nat outside
@@ -4321,17 +4340,20 @@ Group  Port-channel  Protocol    Ports
   - **Syslog MSG** is the text of the syslog message, with additional information about the process that generated the message.
     - **How to Read System Messages** 
       - The general format of syslog messages that syslog process are structured as follows:
+        
         ```bash
         seq no:timestamp: %facility-severity-MNEMONIC:description
 
         *Apr 22 11:05:55.423: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/22, changed state to up
         ```
+        
         Facility codes in syslog message:
         - LINEPROTO : Line protocol
         - LINK : Data Link
         - OSPF : Open Shortest Path First
         - CDP : Cisco Discovery Protocol
         - SYS : Operating System
+        
         ```bash
         ########## Change Sequence Number ############
         R1(config)# service sequence-numbers
@@ -4351,6 +4373,7 @@ Group  Port-channel  Protocol    Ports
         %SYS-5-CONFIG_I: Configured from console by console
         %SEC-6-IPACCESSLOGDP: list dmz-acl denied icmp 10.10.10.2 -> 10.10.99.1
         ```
+
     - **System Log Config**
       - To change the level of messages that are sent to the console, use the `logging console <level>` command. Limit the syslog messages that are sent to the syslog server based on the severity:
       ```bash
@@ -4358,6 +4381,7 @@ Group  Port-channel  Protocol    Ports
       R1(config)# logging trap informational
       R1(config)# logging source-interface Loopback0
       ```
+      
       | Command | Description |
       |-|-|
       | `logging` {*`hostname`/`ip-address`*} | Identifies a syslog server host to receive logging messages |
@@ -4366,6 +4390,7 @@ Group  Port-channel  Protocol    Ports
       | `logging source-interface` *`interface`* | Identifies which interface is used as source IP address, when syslog messages will be sent |
       
       Check syslog messages that are stored in the router and shows you how many messages are logged to various destinations, and what severity level is configured for that destination.
+      
       ```bash
       R1# show logging
       Syslog logging: enabled (0 messages dropped, 3 messages rate-limited, 0 flushes, 0 overruns, xml disabled, filtering disabled)
