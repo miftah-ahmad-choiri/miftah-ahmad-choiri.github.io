@@ -364,33 +364,30 @@ last_modified_at: 2025-03-21T11:59:26-04:00
 
 ![image-right](/assets/images/aboutme/logo/2.png){: .align-right}
 
-**Institut Teknologi Sepuluh Nopember (ITS)** 
+**Institut Teknologi Sepuluh Nopember (ITS)** <br>
 *Bachelor's Degree in Electrical Engineering, 2015 – 2019*  
 
 Graduated with a **GPA of 3.43/4.00**, earning recognition as the **Most Outstanding Student** of the Faculty of Electrical Technology. Completed 147 credits out of the required 144, specializing in *Startup Business, Data Science, Power Systems, Cloud Computing, and IoT*, gaining a strong foundation in both technical and business aspects of emerging technologies. During university, I achieved *25+ awards and scholarships*, published *3+ research papers*, and contributed to *7+ social and industry-level projects*, demonstrating excellence in academics, research, and real-world applications.
 
 ## My Work Experiences
 
-![image-left](/assets/images/aboutme/logo/1.png){: .align-left} **Service Planning Representative** - **IBM** 
-
+![image-left](/assets/images/aboutme/logo/1.png){: .align-left} **Service Planning Representative** - **IBM** <br>
 (*Jun 2021 – Present*, *Jakarta*)
 
-Spearhead *multi-brand server and supercomputer projects*, overseeing *installations, configurations, upgrades, assessments, migrations, and relocations* to ensure seamless deployment and operational excellence. Serve as the *technical focal point* for key accounts, driving *client satisfaction, meeting project milestones, optimizing key performance indicators (KPIs), and fostering business growth*. Provide *consultative expertise* to sales and solution teams, assisting in *sizing, designing, and optimizing new system storage offerings and initiatives* to align with evolving business needs.  
+As an IBMer, my responsibility is to spearhead *__multi-brand server and supercomputer projects__*, overseeing *__installations, configurations, upgrades, assessments, migrations, and relocations__* to ensure seamless deployment and operational excellence. Serve as the *__technical focal point__* for key accounts, driving *__client satisfaction, meeting project milestones, optimizing key performance indicators (KPIs), and fostering business growth__*. Provide *__consultative expertise__* to sales and solution teams, assisting in *__sizing, designing, and optimizing new system storage offerings and initiatives__* to align with evolving business needs.  
 
-As a *seasoned IT professional*, I bring extensive expertise in *system administration, server management, and virtualization*, having worked with *Red Hat, RHV, RHCOS, AIX, VMware ESXi, and AS/400*. I specialize in *managing complex infrastructures*, including *IBM DS8000, Storwize, IBM Power Server, and high-availability solutions like AIX PowerHA*. My technical proficiency extends to *automation with Ansible*, handling *project installations, migrations, relocations, and hardware breakfixes* with precision and efficiency. Additionally, I possess deep knowledge of *OpenShift, DB2 instances, and enterprise storage solutions*, ensuring *optimal system performance and reliability*. With a *strong background in networking, troubleshooting, and system configuration*, I excel at maintaining *seamless operations in disconnected environments*. Passionate about *automation and strategic infrastructure management*, I am committed to *enhancing workflows, optimizing efficiency, and driving continuous innovation*. 
+Beside of that, as a *__seasoned IT professional__*, I also bring extensive expertise in *__system administration, server management, and virtualization__*, having worked with *__Red Hat, RHV, RHCOS, AIX, VMware ESXi, and AS/400__*. I specialize in *__managing complex infrastructures__*, including *__IBM DS8000, Storwize, IBM Power Server, and high-availability solutions like AIX PowerHA__*. My technical proficiency extends to *__automation with Ansible__*, handling *__project installations, migrations, relocations, and hardware breakfixes__* with precision and efficiency. Additionally, I possess deep knowledge of *__OpenShift, DB2 instances, and enterprise storage solutions__*, ensuring *__optimal system performance and reliability__*. With a *__strong background in troubleshooting, and system configuration__*, I excel at maintaining *__seamless operations in disconnected environments__*. Passionate about *__automation and strategic infrastructure management__*, I am committed to *__enhancing workflows, optimizing efficiency, and driving continuous innovation__*. 
 
 ---
 
-![image-right](/assets/images/aboutme/logo/4.png){: .align-right} **Strategic Media Planner** - **GroupM** 
-
+![image-right](/assets/images/aboutme/logo/4.png){: .align-right} **Strategic Media Planner** - **GroupM** <br>
 (*Apr 2021 – Jun 2021*, *Jakarta*)
 
 Managed and strategized paid advertising campaigns for Unilever Indonesia, ensuring effective media delivery across conventional, digital, and performance-based channels. Led the development of integrated media plans to optimize brand reach and engagement. Worked closely with internal teams and external partners to craft data-driven media strategies and tactical execution, ensuring alignment with business objectives and market trends.
 
 ---
 
-![image-right](/assets/images/aboutme/logo/3.png){: .align-left} **Data Scientist/Analyst** - **Supertype** 
-
+![image-right](/assets/images/aboutme/logo/3.png){: .align-left} **Data Scientist/Analyst** - **Supertype.ai** <br>
 (*Aug 2020 – Mar 2021*, *Jakarta*)
 
 As a **Data Scientist/Analyst** at **Supertype**, I managed software development for a review management app, helping clients analyze customer feedback and leverage competitor weaknesses. I built end-to-end analytics and machine learning solutions, from data collection and preprocessing to model deployment and visualization. Collaborating with the data team, I developed data pipelines, integrated solutions into backend systems using Docker, and successfully delivered an analytics dashboard with NLP-powered sentiment analysis and topic classification, providing valuable insights through interactive reports.
