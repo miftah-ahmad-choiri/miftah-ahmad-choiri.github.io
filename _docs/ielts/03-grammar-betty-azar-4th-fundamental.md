@@ -1210,66 +1210,232 @@ Reflexive pronouns are used when **the subject and object are the same person or
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/77.png)
 
+Modal auxiliaries (or **modal verbs**) help express **ability, possibility, permission, politeness, advice, and necessity**. They **do not** change form and are always followed by the **base form of the main verb** (without *to*). 
+
+Modal auxiliaries are **essential for expressing ability, possibility, permission, politeness, and advice**.  
+
+✅ **Key Takeaways:**  
+- **Ability:** *He **can** swim. / She **could** run fast.*  
+- **Possibility:** *It **may/might/could** rain.*  
+- **Permission:** *You **may/can** leave.*  
+- **Politeness:** *May I / Could I / Would you / Can you?*  
+- **Advice:** *You **should/ought to** rest.*  
+- **Warnings:** *You **had better** study.*  
+- **Necessity:** *You **must/have to** do it.*  
+- **Lack of necessity:** *You **don’t have to** go.*  
+- **Prohibition:** *You **must not** enter.*  
+- **Logical conclusion:** *He **must** be the teacher.*  
+- **Tag questions:** *You **can** help, **can't you**?*  
+- **Instructions:** *Sit down.*  
+- **Suggestions:** *Let’s eat.* / *Why don’t we go?*  
+- **Preferences:** *I **prefer** tea.* / *I **would rather** drink water.*  
+
+
 ### 7-1 The form of modal auxiliaries
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/78.png)
+
+Modal auxiliaries do not take **-s, -ing, or -ed** endings and are followed by the **base form** of the verb.  
+
+📌 **Structure:**  
+**Subject + Modal Verb + Base Verb + Object**  
+
+✅ **Examples:**  
+- *She **can** swim.* (*not "can swims" ❌*)  
+- *He **should** study for the exam.*  
+
+📌 **Common Modals:**  
+| **Modal** | **Function** | **Example** |  
+|-----------|------------|------------|  
+| can | Ability / Permission | *I **can** drive.* / *You **can** go now.* |  
+| could | Past ability / Polite request / Possibility | *She **could** run fast.* / ***Could** you help me?* |  
+| may | Permission / Possibility | *You **may** leave early.* / *It **may** rain.* |  
+| might | Possibility | *She **might** be late.* |  
+| will | Future certainty | *We **will** arrive at 5 PM.* |  
+| would | Hypothetical / Politeness | *I **would** love to help.* |  
+| shall | Future intention / Suggestion | *I **shall** return.* / *Shall we dance?* |  
+| should | Advice / Expectation | *You **should** rest.* |  
+| must | Strong necessity | *You **must** wear a seatbelt.* | 
 
 ### 7-2 Expressing ability: `can` and `could`
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/79.png)
 
+📌 **Can** is used for **present ability**, and **could** is used for **past ability** or **polite requests**.  
+
+✅ **Examples:**  
+- *She **can** swim.* (present ability)  
+- *He **could** run fast when he was younger.* (past ability)  
+- ***Could** you help me?* (polite request)  
+
+
 ### 7-3 Expressing possibility: `may`, `might`, and `maybe`; expressing permission: `may` and `can`
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/80.png)
+
+Permission: `may` and `can`**  
+📌 **May and might** express possibility:  
+- *It **may** rain tomorrow.* (possible)  
+- *She **might** be at home.* (less certain)  
+
+📌 **May and can** express permission:  
+- *You **may** enter the room.* (formal)  
+- *You **can** go now.* (informal)  
+
+📌 **Maybe** is not a modal but an adverb:  
+- *Maybe she is late.* (*not "Maybe she may be late" ❌*)  
 
 ### 7-4 Using `could` to express possibility
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/81.png)
 
+📌 **Could** suggests a **possible** but **uncertain** outcome.  
+
+✅ **Examples:**  
+- *She **could** win the race.* (possible but not certain)  
+- *The key **could** be in your bag.*  
+
+
 ### 7-5 Polite questions: `may I`, `could I`, `can I`
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/82.png)
+
+Used to ask for permission **politely**.  
+
+📌 **Formal:**  
+- *May I leave early?*  
+
+📌 **Less formal:**  
+- *Could I sit here?*  
+- *Can I borrow your pen?*  
 
 ### 7-6 Polite questions: `would you`, `could you`, `will you`, `can you`
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/83.png)
 
+Used to ask someone **to do something** politely.  
+
+📌 **Most formal:**  
+- *Would you please help me?*  
+- *Could you open the door?*  
+
+📌 **Less formal:**  
+- *Will you help me?*  
+- *Can you pass the salt?*  
+
 ### 7-7 Expressing advice: `should` and `ought to`
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/84.png)
+
+📌 **Should and ought to** both mean **giving advice or recommendation**.  
+
+✅ **Examples:**  
+- *You **should** sleep early.*  
+- *You **ought to** see a doctor.*  
+
+📌 **Should** is more common in speech than **ought to**.  
 
 ### 7-8 Expressing advice: `had better`
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/85.png)
 
+📌 **Had better** gives **strong advice or warning**.  
+
+✅ **Examples:**  
+- *You **had better** study, or you will fail.*  
+- *We **had better** leave now before the storm starts.*  
+
+📌 **Stronger than "should"** but **softer than "must"**.  
+
 ### 7-9 Expressing necessity: `have to`, `have got to`, `must`
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/86.png)
+
+📌 These modals express **necessity or obligation**.  
+
+✅ **Examples:**  
+- *You **must** wear a seatbelt.* (strong necessity)  
+- *I **have to** finish my homework.* (external obligation)  
+- *She **has got to** be on time.* (spoken emphasis)  
+
+📌 **Differences:**  
+- **Must** is often for **strong personal necessity or rules** (*You must be quiet!*).  
+- **Have to** refers to **external obligations** (*I have to go to work.*).  
+- **Have got to** is more common in **spoken English** (*I've got to leave now.*).  
 
 ### 7-10 Expressing lack of necessity: `do not have to`; Expressing prohibition: `must not`
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/87.png)
 
+📌 **Do not have to** = Something is **not necessary**.  
+📌 **Must not** = **Strict prohibition** (not allowed).  
+
+✅ **Examples:**  
+- *You **do not have to** wake up early tomorrow.* (It’s optional.)  
+- *You **must not** park here.* (Strict rule – not allowed.)  
+
 ### 7-11 Making logical conclusions: `must`
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/88.png)
+
+📌 **Must** can also express **certainty or logical conclusions**.  
+
+✅ **Examples:**  
+- *She **must** be at work now.* (I’m sure she is.)  
+- *It **must** be cold outside.* (Based on the situation, I’m certain.)  
 
 ### 7-12 Tag questions with modal auxiliaries
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/89.png)
 
+📌 Tag questions are **short questions** added to the **end of a statement** to **confirm information**.  
+
+✅ **Examples:**  
+- *She **can** swim, **can't she**?*  
+- *They **should** help, **shouldn’t they**?*  
+- *You **must** be tired, **mustn't you**?*  
+
+📌 **Positive statement → Negative tag** (*You can help, can't you?*)  
+📌 **Negative statement → Positive tag** (*You can’t swim, can you?*)  
+
+
 ### 7-13 Giving instructions: imperative sentences
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/90.png)
+
+📌 Imperatives are used to **give commands, instructions, or advice**.  
+
+✅ **Examples:**  
+- *Close the door.* (Command)  
+- *Please sit down.* (Polite instruction)  
+- *Don't touch that!* (Negative imperative)  
+
+📌 **Adding "please" makes it more polite** (*Please turn off the lights.*).  
 
 ### 7-14 Making suggestions: `let's` and `why don't`
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/91.png)
 
+📌 **Let’s + base verb** = **Including the speaker in the suggestion**.  
+📌 **Why don’t + subject + verb** = **Making a suggestion to someone**.  
+
+✅ **Examples:**  
+- *Let’s go to the beach!* (Group suggestion)  
+- *Why don’t we watch a movie?* (Casual suggestion)  
+
 ### 7-15 Stating preferences: `prefer`, `like...better`, `would rather`
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/92.png)
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/93.png)
+
+📌 **Prefer** = General preference  
+📌 **Like...better** = Comparison preference  
+📌 **Would rather** = Specific preference in a situation  
+
+✅ **Examples:**  
+- *I **prefer** tea to coffee.* (General)  
+- *I **like** tea **better** than coffee.* (Comparison)  
+- *I **would rather** drink tea than coffee.* (Specific choice)  
 
 <hr style="height: 5px; background-color: black; border: none;">
 
@@ -1277,34 +1443,110 @@ Reflexive pronouns are used when **the subject and object are the same person or
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/94.png)
 
+Connecting ideas properly helps create **coherent and logical** sentences in writing and speech. Different conjunctions are used to show **addition, contrast, cause-effect, and choices**. 
+
+✅ **Key Takeaways:**  
+- **Addition:** *I like apples **and** bananas.*  
+- **Contrast:** *I like apples, **but** I don’t like oranges.*  
+- **Choices:** *Do you want apples **or** oranges?*  
+- **Cause-effect:** *It was late, **so** I went home.*  
+- **Avoiding repetition:** *He likes coffee, **but** she doesn’t.*  
+- **Expressing similarity:** *He plays soccer, and I do **too** / **so do I**.*  
+- **Giving reasons:** *She left **because** she was tired.*  
+- **Showing contrast:** *She left **even though** she was tired.*  
+
+
 ### 8-1 Connecting ideas with `and`
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/95.png)
+
+📌 **`And`** is used to **add information** or connect similar ideas.  
+
+✅ **Examples:**  
+- *I like coffee, **and** I like tea.*  
+- *She speaks English **and** Spanish.*  
+
+📌 **`And`** also connects **actions happening in sequence**:  
+- *She woke up **and** brushed her teeth.*  
 
 ### 8-2 Connecting ideas with `but` and `or`
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/96.png)
 
+📌 **`But`** is used to show **contrast (opposite ideas)**.  
+📌 **`Or`** is used to show **choices or alternatives**.  
+
+✅ **Examples:**  
+- *I like coffee, **but** I don’t like tea.* (contrast)  
+- *Do you want coffee **or** tea?* (choice)  
+
 ### 8-3 Connecting ideas with `so`
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/97.png)
+
+📌 **`So`** is used to show **cause and effect** (result).  
+
+✅ **Examples:**  
+- *I was tired, **so** I went to bed early.*  
+- *It was raining, **so** we stayed inside.* 
 
 ### 8-4 Using auxiliary verbs after `but`
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/98.png)
 
+📌 Auxiliary verbs (**do, does, did, can, will, etc.**) are used after **but** to avoid repetition.  
+
+✅ **Examples:**  
+- *She likes ice cream, **but** I don’t.* (= but I don’t like ice cream.)  
+- *He studied a lot, **but** she didn’t.* (= but she didn’t study.)  
+
+📌 This makes sentences **shorter and clearer**.  
+
 ### 8-5 Using `and` + `too`, `so`, `either`, `neither`
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/99.png)
+
+📌 To express **similarity**, we use:  
+- **`too`** (for positive sentences)  
+- **`so` + auxiliary verb + subject**  
+- **`either`** (for negative sentences)  
+- **`neither` + auxiliary verb + subject**  
+
+✅ **Examples:**  
+- *She likes pizza, and I do **too**.*  
+- *She likes pizza, and **so do I**.*  
+- *She **doesn’t** like coffee, and I don’t **either**.*  
+- *She **doesn’t** like coffee, and **neither do I**.*  
+
+📌 **`So` and `neither` are more formal than `too` and `either`**.  
+
 
 ### 8-6 Connecting ideas with `because`
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/100.png)
 
+📌 **`Because`** introduces a **reason or cause**.  
+
+✅ **Examples:**  
+- *I stayed home **because** I was sick.*  
+- *He left early **because** he had a meeting.*  
+
+📌 **Positioning:**  
+- **`Because`** can be at the **beginning** or **middle** of a sentence:  
+  - *Because I was sick, I stayed home.*  
+  - *I stayed home because I was sick.*  
+
 ### 8-7 Connecting ideas with `even though`/`although`
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/101.png)
 
+📌 **`Even though` and `although`** show **contrast between two ideas** (unexpected results).  
+
+✅ **Examples:**  
+- *She went to work **even though** she was sick.*  
+- *Although it was raining, they played outside.*  
+
+📌 **`Even though` is stronger than `although`**.  
 
 <hr style="height: 5px; background-color: black; border: none;">
 
@@ -1312,49 +1554,156 @@ Reflexive pronouns are used when **the subject and object are the same person or
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/102.png)
 
+Comparisons allow us to describe differences and similarities between people, objects, ideas, or situations. They help us express equality, inequality, or the degree of a certain quality. In English, there are several ways to form comparisons using adjectives, adverbs, and nouns. This section will explore different comparative structures and their usage.
+
+**🎯 Conclusion**  
+
+- **Comparisons** help describe similarities, differences, and degrees of change.  
+- **Comparatives** are used to compare two things (*bigger, more interesting*).  
+- **Superlatives** show the highest or lowest degree among three or more things (*biggest, most interesting*).  
+- **Modifiers** like *much, slightly, far* can adjust the intensity of comparisons.  
+- **Structures like** `as...as`, `less...than`, and `not as...as` help express equal or unequal comparisons.  
+- **Double comparatives** (*the more, the better*) show cause-and-effect relationships.  
+- **Repeating comparatives** (*colder and colder*) emphasize gradual change.  
+- **Using words like** *same, similar, different, like, alike* helps express relationships between things.  
+- Mastering these forms will improve both **spoken and written** communication.  
+
+
 ### 9-1 Making comparisons with `as...as`
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/103.png)
+
+This structure is used to show that two things are equal or not equal in some way.  
+
+✅ **Formula:**  
+**as + adjective/adverb + as**  
+
+- **Equal comparison:**  
+  - *She is **as tall as** her brother.* 👦👧 (They are of the same height.)  
+  - *He runs **as fast as** a professional athlete.* 🏃💨 (He runs at the same speed.)  
+
+- **Unequal comparison (negative form):**  
+  - *This cake is **not as sweet as** the one I baked yesterday.* 🍰  
+  - *The test was **not as difficult as** I expected.* 📝  
+
 
 ### 9-2 Comparative and superlative
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/104.png)
 
+Comparatives and superlatives are used to compare things.  
+
+- **Comparative:** Used when comparing two things.  
+- **Superlative:** Used when comparing three or more things, showing the highest or lowest degree.  
+
+📌 **Examples:**  
+- *This book is **more interesting than** that one.* 📚  
+- *This is **the most interesting** book I have ever read.* 📖
+
 ### 9-3 Comparative and superlative forms of adjectives and adverbs
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/105.png)
+
+Adjectives and adverbs change their forms when used in comparisons:  
+
+**1️⃣ One-Syllable Adjectives**  
+📌 Add **-er** for the comparative and **-est** for the superlative.  
+- *small → **smaller** → **smallest*** 🏠  
+- *fast → **faster** → **fastest*** 🚗💨  
+
+**2️⃣ Two or More Syllable Adjectives**  
+📌 Use **more** for comparatives and **most** for superlatives.  
+- *beautiful → **more beautiful** → **most beautiful*** 🌸  
+- *important → **more important** → **most important*** ✅  
+
+**3️⃣ Irregular Forms**  
+📌 Some adjectives and adverbs change completely.  
+- *good → **better** → **best*** 🌟  
+- *bad → **worse** → **worst*** 🚫  
 
 ### 9-4 Completing a comparative
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/106.png)
 
+Comparatives often require additional words to complete the meaning, usually using "than."  
+
+📌 **Examples:**  
+- *The new phone is **cheaper than** the old model.* 📱  
+- *This road is **wider than** the previous one.* 🛣️ 
+
 ### 9-5 Modifying comparatives
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/107.png)
+
+We can modify comparatives using words that show degree:  
+
+✅ **Modifiers:** *much, far, a little, slightly, significantly*  
+
+📌 **Examples:**  
+- *This jacket is **much warmer than** that one.* 🧥🔥  
+- *The new version is **slightly better than** the old one.* 🎮  
 
 ### 9-6 Comparisons with `less...than` and `not as...as`
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/108.png)
 
+These structures show that something is of a lower degree.  
+
+📌 **Examples:**  
+- *This chair is **less comfortable than** the sofa.* 🪑  
+- *This exam was **not as hard as** I expected.* 🏫  
+
+
 ### 9-7 Using `more` with nouns
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/109.png)
+
+"More" can be used with both countable and uncountable nouns to indicate a greater quantity.  
+
+📌 **Examples:**  
+- *She has **more books than** her brother.* 📚  
+- *I need **more water** to finish cooking.* 💧  
 
 ### 9-8 Repeating a comparative
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/110.png)
 
+Repeating a comparative shows gradual change.  
+
+📌 **Examples:**  
+- *The weather is getting **colder and colder.*** ❄️  
+- *She is becoming **more and more confident.*** 💪  
+
 ### 9-9 Using double comparatives
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/111.png)
+
+Double comparatives show a cause-and-effect relationship.  
+
+📌 **Examples:**  
+- *The **more** you practice, the **better** you become.* 🎸  
+- *The **faster** you run, the **sooner** you’ll finish.* 🏃
 
 ### 9-10 Using superlatives
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/112.png)
 
+Superlatives express the highest or lowest degree among three or more things.  
+
+📌 **Examples:**  
+- *This is **the most expensive** restaurant in town.* 🍽️  
+- *She is **the smartest** student in the class.* 🎓  
+
 ### 9-11 Using `the same`, `similar`, `different`, `like`, `alike`
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/113.png)
+
+These words express similarity or difference between things.  
+
+📌 **Examples:**  
+- *This phone is **the same as** mine.* 📱📱  
+- *These two designs are **similar** but not identical.* 🎨  
+- *Her answer was **different from** his.* ❌  
 
 <hr style="height: 5px; background-color: black; border: none;">
 
@@ -1362,50 +1711,181 @@ Reflexive pronouns are used when **the subject and object are the same person or
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/114.png)
 
+The passive voice is used when the focus is on the action rather than the person or thing performing the action. It is commonly used in formal writing, news reports, and scientific descriptions.  
+
+✅ **Active:** *The chef cooked the meal.* 👨‍🍳  
+✅ **Passive:** *The meal was cooked by the chef.* 🍽️  
+
+The passive is useful when:  
+- The **doer** of the action is unknown or unimportant.  
+- The **focus** is on the result rather than the subject performing the action.  
+- The **speaker wants to be indirect** or impersonal (e.g., official or formal statements).
+
+What you will learn:
+
+- The **passive voice** shifts the focus to the action rather than the doer.  
+- **Passive sentences use** **be + past participle (V3)** and change depending on tense.  
+- **Transitive verbs** can be passive, but **intransitive verbs** cannot.  
+- The **by-phrase** is optional and only used when the doer is important.  
+- **Modal verbs** in the passive use **modal + be + past participle** (*must be done*).  
+- **Past participles** can act as adjectives (*a broken window*).  
+- **`-ed` and `-ing` adjectives** have different meanings (*bored vs. boring*).  
+- **`Get` + adjective/past participle** is common in informal speech (*get tired, get fired*).  
+- **Be used to** = familiarity; **get used to** = adaptation.  
+- **`Be supposed to`** expresses obligations or expectations.  
+
 ### 10-1 Active sentences and passive sentences
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/115.png)
+
+**1️⃣ What is the Difference?**  
+- **Active Voice:** The subject performs the action.  
+  - *Example:* *A famous artist painted this picture.* 🎨  
+- **Passive Voice:** The object becomes the subject, and the action is emphasized.  
+  - *Example:* *This picture was painted by a famous artist.* 🖼️  
+
+📌 **When to use Passive?**  
+- When the action is **more important** than the doer.  
+- When the doer is **unknown, obvious, or irrelevant**.  
+- In **scientific, academic, or official writing**. 
 
 ### 10-2 Form of the passive
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/116.png)
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/117.png)
 
+📌 **Formula:**  
+✅ **be + past participle (V3)**  
+
+| **Tense**  | **Active** | **Passive** |  
+|------------|-----------|------------|  
+| Present Simple | They **make** cars. 🚗 | Cars **are made**. 🏭 |  
+| Past Simple | They **built** the house. 🏠 | The house **was built**. 🏗️ |  
+| Future | They **will finish** the project. | The project **will be finished**. |  
+| Present Perfect | They **have repaired** the road. | The road **has been repaired**. |  
+
+🔹 **Examples:**  
+- *A new bridge **is being built** in the city.* 🌉 (Present continuous)  
+- *The results **will be announced** tomorrow.* 📢 (Future)
+
 ### 10-3 Transitive and intrasitive verbs
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/118.png)
+
+**1️⃣ Transitive Verbs (Can Be Passive)**  
+- Verbs that **require an object** can form passive sentences.  
+  - *Example (Active):* *They **wrote** the report.* 📝  
+  - *Example (Passive):* *The report **was written**.*  
+
+**2️⃣ Intransitive Verbs (Cannot Be Passive)**  
+- Verbs that **do not take an object** cannot be passive.  
+  - ❌ *"He **arrived** at 7 PM." → No passive form!*  
+
+💡 **Common intransitive verbs:** arrive, go, sleep, exist, happen, die.  
+
 
 ### 10-4 Using the `by`-phrase
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/119.png)
 
+The **by-phrase** introduces the doer of the action in passive sentences.  
+
+📌 **Examples:**  
+- *The novel **was written by** J.K. Rowling.* 📖  
+- *The window **was broken by** a strong wind.* 🌬️  
+
+💡 **When to Omit `by`?**  
+- If the doer is **unknown, general, or unimportant**.  
+  - *"A cure for the disease **has been discovered**."* (Who discovered it is not important.)  
+
 ### 10-5 Passive modal auxiliaries 
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/120.png)
+
+Modal verbs (*can, must, should, may, might, etc.*) are used in passive structures.  
+
+📌 **Formula:**  
+✅ **modal + be + past participle**  
+
+🔹 **Examples:**  
+- *The rules **must be followed**.* 📜  
+- *The work **should be completed** by Monday.* ⏳  
+- *A decision **can be made** later.* 🤔  
 
 ### 10-6 Using past participles as adjectives (non-progressive passive)
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/121.png)
 
+Past participles (V3) can act as adjectives to describe a **state or condition**.  
+
+📌 **Examples:**  
+- *The **closed** doors made the room dark.* 🚪  
+- *The **broken** glass was dangerous.* 🏺  
+
+💡 **Difference:**  
+- *The door **was closed** by someone.* (Passive)  
+- *The **closed** door kept out the noise.* (Adjective)
+
 ### 10-7 Participial adjectives: `-ed` vs `-ing`
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/122.png)
+
+- **`-ed` adjectives** → Describe **feelings**.  
+  - *I am **bored** by the movie.* (I feel this way.)  
+- **`-ing` adjectives** → Describe **characteristics** of things.  
+  - *The movie is **boring**.* 🎥  
+
+📌 **More Examples:**  
+- *She felt **tired** after work.* 💤  
+- *It was an **exciting** match!* ⚽  
+
 
 ### 10-8 `Get` + adjective; `get` + past participle
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/123.png)
 
+📌 **Formula:**  
+✅ **get + adjective** → Change of state  
+✅ **get + past participle** → Passive meaning  
+
+🔹 **Examples:**  
+- *She **got sick** after eating bad food.* 🤒  
+- *The car **got repaired** yesterday.* 🚗🔧  
+
+💡 `"Get"` is often used in **informal speech** instead of `"be"`.  
+
 ### 10-9 Using `be used/accutomed to` and `get used/accustomed to`
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/124.png)
+
+**1️⃣ Be Used to (Familiarity)**
+✅ **be used to + noun/gerund (V-ing)**  
+- *I **am used to** waking up early.* ⏰  
+
+**2️⃣ Get Used to (Process of Adapting)**
+✅ **get used to + noun/gerund (V-ing)**  
+- *She **got used to** the cold weather.* ❄️ 
 
 ### 10-10 `Used to` to `be used to`
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/125.png)
 
+🔹 **Used to + verb** → Past habits/actions (no longer true).  
+- *I **used to** play football.* (I don’t anymore.)  
+
+🔹 **Be Used to + noun/V-ing** → Familiarity with something.  
+- *I **am used to** waking up early.*  
+
 ### 10-11 Using `be supposed to`
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/126.png)
+
+📌 **Formula:**  
+✅ **be supposed to + base verb** → Shows obligation, expectation, or assumption.  
+
+🔹 **Examples:**  
+- *You **are supposed to** finish your homework.* 📚 (Obligation)  
+- *The train **is supposed to** arrive at 6 PM.* 🚆 (Expectation)
 
 <hr style="height: 5px; background-color: black; border: none;">
 
@@ -1413,42 +1893,162 @@ Reflexive pronouns are used when **the subject and object are the same person or
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/127.png)
 
+Nouns in English are classified as **countable (count nouns)** or **uncountable (noncount nouns)**. Understanding this distinction helps in using articles (*a, an, the*), quantifiers (*some, many, much, a few*), and correct grammar.  
+
+What you will learn:
+- **Articles (`a, an, the`)** help define nouns clearly.  
+- **Count nouns** can be singular/plural; **noncount nouns** cannot.  
+- Some nouns **can be both** countable and uncountable based on context.  
+- **Quantifiers** like *many/much, a few/a little* differ based on noun type.  
+- **Units of measurement** make noncount nouns countable (*a piece of advice*).  
+- **Capitalization** follows strict rules for proper nouns and sentences.  
+
+
 ### 11-1 `A` vs `an`
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/128.png)
+
+**`A` and `an` are indefinite articles** used with singular count nouns.  
+
+### **When to Use?**  
+✅ **`A`** → Before words beginning with a **consonant** sound.  
+✅ **`An`** → Before words beginning with a **vowel** sound.  
+
+📌 **Examples:**  
+- *I saw **a** cat outside.* 🐱  
+- *She ate **an** apple.* 🍏  
+- *He is **an** honest person.* (Silent 'h', so vowel sound!)  
+
+🚨 **Common Mistakes:**  
+- ❌ *An university* → ✅ *A university* (because 'university' starts with a **consonant** sound: **"yoo"**)  
+- ❌ *A hour* → ✅ *An hour* (because 'hour' starts with a **vowel** sound: **"ow"**)  
 
 ### 11-2 Count and noncount nouns
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/129.png)
 
+**1️⃣ Countable Nouns (Count Nouns)**  
+- Things that **can be counted** (one, two, three…).  
+- Can have singular and plural forms.  
+
+📌 **Examples:**  
+- *One chair, two chairs* 🪑  
+- *A book, many books* 📚  
+
+**2️⃣ Uncountable Nouns (Noncount Nouns)**  
+- Things that **cannot be counted individually**.  
+- They **do not** have plural forms.  
+
+📌 **Examples:**  
+- *Water, sugar, information, furniture* 🚰  
+
+🚨 **Common Mistakes:**  
+- ❌ *Two informations* → ✅ *Two pieces of information*  
+- ❌ *A bread* → ✅ *A loaf of bread*  
+
 ### 11-3 Noncount nouns
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/130.png)
+
+Some common **categories** of uncountable nouns:  
+
+1. **Liquids & Gases:** Water, milk, juice, air, oxygen  
+2. **Substances & Materials:** Sugar, gold, wood, cotton  
+3. **Abstract Ideas:** Love, happiness, advice, knowledge  
+4. **Natural Phenomena:** Weather, rain, snow, lightning  
+
+📌 **Examples:**  
+- *She gave me good **advice** (not “an advice”)* 💡  
+- *I need some **water** (not “a water”)* 💧  
 
 ### 11-4 More noncount nouns
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/131.png)
 
+Some **nouns look plural but are actually singular**.  
+
+📌 **Examples:**  
+- **News** (*The news is interesting.*) 📰  
+- **Mathematics** (*Mathematics is my favorite subject.*) 🏫  
+- **Economics** (*Economics is difficult.*) 💰  
+
+🚨 **Common Mistakes:**  
+- ❌ *These news are good!* → ✅ *This news is good!*  
+
 ### 11-5 Using `several`, `a lot of`, `many/much`, and `a few/a little`
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/132.png)
+
+**1️⃣ Words for Countable Nouns:**  
+- **Several** (*I have **several** friends.*)  
+- **A few** (*I have **a few** questions.*)  
+- **Many** (*There are **many** cars in the parking lot.*)  
+
+**2️⃣ Words for Uncountable Nouns:**  
+- **A little** (*There is **a little** milk left.*)  
+- **Much** (*I don’t have **much** time.*)  
+
+**3️⃣ Words for Both Count and Noncount Nouns:**  
+- **A lot of** (*I have **a lot of** books / There is **a lot of** water.*)  
+- **Some** (*She bought **some** apples / She bought **some** bread.*)  
+
+🚨 **Common Mistakes:**  
+- ❌ *I have much friends* → ✅ *I have many friends*  
+- ❌ *I drank many water* → ✅ *I drank much water*  
 
 ### 11-6 Nouns that can be count or noncount
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/133.png)
 
+Some nouns can be both countable and uncountable, depending on **meaning**.  
+
+📌 **Examples:**  
+- **Chicken** (Noncount = food 🥩) → *I ate **chicken** for dinner.*  
+- **Chicken** (Count = animal 🐔) → *There are **three chickens** in the yard.*  
+
+- **Hair** (Noncount = all hair on head) → *She has beautiful **hair**.* 💇‍♀️  
+- **Hair** (Count = individual strands) → *I found **a hair** in my soup!* 😱  
+
 ### 11-7 Using units of measure with noncount nouns
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/134.png)
+
+Since noncount nouns **cannot** be counted directly, we use **units of measure**.  
+
+📌 **Examples:**  
+- *A glass of water* 🥛  
+- *A slice of pizza* 🍕  
+- *A piece of furniture* 🪑  
+
+🚨 **Common Mistakes:**  
+- ❌ *Three breads* → ✅ *Three loaves of bread*  
 
 ### 11-8 Guidelines for article usage
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/135.png)
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/136.png)
 
+| **Article** | **Usage** | **Example** |  
+|------------|----------|------------|  
+| **`A` / `An`** | First mention of something | *I saw **a** dog.* 🐶 |  
+| **`The`** | Specific things, already mentioned | *The dog was friendly.* 🐕 |  
+| **No article (Ø)** | General ideas, uncountable nouns, plural count nouns | *Love is important.* ❤️ |  
+
+📌 **Examples:**  
+- *I need **a** phone.* (Any phone, not specific)  
+- *I need **the** phone on the table.* (A specific phone)  
+- *She loves **Ø** music.* (General idea)
+
 ### 11-9 Using `the` or `O` with names
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/138.png)
+
+| **Use "The"** | **No "The" (Ø)** |  
+|--------------|----------------|  
+| **Oceans & Seas:** *The Atlantic Ocean* 🌊 | **Continents:** *Asia, Europe* 🌏 |  
+| **Rivers:** *The Nile* 🌊 | **Countries:** *Brazil, Japan* 🇧🇷🇯🇵 |  
+| **Hotels/Theaters:** *The Hilton Hotel* 🏨 | **Cities:** *Paris, Tokyo* 🏙️ |  
+| **Newspapers:** *The New York Times* 📰 | **Names:** *John, Sarah* 👩‍🦰 |  
 
 ### 11-10 Capitalization
 
@@ -1456,39 +2056,151 @@ Reflexive pronouns are used when **the subject and object are the same person or
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/140.png)
 
 
+Capitalization rules:  
+- **First word of a sentence:** *The weather is nice.*  
+- **Proper nouns:** *I live in **New York.*** 🗽  
+- **Days & months:** *Monday, January*  
+- **Titles:** *Dr. Smith, President Biden*  
+
+🚨 **Common Mistakes:**  
+- ❌ *i live in france.* → ✅ *I live in France.*  
+- ❌ *monday is a holiday.* → ✅ *Monday is a holiday.*  
+
 <hr style="height: 5px; background-color: black; border: none;">
 
 ## 12. ADJECTIVE CLAUSES
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/142.png)
 
+An **adjective clause** (also called a **relative clause**) is a **dependent clause** that describes or gives more information about a noun.  
+- It usually starts with **relative pronouns** (*who, whom, whose, which, that*) or **relative adverbs** (*where, when, why*).  
+
+📌 **Example:**  
+- *The girl **who lives next door** is my best friend.*  
+- *The book **that I borrowed** was interesting.*  
+
+**Why use adjective clauses?**  
+✅ They help combine sentences.  
+✅ They make writing smoother and more natural. 
+
+What you will learn:
+
+- **Adjective clauses** give extra information about nouns.  
+- **Who/whom/that** refer to **people**; **which/that** refer to **things**.  
+- **Whose** is used for **possession**.  
+- **Prepositions** can be placed at the **end** or **before the relative pronoun**.  
+- **Verb agreement** in the clause must match the noun.  
+
 ### 12-1 Adjective clauses: introduction
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/143.png)
+
+An **adjective clause** acts like an **adjective** and modifies a **noun**.  
+
+📌 **Examples:**  
+- *She met a man **who speaks five languages**.*  
+- *I have a car **that runs on electricity**.* 🚗⚡  
+
+**Adjective Clause Structure:**  
+**Relative Pronoun/Adverb** + **Subject** + **Verb**  
+
+📌 **Examples:**  
+- *The house **where I was born** is still standing.*  
+- *The teacher **who taught me math** is retiring.*  
 
 ### 12-2 Using `who` and `that` in adjective clauses to describe people
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/144.png)
 
+**Relative Pronouns for People:**  
+- **Who** → Refers to the subject (*he/she/they*).  
+- **That** → Can replace **who** in informal speech.  
+
+📌 **Examples:**  
+- *The doctor **who treated me** was very kind.* 👨‍⚕️  
+- *The woman **that lives next door** is an artist.*  
+
+🚨 **Common Mistakes:**  
+- ❌ *The teacher which helped me was nice.*  
+- ✅ *The teacher who helped me was nice.*  
+
 ### 12-3 Using object pronouns in adjective clauses to describe people
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/145.png)
+
+When the **person is the object** of the clause, we use:  
+- **Whom** (formal)  
+- **Who / That** (common in spoken English)  
+
+📌 **Examples:**  
+- *The woman **whom I met** was very friendly.* (Formal)  
+- *The woman **who I met** was very friendly.* (Less formal)  
+- *The woman **that I met** was very friendly.* (Common)  
+
+🚨 **Whom is rarely used in spoken English!** 
 
 ### 12-4 Using pronouns in adjective clauses to describe things
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/146.png)
 
+**Relative Pronouns for Things:**  
+- **Which** → Used for **things only**.  
+- **That** → Used for **things (and sometimes people in informal speech).**  
+
+📌 **Examples:**  
+- *The phone **which I bought** is very expensive.* 📱  
+- *The book **that I’m reading** is amazing.* 📖  
+
+🚨 **Common Mistakes:**  
+- ❌ *The phone who I bought is expensive.*  
+- ✅ *The phone which I bought is expensive.*  
+
+
 ### 12-5 Singular and plural verbs in adjective clauses
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/147.png)
+
+The **verb** in the adjective clause must **agree with the noun it modifies**.  
+
+📌 **Examples:**  
+- *The student **who studies hard** gets good grades.* (Singular)  
+- *The students **who study hard** get good grades.* (Plural)  
+
+🚨 **Common Mistakes:**  
+- ❌ *The boy who play soccer is talented.*  
+- ✅ *The boy who plays soccer is talented.*  
 
 ### 12-6 Using prepositions in adjective clauses
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/148.png)
 
+Prepositions can appear **inside or at the end** of an adjective clause.  
+
+📌 **Examples:**  
+- *The movie **which we talked about** was amazing.* 🎬  
+- *The restaurant **that I ate at** was delicious.* 🍽️  
+
+**More Formal:**  
+- *The movie **about which we talked** was amazing.*  
+- *The restaurant **at which I ate** was delicious.*  
+
+🚨 **Common Mistakes:**  
+- ❌ *The book which I am interested is great.*  
+- ✅ *The book **that I am interested in** is great.* 
+
 ### 12-7 Using `whose` in adjective clauses
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/149.png)
+
+**Whose** shows **possession** and replaces *his, her, their, its*.  
+
+📌 **Examples:**  
+- *The man **whose car was stolen** is my neighbor.* 🚗  
+- *She is the teacher **whose lessons I love**.*  
+
+🚨 **Common Mistakes:**  
+- ❌ *The man who car was stolen is my neighbor.*  
+- ✅ *The man whose car was stolen is my neighbor.* 
 
 <hr style="height: 5px; background-color: black; border: none;">
 
@@ -1496,45 +2208,170 @@ Reflexive pronouns are used when **the subject and object are the same person or
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/150.png)
 
+In English, verbs are often followed by another verb. The second verb is either in the **gerund form** (*-ing*) or the **infinitive form** (*to + base verb*).  
+
+Understanding when to use **gerunds** and **infinitives** correctly helps improve fluency and clarity in writing and speaking.  
+
+📌 **Examples:**  
+- *I enjoy **reading** books.* (Gerund) 📚  
+- *She decided **to travel** abroad.* (Infinitive) ✈️ 
+
+What you will learn:
+- **Gerunds (-ing)** follow certain verbs (*enjoy, avoid, suggest, finish, keep*).  
+- **Infinitives (to + verb)** follow other verbs (*want, decide, plan, refuse*).  
+- Some verbs can take **both gerunds and infinitives**, but the meaning may change (*stop smoking vs. stop to smoke*).  
+- **Prepositions** must always be followed by **gerunds** (*good at painting*).  
+- **"By" + gerund** explains **how** something happens (*learn by practicing*).  
+- **"It + infinitive"** makes general statements (*It’s easy to learn English*).  
+- **"Too" and "enough"** express excess or sufficiency (*too cold to swim / warm enough to go outside*).  
+
 ### 13-1 Verb + gerund
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/151.png)
+
+Some verbs must be followed by a **gerund (-ing form)** instead of an infinitive.  
+
+### **Common verbs followed by a gerund:**  
+✅ enjoy, avoid, consider, dislike, finish, keep, miss, practice, suggest  
+
+📌 **Examples:**  
+- *She **enjoys reading** novels.* 📖  
+- *I **avoid eating** junk food.* 🍔❌  
+- *They **suggested going** to the beach.* 🏖️  
+
+🚨 **Common Mistakes:**  
+- ❌ *He enjoys to swim.* → ✅ *He enjoys swimming.*  
 
 ### 13-2 `Go` + `-ing`
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/152.png)
 
+The verb **"go"** is often followed by a gerund to describe activities.  
+
+📌 **Examples:**  
+- *They **go swimming** every weekend.* 🏊  
+- *We **went hiking** in the mountains.* 🏔️  
+- *Let’s **go shopping** tomorrow.* 🛍️  
+
 ### 13-3 Verb + infinite
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/153.png)
+
+Some verbs must be followed by an **infinitive** (*to + verb*).  
+
+**Common verbs followed by an infinitive:**  
+✅ agree, decide, hope, learn, need, plan, promise, refuse, want, would like  
+
+📌 **Examples:**  
+- *I **decided to study** abroad.* 🎓  
+- *She **wants to buy** a new car.* 🚗  
+- *They **promised to help** us.* 🤝  
+
+🚨 **Common Mistakes:**  
+- ❌ *He decided going home.* → ✅ *He decided to go home.* 
 
 ### 13-4 Verb + gerund or infinitive
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/154.png)
 
+Some verbs can be followed by **either a gerund or an infinitive**, but the meaning **changes**.  
+
+| **Verb** | **Gerund Meaning (-ing)** | **Infinitive Meaning (to + verb)** |  
+|---------|----------------|----------------|  
+| **Forget** | Forget a past action (*I forgot locking the door.*) | Forget to do something in the future (*I forgot to lock the door.*) |  
+| **Stop** | Stop an activity (*He stopped smoking.* 🚭) | Stop to do something else (*He stopped to smoke.*) |  
+| **Try** | Experiment with something (*Try eating more vegetables.*) | Attempt to do something (*Try to eat more vegetables.*) |  
+
+📌 **Examples:**  
+- *I **stopped smoking** last year.* 🚭 (Quit smoking)  
+- *I **stopped to smoke** a cigarette.* 🚬 (Paused an activity to smoke)  
+
+🚨 **Common Mistakes:**  
+- ❌ *I stopped to watch TV.* → ✅ *I stopped watching TV.* (If you quit watching)  
+
 ### 13-5 Preposition + gerund
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/155.png)
+
+A **preposition** must always be followed by a **gerund (-ing form)**.  
+
+📌 **Examples:**  
+- *She is good **at painting**.* 🎨  
+- *He is afraid **of flying**.* ✈️  
+- *They talked **about going** on vacation.* 🌴  
+
+🚨 **Common Mistakes:**  
+- ❌ *She is interested to read.* → ✅ *She is interested in reading.*  
+
 
 ### 13-6 Using `by` and `with` to express how something is done
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/156.png)
 
+- **By + gerund** → Shows **how something happens**  
+- **With + noun** → Shows **what tool is used**  
+
+📌 **Examples:**  
+- *She improved her English **by practicing** every day.* 📚  
+- *He opened the can **with a knife**.* 🔪  
+
+🚨 **Common Mistakes:**  
+- ❌ *He learned English by to study.* → ✅ *He learned English by studying.*  
+
 ### 13-7 Using gerunds as subjects; using `it` + infinitive
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/157.png)
+
+A **gerund** can act as the **subject** of a sentence.  
+An **infinitive** can be used with **"it"** to express general statements.  
+
+📌 **Examples:**  
+- *Swimming is fun.* (Gerund as subject) 🏊  
+- *It is important to eat healthy.* (It + infinitive) 🥗  
+
+🚨 **Common Mistakes:**  
+- ❌ *To swim is fun.* → ✅ *Swimming is fun.*  
 
 ### 13-8 `It` + infinitive: using `for` (`someone`)
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/158.png)
 
+We use **"for"** before a noun or pronoun to specify **who** the action applies to.  
+
+📌 **Examples:**  
+- *It is difficult **for children to understand**.* 🧒  
+- *It was important **for me to apologize**.*  
+
+🚨 **Common Mistakes:**  
+- ❌ *It is necessary to them to study.* → ✅ *It is necessary **for them** to study.*  
+
 ### 13-9 Expressing purpose with `in order to` and `for`
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/159.png)
 
+- **In order to + verb** → Explains purpose  
+- **For + noun** → Explains purpose with a noun  
+
+📌 **Examples:**  
+- *She studies **in order to pass** the exam.* 🎓  
+- *This tool is **for cutting** wood.* 🔪  
+
+🚨 **Common Mistakes:**  
+- ❌ *He works hard for buy a car.* → ✅ *He works hard in order to buy a car.*  
+
 ### 13-10 Using infinitives with `too` and `enough`
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/160.png)
+
+- **Too + adjective + infinitive** → Shows excess (negative meaning)  
+- **Adjective + enough + infinitive** → Shows sufficiency (positive meaning)  
+
+📌 **Examples:**  
+- *She is **too tired to work**.* 😴 (She can't work because she’s exhausted.)  
+- *He is **strong enough to lift** the box.* 💪 (He has enough strength.)  
+
+🚨 **Common Mistakes:**  
+- ❌ *She is too tired work.* → ✅ *She is too tired to work.*  
 
 <hr style="height: 5px; background-color: black; border: none;">
 
@@ -1542,77 +2379,310 @@ Reflexive pronouns are used when **the subject and object are the same person or
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/161.png)
 
+A **noun clause** is a dependent clause that functions as a **noun** in a sentence.  
+- It can act as a **subject**, **object**, or **complement**.  
+- Noun clauses often start with **question words**, **if/whether**, or **that**.  
+
+📌 **Examples:**  
+- *What she said** was interesting.* (Noun clause as subject)  
+- *I don’t know **where he went**.* (Noun clause as object)  
+- *The fact **that she is studying hard** is impressive.* (Noun clause as complement)  
+
+What you will learn:
+- **Noun clauses** function as subjects, objects, or complements.  
+- **Question words** (*who, what, where, when, why, how*) introduce noun clauses.  
+- **If/whether** introduces **yes/no** question clauses.  
+- **That-clauses** are used after **verbs, adjectives, and nouns**.  
+- **In conversation, "so" replaces "that-clauses"** (*I think so* instead of *I think that he is coming*).  
+- **Quoted speech** uses **exact words**, while **reported speech** shifts tenses.  
+- **Common reporting verbs** include *say, tell, ask, reply*. 
 
 ### 14-1 Noun clauses: introduction
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/162.png)
 
+
+A noun clause **takes the place of a noun** in a sentence.  
+
+📌 **Examples:**  
+- *She didn’t understand **why he left**.*  
+- *I believe **that he is telling the truth**.*  
+
+**Noun Clause Functions:**  
+✅ **As the subject:** *What he said was true.*  
+✅ **As the object:** *She explained why she was late.*  
+✅ **As a complement:** *The problem is that he forgot.*  
+
+🚨 **Common Mistakes:**  
+- ❌ *I don’t know where is he.* → ✅ *I don’t know where he is.*  
+
 ### 14-2 Noun clauses that begin with a question word
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/163.png)
+
+A noun clause can begin with a **question word** (*who, what, where, when, why, how*).  
+
+📌 **Examples:**  
+- *I don’t know **where she went**.*  
+- *Can you tell me **what time it is**?*  
+- *They explained **how they solved the problem**.*  
+
+🚨 **Word Order Rule:**  
+- In noun clauses, the sentence **does NOT follow question order**.  
+- ❌ *I don’t know where did she go.*  
+- ✅ *I don’t know where she went.*  
 
 ### 14-3 Noun clauses that begin with `if` or `whether`
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/164.png)
 
+Use **if** or **whether** to introduce a noun clause when reporting a **yes/no question**.  
+
+📌 **Examples:**  
+- *I don’t know **if he is coming**.*  
+- *She asked **whether we needed help**.*  
+- *Tell me **if you understand**.*  
+
+🚨 **Whether vs. If:**  
+- **Whether** is more formal and can be used before "or not."  
+- *I don’t know **whether or not** she likes sushi.*  
+- **If** is more common in everyday speech.  
+
 ### 14-4 Noun clauses that begin with `that`
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/165.png)
+
+A **that-clause** acts as a **noun** in the sentence.  
+
+📌 **Examples:**  
+- *She believes **that he is honest**.*  
+- *The fact **that she passed the exam** made her happy.*  
+- *I’m sure **that everything will be fine**.*  
+
+🚨 **"That" is often omitted in speech:**  
+- *She believes **he is honest**.* (Omitting "that" is common)  
 
 ### 14-5 Other uses of `that`-clauses
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/166.png)
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/167.png)
 
+A **that-clause** can be used after adjectives, nouns, and certain verbs.  
+
+📌 **Examples:**  
+- *I am happy **that you are here**.* (After an adjective) 😊  
+- *The truth is **that he lied**.* (After a noun)  
+- *We decided **that we should leave early**.* (After a verb)  
+
+🚨 **Common Mistakes:**  
+- ❌ *I am happy you are here.* → ✅ *I am happy **that** you are here.*  
+
 ### 14-6 Substituting `so` for a `that`-clause in conversational responses
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/168.png)
+
+In **casual conversation**, we often replace a **that-clause** with **so** to **avoid repetition**.  
+
+📌 **Examples:**  
+- *A: "Is she coming?"*  
+  *B: "I think **so**."* (Instead of *"I think that she is coming."*)  
+- *A: "Did he pass the test?"*  
+  *B: "I hope **so**."* (Instead of *"I hope that he passed the test."*)  
+
+🚨 **Common Mistakes:**  
+- ❌ *I don’t think so that he is coming.* → ✅ *I don’t think so.*  
 
 ### 14-7 Quoted speech
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/169.png)
 
+**Quoted speech** (direct speech) repeats the exact words of a speaker.  
+
+📌 **Examples:**  
+- *She said, "**I love pizza**."* 🍕  
+- *He asked, "**Where are you going?**"*  
+
+🚨 **Punctuation Rule:**  
+- **Use quotation marks** and follow the original sentence structure.  
+
 ### 14-8 Quoted speech vs reported speech
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/170.png)
+
+**Quoted speech** (direct speech) repeats the exact words, while **reported speech** (indirect speech) changes them.  
+
+📌 **Examples:**  
+- **Quoted Speech:** *He said, "**I am tired**."*  
+- **Reported Speech:** *He said **that he was tired**.*  
+
+🚨 **Changes in Reported Speech:**  
+- **Tenses change:**  
+  - *"I am happy" → He said he was happy.*  
+  - *"She will come" → He said she would come.*  
 
 ### 14-9 Verb forms in reported speech
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/171.png)
 
+When changing **direct speech** into **reported speech**, verb tenses usually shift back (backshifting).  
+
+| **Direct Speech** | **Reported Speech** |
+|------------------|--------------------|
+| *"I am tired."* | He said he **was** tired. |
+| *"I have finished."* | She said she **had finished**. |
+| *"I will go."* | He said he **would go**. |
+
+📌 **Examples:**  
+- *"I can help you." → He said he **could** help me.*  
+- *"She is coming." → He said she **was** coming.*  
+
+🚨 **Exceptions:**  
+- If the statement is **still true**, the tense may not change.  
+  - *"The sun rises in the east."* → He said **the sun rises in the east**.  
+
 ### 14-10 Common reporting verbs: `tell`, `ask`, `answer/reply`
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/172.png)
+
+When reporting speech, **verbs like "tell," "ask," "answer," and "reply"** are commonly used.  
+
+📌 **Examples:**  
+- *She **told** me that she was tired.*  
+- *He **asked** if I needed help.*  
+- *She **replied** that she was busy.*  
+
+🚨 **"Tell" vs. "Say" Rule:**  
+- **Tell** always needs an **object** (*She told **me** she was late.*).  
+- **Say** does **not** need an object (*She said she was late.*).  
 
 
 ## APPENDIX - SUPPLEMENTARY GRAMMAR CHARTS
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/173.png)
 
+
+This appendix provides **additional grammar reference materials** to clarify specific grammar structures, including **verb tenses, phrasal verbs, and preposition combinations**.  
+
+What you will learn:
+- **Perfect tenses** describe actions **before another point in time**.  
+- **"Still"** shows continuation, while **"anymore"** shows something has stopped.  
+- **That-clauses** follow common verbs (*think, say, believe*) and expressions (*It is clear that...*).  
+- **Phrasal verbs** combine a verb with a preposition/adverb, changing the meaning.  
+- **Preposition combinations** follow specific verbs, adjectives, and nouns (*good at, apologize for*).  
+
 ### A-1 The present perfect vs the past perfect
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/174.png)
+
+Both tenses describe actions in relation to **another point in time**, but they are used differently:  
+
+✅ **Present Perfect (`have/has + past participle`)**  
+- Describes **an action that happened at an unspecified time** before now.  
+- Often used with **since, for, already, yet, ever, never**.  
+
+📌 **Examples:**  
+- *I **have visited** Japan twice.*  
+- *She **has never eaten** sushi.*  
+
+✅ **Past Perfect (`had + past participle`)**  
+- Describes **an action that was completed before another past action**.  
+- Often used with **before, after, by the time**.  
+
+📌 **Examples:**  
+- *I **had already eaten** when she arrived.*  
+- *By the time we got to the station, the train **had left**.*  
+
+🚨 **Common Mistakes:**  
+- ❌ *I have eaten before she arrived.* → ✅ *I **had** eaten before she arrived.*  
 
 ### A-2 The past progressive vs the past perfect
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/175.png)
 
+✅ **Past Progressive (`was/were + -ing`)**  
+- Describes **a continuous action** happening at a specific time in the past.  
+- Often used with **when, while, as**.  
+
+📌 **Examples:**  
+- *I **was watching** TV when she called.*  
+- *They **were playing** soccer while it was raining.*  
+
+✅ **Past Perfect (`had + past participle`)**  
+- Describes **a completed action before another past event**.  
+
+📌 **Examples:**  
+- *She **had finished** her homework before dinner.*  
+- *By the time I arrived, they **had left**.*  
+
+🚨 **Key Difference:**  
+- **Past Progressive** focuses on **ongoing** actions.  
+- **Past Perfect** focuses on **completed** actions **before** another past event.  
+
 ### A-3 `Still` vs `anyone`
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/176.png)
+
+✅ **Still**  
+- Used in **positive sentences** to show that something continues.  
+
+📌 **Examples:**  
+- *She **still** lives in New York.*  
+- *Are you **still** working on your project?*  
+
+✅ **Anymore**  
+- Used in **negative sentences** to show that something **stopped happening**.  
+
+📌 **Examples:**  
+- *She doesn’t live in New York **anymore**.*  
+- *I don’t eat fast food **anymore**.*  
+
+🚨 **Common Mistake:**  
+- ❌ *I still don’t like it anymore.* → (Choose one: *I still don’t like it* OR *I don’t like it anymore.*)  
 
 ### A-4 Additional verbs followed by `that`-clauses
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/177.png)
 
+Some verbs commonly introduce **that-clauses** (statements).  
+
+📌 **Examples:**  
+- *She **believes** that she will pass the test.*  
+- *I **hope** that you have a great day!*  
+
+🚨 **Common Verbs that Take `That`-Clauses:**  
+- **Mental Verbs:** *believe, think, assume, know, guess*  
+- **Reporting Verbs:** *say, tell, mention, explain*  
+- **Feeling Verbs:** *hope, fear, regret, wish*  
+
 ### A-5 Additional expressions with `be` + `that`-clauses
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/178.png)
+
+Certain expressions use **"be" + "that-clause"** to express opinions or facts.  
+
+📌 **Examples:**  
+- *It **is clear that** he is unhappy.*  
+- *It **was obvious that** she was excited.*  
+
+🚨 **Common Expressions:**  
+- *It **is possible that**…*  
+- *It **is likely that**…*  
+- *It **was unfortunate that**…*
 
 ### B-1 Phrasal verbs
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/179.png)
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/180.png)
+
+A **phrasal verb** is a verb followed by a **preposition or adverb**, changing its meaning.  
+
+📌 **Examples:**  
+- *Turn off* (stop using) → *Please **turn off** the lights.*  
+- *Give up* (quit) → *He **gave up** smoking last year.*  
+
+🚨 **Types of Phrasal Verbs:**  
+✅ **Separable:** *She **turned off** the TV.* (*She turned the TV off.*)  
+✅ **Inseparable:** *He **ran into** his old friend.* (*❌ He ran his old friend into.*)  
 
 ### B-2 Phrasal verbs: a refernce list
 
@@ -1620,14 +2690,43 @@ Reflexive pronouns are used when **the subject and object are the same person or
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/182.png)
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/183.png)
 
+Here are **common phrasal verbs** and their meanings:  
+
+✅ **Separable Phrasal Verbs:**  
+- **Take off** (remove) → *She **took off** her jacket.*  
+- **Put on** (wear) → *He **put on** his hat.*  
+
+✅ **Inseparable Phrasal Verbs:**  
+- **Look after** (care for) → *She **looks after** her younger brother.*  
+- **Get along with** (have a good relationship) → *I **get along with** my coworkers.*  
+
 ### C-1 Preposition combinations: introduction
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/184.png)
+
+Certain verbs, adjectives, and nouns are **always used with specific prepositions**.  
+
+📌 **Examples:**  
+- *I am **interested in** learning English.*  
+- *She is **good at** dancing.*  
+- *He is **afraid of** heights.*  
 
 ### C-2 Preposition combinations: a reference list
 
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/185.png)
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/186.png)
+
+✅ **Common Verb + Preposition Combinations:**  
+- **Apologize for** → *He apologized for his mistake.*  
+- **Depend on** → *She depends on her parents.*  
+
+✅ **Common Adjective + Preposition Combinations:**  
+- **Excited about** → *I am excited about the trip.*  
+- **Famous for** → *This city is famous for its food.*  
+
+✅ **Common Noun + Preposition Combinations:**  
+- **Reason for** → *The reason for his absence is unknown.*  
+- **Advantage of** → *What is the advantage of this method?*  
 
 
 <!-- Scroll to Top Button -->
