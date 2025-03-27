@@ -15,6 +15,9 @@ toc: true
 
 ----
 
+**Notes:** Set Chrome page zoom to 80% for improved viewing and a better user experience.
+{:.notice--info}
+
 ## Fundamental of English Grammar - 4th Edition
 
 <iframe src="/assets/images/english/pdf/fundamentals-of-english-grammar-4th-betty-azar.pdf" width="100%" height="1000px">
@@ -28,13 +31,13 @@ toc: true
 
 This section focuses on different aspects of the present tense, including simple and progressive forms, verb agreement, and short answers in conversation.
 
-**What you learns**
-- Simple present & present progressive > form (+-?)
-- Simple present + Frequency Adverbs (always, usually, normally, often, sometimes, rearely, seldom, never)
-- Singular plural verbs > spelling (-s/-es)
-- non-action verbs [S+V-s/es] = toughts, emotions, relationships, senses, ownership (non-progresive tenses)
-- Yes-No Questions (present & progresive tense) (do or be + S+V)
+**What You Will Learn** 📚✨  
 
+- **Simple Present & Present Progressive** → Forms (affirmative, negative, and questions).  
+- **Simple Present + Frequency Adverbs** → *always, usually, normally, often, sometimes, rarely, seldom, never.*  
+- **Singular vs. Plural Verbs** → Spelling rules for **-s / -es** endings.  
+- **Non-Action Verbs** → Thoughts, emotions, relationships, senses, and ownership (*do not use in progressive tense*).  
+- **Yes/No Questions** → Forming questions in **simple present & present progressive** using *do/does* or *am/is/are*.  
 
 ### 1-1 Simple present and present progressive 
 
