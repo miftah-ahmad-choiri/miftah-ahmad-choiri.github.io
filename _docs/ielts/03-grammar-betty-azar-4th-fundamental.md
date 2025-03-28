@@ -15,8 +15,8 @@ toc: true
 
 ----
 
-**Notes:** Set Chrome page zoom to 80% for improved viewing and a better user experience.
-{:.notice--info}
+**Notes:** Set Chrome page **zoom to 80%** for improved viewing and a better user experience.
+{:.notice--warning}
 
 ## Fundamental of English Grammar - 4th Edition
 
