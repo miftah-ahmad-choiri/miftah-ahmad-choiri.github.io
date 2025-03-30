@@ -1725,7 +1725,8 @@ The word **"that"** introduces noun clauses but is **often omitted** in casual s
 - **Quoted speech:** *She said, "I am tired."*  
 - **Reported speech:** *She said (that) she was tired.*  
 
-🔹 **Changes in reported speech:**  
+🔹 **Changes in reported speech:** 
+
 | **Direct Speech** | **Reported Speech** |
 |------------------|-------------------|
 | "I am happy." | She said **she was happy**. |
@@ -1733,6 +1734,7 @@ The word **"that"** introduces noun clauses but is **often omitted** in casual s
 | "They are working." | She said **they were working**. |
 
 🔹 **Pronouns and time expressions also change:**  
+
 | **Direct Speech** | **Reported Speech** |
 |------------------|-------------------|
 | "I like this book." | She said **she liked that book**. |
@@ -2813,6 +2815,7 @@ What you will learn:
 - *He was tired, so he went to bed early.*  
 
 📌 **Key Differences:**  
+
 | Expression | Usage | Example |  
 |------------|------------|-----------------|  
 | **Therefore** | Formal, logical | *The road was blocked; therefore, we took a detour.* |  
@@ -2859,6 +2862,7 @@ What you will learn:
 - *She was such a talented singer that she won the competition.*  
 
 📌 **Key Differences:**  
+
 | Expression | Structure | Example |  
 |------------|------------|-----------------|  
 | **So ... that** | **So + adjective/adverb + that** | *He was so tired that he fell asleep immediately.* |  

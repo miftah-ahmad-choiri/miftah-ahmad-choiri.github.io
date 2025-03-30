@@ -439,6 +439,7 @@ When talking about **two actions happening at the same time in the future**, we 
 ✅ *I **will study** while he **watches** TV.*  
 
 📌 **Combination examples:**  
+
 | First Action | Second Action |  
 |-------------|--------------|  
 | Future continuous | Future simple (*While she **is working**, I **will call** her.*) |  
@@ -465,6 +466,7 @@ This section explains how to express past actions **with a connection to the pre
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/31.png)
 
 The **past participle** is the third form of a verb:  
+
 | Base Form | Past Simple | Past Participle |  
 |-----------|------------|----------------|  
 | go | went | gone |  
@@ -474,7 +476,66 @@ The **past participle** is the third form of a verb:
 
 📌 **Used in:**  
 ✅ **Present perfect** → *I **have seen** that movie before.*  
-✅ **Past perfect** → *I **had finished** my homework before dinner.*  
+✅ **Past perfect** → *I **had finished** my homework before dinner.*
+
+**Differences Between Past Perfect, Present Perfect, and Perfect Progressive Tenses**  
+
+Each of these tenses combines **"perfect" (completed action)** with different time frames and sometimes **progressive** (ongoing action).  
+
+| **Tense**            | **Structure** | **Usage** | **Example** |
+|----------------------|--------------|-----------|-------------|
+| **Past Perfect** | **had + past participle** | An action completed before another past event. | *I had finished my work before she arrived.* |
+| **Present Perfect** | **have/has + past participle** | An action that started in the past and is still relevant now. | *I have lived here for five years.* |
+| **Past Perfect Progressive** | **had been + verb-ing** | A past action that was ongoing before another past event. | *I had been studying for hours before the test began.* |
+| **Present Perfect Progressive** | **have/has been + verb-ing** | An action that started in the past and is still ongoing. | *I have been working here since 2020.* |
+
+
+**Past Perfect (had + past participle)**
+- **Used for:** An action **completed before another past action**.  
+- **Focus:** The **completion** of an earlier past action.  
+- **Example:**  
+  - *I had already eaten when they arrived.*  
+  - (First: I ate → Later: They arrived.)  
+
+
+**Present Perfect (have/has + past participle)**
+- **Used for:**  
+  - An action that **happened at an unspecified time before now**.  
+  - An action **that started in the past and continues into the present**.  
+- **Focus:** The **result** or **relevance to the present**.  
+- **Example:**  
+  - *I have visited Japan twice.* (Time not specified, but relevant.)  
+  - *She has lived here for ten years.* (Still true now.)  
+
+
+**Past Perfect Progressive (had been + verb-ing)**
+- **Used for:**  
+  - An **ongoing** action that was happening **before another past event**.  
+  - Often used to show **duration** or **cause**.  
+- **Focus:** The **continuous nature** of the past action.  
+- **Example:**  
+  - *I had been studying for hours before the test began.*  
+  - (First: Studying happened for a while → Then: Test began.)  
+
+
+**Present Perfect Progressive (have/has been + verb-ing)**
+- **Used for:**  
+  - An action that **started in the past and is still happening now**.  
+  - Often used with **"for" or "since"**.  
+- **Focus:** **Duration** or **continuous action until now**.  
+- **Example:**  
+  - *I have been working here since 2020.*  
+  - (Started in 2020 and still working now.)  
+
+
+**Key Differences at a Glance:**
+| **Tense** | **Past-Focused?** | **Still Happening?** | **Emphasizes Completion or Duration?** |
+|----------|----------------|------------------|-------------------------------|
+| **Past Perfect** | Yes | No | Completion |
+| **Present Perfect** | No | Sometimes | Completion |
+| **Past Perfect Progressive** | Yes | No | Duration |
+| **Present Perfect Progressive** | No | Yes | Duration |
+
 
 
 ### 4-2 Present perfect with `since` and `for`
@@ -628,6 +689,7 @@ This section covered **advanced question structures** to improve your communicat
 **Yes/No questions** are questions that can be answered with **"yes" or "no"**.  
 
 ✅ **Form:**  
+
 | **Tense** | **Auxiliary Verb** | **Example Question** | **Short Answer** |  
 |-----------|-------------------|--------------------|--------------|  
 | **Present Simple** | do/does | *Do you like coffee?* | *Yes, I do.* / *No, I don’t.* |  
@@ -749,6 +811,7 @@ These question words are used to ask about **specific details**.
 - *How often do you check your emails?* → (*Several times a day*)  
 
 📌 **Common Answers with Adverbs of Frequency:**  
+
 | **How Often?** | **Example Response** |  
 |---------------|---------------------|  
 | Always       | *I always drink coffee in the morning.* |  
@@ -799,6 +862,7 @@ These question words are used to ask about **specific details**.
 In **spoken English**, contractions are **shortened forms of words** that make speech more natural.  
 
 ✅ **Examples:**  
+
 | **Full Form** | **Contraction** |  
 |--------------|---------------|  
 | *What is your name?* | *What’s your name?* |  
@@ -824,7 +888,8 @@ The word **"how"** can be combined with other words to ask for **specific inform
 - *How deep is the river?* → (*About 20 meters.*)  
 - *How high is Mount Everest?* → (*8,849 meters.*)  
 
-📌 **Common "How" Questions:**  
+📌 **Common "How" Questions:**
+
 | **Question** | **Meaning** | **Example** |  
 |-------------|------------|------------|  
 | *How tall* | Height | *How tall are you?* → *I’m 180 cm tall.* |  
@@ -865,6 +930,7 @@ Tag questions are **short questions added at the end of a sentence** to **confir
 - *They have finished, haven’t they?*  
 
 📌 **Structure:**  
+
 | **Statement** | **Tag** |  
 |-------------|--------|  
 | *You are happy,* **aren’t you?** |  
@@ -915,6 +981,7 @@ This section covers **nouns, pronouns, and sentence structure** to help you buil
 Most singular nouns form the plural by adding **`-s`** or **`-es`**, but there are some irregular forms.  
 
 📌 **Rules for Forming Plural Nouns:**  
+
 | **Singular** | **Plural** | **Rule** |  
 |------------|----------|----------|  
 | **cat** | cats | Add `-s` for most nouns |  
@@ -938,6 +1005,7 @@ Most singular nouns form the plural by adding **`-s`** or **`-es`**, but there a
 The final **`-s` or `-es`** in plural nouns or verbs has **three different pronunciations**:  
 
 📌 **Pronunciation Rules:**  
+
 | **Ending Sound of the Word** | **Pronunciation of `-s` or `-es`** | **Example** |  
 |---------------------------|----------------------------|-------------|  
 | **Voiceless sounds**: `/p/, /t/, /k/, /f/, /θ/` | `/s/` | **cats**, **books** |  
@@ -959,7 +1027,8 @@ A **sentence** usually has:
 ✅ **(2) Verb (Action or state of being)**  
 ✅ **(3) Object (Receives the action, if needed)**  
 
-📌 **Examples:**  
+📌 **Examples:** 
+
 | **Sentence** | **Subject** | **Verb** | **Object** |  
 |-------------|------------|---------|---------|  
 | *She reads a book.* | **She** | reads | a book |  
@@ -985,6 +1054,7 @@ When a **preposition** (in, on, at, with, to, etc.) is followed by a noun or pro
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/65.png)
 
 📌 **Common Time Prepositions:**  
+
 | **Preposition** | **Usage** | **Example** |  
 |-------------|--------|-----------|  
 | **At** | Specific time | *At 7 PM, at noon* |  
@@ -1003,6 +1073,7 @@ When a **preposition** (in, on, at, with, to, etc.) is followed by a noun or pro
 The usual order in English is **PLACE before TIME**.  
 
 📌 **Correct Word Order:**  
+
 | **Correct** | **Incorrect** |  
 |------------|------------|  
 | *I study **at school in the morning**.* | ❌ *I study **in the morning at school**.* |  
@@ -1020,6 +1091,7 @@ The usual order in English is **PLACE before TIME**.
 A **singular subject** takes a **singular verb**, and a **plural subject** takes a **plural verb**.  
 
 📌 **Basic Rules:**  
+
 | **Subject** | **Verb** | **Example** |  
 |------------|--------|-----------|  
 | Singular | **verb + s/es** | *She **likes** coffee.* |  
@@ -1032,6 +1104,7 @@ A **singular subject** takes a **singular verb**, and a **plural subject** takes
 - *She **has** a car.* / *They **have** a car.*  
 
 📌 **Tricky Cases:**  
+
 | **Subject** | **Verb** |  
 |------------|--------|  
 | *Everyone* (singular) | *likes ice cream.* |  
@@ -1044,7 +1117,8 @@ A **singular subject** takes a **singular verb**, and a **plural subject** takes
 
 Adjectives describe nouns and usually come **before** the noun.  
 
-📌 **Order of Adjectives:**  
+📌 **Order of Adjectives:** 
+
 | **Category** | **Example** |  
 |------------|------------|  
 | **Opinion** | beautiful, nice, ugly |  
@@ -1107,6 +1181,7 @@ Pronouns **replace nouns** to avoid repetition.
 Possessive nouns show **ownership or possession**.  
 
 📌 **Rules for Forming Possessives:**  
+
 | **Singular Noun** | **Possessive Form** | **Example** |  
 |----------------|----------------|------------|  
 | boy | boy’s | *The boy’s hat is blue.* |  
@@ -1114,6 +1189,7 @@ Possessive nouns show **ownership or possession**.
 | cat | cat’s | *The cat’s toy is missing.* |  
 
 📌 **Plural Possessives:**  
+
 | **Plural Noun** | **Possessive Form** | **Example** |  
 |----------------|----------------|------------|  
 | boys | boys’ | *The boys’ room is messy.* |  
@@ -1153,6 +1229,7 @@ Possessive pronouns **replace a noun** to show ownership, while possessive adjec
 Reflexive pronouns are used when **the subject and object are the same person or thing**.  
 
 📌 **Reflexive Pronouns List:**  
+
 | **Subject** | **Reflexive Pronoun** | **Example** |  
 |------------|-----------------|------------|  
 | I | myself | *I made this cake myself.* |  
@@ -1184,6 +1261,7 @@ Reflexive pronouns are used when **the subject and object are the same person or
 ![img1](/assets//images/english/grammar/fundamental-of-english-grammar-4th-edition/75.png)
 
 📌 **Key Difference:**  
+
 | **Word** | **Meaning** | **Example** |  
 |---------|----------|-----------|  
 | **others** | additional things/people (general) | *Some people like coffee, but **others** prefer tea.* |  
@@ -1248,6 +1326,7 @@ Modal auxiliaries do not take **-s, -ing, or -ed** endings and are followed by t
 - *He **should** study for the exam.*  
 
 📌 **Common Modals:**  
+
 | **Modal** | **Function** | **Example** |  
 |-----------|------------|------------|  
 | can | Ability / Permission | *I **can** drive.* / *You **can** go now.* |  
