@@ -167,6 +167,10 @@ docs:
     children:
       - title: "• How to Install IBM MQ on RHEL"
         url: /docs/ibm-software/installation-ibmmq/
+      - title: "• Fundamental of IBM MQ"
+        url: /docs/ibm-software/training-ibmmq/
+      - title: "• Connect Remote MQ Server to MQ Explorer"
+        url: /docs/ibm-software/explorer-ibmmq/
 
 
 
