@@ -68,6 +68,14 @@ feature_row:
     btn_class: "btn--primary"
     btn_label: "Learn More"
 
+  - image_path: /assets/pictures/27.png
+    alt: "Lenovo Education"
+    title: "Lenovo Education"
+    excerpt: "Best practices for system maintenance and optimization."
+    url: "https://miftah-ahmad-choiri.github.io/documentation/docs/lenovo/ES51757B/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+
   - image_path: /assets/pictures/25.png
     alt: "IELTS Training Courses🌍"
     title: "IELTS English Courses🌍"
@@ -76,7 +84,7 @@ feature_row:
     btn_class: "btn--primary"
     btn_label: "Learn more"
 
-  - image_path: /assets/pictures/25.png
+  - image_path: /assets/pictures/28.png
     alt: "IBM Storage DS8000🌍"
     title: "IBM Storage DS8000🌍"
     excerpt: "Best practices for system maintenance and optimization."
@@ -84,7 +92,7 @@ feature_row:
     btn_class: "btn--primary"
     btn_label: "Learn more"
 
-  - image_path: /assets/pictures/25.png
+  - image_path: /assets/pictures/26.png
     alt: "DELL VRTX"
     title: "Server DELL VRTX"
     excerpt: "Best practices for system maintenance and optimization."

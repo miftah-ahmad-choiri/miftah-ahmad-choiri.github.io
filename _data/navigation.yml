@@ -59,6 +59,10 @@ docs:
     children:
       - title: "• How to Install AWX"
         url: /docs/ansible/how-to-install-awx
+  - title: Lenovo
+    children:
+      - title: "• All Lenovo Training Collections"
+        url: https://miftah-ahmad-choiri.github.io/documentation/docs/lenovo/ES51757B/
   - title: Google Cloud
     children:
       - title: "• Introduction to Generative AI💡"
