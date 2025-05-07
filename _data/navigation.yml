@@ -117,6 +117,8 @@ docs:
         url: /docs/ds8k/replace-battery/
       - title: "• How to Collec PE-Packages DS8880"
         url: /docs/ds8k/collect-pepkages/
+      - title: "• Upgrade Firmware DS8880"
+        url: /docs/ds8k/upgrade-firmware/
   - title: Server DELL VRTX 
     children:
       - title: "• Replace Disk DELL VRTX"
@@ -175,6 +177,8 @@ docs:
         url: /docs/ibm-software/training-ibmmq/
       - title: "• Connect Remote MQ Server to MQ Explorer"
         url: /docs/ibm-software/explorer-ibmmq/
+      - title: "• Connect Remote MQ Server AIX to LINUX"
+        url: /docs/ibm-software/test-remote-ibmmq/
 
 
 
