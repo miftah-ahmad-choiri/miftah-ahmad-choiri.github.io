@@ -55,6 +55,8 @@ docs:
         url: /docs/aix/backup-mksysb-aix/
       - title: "• Full-Guide Replace Disk AIX/VIOS"
         url: /docs/aix/aix-replace-disks/
+      - title: "• Replace SAS Adapter"
+        url: /docs/aix/replace-sas-adapter/
   - title: Red Hat Ansible🤖
     children:
       - title: "• How to Install AWX"
