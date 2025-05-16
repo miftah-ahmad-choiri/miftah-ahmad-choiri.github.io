@@ -65,6 +65,10 @@ docs:
     children:
       - title: "• All Lenovo Training Collections"
         url: https://miftah-ahmad-choiri.github.io/documentation/docs/lenovo/ES51757B/
+  - title: IBM Software📚
+    children:
+      - title: "• IBM MQ Training Collections"
+        url: /docs/ibm-software/ibmmq/installation-ibmmq/
   - title: Google Cloud
     children:
       - title: "• Introduction to Generative AI💡"
@@ -171,16 +175,6 @@ docs:
     children:
       - title: "• Wait in Progress"
         url: /404.html
-  - title: IBM Software📚
-    children:
-      - title: "• How to Install IBM MQ on RHEL"
-        url: /docs/ibm-software/installation-ibmmq/
-      - title: "• Fundamental of IBM MQ"
-        url: /docs/ibm-software/training-ibmmq/
-      - title: "• Connect Remote MQ Server to MQ Explorer"
-        url: /docs/ibm-software/explorer-ibmmq/
-      - title: "• Connect Remote MQ Server AIX to LINUX"
-        url: /docs/ibm-software/test-remote-ibmmq/
 
 
 
