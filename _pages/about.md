@@ -14,6 +14,18 @@ layouts_gallery:
     alt: "archive layout example"
 
 gallery:
+  - url: /assets/images/aboutme/certificates/10.png
+    image_path: /assets/images/aboutme/certificates/10.png
+    alt: "AIX Basics - issued by IBM Training"
+    title: "AIX Basics - issued by IBM Training"
+  - url: /assets/images/aboutme/certificates/11.png
+    image_path: /assets/images/aboutme/certificates/11.png
+    alt: "IBM i System Operator - issued by IBM Training"
+    title: "IBM i System Operator - issued by IBM Training"
+  - url: /assets/images/aboutme/certificates/10.png
+    image_path: /assets/images/aboutme/certificates/116.png
+    alt: "Fundamental of IBM MQ - issued by IBM Training"
+    title: "Fundamental of IBM MQ - issued by IBM Training"
   - url: /assets/images/aboutme/certificates/1.png
     image_path: /assets/images/aboutme/certificates/1.png
     alt: "Redhat Enterprise Linux Automation with Ansible (RH294) - issued by Red Hat"
@@ -50,14 +62,6 @@ gallery:
     image_path: /assets/images/aboutme/certificates/9.png
     alt: "TensorFlow Developer Certificate - issued by Google"
     title: "TensorFlow Developer Certificate - issued by Google"
-  - url: /assets/images/aboutme/certificates/10.png
-    image_path: /assets/images/aboutme/certificates/10.png
-    alt: "AIX Basics - issued by IBM Training"
-    title: "AIX Basics - issued by IBM Training"
-  - url: /assets/images/aboutme/certificates/11.png
-    image_path: /assets/images/aboutme/certificates/11.png
-    alt: "IBM i System Operator - issued by IBM Training"
-    title: "IBM i System Operator - issued by IBM Training"
   - url: /assets/images/aboutme/certificates/12.jpg
     image_path: /assets/images/aboutme/certificates/12.jpg
     alt: "Modular IELTS Prep Course - issued by IALF Surabaya"
@@ -146,7 +150,341 @@ gallery:
     image_path: /assets/images/aboutme/certificates/31.png
     alt: "Field Engineer Training: FlashArray//X R2 & //X R3 - issued by Pure Storage"
     title: "Field Engineer Training: FlashArray//X R2 & //X R3 - issued by Pure Storage"
-  
+  - url: /assets/images/aboutme/certificates/34.png
+    image_path: /assets/images/aboutme/certificates/34.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/35.png
+    image_path: /assets/images/aboutme/certificates/35.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/36.png
+    image_path: /assets/images/aboutme/certificates/36.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/37.png
+    image_path: /assets/images/aboutme/certificates/37.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/38.png
+    image_path: /assets/images/aboutme/certificates/38.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/39.png
+    image_path: /assets/images/aboutme/certificates/39.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/40.png
+    image_path: /assets/images/aboutme/certificates/40.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/41.png
+    image_path: /assets/images/aboutme/certificates/41.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/42.png
+    image_path: /assets/images/aboutme/certificates/42.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/43.png
+    image_path: /assets/images/aboutme/certificates/43.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/44.png
+    image_path: /assets/images/aboutme/certificates/44.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/45.png
+    image_path: /assets/images/aboutme/certificates/45.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/46.png
+    image_path: /assets/images/aboutme/certificates/46.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/47.png
+    image_path: /assets/images/aboutme/certificates/47.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/48.png
+    image_path: /assets/images/aboutme/certificates/48.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/49.png
+    image_path: /assets/images/aboutme/certificates/49.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/50.png
+    image_path: /assets/images/aboutme/certificates/50.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/51.png
+    image_path: /assets/images/aboutme/certificates/51.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/52.png
+    image_path: /assets/images/aboutme/certificates/52.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/53.png
+    image_path: /assets/images/aboutme/certificates/53.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/54.png
+    image_path: /assets/images/aboutme/certificates/54.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/55.png
+    image_path: /assets/images/aboutme/certificates/55.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/56.png
+    image_path: /assets/images/aboutme/certificates/56.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/57.png
+    image_path: /assets/images/aboutme/certificates/57.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/58.png
+    image_path: /assets/images/aboutme/certificates/58.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/59.png
+    image_path: /assets/images/aboutme/certificates/59.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/60.png
+    image_path: /assets/images/aboutme/certificates/60.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/61.png
+    image_path: /assets/images/aboutme/certificates/61.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/62.png
+    image_path: /assets/images/aboutme/certificates/62.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/63.png
+    image_path: /assets/images/aboutme/certificates/63.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/64.png
+    image_path: /assets/images/aboutme/certificates/64.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/65.png
+    image_path: /assets/images/aboutme/certificates/65.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/66.png
+    image_path: /assets/images/aboutme/certificates/66.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/67.png
+    image_path: /assets/images/aboutme/certificates/67.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/68.png
+    image_path: /assets/images/aboutme/certificates/68.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/69.png
+    image_path: /assets/images/aboutme/certificates/69.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/70.png
+    image_path: /assets/images/aboutme/certificates/70.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/71.png
+    image_path: /assets/images/aboutme/certificates/71.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/72.png
+    image_path: /assets/images/aboutme/certificates/72.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/73.png
+    image_path: /assets/images/aboutme/certificates/73.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/74.png
+    image_path: /assets/images/aboutme/certificates/74.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/75.png
+    image_path: /assets/images/aboutme/certificates/75.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/76.png
+    image_path: /assets/images/aboutme/certificates/76.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/77.png
+    image_path: /assets/images/aboutme/certificates/77.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/78.png
+    image_path: /assets/images/aboutme/certificates/78.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/79.png
+    image_path: /assets/images/aboutme/certificates/79.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/80.png
+    image_path: /assets/images/aboutme/certificates/80.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/81.png
+    image_path: /assets/images/aboutme/certificates/81.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/82.png
+    image_path: /assets/images/aboutme/certificates/82.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/83.png
+    image_path: /assets/images/aboutme/certificates/83.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/84.png
+    image_path: /assets/images/aboutme/certificates/84.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/85.png
+    image_path: /assets/images/aboutme/certificates/85.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/86.png
+    image_path: /assets/images/aboutme/certificates/86.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/87.png
+    image_path: /assets/images/aboutme/certificates/87.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/88.png
+    image_path: /assets/images/aboutme/certificates/88.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/89.png
+    image_path: /assets/images/aboutme/certificates/89.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/90.png
+    image_path: /assets/images/aboutme/certificates/90.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/91.png
+    image_path: /assets/images/aboutme/certificates/91.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/92.png
+    image_path: /assets/images/aboutme/certificates/92.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/93.png
+    image_path: /assets/images/aboutme/certificates/93.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/94.png
+    image_path: /assets/images/aboutme/certificates/94.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/95.png
+    image_path: /assets/images/aboutme/certificates/95.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/96.png
+    image_path: /assets/images/aboutme/certificates/96.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/97.png
+    image_path: /assets/images/aboutme/certificates/97.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/98.png
+    image_path: /assets/images/aboutme/certificates/98.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/99.png
+    image_path: /assets/images/aboutme/certificates/99.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/100.png
+    image_path: /assets/images/aboutme/certificates/100.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/101.png
+    image_path: /assets/images/aboutme/certificates/101.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/102.png
+    image_path: /assets/images/aboutme/certificates/102.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/103.png
+    image_path: /assets/images/aboutme/certificates/103.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/104.png
+    image_path: /assets/images/aboutme/certificates/104.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/105.png
+    image_path: /assets/images/aboutme/certificates/105.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/106.png
+    image_path: /assets/images/aboutme/certificates/106.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/107.png
+    image_path: /assets/images/aboutme/certificates/107.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/108.png
+    image_path: /assets/images/aboutme/certificates/108.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/109.png
+    image_path: /assets/images/aboutme/certificates/109.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/110.png
+    image_path: /assets/images/aboutme/certificates/110.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/111.png
+    image_path: /assets/images/aboutme/certificates/111.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/112.png
+    image_path: /assets/images/aboutme/certificates/112.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/113.png
+    image_path: /assets/images/aboutme/certificates/113.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/114.png
+    image_path: /assets/images/aboutme/certificates/114.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+  - url: /assets/images/aboutme/certificates/115.png
+    image_path: /assets/images/aboutme/certificates/115.png
+    alt: "Lenovo Training - issued by Lenovo"
+    title: "Lenovo Training - issued by Lenovo"
+
 
 gallery2:
   - url: https://www.credly.com/badges/8772a2af-36b3-4b7b-81fa-42d77f931d2a
@@ -392,22 +730,21 @@ Managed and strategized paid advertising campaigns for Unilever Indonesia, ensur
 
 As a **Data Scientist/Analyst** at **Supertype**, I managed software development for a review management app, helping clients analyze customer feedback and leverage competitor weaknesses. I built end-to-end analytics and machine learning solutions, from data collection and preprocessing to model deployment and visualization. Collaborating with the data team, I developed data pipelines, integrated solutions into backend systems using Docker, and successfully delivered an analytics dashboard with NLP-powered sentiment analysis and topic classification, providing valuable insights through interactive reports.
 
+## My Social Dedication & Contribution
+
+{% include gallery id="gallery4" caption="This is a my **Social Dedication & Contribution**." %}
 
 ## My Skill-Badges
 
 {% include gallery id="gallery2" caption="This is a my **Digital Credential Skill Badges**" %}
 
-## My Training-Certificates
-
-{% include gallery caption="This is a my **Training Certificates**." %}
-
 ## My Awards & Scholarships
 
 {% include gallery id="gallery3" caption="This is a my **Awards & Scholarships**." %}
 
-## My Social Dedication & Contribution
+## My Training-Certificates
 
-{% include gallery id="gallery4" caption="This is a my **Social Dedication & Contribution**." %}
+{% include gallery caption="This is a my **Training Certificates**." %}
 
 
 
