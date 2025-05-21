@@ -142,7 +142,9 @@ docs:
       - title: "• How to Renew, Generate, Input UAK Keys on HMC"
         url: /docs/hmc/renew-input-uak-key/
       - title: "• Upgrading, Update, Backup HMC IBM"
-        url: /docs/aix/upgrade-hmc/
+        url: /docs/hmc/upgrade-hmc/
+      - title: "• Collect PEDBG HMC IBM"
+        url: /docs/hmc/collect-pedbg/
   - title: Pure Storage📚
     children:
       - title: "• FE Training Pure Storage M Series"
