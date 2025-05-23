@@ -69,6 +69,12 @@ docs:
     children:
       - title: "• IBM MQ Training Collections"
         url: /docs/ibm-software/ibmmq/installation-ibmmq/
+  - title: NEC x HPE Server
+    children:
+      - title: "• Collect log HPUX & Aruba"
+        url: https://miftah-ahmad-choiri.github.io/documentation/docs/nec/collect-log-hpe/
+      - title: "• Collect log NEC Server"
+        url: https://miftah-ahmad-choiri.github.io/documentation/docs/nec/collect-log-nec/
   - title: Google Cloud
     children:
       - title: "• Introduction to Generative AI💡"
