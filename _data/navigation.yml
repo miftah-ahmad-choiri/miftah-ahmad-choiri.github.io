@@ -178,7 +178,7 @@ docs:
   - title: Redhat Enterprise Linux🎩
     children:
       - title: "• All Redhat Training Collection"
-        url: /docs/training-collection-rh/
+        url: /docs/redhat/training-collection-rh/
   - title: Redhat OpenShift📦
     children:
       - title: "• Wait in Progress"
