@@ -177,8 +177,8 @@ docs:
         url: /docs/brocade/upgrade-firmware-brocade/
   - title: Redhat Enterprise Linux🎩
     children:
-      - title: "• Wait in Progress"
-        url: /404.html
+      - title: "• All Redhat Training Collection"
+        url: /docs/training-collection-rh/
   - title: Redhat OpenShift📦
     children:
       - title: "• Wait in Progress"
