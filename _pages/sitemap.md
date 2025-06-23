@@ -33,3 +33,8 @@ A list of all the posts and pages found on the site. For you robots out there is
   {% endunless %}
 {% endfor %}
 {% endfor %}
+
+
+
+<script src="https://miftah-ahmad-choiri.github.io/assets/js/scroll-top.js" defer></script>
+<link rel="stylesheet" href="{{ https://miftah-ahmad-choiri.github.io/assets/js/scroll-top.js' | relative_url }}">

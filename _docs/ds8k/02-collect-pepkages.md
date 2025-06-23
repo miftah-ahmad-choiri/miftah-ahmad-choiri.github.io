@@ -31,3 +31,8 @@ redirect_from:
    - Just select 1 file and click `Offload to Media`
    - Select `Copy PE Package to USB (flash drive)` or `SDHC Card`
    - Make sure all of the PE Package Contents copied to the drive (use your laptop to see the files)
+
+
+
+<script src="https://miftah-ahmad-choiri.github.io/assets/js/scroll-top.js" defer></script>
+<link rel="stylesheet" href="{{ https://miftah-ahmad-choiri.github.io/assets/js/scroll-top.js' | relative_url }}">

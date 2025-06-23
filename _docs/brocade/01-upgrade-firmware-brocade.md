@@ -20,3 +20,5 @@ redirect_from:
 </iframe>
 
 
+<script src="https://miftah-ahmad-choiri.github.io/assets/js/scroll-top.js" defer></script>
+<link rel="stylesheet" href="{{ https://miftah-ahmad-choiri.github.io/assets/js/scroll-top.js' | relative_url }}">

@@ -54,3 +54,8 @@ What this means for you:
 * I respect and value my readers too much to write anything other than my own genuine and objective opinions and advice.
 
 Just like this website, my Disclosure Policy is a work in progress. As the revenue streams evolve, so will this page.
+
+
+
+<script src="https://miftah-ahmad-choiri.github.io/assets/js/scroll-top.js" defer></script>
+<link rel="stylesheet" href="{{ https://miftah-ahmad-choiri.github.io/assets/js/scroll-top.js' | relative_url }}">

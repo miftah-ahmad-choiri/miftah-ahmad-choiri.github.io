@@ -22,3 +22,5 @@ If you're one of us, click the button below to proceed.👇<br><br>
 
 ---
 
+<script src="https://miftah-ahmad-choiri.github.io/assets/js/scroll-top.js" defer></script>
+<link rel="stylesheet" href="{{ https://miftah-ahmad-choiri.github.io/assets/js/scroll-top.js' | relative_url }}">
